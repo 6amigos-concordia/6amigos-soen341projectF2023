@@ -4,7 +4,7 @@ This is a full-stack real estate web application that aims to be used by: Homebu
 A real estate web application is a digital platform designed to facilitate the buying, selling, and renting, of real estate properties. 
 ### Homebuyer requirements
 1.	Search for a property: The homebuyer can search for properties based on specific criteria such as location, price range, number of bedrooms, and amenities.
-2.	Save favorites: Homebuyers can save properties they are interested in, creating a list of favorites for easy access and comparison.
+2.	Save favourites: Homebuyers can save properties they are interested in, creating a list of favorites for easy access and comparison.
 3.	Request a visit to a property: Once interested in a property, the homebuyer can request a viewing appointment through the system.
 4.	Search for brokers.
 5.	Mortgage Calculator.
@@ -39,6 +39,15 @@ Backend Developers: Java, Spring Boot, MongoDB
 - There are a total of 6 members and we decided to split up into two smaller groups (frontend and backend).
 
 ### Frontend Approach
+We've chosen ReactJS for the front-end development. React is a JavaScript library for building user interfaces. The main advantage of using React is its component-based architecture, which allows for reusability of UI components. Given the nature of the application, it's necessary that it is accessible on various devices, especially mobile phones and tablets. We will ensure a responsive design.
+The team will first focus on designing the main components of the application:
+
+- **Homepage:** This is the landing page where users will start their search for properties.
+- **Property Listing:** A page where properties are listed based on search criteria. 
+- **Property Details:** A detailed page for each property, showing all its attributes, photos, location map, and an option to request a visit or contact the broker.
+- **Broker Profile:** Listing of all brokers with their profiles. Homebuyers and renters can view and select a broker from here.
+- **Favourites:** A dashboard where users can view all their saved properties.
+- **Mortgage Calculator:** An interactive calculator for homebuyers to estimate their monthly mortgage payments.
 
 
 ### Backend Approach
