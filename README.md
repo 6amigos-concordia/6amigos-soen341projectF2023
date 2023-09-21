@@ -39,9 +39,10 @@ Backend Developers: Java, Spring Boot, MongoDB
 - There are a total of 6 members and we decided to split up into two smaller groups (frontend and backend).
 
 ### Frontend Approach
-We've chosen ReactJS for the front-end development. React is a JavaScript library for building user interfaces. The main reason we chose React is because its a component-based architecture, which allows for reusability of UI components. 
+We've chosen ReactJS for the front-end development. React is a JavaScript library for building user interfaces. The main reason we chose React is because its a component-based architecture, which is similar to what Vue and Angular offer, lets us create reusable user interface elements. On top of that, React is flexible, making it perfect for ensuring our app looks good and works well on different devices, which is crucial in the real estate business.
+<br />What really sealed the deal was our team's familiarity with React and JavaScript. This made a huge difference because it allows for efficient development and easy sharing of knowledge. Plus, React fits nicely with the Agile development process we’re using, where we can adapt and improve our app based on client feedback and changing needs. This flexibility is a big plus, especially compared to Angular's more complex framework, which might have required more time and effort to learn and use effectively.
 
-The team will first focus on designing the main components of the application:
+<br />The team will first focus on designing the main components of the application:
 
 - **Homepage:** This is the landing page where users will start their search for properties.
 - **Property Listing:** A page where properties are listed based on search criteria. 
