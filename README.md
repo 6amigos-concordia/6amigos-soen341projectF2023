@@ -36,7 +36,7 @@ Backend Developers: Java, Spring Boot, MongoDB
 
 ## Project Approach
 - This project is expected to be completed after 4 sprints, with each sprint lasting 2 weeks each.
-- There are a total of 6 members and we decided to split up into two smaller groups (frontend and backend).
+- There are a total of 6 members and we decided to split up into two smaller groups (frontend and backend). 
 
 ### Frontend Approach
 We've chosen ReactJS for the front-end development. React is a JavaScript library for building user interfaces. The main reason we chose React is because its a component-based architecture, which is similar to what Vue and Angular offer, lets us create reusable user interface elements. On top of that, React is flexible, making it perfect for ensuring our app looks good and works well on different devices, which is crucial in the real estate business.
