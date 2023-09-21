@@ -6,7 +6,7 @@ A real estate web application is a digital platform designed to facilitate the b
 1.	Search for a property: The homebuyer can search for properties based on specific criteria such as location, price range, number of bedrooms, and amenities.
 2.	Save favourites: Homebuyers can save properties they are interested in, creating a list of favorites for easy access and comparison.
 3.	Request a visit to a property: Once interested in a property, the homebuyer can request a viewing appointment through the system.
-4.	Search for brokers.
+4.	Search for brokers. 
 5.	Mortgage Calculator.
 
 ### Renters requirements
