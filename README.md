@@ -39,7 +39,8 @@ Backend Developers: Java, Spring Boot, MongoDB
 - There are a total of 6 members and we decided to split up into two smaller groups (frontend and backend).
 
 ### Frontend Approach
-We've chosen ReactJS for the front-end development. React is a JavaScript library for building user interfaces. The main advantage of using React is its component-based architecture, which allows for reusability of UI components. Given the nature of the application, it's necessary that it is accessible on various devices, especially mobile phones and tablets. We will ensure a responsive design.
+We've chosen ReactJS for the front-end development. React is a JavaScript library for building user interfaces. The main reason we chose React is because its a component-based architecture, which allows for reusability of UI components. 
+
 The team will first focus on designing the main components of the application:
 
 - **Homepage:** This is the landing page where users will start their search for properties.
