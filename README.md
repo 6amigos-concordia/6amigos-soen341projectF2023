@@ -4,13 +4,13 @@ This is a full-stack real estate web application that aims to be used by: Homebu
 A real estate web application is a digital platform designed to facilitate the buying, selling, and renting, of real estate properties. 
 ### Homebuyer requirements
 1.	Search for a property: The homebuyer can search for properties based on specific criteria such as location, price range, number of bedrooms, and amenities.
-2.	Save favourites: Homebuyers can save properties they are interested in, creating a list of favorites for easy access and comparison.
+2.	Save favourites: Homebuyers can save properties they are interested in, creating a list of favourites for easy access and comparison.
 3.	Request a visit to a property: Once interested in a property, the homebuyer can request a viewing appointment through the system.
 4.	Search for brokers. 
 5.	Mortgage Calculator.
 
 ### Renters requirements
-Similar to homebuyers exceot for mortgage calculators.
+Similar to homebuyers except for mortgage calculators.
 
 ### Broker
 1.	Submit Offers: Brokers can submit offers for buying properties on behalf of their clients, and track the status of their offers.
@@ -39,16 +39,17 @@ Backend Developers: Java, Spring Boot, MongoDB
 - There are a total of 6 members and we decided to split up into two smaller groups (frontend and backend). 
 
 ### Frontend Approach
-We've chosen ReactJS for the front-end development. React is a JavaScript library for building user interfaces. The main reason we chose React is because its a component-based architecture, which is similar to what Vue and Angular offer, lets us create reusable user interface elements. On top of that, React is flexible, making it perfect for ensuring our app looks good and works well on different devices, which is crucial in the real estate business.
-<br />What really sealed the deal was our team's familiarity with React and JavaScript. This made a huge difference because it allows for efficient development and easy sharing of knowledge. Plus, React fits nicely with the Agile development process we’re using, where we can adapt and improve our app based on client feedback and changing needs. This flexibility is a big plus, especially compared to Angular's more complex framework, which might have required more time and effort to learn and use effectively.
+We've chosen ReactJS for the front-end development. React is a JavaScript library for building user interfaces. The main reason we chose React is because of its component-based architecture, which is similar to what Vue and Angular offers. It lets us create reusable user interface elements. On top of that, React is flexible, making it perfect for ensuring our app looks good and works well on different devices, which is crucial in the real estate business.
+<br /> Additionally, React fits perfectly with the Agile development process we’re using, where we can adapt and improve our app based on client feedback and changing needs, compared to other frameworks like Vue and Angular.
 
 <br />The team will first focus on designing the main components of the application:
 
-- **Homepage:** This is the landing page where users will start their search for properties.
+- **Homepage:** This is the landing page where users will start searching for properties.
 - **Property Listing:** A page where properties are listed based on search criteria. 
 - **Property Details:** A detailed page for each property, showing all its attributes, photos, location map, and an option to request a visit or contact the broker.
 - **Broker Profile:** Listing of all brokers with their profiles. Homebuyers and renters can view and select a broker from here.
 - **Favourites:** A dashboard where users can view all their saved properties.
+- **History:** Section that will contain the user's interactions and activities previously made on the platform.
 - **Mortgage Calculator:** An interactive calculator for homebuyers to estimate their monthly mortgage payments.
 
 
