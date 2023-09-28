@@ -1,0 +1,66 @@
+.content-CTA {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1rem;
+  max-width: 80%; /* avoid taking full viewport width */
+  margin: 0 auto; /* center the content */
+}
+
+.content-CTA .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  width: 66.67%; /* 2/3 of the parent width */
+ 
+}
+
+.content-CTA .title {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+  font-family: "Montserrat", Helvetica;
+  font-size: 2rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.content-CTA .hr-line-label {
+  width: 100%;
+}
+
+.content-CTA .line {
+  background-color: #ffffff;
+  height: 1px;
+  width: 4rem; /* adjust based on your design */
+}
+
+.content-CTA .description {
+  color: #ffffffcc;
+  font-family: "Montserrat", Helvetica;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5; /* making the text more readable */
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.content-CTA button {
+  padding: 0.25rem 0.5rem;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-family: "Montserrat", Helvetica;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  align-self: flex-start; /* Added this line */
+}
+
+.content-CTA button:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Slight background on hover for better UX */
+  color: #345AB1; /* Adjust color on hover if needed */
+}
+
