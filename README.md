@@ -9,7 +9,7 @@ A real estate web application is a digital platform designed to facilitate the b
 4.	Search for brokers. 
 5.	Mortgage Calculator.
 
-### Renters requirements
+### Renters requirements ++
 Similar to homebuyers except for mortgage calculators.
 
 ### Broker
