@@ -15,13 +15,13 @@
   transition: all 0.3s;
   border: none;           /* No border by default */
   background-color: transparent; /* No background for an outlined button */
-  color: #14339E;                /* Text color matches the border */
-  border: 1px solid #14339E;     /* Outline */
+  color: white;                /* Text color matches the border */
+  border: 1px solid #ffffff;     /* Outline */
   transition: background-color 0.3s; /* Smooth transition for background color */
 }
 
 .button-secondary:hover {
-  background-color: #E8E8E8; /* Light shade on hover for a subtle effect */
+  background-color: #14339E; /* Light shade on hover for a subtle effect */
 }
 
 .button-secondary .text {

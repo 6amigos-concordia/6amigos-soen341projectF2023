@@ -5,7 +5,7 @@
   align-items: center;
   flex-wrap: wrap;
   background-color: #2969cf;
-  background-image: url("/static/img/hero.png");
+  background-image: url("https://wallpapers.com/images/hd/real-estate-modern-white-house-dcxpp5xsw4e7wqgc.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -70,5 +70,12 @@
     align-items: flex-start; /* Align items to the start */
     padding: 1rem; /* Provide some space */
   }
+}
+.Logo-title{
+  font-family: "Roboto", Helvetica; 
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;       
+  color: white; 
 }
 
