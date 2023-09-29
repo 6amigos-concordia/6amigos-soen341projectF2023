@@ -11,7 +11,8 @@ export const LandingPage = () => {
     <div className="landing-page">
       <div className="top-fixed-container">
       <div className="brand">
-        <img className="IMG" alt="Logo" src="/img/logo.png" />
+        <img className="IMG" alt="" src="logo.png" />
+        <h1 className="Logo-title">LUXIUM</h1>
     
       </div>
       <div className="links">
@@ -21,7 +22,7 @@ export const LandingPage = () => {
         <div className="link">Saved properties</div>
       </div>
       <div className="signing">
-        <ButtonSecondary className="log-in" text="Log in" textClassName="button-secondary-instance" />
+        <ButtonSecondary className="log-in2" text="Log in" textClassName="button-secondary-instance" />
         <Button className="sign-up" divClassName="design-component-instance-node" frameClassName="button-instance" />
       </div>
       </div>

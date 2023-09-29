@@ -4,14 +4,14 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  background-color: #002766;
-  /*background-image: url("/static/img/hero.png");*/
+  background-color: #2969cf;
+  background-image: url("https://wallpapers.com/images/hd/real-estate-modern-white-house-dcxpp5xsw4e7wqgc.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-top: 100px; /* This is an arbitrary value; adjust based on your fixed header's height */
+  padding-top: 100px; 
   min-height: 100vh;
-  position: relative; /* This ensures any absolute positioned children are relative to this container */
+  position: relative; 
 }
 .top-fixed-container {
   padding: 20px;
@@ -23,7 +23,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 10; /* Ensures the fixed content stays above everything else */
+  z-index: 10; 
 }
 
 
@@ -38,14 +38,14 @@
   gap: 2vw;
 }
 
-/* Uniform text styles for links */
+
 .landing-page .links .link {
-  font-family: "Roboto", Helvetica;  /* Using the Roboto font with Helvetica as fallback */
+  font-family: "Roboto", Helvetica; 
   font-size: 18px;
   font-weight: 400;
-  text-decoration: none;       /* remove underlines */
-  color: white;                 /* example color, adjust as needed */
-  transition: color 0.3s;      /* smooth transition for hover effect */
+  text-decoration: none;       
+  color: white;                
+  transition: color 0.3s;     
 }
 
 /* Hover effect */
@@ -70,5 +70,12 @@
     align-items: flex-start; /* Align items to the start */
     padding: 1rem; /* Provide some space */
   }
+}
+.Logo-title{
+  font-family: "Roboto", Helvetica; 
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;       
+  color: white; 
 }
 
