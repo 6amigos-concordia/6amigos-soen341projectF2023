@@ -65,3 +65,18 @@ The Spring Boot application is under server/real_estate where all files are stor
 * After that you will be able to develop controllers and components from here, so here's a starting point: https://spring.io/guides/gs/spring-boot/
 * Also, you will need to connect with MongoDB where it will be essential to learn the basics of Spring and Spring Boot after which it would be simpler to build the entire server-side infrastructure and provide information to the front-end.
 * The required dependencies are added for MongoDB which makes it easier for you to start with the next step.
+
+## Getting Started (Spring Boot and MongoDB)
+### Starting MongoDB docker image
+1. docker-compose build
+2. docker-compose up -d
+
+### Starting Spring Boot application
+* Git clone the project into local directory
+* Open the folder and go into server/real_estate
+* Open the project in an IDE of your choice and run the main class src.main.java.RealEstateApplication
+
+### Test API
+Try any endpoint and see the app is running fine or not using Postman.
+* Add a user POST API: http://localhost:27017/api/users
+* Get all users GET API endpoint: http://localhost:27017/api/users
