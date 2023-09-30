@@ -80,3 +80,9 @@ The Spring Boot application is under server/real_estate where all files are stor
 Try any endpoint and see the app is running fine or not using Postman.
 * Add a user POST API: http://localhost:27017/api/users
 * Get all users GET API endpoint: http://localhost:27017/api/users
+
+## Getting Started (React & JavaScript)
+### Starting React
+*
+
+
