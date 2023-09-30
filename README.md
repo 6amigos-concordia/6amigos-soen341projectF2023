@@ -83,6 +83,12 @@ Try any endpoint and see the app is running fine or not using Postman.
 
 ## Getting Started (React & JavaScript)
 ### Starting React
-*
+* Visit https://create-react-app.dev/
+* run this command : npx create-react-app my-app in your terminal to create the react app
+* Choose the location where u want to put the folders obtained after installation
+* Open the folder in your IDE
+* Change the code provided to make it your own
+* To run the code, do npm start in your terminal
+  
 
 
