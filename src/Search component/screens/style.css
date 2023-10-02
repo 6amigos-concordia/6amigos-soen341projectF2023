@@ -1,0 +1,161 @@
+.search {
+  background-color: #ffffff;
+  border-radius: 8px;
+  height: 196px;
+  position: relative;
+  width: 1650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 0%;
+}
+
+.search .subtitle-icon {
+  align-items: center;
+  display: flex;
+  gap: 12px;
+  width: 100%;
+  /* Use 100% width to fill the parent container */
+  text-align: center;
+  /* Center the text */
+  margin-top: 20px;
+  /* Add top margin to subtitle */
+}
+
+.search .description {
+  color: var(--x-1433-9e);
+  font-family: "Montserrat", Helvetica;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.search .icons-search {
+  height: 24px !important;
+  position: relative !important;
+  width: 24px !important;
+}
+
+
+.search .text-search-BTN {
+  align-items: center;
+  display: flex;
+  gap: 42px;
+  width: 100%;
+  /* Use 100% width to fill the parent container */
+  text-align: center;
+  /* Center the children elements */
+  margin-bottom: 20px;
+  /* Add bottom margin to the dropdown section */
+  margin-left: 10px;
+  /* Add right margin to move the input box to the right */
+
+}
+
+
+.search .dropdown-instance {
+  flex: 1 !important;
+  flex-grow: 1 !important;
+  width: unset !important;
+}
+
+.input-wrapper {
+  position: relative;
+  margin-bottom: 5px;
+  /* Adjust the value to set the desired space after the input box */
+  margin-left: 10px;
+  /* Add right margin to move the input box to the right */
+}
+
+.input-instance {
+  height: 40px;
+  width: 450px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.search .button-text-only-instance {
+  background-color: var(--x-1433-9e) !important;
+  border-radius: 6px !important;
+  display: flex !important;
+  flex: 1 !important;
+  flex-grow: 1 !important;
+}
+
+.button-with-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  /* Set a fixed width to maintain the circular shape */
+  height: 50px;
+  /* Set a fixed height to maintain the circular shape */
+  border: none;
+  background-color: #f8f8f9;
+  color: white;
+  border-radius: 50%;
+  /* Set border-radius to 50% for a round shape */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #c5ced7;
+  }
+}
+/* Default styles for the search bar */
+.search-bar {
+  background-color: #f0f0f0;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.search-bar input[type="text"] {
+  width: 70%;
+  padding: 8px;
+  font-size: 16px;
+}
+
+.search-bar button {
+  padding: 8px 16px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/* Responsive styles using media queries */
+@media screen and (max-width: 768px) {
+  .search-bar input[type="text"] {
+    width: 60%;
+    font-size: 14px;
+  }
+
+  .search-bar button {
+    padding: 8px 12px;
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .search-bar input[type="text"] {
+    width: 50%;
+    font-size: 12px;
+  }
+
+  .search-bar button {
+    padding: 6px 10px;
+    font-size: 12px;
+  }
+}
+
+

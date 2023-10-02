@@ -1,7 +1,7 @@
-import React from "react";
-import ReactDOMClient from "react-dom/client";
-import { LandingPage } from "./screens/LandingPage";
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App';
 
-const app = document.getElementById("app");
-const root = ReactDOMClient.createRoot(app);
-root.render(<LandingPage />);
+const app = document.getElementById('app');
+
+ReactDOM.render(<App />, app);

@@ -1,0 +1,80 @@
+.landing-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #2969cf;
+  background-image: url("https://wallpapers.com/images/hd/real-estate-modern-white-house-dcxpp5xsw4e7wqgc.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 100px; 
+  min-height: 100vh;
+  position: relative; 
+}
+.top-fixed-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10; 
+}
+img.IMG{
+  height: 100px;
+  width: 125px;
+}
+.landing-page .brand {
+  display: flex;
+  align-items: center;
+}
+.landing-page .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+
+.landing-page .links .link {
+  font-family: "Roboto", Helvetica; 
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;       
+  color: white;                
+  transition: color 0.3s;     
+}
+
+/* Hover effect */
+.landing-page .links .link:hover {
+  color: #555;                 /* slightly darker on hover */
+}
+
+/* Active effect (when the link is clicked) */
+.landing-page .links .link:active {
+  color: #222;                 /* even darker when clicked */
+}
+
+
+.landing-page .signing {
+  display: flex;
+  gap: 1vw;
+}
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+  .top-fixed-container {
+    flex-direction: column; /* stack elements vertically */
+    align-items: flex-start; /* Align items to the start */
+    padding: 1rem; /* Provide some space */
+  }
+}
+.Logo-title{
+  font-family: "Roboto", Helvetica; 
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;       
+  color: white; 
+}

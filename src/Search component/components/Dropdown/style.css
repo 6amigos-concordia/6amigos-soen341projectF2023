@@ -1,0 +1,41 @@
+.select-instance {
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid;
+  border-color: #cfd4dc;
+  border-radius: 6px;
+  box-shadow: var(--shadow-xs);
+  display: flex;
+  gap: 8px;
+  padding: 10px 14px;
+  position: relative;
+  width: 100%; /* Make the select take up the full width of its parent */
+
+  /* Set a maximum width if you don't want it to stretch too wide on larger screens */
+  /* max-width: 320px; */ 
+}
+
+/* Optional: Style the dropdown arrow inside the select */
+.select-instance::-ms-expand {
+  display: none;
+}
+
+.select-instance option {
+  font-family: "Montserrat", Helvetica;
+  font-size: 16px;
+  color: #667084;
+  background-color: white;
+}
+
+/* Optional: Style the dropdown when it's open */
+.select-instance:focus {
+  border-color: #7f57f1; /* Add a different border color when the select is focused */
+}
+
+/* Responsive styles using media queries */
+@media screen and (max-width: 768px) {
+  .select-instance {
+    font-size: 14px; /* Decrease the font size for smaller screens */
+    padding: 8px 12px; /* Adjust padding for smaller screens */
+  }
+}
