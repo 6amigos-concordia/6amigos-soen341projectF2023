@@ -205,7 +205,7 @@
 }
 
 :root {
-  --search-bar-height: 10%;
+  --search-bar-height: 16%;
 }
 
 .search {
@@ -261,11 +261,6 @@
   margin-bottom: 20px;
   margin-left: 10px;
   display: flex;
-}
-
-.search .dropdown-instance {
-  width: unset !important;
-  flex: 1 !important;
 }
 
 .input-wrapper {
@@ -329,6 +324,52 @@
   border: none;
   padding: 8px 16px;
   font-size: 16px;
+}
+
+.search .dropdown-instance {
+  width: unset !important;
+  flex: 1 !important;
+}
+
+.dropdown {
+  gap: 8px;
+  width: 320px;
+  padding: 10px 14px;
+  display: flex;
+  position: relative;
+  box-shadow: var(--shadow-xs) !important;
+  background-color: #fff !important;
+  border: 1px solid #cfd4dc !important;
+  border-radius: 6px !important;
+  align-items: center !important;
+}
+
+.dropdown .content {
+  flex: 1;
+  align-items: center;
+  gap: 8px;
+  display: flex;
+  position: relative;
+}
+
+.dropdown .text {
+  color: #667084;
+  letter-spacing: 0;
+  white-space: nowrap;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: -1px;
+  font-family: Montserrat-Regular, Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  position: relative;
+}
+
+.dropdown .icons-arrow-down {
+  width: 20px !important;
+  height: 20px !important;
+  position: relative !important;
 }
 
 @media screen and (width <= 768px) {

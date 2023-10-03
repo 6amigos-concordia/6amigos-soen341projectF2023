@@ -1,5 +1,5 @@
 :root {
-  --search-bar-height: 10%; /* Adjust this percentage based on your design needs */
+  --search-bar-height: 16%; /* Adjust this percentage based on your design needs */
 }
 .search {
   background-color: #ffffff;
@@ -41,6 +41,7 @@
   position: relative;
   white-space: nowrap;
   width: fit-content;
+
 }
 
 .search .icons-search {
@@ -70,6 +71,9 @@
   flex: 1 !important;
   flex-grow: 1 !important;
   width: unset !important;
+
+
+
 }
 
 .input-wrapper {
@@ -141,6 +145,56 @@
   font-size: 16px;
 }
 
+.search .dropdown-instance {
+  flex: 1 !important;
+  flex-grow: 1 !important;
+  width: unset !important;
+
+  
+}
+
+.dropdown {
+  align-items: center!important;
+  background-color: #ffffff!important;
+  border: 1px solid!important;
+  border-color: #cfd4dc!important;
+  border-radius: 6px!important;
+  box-shadow: var(--shadow-xs)!important;
+  display: flex;
+  gap: 8px;
+  padding: 10px 14px;
+  position: relative;
+  width: 320px;
+  }
+  .dropdown .content {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-grow: 1;
+  gap: 8px;
+  position: relative;
+  }
+  .dropdown .text {
+  color: #667084;
+  font-family: "Montserrat-Regular", Helvetica;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+  }
+  .dropdown .icons-arrow-down {
+  height: 20px !important;
+  position: relative !important;
+  width: 20px !important;
+  }
+  
+
+
+
 /* Responsive styles using media queries */
 @media screen and (max-width: 768px) {
   .search-bar input[type="text"] {
@@ -164,6 +218,9 @@
     padding: 6px 10px;
     font-size: 12px;
   }
+
+
 }
+
 
 

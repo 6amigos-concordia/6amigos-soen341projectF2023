@@ -80,7 +80,7 @@ export const Search = () => {
   const propertyTypeOptions = [
     { label: "For sale", value: "For sale" },
     { label: "For rent", value: "For rent" },
-    { label: "sold", value: "sold" }
+    { label: "Sold", value: "Sold" }
   ];
 
   return (
