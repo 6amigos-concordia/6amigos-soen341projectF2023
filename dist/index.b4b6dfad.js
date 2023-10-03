@@ -27211,42 +27211,49 @@ const LandingPage = ()=>{
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "links",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "link",
-                                children: "Find a home"
-                            }, void 0, false, {
-                                fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                                lineNumber: 18,
-                                columnNumber: 9
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "link",
-                                children: "Mortage Calculator"
-                            }, void 0, false, {
-                                fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                                lineNumber: 19,
-                                columnNumber: 9
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "link",
-                                children: "Find a broker"
-                            }, void 0, false, {
-                                fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                                lineNumber: 20,
-                                columnNumber: 9
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "link",
-                                children: "Saved properties"
-                            }, void 0, false, {
-                                fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                                lineNumber: 21,
-                                columnNumber: 9
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
+                        className: "hamburger-menu",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "links",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "link",
+                                    children: "Find a home"
+                                }, void 0, false, {
+                                    fileName: "src/Landing component/LandingPage/LandingPage.jsx",
+                                    lineNumber: 20,
+                                    columnNumber: 9
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "link",
+                                    children: "Mortage Calculator"
+                                }, void 0, false, {
+                                    fileName: "src/Landing component/LandingPage/LandingPage.jsx",
+                                    lineNumber: 21,
+                                    columnNumber: 9
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "link",
+                                    children: "Find a broker"
+                                }, void 0, false, {
+                                    fileName: "src/Landing component/LandingPage/LandingPage.jsx",
+                                    lineNumber: 22,
+                                    columnNumber: 9
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "link",
+                                    children: "Saved properties"
+                                }, void 0, false, {
+                                    fileName: "src/Landing component/LandingPage/LandingPage.jsx",
+                                    lineNumber: 23,
+                                    columnNumber: 9
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Landing component/LandingPage/LandingPage.jsx",
+                            lineNumber: 19,
+                            columnNumber: 7
+                        }, undefined)
+                    }, void 0, false, {
                         fileName: "src/Landing component/LandingPage/LandingPage.jsx",
                         lineNumber: 17,
                         columnNumber: 7
@@ -27260,7 +27267,7 @@ const LandingPage = ()=>{
                                 textClassName: "button-secondary-instance"
                             }, void 0, false, {
                                 fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                                lineNumber: 24,
+                                lineNumber: 27,
                                 columnNumber: 9
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _button.Button), {
@@ -27269,13 +27276,13 @@ const LandingPage = ()=>{
                                 frameClassName: "button-instance"
                             }, void 0, false, {
                                 fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                                lineNumber: 25,
+                                lineNumber: 28,
                                 columnNumber: 9
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                        lineNumber: 23,
+                        lineNumber: 26,
                         columnNumber: 7
                     }, undefined)
                 ]
@@ -27286,12 +27293,12 @@ const LandingPage = ()=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cta.ContentCta), {}, void 0, false, {
                 fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                lineNumber: 28,
+                lineNumber: 31,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _search.Search), {}, void 0, false, {
                 fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                lineNumber: 30,
+                lineNumber: 33,
                 columnNumber: 8
             }, undefined)
         ]

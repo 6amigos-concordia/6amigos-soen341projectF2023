@@ -14,11 +14,14 @@ export const LandingPage = () => {
       <div className="brand">
         <img className="IMG" alt="" src="https://i.ibb.co/TbH49Cr/luxium.png"/>
       </div>
+      <div className="hamburger-menu">
+          
       <div className="links">
         <div className="link">Find a home</div>
         <div className="link">Mortage Calculator</div>
         <div className="link">Find a broker</div>
         <div className="link">Saved properties</div>
+      </div>
       </div>
       <div className="signing">
         <ButtonSecondary className="log-in2" text="Log in" textClassName="button-secondary-instance" />
@@ -26,7 +29,7 @@ export const LandingPage = () => {
       </div>
       </div>
       <ContentCta />
-       {/*  <Search/> */}
+       
        <Search/>
      
       

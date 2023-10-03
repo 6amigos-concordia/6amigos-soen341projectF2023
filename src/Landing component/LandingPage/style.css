@@ -32,8 +32,16 @@ img.IMG{
   display: flex;
   align-items: center;
 }
-.landing-page .links {
-  display: flex;
+
+.hamburger-menu {
+  cursor: pointer;
+  font-size: 24px;
+  display: flex; /* Make sure the container is always flex */
+  align-items: center;
+}
+
+.links {
+  display: flex; /* Display the links by default */
   justify-content: center;
   align-items: center;
   gap: 2vw;
@@ -50,7 +58,7 @@ img.IMG{
 
 /* Hover effect */
 .landing-page .links .link:hover {
-  color: #555;                 /* slightly darker on hover */
+  color: #555;
 }
 
 /* Active effect (when the link is clicked) */
@@ -69,6 +77,32 @@ img.IMG{
     flex-direction: column; /* stack elements vertically */
     align-items: flex-start; /* Align items to the start */
     padding: 1rem; /* Provide some space */
+  }
+  img.IMG {
+    height: 90px;
+    width: 120px;
+  }
+
+
+
+  .hamburger-menu:before {
+    content: '☰';
+  }
+
+  .landing-page .links {
+    display: none; /* Initially hide the links on small screens */
+    flex-direction: column; /* Make them vertical */
+    position: absolute; /* To overlay on top of other content */
+    background-color: #14339E;
+    color: #14339E;
+    top: 10px; /* Adjust depending on your hamburger menu's size */
+    width: 200px; /* Or as needed */
+    right: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Optional shadow for dropdown effect */
+  }
+
+  .hamburger-menu:hover .links {
+    display: flex; /* Show the links when hamburger is hovered */
   }
 }
 .Logo-title{
