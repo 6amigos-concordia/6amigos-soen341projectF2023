@@ -27206,7 +27206,7 @@ const LandingPage = ()=>{
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             className: "IMG",
                             alt: "",
-                            src: "https://i.ibb.co/MBMvKS6/luxium.png"
+                            src: "https://i.ibb.co/TbH49Cr/luxium.png"
                         }, void 0, false, {
                             fileName: "src/Landing component/LandingPage/LandingPage.jsx",
                             lineNumber: 15,

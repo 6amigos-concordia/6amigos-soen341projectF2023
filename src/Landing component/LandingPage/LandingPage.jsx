@@ -12,7 +12,7 @@ export const LandingPage = () => {
     <div className="landing-page">
       <div className="top-fixed-container">
       <div className="brand">
-        <img className="IMG" alt="" src="https://i.ibb.co/MBMvKS6/luxium.png"/>
+        <img className="IMG" alt="" src="https://i.ibb.co/TbH49Cr/luxium.png"/>
       </div>
       <div className="links">
         <div className="link">Find a home</div>
