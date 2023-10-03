@@ -27150,8 +27150,8 @@ const App = ()=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _featureComponent.OurFeature), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 9,
-                columnNumber: 7
+                lineNumber: 10,
+                columnNumber: 8
             }, undefined)
         ]
     }, void 0, true, {
@@ -27298,8 +27298,8 @@ const LandingPage = ()=>{
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _search.Search), {}, void 0, false, {
                 fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                lineNumber: 29,
-                columnNumber: 7
+                lineNumber: 30,
+                columnNumber: 8
             }, undefined)
         ]
     }, void 0, true, {

@@ -13,17 +13,17 @@
   position: relative; 
 }
 .top-fixed-container {
+  position: absolute; /* Added this */
   padding: 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100vw;
-
-  position: fixed;
   top: 0;
   left: 0;
   z-index: 10; 
 }
+
 img.IMG{
   height: 100px;
   width: 125px;

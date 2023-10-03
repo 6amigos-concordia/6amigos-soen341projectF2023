@@ -75,6 +75,7 @@
   text-align: center;
   box-sizing: border-box;
   color: #fff;
+  cursor: pointer;
   background-color: #14339e;
   border: 1px solid #fff;
   border-radius: 16px;
@@ -203,7 +204,13 @@
   }
 }
 
+:root {
+  --search-bar-height: 10%;
+}
+
 .search {
+  height: var(--search-bar-height);
+  margin-bottom: calc(var(--search-bar-height) / -2);
   background-color: #fff;
   border-radius: 8px;
   flex-direction: column;
@@ -211,6 +218,8 @@
   width: 1650px;
   height: 196px;
   padding-top: 0%;
+  padding-left: 2%;
+  padding-right: 2%;
   display: flex;
   position: relative;
 }
@@ -368,7 +377,7 @@
   width: 100vw;
   padding: 20px;
   display: flex;
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
 }

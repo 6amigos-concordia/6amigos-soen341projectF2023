@@ -1,3 +1,6 @@
+:root {
+  --search-bar-height: 10%; /* Adjust this percentage based on your design needs */
+}
 .search {
   background-color: #ffffff;
   border-radius: 8px;
@@ -8,6 +11,11 @@
   flex-direction: column;
   justify-content: space-between;
   padding-top: 0%;
+  padding-left: 2%;
+  padding-right: 2%;
+  height: var(--search-bar-height); /* Set the height using the variable */
+  margin-bottom: calc(var(--search-bar-height) / -2); 
+  
 }
 
 .search .subtitle-icon {

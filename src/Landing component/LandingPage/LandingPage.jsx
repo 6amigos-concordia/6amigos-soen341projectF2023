@@ -26,7 +26,9 @@ export const LandingPage = () => {
       </div>
       </div>
       <ContentCta />
-      <Search/>
+       {/*  <Search/> */}
+       <Search/>
+     
       
     </div>
   );
