@@ -205,7 +205,7 @@
 }
 
 :root {
-  --search-bar-height: 16%;
+  --search-bar-height: 8%;
 }
 
 .search {
@@ -560,16 +560,11 @@ img.IMG {
   overflow: hidden;
 }
 
-div.card {
-  transition: width .3s, height .3s;
-  box-shadow: 10px 10px 5px #d3d3d3;
-}
-
 .card:hover {
   transform: scale(1.2);
 }
 
-.our-feature .headline {
+.our-feature .headline, .our-feature .headline-2 {
   color: #2f234f;
   letter-spacing: .48px;
   width: 546px;
@@ -590,18 +585,6 @@ div.card {
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
-  position: relative;
-}
-
-.our-feature .headline-2 {
-  color: #2f234f;
-  letter-spacing: .48px;
-  align-self: stretch;
-  margin-top: -1px;
-  font-family: Playfair Display, Helvetica;
-  font-size: 24px;
-  font-weight: 600;
-  line-height: 32px;
   position: relative;
 }
 
@@ -631,6 +614,14 @@ div.card {
 @media screen and (width <= 1200px) {
   .our-feature .wrapper {
     justify-content: center;
+  }
+
+  .our-feature .title {
+    text-align: center;
+    width: 100%;
+    max-width: 592px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 

@@ -49,17 +49,12 @@
   width: 100%;
 }
 
-div.card {
-  transition: width 0.3s ease, height 0.3s ease;
-  box-shadow: 10px 10px 5px lightgray;
-}
-
 .card:hover {
   transform: scale(1.2);
 }
 
-
-.our-feature .headline {
+.our-feature .headline,
+.our-feature .headline-2 {
   color: #2f234f;
   font-family: "Playfair Display", Helvetica;
   font-size: 24px;
@@ -80,18 +75,6 @@ div.card {
   height: 61px;
   letter-spacing: 0;
   line-height: 24px;
-  position: relative;
-}
-
-.our-feature .headline-2 {
-  align-self: stretch;
-  color: #2f234f;
-  font-family: "Playfair Display", Helvetica;
-  font-size: 24px;
-  font-weight: 600;
-  letter-spacing: 0.48px;
-  line-height: 32px;
-  margin-top: -1px;
   position: relative;
 }
 
@@ -121,6 +104,14 @@ div.card {
 @media screen and (max-width: 1200px) {
   .our-feature .wrapper {
     justify-content: center;
+  }
+
+  .our-feature .title {
+    left: 50%; /* Center the title horizontally */
+    transform: translateX(-50%);
+    text-align: center; /* Center the text */
+    width: 100%; /* Set width to 100% for responsiveness */
+    max-width: 592px; /* Set maximum width for larger screens */
   }
 }
 

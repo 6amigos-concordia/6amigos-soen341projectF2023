@@ -1,5 +1,5 @@
 :root {
-  --search-bar-height: 16%; /* Adjust this percentage based on your design needs */
+  --search-bar-height: 8%; /* Adjust this percentage based on your design needs */
 }
 .search {
   background-color: #ffffff;
@@ -192,9 +192,6 @@
   width: 20px !important;
   }
   
-
-
-
 /* Responsive styles using media queries */
 @media screen and (max-width: 768px) {
   .search-bar input[type="text"] {

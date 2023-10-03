@@ -27142,12 +27142,19 @@ var _featureComponent = require("./Feature component");
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "app",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _landingPage.LandingPage), {}, void 0, false, {
-            fileName: "src/App.jsx",
-            lineNumber: 8,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _landingPage.LandingPage), {}, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 8,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _featureComponent.OurFeature), {}, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 9,
+                columnNumber: 9
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/App.jsx",
         lineNumber: 7,
         columnNumber: 5
