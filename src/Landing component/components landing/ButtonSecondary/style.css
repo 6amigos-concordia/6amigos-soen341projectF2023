@@ -1,3 +1,5 @@
+
+
 .button-secondary {
   display: flex;
   align-items: center;
@@ -13,9 +15,11 @@
   transition: all 0.3s;
   border: none;           /* No border by default */
   background-color: transparent; /* No background for an outlined button */
-  color: white;                /* Text color matches the border */
+  color: rgb(255, 255, 255);                /* Text color matches the border */
   border: 1px solid #ffffff;     /* Outline */
+  background-color: #14339E;
   transition: background-color 0.3s; /* Smooth transition for background color */
+  cursor: pointer;
 }
 
 .button-secondary:hover {
