@@ -29583,7 +29583,7 @@ const FeaturedProperties = ()=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                         className: "image",
                         alt: "Image",
-                        src: "/img/image-5.png"
+                        src: "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg"
                     }, void 0, false, {
                         fileName: "src/FeaturedProperties/FeaturedProperties.jsx",
                         lineNumber: 17,
@@ -29592,7 +29592,7 @@ const FeaturedProperties = ()=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                         className: "image",
                         alt: "Image",
-                        src: "/img/image-4.png"
+                        src: "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg"
                     }, void 0, false, {
                         fileName: "src/FeaturedProperties/FeaturedProperties.jsx",
                         lineNumber: 18,
@@ -29601,7 +29601,7 @@ const FeaturedProperties = ()=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                         className: "image",
                         alt: "Image",
-                        src: "/img/image-5.png"
+                        src: "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg"
                     }, void 0, false, {
                         fileName: "src/FeaturedProperties/FeaturedProperties.jsx",
                         lineNumber: 19,
@@ -29610,7 +29610,7 @@ const FeaturedProperties = ()=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                         className: "image",
                         alt: "Image",
-                        src: "/img/image-5.png"
+                        src: "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg"
                     }, void 0, false, {
                         fileName: "src/FeaturedProperties/FeaturedProperties.jsx",
                         lineNumber: 20,
@@ -29619,7 +29619,7 @@ const FeaturedProperties = ()=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                         className: "image",
                         alt: "Image",
-                        src: "/img/image-5.png"
+                        src: "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg"
                     }, void 0, false, {
                         fileName: "src/FeaturedProperties/FeaturedProperties.jsx",
                         lineNumber: 21,
@@ -29628,7 +29628,7 @@ const FeaturedProperties = ()=>{
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                         className: "image",
                         alt: "Image",
-                        src: "/img/image-5.png"
+                        src: "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg"
                     }, void 0, false, {
                         fileName: "src/FeaturedProperties/FeaturedProperties.jsx",
                         lineNumber: 22,
