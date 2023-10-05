@@ -27151,7 +27151,7 @@ const App = ()=>{
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _featureComponent.OurFeature), {}, void 0, false, {
                 fileName: "src/App.jsx",
                 lineNumber: 9,
-                columnNumber: 9
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {

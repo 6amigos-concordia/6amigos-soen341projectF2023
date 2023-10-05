@@ -102,26 +102,30 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .our-feature .div {
+    padding: 20px; /* Add padding for smaller screens */
+  }
+
   .our-feature .wrapper {
-    justify-content: center;
-  }
-
-  .our-feature .title {
-    left: 50%; /* Center the title horizontally */
-    transform: translateX(-50%);
-    text-align: center; /* Center the text */
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    position: static; /* Reset the position property */
+    left: auto; /* Reset left property */
+    top: auto; /* Reset top property */
     width: 100%; /* Set width to 100% for responsiveness */
-    max-width: 592px; /* Set maximum width for larger screens */
+    max-width: 100%; /* Set maximum width for larger screens */
   }
-}
 
-@media screen and (max-width: 768px) {
   .our-feature .card {
     max-width: 100%;
   }
-}
 
-@media screen and (max-width: 480px) {
+  .our-feature .cover {
+    height: 300px; /* Adjust the height as per your design */
+    width: 300px; /* Adjust the width as per your design */
+  }
 
   .our-feature .headline,
   .our-feature .headline-2 {
@@ -134,5 +138,45 @@
 
   .our-feature .title {
     font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .our-feature .cover {
+    height: 200px; /* Adjust the height as per your design */
+    width: 200px; /* Adjust the width as per your design */
+  }
+
+  .our-feature .headline,
+  .our-feature .headline-2 {
+    font-size: 18px;
+  }
+
+  .our-feature .text-wrapper {
+    font-size: 12px;
+  }
+
+  .our-feature .title {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .our-feature .cover {
+    height: 150px; /* Adjust the height as per your design */
+    width: 150px; /* Adjust the width as per your design */
+  }
+
+  .our-feature .headline,
+  .our-feature .headline-2 {
+    font-size: 16px;
+  }
+
+  .our-feature .text-wrapper {
+    font-size: 10px;
+  }
+
+  .our-feature .title {
+    font-size: 20px;
   }
 }
