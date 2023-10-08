@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { ButtonTextOnly } from "../../components news/ButtonTextOnly";
-import { Input } from "../../components news/Input";
+import { ButtonTextOnly } from "./ButtonTextOnly";
+import { Input } from "./Input";
 import "./style.css";
 
 export const Cta = () => {
