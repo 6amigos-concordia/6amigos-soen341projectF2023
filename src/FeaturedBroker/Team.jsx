@@ -14,7 +14,7 @@ export const Team = () => {
         <div className="content">
           <div className="element">
             <div className="team-member">
-              <img className="avatar-mask" alt="Avatar mask" src="/img/avatar-mask.png" />
+              <img className="avatar-mask" alt="Avatar mask" src="https://i.ibb.co/M2LJjHY/Staci.webp" />
               <div className="div-2">
                 <div className="title-2">Kathryn Murphy</div>
                 <button className="sub-title">See More</button>
@@ -24,7 +24,7 @@ export const Team = () => {
           </div>
           <div className="element">
             <div className="team-member">
-              <img className="avatar-mask" alt="Avatar mask" src="/img/avatar-mask-3.png" />
+              <img className="avatar-mask" alt="Avatar mask" src="https://i.ibb.co/r0N3Ffb/Jimbo.webp" />
               <div className="div-2">
                 <div className="title-2">Floyd Miles</div>
                 <button className="sub-title">See More</button>
@@ -33,7 +33,7 @@ export const Team = () => {
           </div>
           <div className="element">
             <div className="team-member">
-              <img className="avatar-mask" alt="Avatar mask" src="/img/avatar-mask-2.png" />
+              <img className="avatar-mask" alt="Avatar mask" src="https://i.ibb.co/s1yGF6k/static1-squarespace.jpg" />
               <div className="div-2">
                 <div className="title-2">Floyd Miles</div>
                 <button className="sub-title">See More</button>
@@ -42,7 +42,7 @@ export const Team = () => {
           </div>
           <div className="element">
             <div className="team-member">
-              <img className="avatar-mask" alt="Avatar mask" src="/img/avatar-mask-1.png" />
+              <img className="avatar-mask" alt="Avatar mask" src="https://i.ibb.co/vVDbJxs/688-6883042-boss-baby-triplets-png-png-download-transparent-png.png" />
               <div className="div-2">
                 <div className="title-2">Ronald Richards</div>
                 <button className="sub-title">See More</button>
