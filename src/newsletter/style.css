@@ -1,0 +1,202 @@
+
+.CTA {
+  background-color: #14339e1a;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.CTA .div {
+  background-color: var(--x-1433-9e);
+  height: 416px;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+
+    display: flex;
+    align-items: center; /* Vertically center the content */
+    justify-content: center; /* Horizontally center the content */
+    padding: 40px; /* Provide some padding */
+  }
+
+.CTA .shapes {
+  height: 599px;
+  left: 112px;
+  position: absolute;
+  top: -109px;
+  width: 575px;
+
+
+  flex: 1; /* take up 1 fraction of the space */
+    max-width: 40%; /* limit the width it can take */
+    height: auto; /* reset the height */
+}
+
+.CTA .overlap-group {
+  height: 599px;
+  position: relative;
+}
+
+.CTA .rectangle {
+  background-color: var(--x-1433-9e);
+  box-shadow: 5px 5px 10px #161b1d3b;
+  height: 296px;
+  left: 219px;
+  position: absolute;
+  top: 243px;
+  transform: rotate(37.02deg);
+  width: 296px;
+}
+
+.CTA .rectangle-2 {
+  background-color: var(--x-1433-9e);
+  box-shadow: 5px 5px 10px #161b1d3b;
+  height: 296px;
+  left: 36px;
+  position: absolute;
+  top: 36px;
+  transform: rotate(16.27deg);
+  width: 296px;
+}
+
+.CTA .subscribe-wrapper {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+  left: 734px;
+  position: absolute;
+  top: 75px;
+  width: 594px;
+
+  flex: 2; /* take up 2 fractions of the space, making it bigger than shapes */
+  max-width: 60%; /* allow it to expand up to 60% of the parent */
+  align-items: center; /* Center the content vertically */
+  text-align: center; /* Center the text horizontally */
+  height: auto; /* Reset the height */
+  left: 55%; /* position right to the shapes */
+  width: 40%; /* take 40% width */
+}
+
+.CTA .title-description {
+  align-items: flex-start;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 8px;
+  position: relative;
+  width: 100%;
+}
+
+.CTA .title {
+  align-self: stretch;
+  color: #ffffff;
+  font-family: "Playfair Display", Helvetica;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  line-height: 60px;
+  margin-top: -1px;
+  position: relative;
+}
+
+.CTA .description {
+  align-self: stretch;
+  color: #ffffffcc;
+  font-family: "Montserrat", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 32px;
+  position: relative;
+}
+
+.CTA .input-2 {
+  align-items: flex-start;
+  align-self: stretch;
+  box-shadow: 4px 4px 8px #0000001f;
+  display: flex;
+  flex: 0 0 auto;
+  position: relative;
+  width: 100%;
+
+
+    display: flex; 
+    justify-content: center; /* Center the input and button */
+    max-width: 80%; /* Don't let it span the full width of its parent */
+    margin: 20px auto; /* Center it horizontally with some margin on top and bottom */
+}
+
+.CTA .input-instance {
+  border-radius: 8px 0px 0px 8px !important;
+  flex: 1 !important;
+  flex-grow: 1 !important;
+  padding: 16px 24px !important;
+  width: unset !important;
+}
+
+.CTA .design-component-instance-node {
+  color: #2f234f80 !important;
+}
+
+.CTA .button-text-only-instance {
+  background-color: #092895 !important;
+  border-radius: 0px 8px 8px 0px !important;
+  display: flex !important;
+  padding: 16px 20px !important;
+  width: 180px !important;
+
+/* Small devices (phones) */
+@media (max-width: 767.98px) {
+  .CTA {
+    flex-direction: column;
+  }
+
+  .CTA .div {
+    height: auto;
+  }
+
+  .CTA .shapes, 
+  .CTA .subscribe-wrapper {
+    position: relative;
+    left: auto; 
+    top: auto;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .CTA .title {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .CTA .description {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .CTA .input-2 {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .CTA .input-instance {
+    border-radius: 8px 8px 0 0 !important;
+    margin-bottom: 10px;
+    width: 90% !important;
+  }
+
+  .CTA .button-text-only-instance {
+    border-radius: 0 0 8px 8px !important;
+    width: 90% !important;
+  }
+}}
