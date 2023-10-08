@@ -1,0 +1,220 @@
+/* General Styles */
+.team {
+  background-color: #ffffff;
+  width: 100%;
+  overflow: hidden;  /* Clearfix for floats */
+  min-height: 10vh; 
+}
+
+.team .div {
+  background-color: #ffffff;
+  
+  width: 100%;
+  position: relative;
+}
+
+.team .title {
+  color: var(--x-1433-9e);
+  font-family: "Roboto", Helvetica;
+  font-size: 3rem; /* Making the title big */
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 3.5rem; /* Adjust line height to match font size */
+  margin-bottom: 1.5rem; /* Space between title and description */
+  display: inline-block; /* Allows the title to take only the necessary width */
+  padding-bottom: 0.5rem; /* Padding to give space between title and underline */
+}
+.team .title-description {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 1008px;
+  margin: 80px auto 0;
+  text-align: center;
+  color: #2f234fcc;
+  font-family: "Montserrat-Medium", Helvetica;
+  font-size: 1.2rem;
+  
+font-weight: 400;
+
+  letter-spacing: 0.5px;
+  line-height: 1.8rem; /* Adjust line height for better readability */
+  max-width: 75%; /* Restricting width for better aesthetics */
+  margin: 0 auto; /* Centering the block */
+  padding: 1rem; /* Providing padding for a spacious look */
+  
+}
+
+.team .title, .team .description {
+  display: inline-block;
+  width: 100%;
+}
+
+.team .content {
+  width: 100%;
+  max-width: 1216px;
+  margin: 20px auto 0;
+  text-align: center;
+}
+
+.team .element {
+  display: inline-block;
+  width: calc(25% - 32px); /* Assuming 4 elements in a row with a 32px gap */
+  margin-right: 32px;
+  vertical-align: top;
+  background-color: #ffffff;
+  border-radius: 8px;
+  padding: 38px 50px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+.team .element:last-child {
+  margin-right: 0;  /* No margin for the last element */
+}
+
+.team .element:hover {
+  transform: scale(1.05);
+  z-index: 1;
+}
+
+
+.team .team-member {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 16px;
+  position: relative;
+}
+
+.team .avatar-mask {
+  height: 180px;
+  position: relative;
+  width: 180px;
+}
+
+.team .div-2 {
+  align-items: center;
+  align-self: stretch;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 4px;
+  position: relative;
+  width: 100%;
+}
+
+.team .text-wrapper {
+  align-self: stretch;
+  color: #2f234f;
+  font-family: "Montserrat", Helvetica;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 27px;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+}
+
+.team .sub-title {
+  align-self: stretch;
+  color: #2f234f80;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: "Montserrat", Helvetica;
+  letter-spacing: 0;
+  line-height: 21px;
+  padding: 8px 12px;
+  text-align: center;
+  background-color: transparent;
+  color: transparent;
+  overflow: hidden;
+  
+}
+
+.team .team-member:hover .sub-title {
+
+  color: var(--x-1433-9e);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.team .contact {
+  align-self: stretch;
+  flex: 0 0 auto;
+  position: relative;
+  width: 100%;
+}
+
+.team .team-member-wrapper {
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0px 10px 20px #29292a12;
+  display: flex;
+  gap: 10px;
+  height: 368px;
+  justify-content: center;
+  padding: 20px 32px;
+  position: relative;
+  width: 280px;
+}
+
+.team .team-member-2 {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 16px;
+  position: relative;
+}
+
+.team .img {
+  height: 216px;
+  position: relative;
+  width: 216px;
+}
+
+.team .title-2 {
+  align-self: stretch;
+  color: #2f234f;
+  font-family: "Montserrat", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 30px;
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+}
+
+
+/* Media Query for Tablet */
+@media (max-width: 1024px) {
+  .team .element {
+    width: calc(50% - 20px); /* 2 elements in a row */
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .team .element {
+    width: 100%; 
+    margin-right: 0;
+    margin-bottom: 20px; 
+    float: none; /* Ensure elements are not floated on mobile */
+  }
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
