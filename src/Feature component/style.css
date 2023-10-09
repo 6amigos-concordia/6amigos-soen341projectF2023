@@ -47,6 +47,8 @@
   padding: 24px;
   position: relative;
   width: 100%;
+  margin-top: 18px; /* Add space between the first box and the title */
+
 }
 
 .card:hover {
@@ -137,8 +139,21 @@
   }
 
   .our-feature .title {
-    font-size: 28px;
-  }
+  color: var(--x-1433-9e);
+  font-family: "Playfair Display", Helvetica;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  line-height: 60px;
+  position: absolute;
+  top: 0; /* Align the title to the top of the .our-feature container */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+    }  
+    .card:hover {
+      transform: scale(1.1); /* Adjust the scale factor as needed */
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -159,6 +174,9 @@
   .our-feature .title {
     font-size: 24px;
   }
+  .card:hover {
+    transform: scale(1.05); /* Adjust the scale factor as needed */
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -178,5 +196,8 @@
 
   .our-feature .title {
     font-size: 20px;
+  }
+  .card:hover {
+    transform: scale(1.02); /* Adjust the scale factor as needed */
   }
 }
