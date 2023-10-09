@@ -1,0 +1,73 @@
+body {
+    background-image: url('https://wallpapers.com/images/hd/real-estate-modern-white-house-dcxpp5xsw4e7wqgc.jpg');  /* Adjust the path if you place it elsewhere */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+  
+  .calculator {
+    position: relative;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.90);  
+    overflow: hidden;  
+  }
+  
+  .calculator h1 {
+    text-align: center;  
+  }
+  .calculator::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: inherit;  
+    filter: blur(8px);  
+    z-index: -1; 
+  }
+  
+  label, 
+  h2 {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 24px;  
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px 12px;  
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 17px 35px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 355px;
+    cursor: pointer;
+    display: block;       
+    margin-left: auto;     
+    margin-right: auto;
+    font-size: 20px;    
+  }
+  
+  p {
+    font-size: 24px;  /* Increase the font size */
+    font-weight: bold;  /* Optional: make the text bold for emphasis */
+    text-align: center;  /* Center the text */
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  
