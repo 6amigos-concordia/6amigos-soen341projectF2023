@@ -1,0 +1,203 @@
+.our-feature {
+  background-color: #ffffffef;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.our-feature .div {
+  background-color: #ffffffef;
+  height: 804px;
+  position: relative;
+  width: 1440px;
+}
+
+.our-feature .wrapper {
+  align-items: center;
+  display: flex;
+  gap: 188px;
+  left: 110px;
+  position: absolute;
+  top: 198px;
+  width: 1218px;
+}
+
+.our-feature .cards-content {
+  align-items: flex-start;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 20px;
+  position: relative;
+}
+
+.our-feature .card {
+  align-items: flex-start;
+  align-self: stretch;
+  background-color: #ffffffef;
+  border-radius: 8px;
+  box-shadow: var(--dark-shadow);
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  overflow: hidden;
+  padding: 24px;
+  position: relative;
+  width: 100%;
+  margin-top: 18px; /* Add space between the first box and the title */
+
+}
+
+.card:hover {
+  transform: scale(1.2);
+}
+
+.our-feature .headline,
+.our-feature .headline-2 {
+  color: #2f234f;
+  font-family: "Playfair Display", Helvetica;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.48px;
+  line-height: 32px;
+  margin-top: -1px;
+  position: relative;
+  width: 546px;
+}
+
+.our-feature .text-wrapper {
+  align-self: stretch;
+  color: #2f234f80;
+  font-family: "Montserrat", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  height: 61px;
+  letter-spacing: 0;
+  line-height: 24px;
+  position: relative;
+}
+
+.our-feature .cover {
+  height: 444px;
+  margin-right: -4px;
+  position: relative;
+  width: 444px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.our-feature .title {
+  color: var(--x-1433-9e);
+  font-family: "Playfair Display", Helvetica;
+  font-size: 48px;
+  font-weight: 700;
+  left: 110px;
+  letter-spacing: 0.96px;
+  line-height: 60px;
+  position: absolute;
+  top: 95px;
+  white-space: nowrap;
+  width: 592px;
+}
+
+@media screen and (max-width: 1200px) {
+  .our-feature .div {
+    padding: 20px; /* Add padding for smaller screens */
+  }
+
+  .our-feature .wrapper {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    position: static; /* Reset the position property */
+    left: auto; /* Reset left property */
+    top: auto; /* Reset top property */
+    width: 100%; /* Set width to 100% for responsiveness */
+    max-width: 100%; /* Set maximum width for larger screens */
+  }
+
+  .our-feature .card {
+    max-width: 100%;
+  }
+
+  .our-feature .cover {
+    height: 300px; /* Adjust the height as per your design */
+    width: 300px; /* Adjust the width as per your design */
+  }
+
+  .our-feature .headline,
+  .our-feature .headline-2 {
+    font-size: 20px;
+  }
+
+  .our-feature .text-wrapper {
+    font-size: 14px;
+  }
+
+  .our-feature .title {
+  color: var(--x-1433-9e);
+  font-family: "Playfair Display", Helvetica;
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 0.96px;
+  line-height: 60px;
+  position: absolute;
+  top: 0; /* Align the title to the top of the .our-feature container */
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+    }  
+    .card:hover {
+      transform: scale(1.1); /* Adjust the scale factor as needed */
+    }
+}
+
+@media screen and (max-width: 768px) {
+  .our-feature .cover {
+    height: 200px; /* Adjust the height as per your design */
+    width: 200px; /* Adjust the width as per your design */
+  }
+
+  .our-feature .headline,
+  .our-feature .headline-2 {
+    font-size: 18px;
+  }
+
+  .our-feature .text-wrapper {
+    font-size: 12px;
+  }
+
+  .our-feature .title {
+    font-size: 24px;
+  }
+  .card:hover {
+    transform: scale(1.05); /* Adjust the scale factor as needed */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .our-feature .cover {
+    height: 150px; /* Adjust the height as per your design */
+    width: 150px; /* Adjust the width as per your design */
+  }
+
+  .our-feature .headline,
+  .our-feature .headline-2 {
+    font-size: 16px;
+  }
+
+  .our-feature .text-wrapper {
+    font-size: 10px;
+  }
+
+  .our-feature .title {
+    font-size: 20px;
+  }
+  .card:hover {
+    transform: scale(1.02); /* Adjust the scale factor as needed */
+  }
+}

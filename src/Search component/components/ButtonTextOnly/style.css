@@ -1,0 +1,38 @@
+.button-text-only {
+  align-items: center;
+  background-color: #7f57f1;
+  border-radius: 8px;
+  box-shadow: 0px 1px 2px #7f57f10d;
+  display: inline-flex;
+  gap: 8px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 12px 20px;
+  position: relative;
+  max-width: 100%; /* Ensures the button doesn't exceed its parent's width */
+  width: 100%; /* Makes the button take up the full width of its parent */
+
+  /* Set a maximum width for the button if you don't want it to stretch too wide on larger screens */
+  /* max-width: 300px; */ 
+}
+
+.button-text-only .text-wrapper {
+  color: #ffffff;
+  font-family: "Montserrat", Helvetica;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 24px;
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: 100%; /* Ensures the text doesn't overflow the button */
+}
+
+/* Responsive styles using media queries */
+@media screen and (max-width: 768px) {
+  .button-text-only {
+    font-size: 14px; /* Decrease the font size for smaller screens */
+    padding: 10px 16px; /* Adjust padding for smaller screens */
+  }
+}
