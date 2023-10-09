@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import './mortg.css';
 
-function Mortgcalc() {
+export const Mortgcalc = () => {
+
   const [propertyPrice, setPropertyPrice] = useState(100000);
   const [downPaymentPercentage, setDownPaymentPercentage] = useState(20);
   const [interestRate, setInterestRate] = useState(5);
@@ -45,5 +46,3 @@ function Mortgcalc() {
     </div>
   );
 }
-
-export default Mortgcalc;

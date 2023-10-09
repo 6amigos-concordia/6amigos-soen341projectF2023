@@ -14,7 +14,7 @@ const App = () => {
       <FeaturedProperties/>   
       <Team/> 
       <Cta/>
-      <Mortgcalc/>
+      {/*<Mortgcalc/>*/}
     </div>
   );
 };
