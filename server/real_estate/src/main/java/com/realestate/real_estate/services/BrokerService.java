@@ -12,6 +12,10 @@ import java.util.List;
 public class BrokerService {
     @Autowired
     private BrokerRepository brokerRepository;
+
+    public List<Property> getAllProperties() {
+        return brokerRepository.findAll();
+    }
     public Property addNewProperty(Property property) {
         return brokerRepository.save(property);
     }

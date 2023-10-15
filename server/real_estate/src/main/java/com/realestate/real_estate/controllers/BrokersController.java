@@ -15,6 +15,10 @@ import java.util.List;
 public class BrokersController {
     @Autowired
     private BrokerService brokerService;
+    @GetMapping(path = "/properties")
+    public ResponseEntity<List<Property>> getAllProperties() {
+        return ResponseEntity.ok().body(brokerService.getAllProperties());
+    }
     @PostMapping(path = "/brokers/add")
     public ResponseEntity<Property> saveUser(@RequestBody Property property) {
         return ResponseEntity.ok(brokerService.addNewProperty(property));
