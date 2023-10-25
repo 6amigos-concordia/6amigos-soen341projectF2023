@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"4s3Ar":[function(require,module,exports) {
+})({"7j8ph":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -573,9 +573,9 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     });
 }
 
-},{}],"1xC6H":[function(require,module,exports) {
-var Refresh = require("6d18d6bd340e7473");
-var ErrorOverlay = require("74ad5ea14201648c");
+},{}],"g0LDX":[function(require,module,exports) {
+var Refresh = require("e82baab5c72e3ea");
+var ErrorOverlay = require("a908a8ed2fa7aafa");
 Refresh.injectIntoGlobalHook(window);
 window.$RefreshReg$ = function() {};
 window.$RefreshSig$ = function() {
@@ -594,11 +594,11 @@ window.addEventListener("parcelhmraccept", ()=>{
     ErrorOverlay.dismissRuntimeErrors();
 });
 
-},{"6d18d6bd340e7473":"3FsDI","74ad5ea14201648c":"1dldy"}],"3FsDI":[function(require,module,exports) {
+},{"e82baab5c72e3ea":"5t1sx","a908a8ed2fa7aafa":"3nkJF"}],"5t1sx":[function(require,module,exports) {
 "use strict";
-module.exports = require("bc819d12737f82d");
+module.exports = require("f252a04ee07177dd");
 
-},{"bc819d12737f82d":"dtx5b"}],"dtx5b":[function(require,module,exports) {
+},{"f252a04ee07177dd":"9ugHR"}],"9ugHR":[function(require,module,exports) {
 /** @license React v0.9.0
  * react-refresh-runtime.development.js
  *
@@ -1058,8 +1058,8 @@ module.exports = require("bc819d12737f82d");
     exports.setSignature = setSignature;
 })();
 
-},{}],"1dldy":[function(require,module,exports) {
-var process = require("d1546958eb39fdcf");
+},{}],"3nkJF":[function(require,module,exports) {
+var process = require("c1ce240beb6c704b");
 !function(e, t) {
     module.exports = t();
 }(window, function() {
@@ -2789,7 +2789,7 @@ var process = require("d1546958eb39fdcf");
     ]);
 });
 
-},{"d1546958eb39fdcf":"d5jf4"}],"d5jf4":[function(require,module,exports) {
+},{"c1ce240beb6c704b":"d5jf4"}],"d5jf4":[function(require,module,exports) {
 // shim for using process in browser
 var process = module.exports = {};
 // cached from whatever global is present so that test runners that stub it
@@ -2952,7 +2952,7 @@ var _appDefault = parcelHelpers.interopDefault(_app);
 const app = document.getElementById("app");
 (0, _reactDomDefault.default).render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {}, void 0, false, {
     fileName: "src/index.jsx",
-    lineNumber: 7,
+    lineNumber: 9,
     columnNumber: 17
 }, undefined), app);
 
@@ -2961,7 +2961,7 @@ const app = document.getElementById("app");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App":"e9Zfo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App":"e9Zfo","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27140,29 +27140,48 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _landingPage = require("./Landing component/LandingPage");
 var _featureComponent = require("./Feature component");
 var _featuredProperties = require("./FeaturedProperties");
+var _featuredBroker = require("./FeaturedBroker");
+var _newsletter = require("./newsletter");
+var _mortgcalc = require("./mortgCalc component/mortgcalc");
+var _listingComponent = require("./Listing component");
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "app",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _landingPage.LandingPage), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 9,
+                lineNumber: 13,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _featureComponent.OurFeature), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 10,
+                lineNumber: 14,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _featuredProperties.FeaturedProperties), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 11,
+                lineNumber: 15,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _featuredBroker.Team), {}, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 16,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newsletter.Cta), {}, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 17,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _listingComponent.PropertyList), {}, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 18,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 8,
+        lineNumber: 12,
         columnNumber: 5
     }, undefined);
 };
@@ -27176,13 +27195,13 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Landing component/LandingPage":"bQzRZ","./Feature component":"eDTYY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./FeaturedProperties":"1ymem"}],"bQzRZ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Landing component/LandingPage":"bQzRZ","./Feature component":"eDTYY","./FeaturedProperties":"1ymem","./FeaturedBroker":"2sHyA","./newsletter":"jMOOi","./mortgCalc component/mortgcalc":"gyxw0","./Listing component":"fAykt","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"bQzRZ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "LandingPage", ()=>(0, _landingPage.LandingPage));
 var _landingPage = require("./LandingPage");
 
-},{"./LandingPage":"f7LBH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"f7LBH":[function(require,module,exports) {
+},{"./LandingPage":"f7LBH","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"f7LBH":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$9df0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27330,13 +27349,13 @@ $RefreshReg$(_c, "LandingPage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../Landing component/components landing/Button":"5kGK3","../../Landing component/components landing/ButtonSecondary":"3ybRV","../../Landing component/components landing/CTA":"63x6C","../../Search component/screens/Search":"jBAXe","./style.css":"hfXNk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5kGK3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../Landing component/components landing/Button":"5kGK3","../../Landing component/components landing/ButtonSecondary":"3ybRV","../../Landing component/components landing/CTA":"63x6C","../../Search component/screens/Search":"jBAXe","./style.css":"hfXNk","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"5kGK3":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Button", ()=>(0, _button.Button));
 var _button = require("./Button");
 
-},{"./Button":"2hDqO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2hDqO":[function(require,module,exports) {
+},{"./Button":"2hDqO","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"2hDqO":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$52a2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27383,7 +27402,7 @@ $RefreshReg$(_c, "Button");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"7YBjW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7YBjW":[function() {},{}],"gkKU3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"7YBjW","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"7YBjW":[function() {},{}],"hiSRe":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27413,9 +27432,9 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"km3Ru":[function(require,module,exports) {
+},{}],"cxbbb":[function(require,module,exports) {
 "use strict";
-var Refresh = require("7422ead32dcc1e6b");
+var Refresh = require("f49c07d3f7913792");
 function debounce(func, delay) {
     {
         let timeout = undefined;
@@ -27551,477 +27570,13 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"7422ead32dcc1e6b":"jEdJI"}],"jEdJI":[function(require,module,exports) {
-"use strict";
-module.exports = require("9e039173d01172ab");
-
-},{"9e039173d01172ab":"uTjV2"}],"uTjV2":[function(require,module,exports) {
-/** @license React v0.9.0
- * react-refresh-runtime.development.js
- *
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
- * This source code is licensed under the MIT license found in the
- * LICENSE file in the root directory of this source tree.
- */ "use strict";
-(function() {
-    "use strict";
-    // ATTENTION
-    // When adding new symbols to this file,
-    // Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
-    // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
-    // nor polyfill, then a plain number is used for performance.
-    var REACT_ELEMENT_TYPE = 0xeac7;
-    var REACT_PORTAL_TYPE = 0xeaca;
-    var REACT_FRAGMENT_TYPE = 0xeacb;
-    var REACT_STRICT_MODE_TYPE = 0xeacc;
-    var REACT_PROFILER_TYPE = 0xead2;
-    var REACT_PROVIDER_TYPE = 0xeacd;
-    var REACT_CONTEXT_TYPE = 0xeace;
-    var REACT_FORWARD_REF_TYPE = 0xead0;
-    var REACT_SUSPENSE_TYPE = 0xead1;
-    var REACT_SUSPENSE_LIST_TYPE = 0xead8;
-    var REACT_MEMO_TYPE = 0xead3;
-    var REACT_LAZY_TYPE = 0xead4;
-    var REACT_BLOCK_TYPE = 0xead9;
-    var REACT_SERVER_BLOCK_TYPE = 0xeada;
-    var REACT_FUNDAMENTAL_TYPE = 0xead5;
-    var REACT_SCOPE_TYPE = 0xead7;
-    var REACT_OPAQUE_ID_TYPE = 0xeae0;
-    var REACT_DEBUG_TRACING_MODE_TYPE = 0xeae1;
-    var REACT_OFFSCREEN_TYPE = 0xeae2;
-    var REACT_LEGACY_HIDDEN_TYPE = 0xeae3;
-    if (typeof Symbol === "function" && Symbol.for) {
-        var symbolFor = Symbol.for;
-        REACT_ELEMENT_TYPE = symbolFor("react.element");
-        REACT_PORTAL_TYPE = symbolFor("react.portal");
-        REACT_FRAGMENT_TYPE = symbolFor("react.fragment");
-        REACT_STRICT_MODE_TYPE = symbolFor("react.strict_mode");
-        REACT_PROFILER_TYPE = symbolFor("react.profiler");
-        REACT_PROVIDER_TYPE = symbolFor("react.provider");
-        REACT_CONTEXT_TYPE = symbolFor("react.context");
-        REACT_FORWARD_REF_TYPE = symbolFor("react.forward_ref");
-        REACT_SUSPENSE_TYPE = symbolFor("react.suspense");
-        REACT_SUSPENSE_LIST_TYPE = symbolFor("react.suspense_list");
-        REACT_MEMO_TYPE = symbolFor("react.memo");
-        REACT_LAZY_TYPE = symbolFor("react.lazy");
-        REACT_BLOCK_TYPE = symbolFor("react.block");
-        REACT_SERVER_BLOCK_TYPE = symbolFor("react.server.block");
-        REACT_FUNDAMENTAL_TYPE = symbolFor("react.fundamental");
-        REACT_SCOPE_TYPE = symbolFor("react.scope");
-        REACT_OPAQUE_ID_TYPE = symbolFor("react.opaque.id");
-        REACT_DEBUG_TRACING_MODE_TYPE = symbolFor("react.debug_trace_mode");
-        REACT_OFFSCREEN_TYPE = symbolFor("react.offscreen");
-        REACT_LEGACY_HIDDEN_TYPE = symbolFor("react.legacy_hidden");
-    }
-    var PossiblyWeakMap = typeof WeakMap === "function" ? WeakMap : Map; // We never remove these associations.
-    // It's OK to reference families, but use WeakMap/Set for types.
-    var allFamiliesByID = new Map();
-    var allFamiliesByType = new PossiblyWeakMap();
-    var allSignaturesByType = new PossiblyWeakMap(); // This WeakMap is read by React, so we only put families
-    // that have actually been edited here. This keeps checks fast.
-    // $FlowIssue
-    var updatedFamiliesByType = new PossiblyWeakMap(); // This is cleared on every performReactRefresh() call.
-    // It is an array of [Family, NextType] tuples.
-    var pendingUpdates = []; // This is injected by the renderer via DevTools global hook.
-    var helpersByRendererID = new Map();
-    var helpersByRoot = new Map(); // We keep track of mounted roots so we can schedule updates.
-    var mountedRoots = new Set(); // If a root captures an error, we remember it so we can retry on edit.
-    var failedRoots = new Set(); // In environments that support WeakMap, we also remember the last element for every root.
-    // It needs to be weak because we do this even for roots that failed to mount.
-    // If there is no WeakMap, we won't attempt to do retrying.
-    // $FlowIssue
-    var rootElements = typeof WeakMap === "function" ? new WeakMap() : null;
-    var isPerformingRefresh = false;
-    function computeFullKey(signature) {
-        if (signature.fullKey !== null) return signature.fullKey;
-        var fullKey = signature.ownKey;
-        var hooks;
-        try {
-            hooks = signature.getCustomHooks();
-        } catch (err) {
-            // This can happen in an edge case, e.g. if expression like Foo.useSomething
-            // depends on Foo which is lazily initialized during rendering.
-            // In that case just assume we'll have to remount.
-            signature.forceReset = true;
-            signature.fullKey = fullKey;
-            return fullKey;
-        }
-        for(var i = 0; i < hooks.length; i++){
-            var hook = hooks[i];
-            if (typeof hook !== "function") {
-                // Something's wrong. Assume we need to remount.
-                signature.forceReset = true;
-                signature.fullKey = fullKey;
-                return fullKey;
-            }
-            var nestedHookSignature = allSignaturesByType.get(hook);
-            if (nestedHookSignature === undefined) continue;
-            var nestedHookKey = computeFullKey(nestedHookSignature);
-            if (nestedHookSignature.forceReset) signature.forceReset = true;
-            fullKey += "\n---\n" + nestedHookKey;
-        }
-        signature.fullKey = fullKey;
-        return fullKey;
-    }
-    function haveEqualSignatures(prevType, nextType) {
-        var prevSignature = allSignaturesByType.get(prevType);
-        var nextSignature = allSignaturesByType.get(nextType);
-        if (prevSignature === undefined && nextSignature === undefined) return true;
-        if (prevSignature === undefined || nextSignature === undefined) return false;
-        if (computeFullKey(prevSignature) !== computeFullKey(nextSignature)) return false;
-        if (nextSignature.forceReset) return false;
-        return true;
-    }
-    function isReactClass(type) {
-        return type.prototype && type.prototype.isReactComponent;
-    }
-    function canPreserveStateBetween(prevType, nextType) {
-        if (isReactClass(prevType) || isReactClass(nextType)) return false;
-        if (haveEqualSignatures(prevType, nextType)) return true;
-        return false;
-    }
-    function resolveFamily(type) {
-        // Only check updated types to keep lookups fast.
-        return updatedFamiliesByType.get(type);
-    } // If we didn't care about IE11, we could use new Map/Set(iterable).
-    function cloneMap(map) {
-        var clone = new Map();
-        map.forEach(function(value, key) {
-            clone.set(key, value);
-        });
-        return clone;
-    }
-    function cloneSet(set) {
-        var clone = new Set();
-        set.forEach(function(value) {
-            clone.add(value);
-        });
-        return clone;
-    }
-    function performReactRefresh() {
-        if (pendingUpdates.length === 0) return null;
-        if (isPerformingRefresh) return null;
-        isPerformingRefresh = true;
-        try {
-            var staleFamilies = new Set();
-            var updatedFamilies = new Set();
-            var updates = pendingUpdates;
-            pendingUpdates = [];
-            updates.forEach(function(_ref) {
-                var family = _ref[0], nextType = _ref[1];
-                // Now that we got a real edit, we can create associations
-                // that will be read by the React reconciler.
-                var prevType = family.current;
-                updatedFamiliesByType.set(prevType, family);
-                updatedFamiliesByType.set(nextType, family);
-                family.current = nextType; // Determine whether this should be a re-render or a re-mount.
-                if (canPreserveStateBetween(prevType, nextType)) updatedFamilies.add(family);
-                else staleFamilies.add(family);
-            }); // TODO: rename these fields to something more meaningful.
-            var update = {
-                updatedFamilies: updatedFamilies,
-                // Families that will re-render preserving state
-                staleFamilies: staleFamilies // Families that will be remounted
-            };
-            helpersByRendererID.forEach(function(helpers) {
-                // Even if there are no roots, set the handler on first update.
-                // This ensures that if *new* roots are mounted, they'll use the resolve handler.
-                helpers.setRefreshHandler(resolveFamily);
-            });
-            var didError = false;
-            var firstError = null; // We snapshot maps and sets that are mutated during commits.
-            // If we don't do this, there is a risk they will be mutated while
-            // we iterate over them. For example, trying to recover a failed root
-            // may cause another root to be added to the failed list -- an infinite loop.
-            var failedRootsSnapshot = cloneSet(failedRoots);
-            var mountedRootsSnapshot = cloneSet(mountedRoots);
-            var helpersByRootSnapshot = cloneMap(helpersByRoot);
-            failedRootsSnapshot.forEach(function(root) {
-                var helpers = helpersByRootSnapshot.get(root);
-                if (helpers === undefined) throw new Error("Could not find helpers for a root. This is a bug in React Refresh.");
-                failedRoots.has(root);
-                if (rootElements === null) return;
-                if (!rootElements.has(root)) return;
-                var element = rootElements.get(root);
-                try {
-                    helpers.scheduleRoot(root, element);
-                } catch (err) {
-                    if (!didError) {
-                        didError = true;
-                        firstError = err;
-                    } // Keep trying other roots.
-                }
-            });
-            mountedRootsSnapshot.forEach(function(root) {
-                var helpers = helpersByRootSnapshot.get(root);
-                if (helpers === undefined) throw new Error("Could not find helpers for a root. This is a bug in React Refresh.");
-                mountedRoots.has(root);
-                try {
-                    helpers.scheduleRefresh(root, update);
-                } catch (err) {
-                    if (!didError) {
-                        didError = true;
-                        firstError = err;
-                    } // Keep trying other roots.
-                }
-            });
-            if (didError) throw firstError;
-            return update;
-        } finally{
-            isPerformingRefresh = false;
-        }
-    }
-    function register(type, id) {
-        if (type === null) return;
-        if (typeof type !== "function" && typeof type !== "object") return;
-         // This can happen in an edge case, e.g. if we register
-        // return value of a HOC but it returns a cached component.
-        // Ignore anything but the first registration for each type.
-        if (allFamiliesByType.has(type)) return;
-         // Create family or remember to update it.
-        // None of this bookkeeping affects reconciliation
-        // until the first performReactRefresh() call above.
-        var family = allFamiliesByID.get(id);
-        if (family === undefined) {
-            family = {
-                current: type
-            };
-            allFamiliesByID.set(id, family);
-        } else pendingUpdates.push([
-            family,
-            type
-        ]);
-        allFamiliesByType.set(type, family); // Visit inner types because we might not have registered them.
-        if (typeof type === "object" && type !== null) switch(type.$$typeof){
-            case REACT_FORWARD_REF_TYPE:
-                register(type.render, id + "$render");
-                break;
-            case REACT_MEMO_TYPE:
-                register(type.type, id + "$type");
-                break;
-        }
-    }
-    function setSignature(type, key) {
-        var forceReset = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
-        var getCustomHooks = arguments.length > 3 ? arguments[3] : undefined;
-        allSignaturesByType.set(type, {
-            forceReset: forceReset,
-            ownKey: key,
-            fullKey: null,
-            getCustomHooks: getCustomHooks || function() {
-                return [];
-            }
-        });
-    } // This is lazily called during first render for a type.
-    // It captures Hook list at that time so inline requires don't break comparisons.
-    function collectCustomHooksForSignature(type) {
-        var signature = allSignaturesByType.get(type);
-        if (signature !== undefined) computeFullKey(signature);
-    }
-    function getFamilyByID(id) {
-        return allFamiliesByID.get(id);
-    }
-    function getFamilyByType(type) {
-        return allFamiliesByType.get(type);
-    }
-    function findAffectedHostInstances(families) {
-        var affectedInstances = new Set();
-        mountedRoots.forEach(function(root) {
-            var helpers = helpersByRoot.get(root);
-            if (helpers === undefined) throw new Error("Could not find helpers for a root. This is a bug in React Refresh.");
-            var instancesForRoot = helpers.findHostInstancesForRefresh(root, families);
-            instancesForRoot.forEach(function(inst) {
-                affectedInstances.add(inst);
-            });
-        });
-        return affectedInstances;
-    }
-    function injectIntoGlobalHook(globalObject) {
-        // For React Native, the global hook will be set up by require('react-devtools-core').
-        // That code will run before us. So we need to monkeypatch functions on existing hook.
-        // For React Web, the global hook will be set up by the extension.
-        // This will also run before us.
-        var hook = globalObject.__REACT_DEVTOOLS_GLOBAL_HOOK__;
-        if (hook === undefined) {
-            // However, if there is no DevTools extension, we'll need to set up the global hook ourselves.
-            // Note that in this case it's important that renderer code runs *after* this method call.
-            // Otherwise, the renderer will think that there is no global hook, and won't do the injection.
-            var nextID = 0;
-            globalObject.__REACT_DEVTOOLS_GLOBAL_HOOK__ = hook = {
-                renderers: new Map(),
-                supportsFiber: true,
-                inject: function(injected) {
-                    return nextID++;
-                },
-                onScheduleFiberRoot: function(id, root, children) {},
-                onCommitFiberRoot: function(id, root, maybePriorityLevel, didError) {},
-                onCommitFiberUnmount: function() {}
-            };
-        } // Here, we just want to get a reference to scheduleRefresh.
-        var oldInject = hook.inject;
-        hook.inject = function(injected) {
-            var id = oldInject.apply(this, arguments);
-            if (typeof injected.scheduleRefresh === "function" && typeof injected.setRefreshHandler === "function") // This version supports React Refresh.
-            helpersByRendererID.set(id, injected);
-            return id;
-        }; // Do the same for any already injected roots.
-        // This is useful if ReactDOM has already been initialized.
-        // https://github.com/facebook/react/issues/17626
-        hook.renderers.forEach(function(injected, id) {
-            if (typeof injected.scheduleRefresh === "function" && typeof injected.setRefreshHandler === "function") // This version supports React Refresh.
-            helpersByRendererID.set(id, injected);
-        }); // We also want to track currently mounted roots.
-        var oldOnCommitFiberRoot = hook.onCommitFiberRoot;
-        var oldOnScheduleFiberRoot = hook.onScheduleFiberRoot || function() {};
-        hook.onScheduleFiberRoot = function(id, root, children) {
-            if (!isPerformingRefresh) {
-                // If it was intentionally scheduled, don't attempt to restore.
-                // This includes intentionally scheduled unmounts.
-                failedRoots.delete(root);
-                if (rootElements !== null) rootElements.set(root, children);
-            }
-            return oldOnScheduleFiberRoot.apply(this, arguments);
-        };
-        hook.onCommitFiberRoot = function(id, root, maybePriorityLevel, didError) {
-            var helpers = helpersByRendererID.get(id);
-            if (helpers === undefined) return;
-            helpersByRoot.set(root, helpers);
-            var current = root.current;
-            var alternate = current.alternate; // We need to determine whether this root has just (un)mounted.
-            // This logic is copy-pasted from similar logic in the DevTools backend.
-            // If this breaks with some refactoring, you'll want to update DevTools too.
-            if (alternate !== null) {
-                var wasMounted = alternate.memoizedState != null && alternate.memoizedState.element != null;
-                var isMounted = current.memoizedState != null && current.memoizedState.element != null;
-                if (!wasMounted && isMounted) {
-                    // Mount a new root.
-                    mountedRoots.add(root);
-                    failedRoots.delete(root);
-                } else if (wasMounted && isMounted) ;
-                else if (wasMounted && !isMounted) {
-                    // Unmount an existing root.
-                    mountedRoots.delete(root);
-                    if (didError) // We'll remount it on future edits.
-                    failedRoots.add(root);
-                    else helpersByRoot.delete(root);
-                } else if (!wasMounted && !isMounted) {
-                    if (didError) // We'll remount it on future edits.
-                    failedRoots.add(root);
-                }
-            } else // Mount a new root.
-            mountedRoots.add(root);
-            return oldOnCommitFiberRoot.apply(this, arguments);
-        };
-    }
-    function hasUnrecoverableErrors() {
-        // TODO: delete this after removing dependency in RN.
-        return false;
-    } // Exposed for testing.
-    function _getMountedRootCount() {
-        return mountedRoots.size;
-    } // This is a wrapper over more primitive functions for setting signature.
-    // Signatures let us decide whether the Hook order has changed on refresh.
-    //
-    // This function is intended to be used as a transform target, e.g.:
-    // var _s = createSignatureFunctionForTransform()
-    //
-    // function Hello() {
-    //   const [foo, setFoo] = useState(0);
-    //   const value = useCustomHook();
-    //   _s(); /* Second call triggers collecting the custom Hook list.
-    //          * This doesn't happen during the module evaluation because we
-    //          * don't want to change the module order with inline requires.
-    //          * Next calls are noops. */
-    //   return <h1>Hi</h1>;
-    // }
-    //
-    // /* First call specifies the signature: */
-    // _s(
-    //   Hello,
-    //   'useState{[foo, setFoo]}(0)',
-    //   () => [useCustomHook], /* Lazy to avoid triggering inline requires */
-    // );
-    function createSignatureFunctionForTransform() {
-        // We'll fill in the signature in two steps.
-        // First, we'll know the signature itself. This happens outside the component.
-        // Then, we'll know the references to custom Hooks. This happens inside the component.
-        // After that, the returned function will be a fast path no-op.
-        var status = "needsSignature";
-        var savedType;
-        var hasCustomHooks;
-        return function(type, key, forceReset, getCustomHooks) {
-            switch(status){
-                case "needsSignature":
-                    if (type !== undefined) {
-                        // If we received an argument, this is the initial registration call.
-                        savedType = type;
-                        hasCustomHooks = typeof getCustomHooks === "function";
-                        setSignature(type, key, forceReset, getCustomHooks); // The next call we expect is from inside a function, to fill in the custom Hooks.
-                        status = "needsCustomHooks";
-                    }
-                    break;
-                case "needsCustomHooks":
-                    if (hasCustomHooks) collectCustomHooksForSignature(savedType);
-                    status = "resolved";
-                    break;
-            }
-            return type;
-        };
-    }
-    function isLikelyComponentType(type) {
-        switch(typeof type){
-            case "function":
-                // First, deal with classes.
-                if (type.prototype != null) {
-                    if (type.prototype.isReactComponent) // React class.
-                    return true;
-                    var ownNames = Object.getOwnPropertyNames(type.prototype);
-                    if (ownNames.length > 1 || ownNames[0] !== "constructor") // This looks like a class.
-                    return false;
-                     // eslint-disable-next-line no-proto
-                    if (type.prototype.__proto__ !== Object.prototype) // It has a superclass.
-                    return false;
-                     // Pass through.
-                // This looks like a regular function with empty prototype.
-                } // For plain functions and arrows, use name as a heuristic.
-                var name = type.name || type.displayName;
-                return typeof name === "string" && /^[A-Z]/.test(name);
-            case "object":
-                if (type != null) switch(type.$$typeof){
-                    case REACT_FORWARD_REF_TYPE:
-                    case REACT_MEMO_TYPE:
-                        // Definitely React components.
-                        return true;
-                    default:
-                        return false;
-                }
-                return false;
-            default:
-                return false;
-        }
-    }
-    exports._getMountedRootCount = _getMountedRootCount;
-    exports.collectCustomHooksForSignature = collectCustomHooksForSignature;
-    exports.createSignatureFunctionForTransform = createSignatureFunctionForTransform;
-    exports.findAffectedHostInstances = findAffectedHostInstances;
-    exports.getFamilyByID = getFamilyByID;
-    exports.getFamilyByType = getFamilyByType;
-    exports.hasUnrecoverableErrors = hasUnrecoverableErrors;
-    exports.injectIntoGlobalHook = injectIntoGlobalHook;
-    exports.isLikelyComponentType = isLikelyComponentType;
-    exports.performReactRefresh = performReactRefresh;
-    exports.register = register;
-    exports.setSignature = setSignature;
-})();
-
-},{}],"3ybRV":[function(require,module,exports) {
+},{"f49c07d3f7913792":"5t1sx"}],"3ybRV":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ButtonSecondary", ()=>(0, _buttonSecondary.ButtonSecondary));
 var _buttonSecondary = require("./ButtonSecondary");
 
-},{"./ButtonSecondary":"6eFfG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6eFfG":[function(require,module,exports) {
+},{"./ButtonSecondary":"6eFfG","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"6eFfG":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$86fd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28069,7 +27624,7 @@ $RefreshReg$(_c, "ButtonSecondary");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","./style.css":"40264","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7wKI2":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","./style.css":"40264","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"7wKI2":[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -28822,7 +28377,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ContentCta", ()=>(0, _contentCta.ContentCta));
 var _contentCta = require("./ContentCta");
 
-},{"./ContentCta":"6iWWC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6iWWC":[function(require,module,exports) {
+},{"./ContentCta":"6iWWC","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"6iWWC":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$22b0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28899,7 +28454,7 @@ $RefreshReg$(_c, "ContentCta");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"eBR8N","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eBR8N":[function() {},{}],"jBAXe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"eBR8N","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"eBR8N":[function() {},{}],"jBAXe":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$279a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -29198,13 +28753,13 @@ $RefreshReg$(_c, "Search");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../Search component/components/Dropdown":"hI7DG","../../Search component/icons/IconsSearch":"dvFTl","./style.css":"bYIyU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hI7DG":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../Search component/components/Dropdown":"hI7DG","../../Search component/icons/IconsSearch":"dvFTl","./style.css":"bYIyU","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"hI7DG":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Dropdown", ()=>(0, _dropdown.Dropdown));
 var _dropdown = require("./Dropdown");
 
-},{"./Dropdown":"lUbAl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lUbAl":[function(require,module,exports) {
+},{"./Dropdown":"lUbAl","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"lUbAl":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$df85 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -29275,13 +28830,13 @@ $RefreshReg$(_c, "Dropdown");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","./style.css":"3zzKY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3zzKY":[function() {},{}],"dvFTl":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","./style.css":"3zzKY","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"3zzKY":[function() {},{}],"dvFTl":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "IconsSearch", ()=>(0, _iconsSearch.IconsSearch));
 var _iconsSearch = require("./IconsSearch");
 
-},{"./IconsSearch":"kZr1A","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kZr1A":[function(require,module,exports) {
+},{"./IconsSearch":"kZr1A","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"kZr1A":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$9596 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -29369,13 +28924,13 @@ $RefreshReg$(_c, "IconsSearch");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bYIyU":[function() {},{}],"hfXNk":[function() {},{}],"eDTYY":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"bYIyU":[function() {},{}],"hfXNk":[function() {},{}],"eDTYY":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "OurFeature", ()=>(0, _ourFeature.OurFeature));
 var _ourFeature = require("./OurFeature");
 
-},{"./OurFeature":"jpRgE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jpRgE":[function(require,module,exports) {
+},{"./OurFeature":"jpRgE","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"jpRgE":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$296e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -29526,13 +29081,13 @@ $RefreshReg$(_c, "OurFeature");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"3KU1I","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3KU1I":[function() {},{}],"1ymem":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"3KU1I","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"3KU1I":[function() {},{}],"1ymem":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "FeaturedProperties", ()=>(0, _featuredProperties.FeaturedProperties));
 var _featuredProperties = require("./FeaturedProperties");
 
-},{"./FeaturedProperties":"s28Bu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"s28Bu":[function(require,module,exports) {
+},{"./FeaturedProperties":"s28Bu","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"s28Bu":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0a93 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -29661,6 +29216,903 @@ $RefreshReg$(_c, "FeaturedProperties");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"hygpl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hygpl":[function() {},{}]},["4s3Ar","1xC6H","d8Dch"], "d8Dch", "parcelRequire6432")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"hygpl","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"hygpl":[function() {},{}],"2sHyA":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Team", ()=>(0, _team.Team));
+var _team = require("./Team");
+
+},{"./Team":"hvIBW","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"hvIBW":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$58f7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$58f7.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Team", ()=>Team);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _styleCss = require("./style.css");
+const Team = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "team",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "div",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "title-description",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "title",
+                            children: "Featured Brokers"
+                        }, void 0, false, {
+                            fileName: "src/FeaturedBroker/Team.jsx",
+                            lineNumber: 9,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "description",
+                            children: "Our team of dedicated brokers is here to guide you through every step of the buying or selling process."
+                        }, void 0, false, {
+                            fileName: "src/FeaturedBroker/Team.jsx",
+                            lineNumber: 10,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/FeaturedBroker/Team.jsx",
+                    lineNumber: 8,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "content",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "element",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "team-member",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "avatar-mask",
+                                        alt: "Avatar mask",
+                                        src: "https://i.ibb.co/M2LJjHY/Staci.webp"
+                                    }, void 0, false, {
+                                        fileName: "src/FeaturedBroker/Team.jsx",
+                                        lineNumber: 17,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "div-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "title-2",
+                                                children: "Kathryn Murphy"
+                                            }, void 0, false, {
+                                                fileName: "src/FeaturedBroker/Team.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                className: "sub-title",
+                                                children: "See More"
+                                            }, void 0, false, {
+                                                fileName: "src/FeaturedBroker/Team.jsx",
+                                                lineNumber: 20,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/FeaturedBroker/Team.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/FeaturedBroker/Team.jsx",
+                                lineNumber: 16,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/FeaturedBroker/Team.jsx",
+                            lineNumber: 15,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "element",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "team-member",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "avatar-mask",
+                                        alt: "Avatar mask",
+                                        src: "https://i.ibb.co/r0N3Ffb/Jimbo.webp"
+                                    }, void 0, false, {
+                                        fileName: "src/FeaturedBroker/Team.jsx",
+                                        lineNumber: 27,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "div-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "title-2",
+                                                children: "Floyd Miles"
+                                            }, void 0, false, {
+                                                fileName: "src/FeaturedBroker/Team.jsx",
+                                                lineNumber: 29,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                className: "sub-title",
+                                                children: "See More"
+                                            }, void 0, false, {
+                                                fileName: "src/FeaturedBroker/Team.jsx",
+                                                lineNumber: 30,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/FeaturedBroker/Team.jsx",
+                                        lineNumber: 28,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/FeaturedBroker/Team.jsx",
+                                lineNumber: 26,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/FeaturedBroker/Team.jsx",
+                            lineNumber: 25,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "element",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "team-member",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "avatar-mask",
+                                        alt: "Avatar mask",
+                                        src: "https://i.ibb.co/s1yGF6k/static1-squarespace.jpg"
+                                    }, void 0, false, {
+                                        fileName: "src/FeaturedBroker/Team.jsx",
+                                        lineNumber: 36,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "div-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "title-2",
+                                                children: "Floyd Miles"
+                                            }, void 0, false, {
+                                                fileName: "src/FeaturedBroker/Team.jsx",
+                                                lineNumber: 38,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                className: "sub-title",
+                                                children: "See More"
+                                            }, void 0, false, {
+                                                fileName: "src/FeaturedBroker/Team.jsx",
+                                                lineNumber: 39,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/FeaturedBroker/Team.jsx",
+                                        lineNumber: 37,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/FeaturedBroker/Team.jsx",
+                                lineNumber: 35,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/FeaturedBroker/Team.jsx",
+                            lineNumber: 34,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "element",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "team-member",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "avatar-mask",
+                                        alt: "Avatar mask",
+                                        src: "https://i.ibb.co/vVDbJxs/688-6883042-boss-baby-triplets-png-png-download-transparent-png.png"
+                                    }, void 0, false, {
+                                        fileName: "src/FeaturedBroker/Team.jsx",
+                                        lineNumber: 45,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "div-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "title-2",
+                                                children: "Ronald Richards"
+                                            }, void 0, false, {
+                                                fileName: "src/FeaturedBroker/Team.jsx",
+                                                lineNumber: 47,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                className: "sub-title",
+                                                children: "See More"
+                                            }, void 0, false, {
+                                                fileName: "src/FeaturedBroker/Team.jsx",
+                                                lineNumber: 48,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/FeaturedBroker/Team.jsx",
+                                        lineNumber: 46,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/FeaturedBroker/Team.jsx",
+                                lineNumber: 44,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/FeaturedBroker/Team.jsx",
+                            lineNumber: 43,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/FeaturedBroker/Team.jsx",
+                    lineNumber: 14,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/FeaturedBroker/Team.jsx",
+            lineNumber: 7,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/FeaturedBroker/Team.jsx",
+        lineNumber: 6,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Team;
+var _c;
+$RefreshReg$(_c, "Team");
+
+  $parcel$ReactRefreshHelpers$58f7.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"e89W3","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"e89W3":[function() {},{}],"jMOOi":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Cta", ()=>(0, _cta.Cta));
+var _cta = require("./Cta");
+
+},{"./Cta":"eIS5a","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"eIS5a":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5b36 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5b36.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Cta", ()=>Cta);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _buttonTextOnly = require("./ButtonTextOnly");
+var _input = require("./Input");
+var _styleCss = require("./style.css");
+var _s = $RefreshSig$();
+const Cta = ()=>{
+    _s();
+    const [email, setEmail] = (0, _react.useState)(""); // Step 1: Capture the Email
+    const handleSubscribe = ()=>{
+        // Step 2: Handle the Submission
+        if (email) // Step 3: Send the Brochure (example API call)
+        fetch("/api/sendBrochure", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                email
+            })
+        }).then((response)=>response.json()).then((data)=>{
+            if (data.success) alert("Brochure sent successfully!");
+            else alert("There was an error. Please try again later.");
+        });
+        else alert("Please enter a valid email address.");
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "CTA",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "div",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "shapes",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "overlap-group",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "rectangle"
+                            }, void 0, false, {
+                                fileName: "src/newsletter/Cta.jsx",
+                                lineNumber: 38,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "rectangle-2"
+                            }, void 0, false, {
+                                fileName: "src/newsletter/Cta.jsx",
+                                lineNumber: 39,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/newsletter/Cta.jsx",
+                        lineNumber: 37,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/newsletter/Cta.jsx",
+                    lineNumber: 36,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "subscribe-wrapper",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "title-description",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "title",
+                                    children: "Stay Ahead in Luxury Living"
+                                }, void 0, false, {
+                                    fileName: "src/newsletter/Cta.jsx",
+                                    lineNumber: 44,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "description",
+                                    children: "Sign up with your email and receive exclusive updates on elite properties every day."
+                                }, void 0, false, {
+                                    fileName: "src/newsletter/Cta.jsx",
+                                    lineNumber: 45,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/newsletter/Cta.jsx",
+                            lineNumber: 43,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "input-2",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "email",
+                                    id: "email",
+                                    className: "input-instance design-component-instance-node",
+                                    placeholder: "Your email here",
+                                    value: email,
+                                    onChange: (e)=>setEmail(e.target.value)
+                                }, void 0, false, {
+                                    fileName: "src/newsletter/Cta.jsx",
+                                    lineNumber: 50,
+                                    columnNumber: 11
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonTextOnly.ButtonTextOnly), {
+                                    className: "button-text-only-instance",
+                                    text: "Subscribe",
+                                    onClick: handleSubscribe
+                                }, void 0, false, {
+                                    fileName: "src/newsletter/Cta.jsx",
+                                    lineNumber: 58,
+                                    columnNumber: 12
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/newsletter/Cta.jsx",
+                            lineNumber: 49,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/newsletter/Cta.jsx",
+                    lineNumber: 42,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/newsletter/Cta.jsx",
+            lineNumber: 35,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/newsletter/Cta.jsx",
+        lineNumber: 34,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Cta, "Pe1zWWKcsJK82m3WyFiCTurRPxo=");
+_c = Cta;
+var _c;
+$RefreshReg$(_c, "Cta");
+
+  $parcel$ReactRefreshHelpers$5b36.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./ButtonTextOnly":"dLF5w","./Input":"6dbH2","./style.css":"3i9bq","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"dLF5w":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ButtonTextOnly", ()=>(0, _buttonTextOnly.ButtonTextOnly));
+var _buttonTextOnly = require("./ButtonTextOnly");
+
+},{"./ButtonTextOnly":"cQ4dO","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"cQ4dO":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5ab6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5ab6.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ButtonTextOnly", ()=>ButtonTextOnly);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _styleCss = require("./style.css");
+const ButtonTextOnly = ({ className, text = "Button CTA", onClick })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: `button-text-only ${className}`,
+        onClick: onClick,
+        role: "button",
+        tabIndex: "0",
+        onKeyPress: (event)=>{
+            // Enables "click" on pressing Enter key
+            if (event.key === "Enter") onClick(event);
+        },
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "text-wrapper",
+            children: text
+        }, void 0, false, {
+            fileName: "src/newsletter/ButtonTextOnly/ButtonTextOnly.jsx",
+            lineNumber: 17,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/newsletter/ButtonTextOnly/ButtonTextOnly.jsx",
+        lineNumber: 7,
+        columnNumber: 5
+    }, undefined);
+};
+_c = ButtonTextOnly;
+ButtonTextOnly.propTypes = {
+    text: (0, _propTypesDefault.default).string,
+    onClick: (0, _propTypesDefault.default).func
+};
+var _c;
+$RefreshReg$(_c, "ButtonTextOnly");
+
+  $parcel$ReactRefreshHelpers$5ab6.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","./style.css":"dNy1G","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"dNy1G":[function() {},{}],"6dbH2":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Input", ()=>(0, _input.Input));
+var _input = require("./Input");
+
+},{"./Input":"8NsFZ","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"8NsFZ":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1a05 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1a05.prelude(module);
+
+try {
+/*
+We're constantly improving the code you see. 
+Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcNg&d=1152665201300829
+*/ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Input", ()=>Input);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _styleCss = require("./style.css");
+const Input = ({ className, textClassName, text = "Select team member" })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: `input ${className}`,
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "content",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: `text ${textClassName}`,
+                children: text
+            }, void 0, false, {
+                fileName: "src/newsletter/Input/Input.jsx",
+                lineNumber: 14,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/newsletter/Input/Input.jsx",
+            lineNumber: 13,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/newsletter/Input/Input.jsx",
+        lineNumber: 12,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Input;
+Input.propTypes = {
+    text: (0, _propTypesDefault.default).string
+};
+var _c;
+$RefreshReg$(_c, "Input");
+
+  $parcel$ReactRefreshHelpers$1a05.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","./style.css":"2c4j1","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"2c4j1":[function() {},{}],"3i9bq":[function() {},{}],"gyxw0":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$ea2b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$ea2b.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Mortgcalc", ()=>Mortgcalc);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _mortgCss = require("./mortg.css");
+var _s = $RefreshSig$();
+const Mortgcalc = ()=>{
+    _s();
+    const [propertyPrice, setPropertyPrice] = (0, _react.useState)(100000);
+    const [downPaymentPercentage, setDownPaymentPercentage] = (0, _react.useState)(20);
+    const [interestRate, setInterestRate] = (0, _react.useState)(5);
+    const [loanPeriod, setLoanPeriod] = (0, _react.useState)(15);
+    const [monthlyPayment, setMonthlyPayment] = (0, _react.useState)(0);
+    const [showResult, setShowResult] = (0, _react.useState)(false); // New state
+    const downPaymentAmount = propertyPrice * downPaymentPercentage / 100;
+    const calculateMonthlyPayment = ()=>{
+        const principal = propertyPrice - downPaymentAmount;
+        const r = interestRate / 1200; // Monthly interest rate
+        const n = loanPeriod * 12; // Number of months
+        const payment = principal * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+        setMonthlyPayment(payment.toFixed(2));
+        setShowResult(true); // Show the result when the button is clicked
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "calculator",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Mortgage Calculator"
+            }, void 0, false, {
+                fileName: "src/mortgCalc component/mortgcalc.jsx",
+                lineNumber: 27,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                children: [
+                    "Property Price: $",
+                    propertyPrice,
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "range",
+                        min: "50000",
+                        max: "1000000",
+                        value: propertyPrice,
+                        onChange: (e)=>setPropertyPrice(e.target.value)
+                    }, void 0, false, {
+                        fileName: "src/mortgCalc component/mortgcalc.jsx",
+                        lineNumber: 30,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/mortgCalc component/mortgcalc.jsx",
+                lineNumber: 28,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                children: [
+                    "Down Payment: ",
+                    downPaymentPercentage,
+                    "% ($",
+                    downPaymentAmount.toFixed(2),
+                    ")",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "range",
+                        min: "0",
+                        max: "100",
+                        value: downPaymentPercentage,
+                        onChange: (e)=>setDownPaymentPercentage(e.target.value)
+                    }, void 0, false, {
+                        fileName: "src/mortgCalc component/mortgcalc.jsx",
+                        lineNumber: 34,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/mortgCalc component/mortgcalc.jsx",
+                lineNumber: 32,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                children: [
+                    "Interest Rate: ",
+                    interestRate,
+                    "%",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "range",
+                        min: "1",
+                        max: "20",
+                        value: interestRate,
+                        onChange: (e)=>setInterestRate(e.target.value)
+                    }, void 0, false, {
+                        fileName: "src/mortgCalc component/mortgcalc.jsx",
+                        lineNumber: 38,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/mortgCalc component/mortgcalc.jsx",
+                lineNumber: 36,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                children: [
+                    "Loan Period: ",
+                    loanPeriod,
+                    " years",
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        type: "range",
+                        min: "1",
+                        max: "30",
+                        value: loanPeriod,
+                        onChange: (e)=>setLoanPeriod(e.target.value)
+                    }, void 0, false, {
+                        fileName: "src/mortgCalc component/mortgcalc.jsx",
+                        lineNumber: 42,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/mortgCalc component/mortgcalc.jsx",
+                lineNumber: 40,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                onClick: calculateMonthlyPayment,
+                children: "Calculate"
+            }, void 0, false, {
+                fileName: "src/mortgCalc component/mortgcalc.jsx",
+                lineNumber: 44,
+                columnNumber: 7
+            }, undefined),
+            showResult && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: [
+                    "Monthly Payment: $",
+                    monthlyPayment
+                ]
+            }, void 0, true, {
+                fileName: "src/mortgCalc component/mortgcalc.jsx",
+                lineNumber: 45,
+                columnNumber: 22
+            }, undefined),
+            "  "
+        ]
+    }, void 0, true, {
+        fileName: "src/mortgCalc component/mortgcalc.jsx",
+        lineNumber: 26,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Mortgcalc, "Vy5CVjtzTKJCYPiNur/D30YKjgc=");
+_c = Mortgcalc;
+var _c;
+$RefreshReg$(_c, "Mortgcalc");
+
+  $parcel$ReactRefreshHelpers$ea2b.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./mortg.css":"5gbcB","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"5gbcB":[function() {},{}],"fAykt":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "PropertyList", ()=>(0, _propertyList.PropertyList));
+var _propertyList = require("./PropertyList");
+
+},{"./PropertyList":"a7sq9","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"a7sq9":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$188f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$188f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "PropertyList", ()=>PropertyList);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _propertyListCss = require("./PropertyList.css");
+var _s = $RefreshSig$();
+const properties = [
+    {
+        id: 1,
+        name: "Property 1",
+        price: 2000000,
+        image: "https://i.ibb.co/85wDgBm/Eleonon-House.jpg"
+    },
+    {
+        id: 2,
+        name: "Property 2",
+        price: 2500000,
+        image: "https://i.ibb.co/F6wxK8w/Tour-the-Homes-Designed-by-Hollywood-s-Newest-A-List-Architect.jpg"
+    },
+    {
+        id: 3,
+        name: "Property 3",
+        price: 1800000,
+        image: "https://i.ibb.co/bWf5j8v/Custom-Mantels-UT-Stone-Mountain-Castings-Design.jpg"
+    },
+    {
+        id: 4,
+        name: "Property 4",
+        price: 3000000,
+        image: "https://i.ibb.co/9bW0w7B/The-12-000-000-Montreal-Mansion-You-ll-Want-To-Buy-Right-Meow.jpg"
+    },
+    {
+        id: 5,
+        name: "Property 5",
+        price: 2200000,
+        image: "https://i.ibb.co/zJYdCZk/image.jpg"
+    },
+    {
+        id: 6,
+        name: "Property 6",
+        price: 3700000,
+        image: "https://i.ibb.co/48YZtTt/2021-Dream-Home.jpg"
+    },
+    {
+        id: 7,
+        name: "Property 7",
+        price: 1900000,
+        image: "https://i.ibb.co/dWjqQrS/2-Story-home-gallery.jpg"
+    },
+    {
+        id: 8,
+        name: "Property 8",
+        price: 2800000,
+        image: "https://i.ibb.co/CBZTxgj/Exteriors-Gallery.jpg"
+    },
+    {
+        id: 9,
+        name: "Property 9",
+        price: 4000000,
+        image: "https://i.ibb.co/5rxyzDR/House-Plan-1020-00083-European-Plan-4-381-Square-Feet-4-Bedrooms-4-5-Bathrooms.jpg"
+    },
+    {
+        id: 10,
+        name: "Property 10",
+        price: 3200000,
+        image: "https://i.ibb.co/DDbtcs0/17-Gorgeous-Traditional-Home-Exterior-Designs-You-Will-Find-Inspiration-In.jpg"
+    }
+];
+const PropertyList = ()=>{
+    _s();
+    const [interestStatus, setInterestStatus] = (0, _react.useState)({});
+    const handleInterestToggle = (propertyId, propertyName)=>{
+        if (!interestStatus[propertyId]) {
+            setInterestStatus((prevState)=>({
+                    ...prevState,
+                    [propertyId]: true
+                }));
+            alert(`You are interested in ${propertyName}`);
+        } else alert(`You are already interested in ${propertyName}`);
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "property-list",
+        children: properties.map((property)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "property",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: property.image,
+                        alt: property.name,
+                        className: "property-image"
+                    }, void 0, false, {
+                        fileName: "src/Listing component/PropertyList.jsx",
+                        lineNumber: 35,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "property-details",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                children: property.name
+                            }, void 0, false, {
+                                fileName: "src/Listing component/PropertyList.jsx",
+                                lineNumber: 37,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: [
+                                    "Price: $",
+                                    property.price
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Listing component/PropertyList.jsx",
+                                lineNumber: 38,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                onClick: ()=>handleInterestToggle(property.id, property.name),
+                                children: interestStatus[property.id] ? "Interested" : "Show Interest"
+                            }, void 0, false, {
+                                fileName: "src/Listing component/PropertyList.jsx",
+                                lineNumber: 39,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Listing component/PropertyList.jsx",
+                        lineNumber: 36,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, property.id, true, {
+                fileName: "src/Listing component/PropertyList.jsx",
+                lineNumber: 34,
+                columnNumber: 9
+            }, undefined))
+    }, void 0, false, {
+        fileName: "src/Listing component/PropertyList.jsx",
+        lineNumber: 32,
+        columnNumber: 5
+    }, undefined);
+};
+_s(PropertyList, "67l1/WHuEiNtw7qnGLnLekiwJqc=");
+_c = PropertyList;
+var _c;
+$RefreshReg$(_c, "PropertyList");
+
+  $parcel$ReactRefreshHelpers$188f.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./PropertyList.css":"esJvN","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"esJvN":[function() {},{}]},["7j8ph","g0LDX","d8Dch"], "d8Dch", "parcelRequire6432")
 
 //# sourceMappingURL=index.b4b6dfad.js.map

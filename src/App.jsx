@@ -5,6 +5,7 @@ import {FeaturedProperties} from './FeaturedProperties';
 import {Team} from './FeaturedBroker';
 import {Cta} from './newsletter';
 import {Mortgcalc} from './mortgCalc component/mortgcalc';
+import {PropertyList} from './Listing component';
 
 const App = () => {
   return (
@@ -14,6 +15,7 @@ const App = () => {
       <FeaturedProperties/>   
       <Team/> 
       <Cta/>
+      <PropertyList/>
       {/*<Mortgcalc/>*/}
     </div>
   );
