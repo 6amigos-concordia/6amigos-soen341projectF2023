@@ -1,6 +1,8 @@
 :root {
-  --search-bar-height: 15%; /* Adjust this percentage based on your design needs */
+  --search-bar-height: 15%;
+  /* Adjust this percentage based on your design needs */
 }
+
 .search {
   background-color: #ffffff;
   border-radius: 8px;
@@ -13,9 +15,10 @@
   padding-top: 0%;
   padding-left: 2%;
   padding-right: 2%;
-  height: var(--search-bar-height); /* Set the height using the variable */
-  margin-bottom: calc(var(--search-bar-height) / -2); 
-  
+  height: var(--search-bar-height);
+  /* Set the height using the variable */
+  margin-bottom: calc(var(--search-bar-height) / -2);
+
 }
 
 .search .subtitle-icon {
@@ -120,6 +123,7 @@
     background-color: #c5ced7;
   }
 }
+
 /* Default styles for the search bar */
 .search-bar {
   background-color: #f0f0f0;
@@ -150,15 +154,16 @@
   flex-grow: 1 !important;
   width: unset !important;
 
-  
+
 }
 
 .dropdown {
-  align-items: center!important;
-  background-color: #ffffff!important;
-  border: none!important; /* Remove the border */
-  border-radius: 6px!important;
-  box-shadow: var(--shadow-xs)!important;
+  align-items: center !important;
+  background-color: #ffffff !important;
+  border: none !important;
+  /* Remove the border */
+  border-radius: 6px !important;
+  box-shadow: var(--shadow-xs) !important;
   display: flex;
   gap: 8px;
   padding: 10px 14px;
@@ -166,15 +171,16 @@
   width: 320px;
 }
 
-  .dropdown .content {
+.dropdown .content {
   align-items: center;
   display: flex;
   flex: 1;
   flex-grow: 1;
   gap: 8px;
   position: relative;
-  }
-  .dropdown .text {
+}
+
+.dropdown .text {
   color: #667084;
   font-family: "Montserrat-Regular", Helvetica;
   font-size: 16px;
@@ -185,13 +191,14 @@
   position: relative;
   white-space: nowrap;
   width: fit-content;
-  }
-  .dropdown .icons-arrow-down {
+}
+
+.dropdown .icons-arrow-down {
   height: 20px !important;
   position: relative !important;
   width: 20px !important;
-  }
-  
+}
+
 /* Responsive styles using media queries */
 @media screen and (max-width: 768px) {
   .search-bar input[type="text"] {
@@ -216,8 +223,30 @@
     font-size: 12px;
   }
 
+  /* Your existing styles */
+  .modal {
+    z-index: 9999;
+    display: none; /* Set to none by default */
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal.visible {
+    display: flex; /* Display only when isModalVisible is true */
+  }
+  
+  .modal-content {
+    background: white;
+    z-index: 9999;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
 
 }
-
-
-

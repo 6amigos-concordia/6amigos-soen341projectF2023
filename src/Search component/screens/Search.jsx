@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Dropdown } from "../../Search component/components/Dropdown";
 import { IconsSearch } from "../../Search component/icons/IconsSearch";
+import { FilterForm } from "../Filtercomponent/FilterForm";
 import "./style.css";
 
 export const Search = () => {
@@ -30,7 +31,7 @@ export const Search = () => {
     { label: "West Island", value: "West Island" },
     { label: "Hampstead", value: "Hampstead" },
     { label: "Île des Soeurs", value: "Île des Soeurs" },
-    { label: "Candiac", value: "candiac"}
+    { label: "Candiac", value: "candiac" }
 
   ];
 
@@ -82,7 +83,13 @@ export const Search = () => {
     { label: "For rent", value: "For rent" },
     { label: "Sold", value: "Sold" }
   ];
-
+  const [isModalVisible, setIsModalVisible] = useState(false);
+ 
+  const handleFilterButtonClick1 = () => {
+    console.log("Filter button clicked!");
+    setIsModalVisible(!isModalVisible);
+  };
+  
   return (
     <div className="search">
       <div className="subtitle-icon">
@@ -90,14 +97,14 @@ export const Search = () => {
         <IconsSearch className="icons-search" />
       </div>
       <div className="input-wrapper"> {/* Wrap location input in a div */}
-          <input
-            className="input-instance"
-            iconsArrowDownColor="#2F234F"
-            placeholder="City name, street name"
-            value={inputValue}
-            onChange={handleInputChange}
-          />
-        </div>
+        <input
+          className="input-instance"
+          iconsArrowDownColor="#2F234F"
+          placeholder="City name, street name"
+          value={inputValue}
+          onChange={handleInputChange}
+        />
+      </div>
       <div className="text-search-BTN">
         <Dropdown className="dropdown-instance"
           text="District"
@@ -130,6 +137,16 @@ export const Search = () => {
         <button className="button-with-icon" onClick={handleButtonClick}>
           <IconsSearch className="icons-search" />
         </button>
+        <button className="button-with-icon" type="button" onClick={handleFilterButtonClick1}>
+          <img className="vector" alt="Vector" src="https://i.ibb.co/nnx7Z0V/vector.png" />
+        </button>
+        {isModalVisible && (
+          <div className="modal">
+            <div className="modal-content">
+            <FilterForm onSubmit={formData => console.log(formData)} />
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

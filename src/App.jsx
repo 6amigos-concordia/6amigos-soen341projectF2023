@@ -4,7 +4,8 @@ import {OurFeature} from './Feature component';
 import {FeaturedProperties} from './FeaturedProperties';
 import {Team} from './FeaturedBroker';
 import {Cta} from './newsletter';
-import {Mortgcalc} from './mortgCalc component/mortgcalc';
+import {Frame} from './booking component/Frame';
+import {PropertyList} from './Listing component/PropertyList';
 
 const App = () => {
   return (
@@ -14,8 +15,9 @@ const App = () => {
       <FeaturedProperties/>   
       <Team/> 
       <Cta/>
-      {/*<Mortgcalc/>*/}
+      {/*<PropertyList/>*/}
        {/*<ListingProp/>*/}
+       {/*<Frame/>*/}
     </div>
   );
 };
