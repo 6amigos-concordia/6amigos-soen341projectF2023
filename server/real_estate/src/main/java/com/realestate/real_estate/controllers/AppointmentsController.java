@@ -20,9 +20,9 @@ public class AppointmentsController {
     public ResponseEntity<List<Appointment>> getAllAppointments() {
         return ResponseEntity.ok().body(appointmentService.getAppointments());
     }
-    @PostMapping(path = "/appointments/add")
-    public ResponseEntity<Appointment> saveAppointement(@RequestBody Appointment appointment) {
-        return ResponseEntity.ok(appointmentService.bookAppointment(appointment));
+    @PostMapping(path = "/bookAppointment")
+    public Appointment bookAppointment(@RequestBody AppointmentRequest appointmentRequest) {
+        return appointmentService.makeAppointment(appointmentRequest.getDateTime(), appointmentRequest.getUsername());
     }
 
 }

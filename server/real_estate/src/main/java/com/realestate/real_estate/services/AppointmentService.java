@@ -19,11 +19,14 @@ public class AppointmentService {
 
     public Appointment getAppointmentById(String id) {
         return appointmentRepository.findById(id)
-                .orElseThrow(() -> new RuntimeException("No user by ID: " + id));
+                .orElseThrow(() -> new RuntimeException("No appointment by ID: " + id));
     }
-
-    public Appointment bookAppointment(Appointment appointment) {
-        return appointmentRepository.save(appointment);
+    public Appointment bookAppointment(String dateTime, String username) {
+        Appointment appointment = new Appointment();
+        appointment.setDateTime(dateTime);
+        appointment.setUsername(username);
+        appointmentRepository.save(appointment);
+        return appointment;
     }
 
 }
