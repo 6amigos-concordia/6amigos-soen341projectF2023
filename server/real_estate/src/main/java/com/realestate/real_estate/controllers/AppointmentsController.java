@@ -21,7 +21,7 @@ public class AppointmentsController {
         return ResponseEntity.ok().body(appointmentService.getAppointments());
     }
     @PostMapping(path = "/appointments/add")
-    public ResponseEntity<Appointment> saveUser(@RequestBody Appointment appointment) {
+    public ResponseEntity<Appointment> saveAppointement(@RequestBody Appointment appointment) {
         return ResponseEntity.ok(appointmentService.bookAppointment(appointment));
     }
 
