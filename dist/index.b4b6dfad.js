@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"7j8ph":[function(require,module,exports) {
+})({"4s3Ar":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -573,9 +573,9 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     });
 }
 
-},{}],"g0LDX":[function(require,module,exports) {
-var Refresh = require("e82baab5c72e3ea");
-var ErrorOverlay = require("a908a8ed2fa7aafa");
+},{}],"1xC6H":[function(require,module,exports) {
+var Refresh = require("6d18d6bd340e7473");
+var ErrorOverlay = require("74ad5ea14201648c");
 Refresh.injectIntoGlobalHook(window);
 window.$RefreshReg$ = function() {};
 window.$RefreshSig$ = function() {
@@ -594,11 +594,11 @@ window.addEventListener("parcelhmraccept", ()=>{
     ErrorOverlay.dismissRuntimeErrors();
 });
 
-},{"e82baab5c72e3ea":"5t1sx","a908a8ed2fa7aafa":"3nkJF"}],"5t1sx":[function(require,module,exports) {
+},{"6d18d6bd340e7473":"3FsDI","74ad5ea14201648c":"1dldy"}],"3FsDI":[function(require,module,exports) {
 "use strict";
-module.exports = require("f252a04ee07177dd");
+module.exports = require("bc819d12737f82d");
 
-},{"f252a04ee07177dd":"9ugHR"}],"9ugHR":[function(require,module,exports) {
+},{"bc819d12737f82d":"dtx5b"}],"dtx5b":[function(require,module,exports) {
 /** @license React v0.9.0
  * react-refresh-runtime.development.js
  *
@@ -1058,8 +1058,8 @@ module.exports = require("f252a04ee07177dd");
     exports.setSignature = setSignature;
 })();
 
-},{}],"3nkJF":[function(require,module,exports) {
-var process = require("c1ce240beb6c704b");
+},{}],"1dldy":[function(require,module,exports) {
+var process = require("d1546958eb39fdcf");
 !function(e, t) {
     module.exports = t();
 }(window, function() {
@@ -2789,7 +2789,7 @@ var process = require("c1ce240beb6c704b");
     ]);
 });
 
-},{"c1ce240beb6c704b":"d5jf4"}],"d5jf4":[function(require,module,exports) {
+},{"d1546958eb39fdcf":"d5jf4"}],"d5jf4":[function(require,module,exports) {
 // shim for using process in browser
 var process = module.exports = {};
 // cached from whatever global is present so that test runners that stub it
@@ -2961,7 +2961,7 @@ const app = document.getElementById("app");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App":"e9Zfo","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"iTorj":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","./App":"e9Zfo","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"iTorj":[function(require,module,exports) {
 "use strict";
 module.exports = require("ee51401569654d91");
 
@@ -27144,44 +27144,45 @@ var _featuredBroker = require("./FeaturedBroker");
 var _newsletter = require("./newsletter");
 var _mortgcalc = require("./mortgCalc component/mortgcalc");
 var _listingComponent = require("./Listing component");
+var _listingProp = require("./ListingProp");
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "app",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _landingPage.LandingPage), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 13,
+                lineNumber: 15,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _featureComponent.OurFeature), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 14,
+                lineNumber: 16,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _featuredProperties.FeaturedProperties), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 15,
+                lineNumber: 17,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _featuredBroker.Team), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 16,
+                lineNumber: 18,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newsletter.Cta), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 17,
+                lineNumber: 19,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _listingComponent.PropertyList), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 18,
+                lineNumber: 20,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 12,
+        lineNumber: 14,
         columnNumber: 5
     }, undefined);
 };
@@ -27195,13 +27196,13 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Landing component/LandingPage":"bQzRZ","./Feature component":"eDTYY","./FeaturedProperties":"1ymem","./FeaturedBroker":"2sHyA","./newsletter":"jMOOi","./mortgCalc component/mortgcalc":"gyxw0","./Listing component":"fAykt","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"bQzRZ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Landing component/LandingPage":"bQzRZ","./Feature component":"eDTYY","./FeaturedProperties":"1ymem","./FeaturedBroker":"2sHyA","./newsletter":"jMOOi","./mortgCalc component/mortgcalc":"gyxw0","./Listing component":"fAykt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./ListingProp":"dTe8K"}],"bQzRZ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "LandingPage", ()=>(0, _landingPage.LandingPage));
 var _landingPage = require("./LandingPage");
 
-},{"./LandingPage":"f7LBH","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"f7LBH":[function(require,module,exports) {
+},{"./LandingPage":"f7LBH","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"f7LBH":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$9df0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27349,13 +27350,13 @@ $RefreshReg$(_c, "LandingPage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../Landing component/components landing/Button":"5kGK3","../../Landing component/components landing/ButtonSecondary":"3ybRV","../../Landing component/components landing/CTA":"63x6C","../../Search component/screens/Search":"jBAXe","./style.css":"hfXNk","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"5kGK3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../Landing component/components landing/Button":"5kGK3","../../Landing component/components landing/ButtonSecondary":"3ybRV","../../Landing component/components landing/CTA":"63x6C","../../Search component/screens/Search":"jBAXe","./style.css":"hfXNk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5kGK3":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Button", ()=>(0, _button.Button));
 var _button = require("./Button");
 
-},{"./Button":"2hDqO","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"2hDqO":[function(require,module,exports) {
+},{"./Button":"2hDqO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"2hDqO":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$52a2 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27402,7 +27403,7 @@ $RefreshReg$(_c, "Button");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"7YBjW","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"7YBjW":[function() {},{}],"hiSRe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"7YBjW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7YBjW":[function() {},{}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -27432,9 +27433,9 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"cxbbb":[function(require,module,exports) {
+},{}],"km3Ru":[function(require,module,exports) {
 "use strict";
-var Refresh = require("f49c07d3f7913792");
+var Refresh = require("7422ead32dcc1e6b");
 function debounce(func, delay) {
     {
         let timeout = undefined;
@@ -27570,13 +27571,477 @@ function registerExportsForReactRefresh(module1) {
     }
 }
 
-},{"f49c07d3f7913792":"5t1sx"}],"3ybRV":[function(require,module,exports) {
+},{"7422ead32dcc1e6b":"jEdJI"}],"jEdJI":[function(require,module,exports) {
+"use strict";
+module.exports = require("9e039173d01172ab");
+
+},{"9e039173d01172ab":"uTjV2"}],"uTjV2":[function(require,module,exports) {
+/** @license React v0.9.0
+ * react-refresh-runtime.development.js
+ *
+ * Copyright (c) Facebook, Inc. and its affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */ "use strict";
+(function() {
+    "use strict";
+    // ATTENTION
+    // When adding new symbols to this file,
+    // Please consider also adding to 'react-devtools-shared/src/backend/ReactSymbols'
+    // The Symbol used to tag the ReactElement-like types. If there is no native Symbol
+    // nor polyfill, then a plain number is used for performance.
+    var REACT_ELEMENT_TYPE = 0xeac7;
+    var REACT_PORTAL_TYPE = 0xeaca;
+    var REACT_FRAGMENT_TYPE = 0xeacb;
+    var REACT_STRICT_MODE_TYPE = 0xeacc;
+    var REACT_PROFILER_TYPE = 0xead2;
+    var REACT_PROVIDER_TYPE = 0xeacd;
+    var REACT_CONTEXT_TYPE = 0xeace;
+    var REACT_FORWARD_REF_TYPE = 0xead0;
+    var REACT_SUSPENSE_TYPE = 0xead1;
+    var REACT_SUSPENSE_LIST_TYPE = 0xead8;
+    var REACT_MEMO_TYPE = 0xead3;
+    var REACT_LAZY_TYPE = 0xead4;
+    var REACT_BLOCK_TYPE = 0xead9;
+    var REACT_SERVER_BLOCK_TYPE = 0xeada;
+    var REACT_FUNDAMENTAL_TYPE = 0xead5;
+    var REACT_SCOPE_TYPE = 0xead7;
+    var REACT_OPAQUE_ID_TYPE = 0xeae0;
+    var REACT_DEBUG_TRACING_MODE_TYPE = 0xeae1;
+    var REACT_OFFSCREEN_TYPE = 0xeae2;
+    var REACT_LEGACY_HIDDEN_TYPE = 0xeae3;
+    if (typeof Symbol === "function" && Symbol.for) {
+        var symbolFor = Symbol.for;
+        REACT_ELEMENT_TYPE = symbolFor("react.element");
+        REACT_PORTAL_TYPE = symbolFor("react.portal");
+        REACT_FRAGMENT_TYPE = symbolFor("react.fragment");
+        REACT_STRICT_MODE_TYPE = symbolFor("react.strict_mode");
+        REACT_PROFILER_TYPE = symbolFor("react.profiler");
+        REACT_PROVIDER_TYPE = symbolFor("react.provider");
+        REACT_CONTEXT_TYPE = symbolFor("react.context");
+        REACT_FORWARD_REF_TYPE = symbolFor("react.forward_ref");
+        REACT_SUSPENSE_TYPE = symbolFor("react.suspense");
+        REACT_SUSPENSE_LIST_TYPE = symbolFor("react.suspense_list");
+        REACT_MEMO_TYPE = symbolFor("react.memo");
+        REACT_LAZY_TYPE = symbolFor("react.lazy");
+        REACT_BLOCK_TYPE = symbolFor("react.block");
+        REACT_SERVER_BLOCK_TYPE = symbolFor("react.server.block");
+        REACT_FUNDAMENTAL_TYPE = symbolFor("react.fundamental");
+        REACT_SCOPE_TYPE = symbolFor("react.scope");
+        REACT_OPAQUE_ID_TYPE = symbolFor("react.opaque.id");
+        REACT_DEBUG_TRACING_MODE_TYPE = symbolFor("react.debug_trace_mode");
+        REACT_OFFSCREEN_TYPE = symbolFor("react.offscreen");
+        REACT_LEGACY_HIDDEN_TYPE = symbolFor("react.legacy_hidden");
+    }
+    var PossiblyWeakMap = typeof WeakMap === "function" ? WeakMap : Map; // We never remove these associations.
+    // It's OK to reference families, but use WeakMap/Set for types.
+    var allFamiliesByID = new Map();
+    var allFamiliesByType = new PossiblyWeakMap();
+    var allSignaturesByType = new PossiblyWeakMap(); // This WeakMap is read by React, so we only put families
+    // that have actually been edited here. This keeps checks fast.
+    // $FlowIssue
+    var updatedFamiliesByType = new PossiblyWeakMap(); // This is cleared on every performReactRefresh() call.
+    // It is an array of [Family, NextType] tuples.
+    var pendingUpdates = []; // This is injected by the renderer via DevTools global hook.
+    var helpersByRendererID = new Map();
+    var helpersByRoot = new Map(); // We keep track of mounted roots so we can schedule updates.
+    var mountedRoots = new Set(); // If a root captures an error, we remember it so we can retry on edit.
+    var failedRoots = new Set(); // In environments that support WeakMap, we also remember the last element for every root.
+    // It needs to be weak because we do this even for roots that failed to mount.
+    // If there is no WeakMap, we won't attempt to do retrying.
+    // $FlowIssue
+    var rootElements = typeof WeakMap === "function" ? new WeakMap() : null;
+    var isPerformingRefresh = false;
+    function computeFullKey(signature) {
+        if (signature.fullKey !== null) return signature.fullKey;
+        var fullKey = signature.ownKey;
+        var hooks;
+        try {
+            hooks = signature.getCustomHooks();
+        } catch (err) {
+            // This can happen in an edge case, e.g. if expression like Foo.useSomething
+            // depends on Foo which is lazily initialized during rendering.
+            // In that case just assume we'll have to remount.
+            signature.forceReset = true;
+            signature.fullKey = fullKey;
+            return fullKey;
+        }
+        for(var i = 0; i < hooks.length; i++){
+            var hook = hooks[i];
+            if (typeof hook !== "function") {
+                // Something's wrong. Assume we need to remount.
+                signature.forceReset = true;
+                signature.fullKey = fullKey;
+                return fullKey;
+            }
+            var nestedHookSignature = allSignaturesByType.get(hook);
+            if (nestedHookSignature === undefined) continue;
+            var nestedHookKey = computeFullKey(nestedHookSignature);
+            if (nestedHookSignature.forceReset) signature.forceReset = true;
+            fullKey += "\n---\n" + nestedHookKey;
+        }
+        signature.fullKey = fullKey;
+        return fullKey;
+    }
+    function haveEqualSignatures(prevType, nextType) {
+        var prevSignature = allSignaturesByType.get(prevType);
+        var nextSignature = allSignaturesByType.get(nextType);
+        if (prevSignature === undefined && nextSignature === undefined) return true;
+        if (prevSignature === undefined || nextSignature === undefined) return false;
+        if (computeFullKey(prevSignature) !== computeFullKey(nextSignature)) return false;
+        if (nextSignature.forceReset) return false;
+        return true;
+    }
+    function isReactClass(type) {
+        return type.prototype && type.prototype.isReactComponent;
+    }
+    function canPreserveStateBetween(prevType, nextType) {
+        if (isReactClass(prevType) || isReactClass(nextType)) return false;
+        if (haveEqualSignatures(prevType, nextType)) return true;
+        return false;
+    }
+    function resolveFamily(type) {
+        // Only check updated types to keep lookups fast.
+        return updatedFamiliesByType.get(type);
+    } // If we didn't care about IE11, we could use new Map/Set(iterable).
+    function cloneMap(map) {
+        var clone = new Map();
+        map.forEach(function(value, key) {
+            clone.set(key, value);
+        });
+        return clone;
+    }
+    function cloneSet(set) {
+        var clone = new Set();
+        set.forEach(function(value) {
+            clone.add(value);
+        });
+        return clone;
+    }
+    function performReactRefresh() {
+        if (pendingUpdates.length === 0) return null;
+        if (isPerformingRefresh) return null;
+        isPerformingRefresh = true;
+        try {
+            var staleFamilies = new Set();
+            var updatedFamilies = new Set();
+            var updates = pendingUpdates;
+            pendingUpdates = [];
+            updates.forEach(function(_ref) {
+                var family = _ref[0], nextType = _ref[1];
+                // Now that we got a real edit, we can create associations
+                // that will be read by the React reconciler.
+                var prevType = family.current;
+                updatedFamiliesByType.set(prevType, family);
+                updatedFamiliesByType.set(nextType, family);
+                family.current = nextType; // Determine whether this should be a re-render or a re-mount.
+                if (canPreserveStateBetween(prevType, nextType)) updatedFamilies.add(family);
+                else staleFamilies.add(family);
+            }); // TODO: rename these fields to something more meaningful.
+            var update = {
+                updatedFamilies: updatedFamilies,
+                // Families that will re-render preserving state
+                staleFamilies: staleFamilies // Families that will be remounted
+            };
+            helpersByRendererID.forEach(function(helpers) {
+                // Even if there are no roots, set the handler on first update.
+                // This ensures that if *new* roots are mounted, they'll use the resolve handler.
+                helpers.setRefreshHandler(resolveFamily);
+            });
+            var didError = false;
+            var firstError = null; // We snapshot maps and sets that are mutated during commits.
+            // If we don't do this, there is a risk they will be mutated while
+            // we iterate over them. For example, trying to recover a failed root
+            // may cause another root to be added to the failed list -- an infinite loop.
+            var failedRootsSnapshot = cloneSet(failedRoots);
+            var mountedRootsSnapshot = cloneSet(mountedRoots);
+            var helpersByRootSnapshot = cloneMap(helpersByRoot);
+            failedRootsSnapshot.forEach(function(root) {
+                var helpers = helpersByRootSnapshot.get(root);
+                if (helpers === undefined) throw new Error("Could not find helpers for a root. This is a bug in React Refresh.");
+                failedRoots.has(root);
+                if (rootElements === null) return;
+                if (!rootElements.has(root)) return;
+                var element = rootElements.get(root);
+                try {
+                    helpers.scheduleRoot(root, element);
+                } catch (err) {
+                    if (!didError) {
+                        didError = true;
+                        firstError = err;
+                    } // Keep trying other roots.
+                }
+            });
+            mountedRootsSnapshot.forEach(function(root) {
+                var helpers = helpersByRootSnapshot.get(root);
+                if (helpers === undefined) throw new Error("Could not find helpers for a root. This is a bug in React Refresh.");
+                mountedRoots.has(root);
+                try {
+                    helpers.scheduleRefresh(root, update);
+                } catch (err) {
+                    if (!didError) {
+                        didError = true;
+                        firstError = err;
+                    } // Keep trying other roots.
+                }
+            });
+            if (didError) throw firstError;
+            return update;
+        } finally{
+            isPerformingRefresh = false;
+        }
+    }
+    function register(type, id) {
+        if (type === null) return;
+        if (typeof type !== "function" && typeof type !== "object") return;
+         // This can happen in an edge case, e.g. if we register
+        // return value of a HOC but it returns a cached component.
+        // Ignore anything but the first registration for each type.
+        if (allFamiliesByType.has(type)) return;
+         // Create family or remember to update it.
+        // None of this bookkeeping affects reconciliation
+        // until the first performReactRefresh() call above.
+        var family = allFamiliesByID.get(id);
+        if (family === undefined) {
+            family = {
+                current: type
+            };
+            allFamiliesByID.set(id, family);
+        } else pendingUpdates.push([
+            family,
+            type
+        ]);
+        allFamiliesByType.set(type, family); // Visit inner types because we might not have registered them.
+        if (typeof type === "object" && type !== null) switch(type.$$typeof){
+            case REACT_FORWARD_REF_TYPE:
+                register(type.render, id + "$render");
+                break;
+            case REACT_MEMO_TYPE:
+                register(type.type, id + "$type");
+                break;
+        }
+    }
+    function setSignature(type, key) {
+        var forceReset = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+        var getCustomHooks = arguments.length > 3 ? arguments[3] : undefined;
+        allSignaturesByType.set(type, {
+            forceReset: forceReset,
+            ownKey: key,
+            fullKey: null,
+            getCustomHooks: getCustomHooks || function() {
+                return [];
+            }
+        });
+    } // This is lazily called during first render for a type.
+    // It captures Hook list at that time so inline requires don't break comparisons.
+    function collectCustomHooksForSignature(type) {
+        var signature = allSignaturesByType.get(type);
+        if (signature !== undefined) computeFullKey(signature);
+    }
+    function getFamilyByID(id) {
+        return allFamiliesByID.get(id);
+    }
+    function getFamilyByType(type) {
+        return allFamiliesByType.get(type);
+    }
+    function findAffectedHostInstances(families) {
+        var affectedInstances = new Set();
+        mountedRoots.forEach(function(root) {
+            var helpers = helpersByRoot.get(root);
+            if (helpers === undefined) throw new Error("Could not find helpers for a root. This is a bug in React Refresh.");
+            var instancesForRoot = helpers.findHostInstancesForRefresh(root, families);
+            instancesForRoot.forEach(function(inst) {
+                affectedInstances.add(inst);
+            });
+        });
+        return affectedInstances;
+    }
+    function injectIntoGlobalHook(globalObject) {
+        // For React Native, the global hook will be set up by require('react-devtools-core').
+        // That code will run before us. So we need to monkeypatch functions on existing hook.
+        // For React Web, the global hook will be set up by the extension.
+        // This will also run before us.
+        var hook = globalObject.__REACT_DEVTOOLS_GLOBAL_HOOK__;
+        if (hook === undefined) {
+            // However, if there is no DevTools extension, we'll need to set up the global hook ourselves.
+            // Note that in this case it's important that renderer code runs *after* this method call.
+            // Otherwise, the renderer will think that there is no global hook, and won't do the injection.
+            var nextID = 0;
+            globalObject.__REACT_DEVTOOLS_GLOBAL_HOOK__ = hook = {
+                renderers: new Map(),
+                supportsFiber: true,
+                inject: function(injected) {
+                    return nextID++;
+                },
+                onScheduleFiberRoot: function(id, root, children) {},
+                onCommitFiberRoot: function(id, root, maybePriorityLevel, didError) {},
+                onCommitFiberUnmount: function() {}
+            };
+        } // Here, we just want to get a reference to scheduleRefresh.
+        var oldInject = hook.inject;
+        hook.inject = function(injected) {
+            var id = oldInject.apply(this, arguments);
+            if (typeof injected.scheduleRefresh === "function" && typeof injected.setRefreshHandler === "function") // This version supports React Refresh.
+            helpersByRendererID.set(id, injected);
+            return id;
+        }; // Do the same for any already injected roots.
+        // This is useful if ReactDOM has already been initialized.
+        // https://github.com/facebook/react/issues/17626
+        hook.renderers.forEach(function(injected, id) {
+            if (typeof injected.scheduleRefresh === "function" && typeof injected.setRefreshHandler === "function") // This version supports React Refresh.
+            helpersByRendererID.set(id, injected);
+        }); // We also want to track currently mounted roots.
+        var oldOnCommitFiberRoot = hook.onCommitFiberRoot;
+        var oldOnScheduleFiberRoot = hook.onScheduleFiberRoot || function() {};
+        hook.onScheduleFiberRoot = function(id, root, children) {
+            if (!isPerformingRefresh) {
+                // If it was intentionally scheduled, don't attempt to restore.
+                // This includes intentionally scheduled unmounts.
+                failedRoots.delete(root);
+                if (rootElements !== null) rootElements.set(root, children);
+            }
+            return oldOnScheduleFiberRoot.apply(this, arguments);
+        };
+        hook.onCommitFiberRoot = function(id, root, maybePriorityLevel, didError) {
+            var helpers = helpersByRendererID.get(id);
+            if (helpers === undefined) return;
+            helpersByRoot.set(root, helpers);
+            var current = root.current;
+            var alternate = current.alternate; // We need to determine whether this root has just (un)mounted.
+            // This logic is copy-pasted from similar logic in the DevTools backend.
+            // If this breaks with some refactoring, you'll want to update DevTools too.
+            if (alternate !== null) {
+                var wasMounted = alternate.memoizedState != null && alternate.memoizedState.element != null;
+                var isMounted = current.memoizedState != null && current.memoizedState.element != null;
+                if (!wasMounted && isMounted) {
+                    // Mount a new root.
+                    mountedRoots.add(root);
+                    failedRoots.delete(root);
+                } else if (wasMounted && isMounted) ;
+                else if (wasMounted && !isMounted) {
+                    // Unmount an existing root.
+                    mountedRoots.delete(root);
+                    if (didError) // We'll remount it on future edits.
+                    failedRoots.add(root);
+                    else helpersByRoot.delete(root);
+                } else if (!wasMounted && !isMounted) {
+                    if (didError) // We'll remount it on future edits.
+                    failedRoots.add(root);
+                }
+            } else // Mount a new root.
+            mountedRoots.add(root);
+            return oldOnCommitFiberRoot.apply(this, arguments);
+        };
+    }
+    function hasUnrecoverableErrors() {
+        // TODO: delete this after removing dependency in RN.
+        return false;
+    } // Exposed for testing.
+    function _getMountedRootCount() {
+        return mountedRoots.size;
+    } // This is a wrapper over more primitive functions for setting signature.
+    // Signatures let us decide whether the Hook order has changed on refresh.
+    //
+    // This function is intended to be used as a transform target, e.g.:
+    // var _s = createSignatureFunctionForTransform()
+    //
+    // function Hello() {
+    //   const [foo, setFoo] = useState(0);
+    //   const value = useCustomHook();
+    //   _s(); /* Second call triggers collecting the custom Hook list.
+    //          * This doesn't happen during the module evaluation because we
+    //          * don't want to change the module order with inline requires.
+    //          * Next calls are noops. */
+    //   return <h1>Hi</h1>;
+    // }
+    //
+    // /* First call specifies the signature: */
+    // _s(
+    //   Hello,
+    //   'useState{[foo, setFoo]}(0)',
+    //   () => [useCustomHook], /* Lazy to avoid triggering inline requires */
+    // );
+    function createSignatureFunctionForTransform() {
+        // We'll fill in the signature in two steps.
+        // First, we'll know the signature itself. This happens outside the component.
+        // Then, we'll know the references to custom Hooks. This happens inside the component.
+        // After that, the returned function will be a fast path no-op.
+        var status = "needsSignature";
+        var savedType;
+        var hasCustomHooks;
+        return function(type, key, forceReset, getCustomHooks) {
+            switch(status){
+                case "needsSignature":
+                    if (type !== undefined) {
+                        // If we received an argument, this is the initial registration call.
+                        savedType = type;
+                        hasCustomHooks = typeof getCustomHooks === "function";
+                        setSignature(type, key, forceReset, getCustomHooks); // The next call we expect is from inside a function, to fill in the custom Hooks.
+                        status = "needsCustomHooks";
+                    }
+                    break;
+                case "needsCustomHooks":
+                    if (hasCustomHooks) collectCustomHooksForSignature(savedType);
+                    status = "resolved";
+                    break;
+            }
+            return type;
+        };
+    }
+    function isLikelyComponentType(type) {
+        switch(typeof type){
+            case "function":
+                // First, deal with classes.
+                if (type.prototype != null) {
+                    if (type.prototype.isReactComponent) // React class.
+                    return true;
+                    var ownNames = Object.getOwnPropertyNames(type.prototype);
+                    if (ownNames.length > 1 || ownNames[0] !== "constructor") // This looks like a class.
+                    return false;
+                     // eslint-disable-next-line no-proto
+                    if (type.prototype.__proto__ !== Object.prototype) // It has a superclass.
+                    return false;
+                     // Pass through.
+                // This looks like a regular function with empty prototype.
+                } // For plain functions and arrows, use name as a heuristic.
+                var name = type.name || type.displayName;
+                return typeof name === "string" && /^[A-Z]/.test(name);
+            case "object":
+                if (type != null) switch(type.$$typeof){
+                    case REACT_FORWARD_REF_TYPE:
+                    case REACT_MEMO_TYPE:
+                        // Definitely React components.
+                        return true;
+                    default:
+                        return false;
+                }
+                return false;
+            default:
+                return false;
+        }
+    }
+    exports._getMountedRootCount = _getMountedRootCount;
+    exports.collectCustomHooksForSignature = collectCustomHooksForSignature;
+    exports.createSignatureFunctionForTransform = createSignatureFunctionForTransform;
+    exports.findAffectedHostInstances = findAffectedHostInstances;
+    exports.getFamilyByID = getFamilyByID;
+    exports.getFamilyByType = getFamilyByType;
+    exports.hasUnrecoverableErrors = hasUnrecoverableErrors;
+    exports.injectIntoGlobalHook = injectIntoGlobalHook;
+    exports.isLikelyComponentType = isLikelyComponentType;
+    exports.performReactRefresh = performReactRefresh;
+    exports.register = register;
+    exports.setSignature = setSignature;
+})();
+
+},{}],"3ybRV":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ButtonSecondary", ()=>(0, _buttonSecondary.ButtonSecondary));
 var _buttonSecondary = require("./ButtonSecondary");
 
-},{"./ButtonSecondary":"6eFfG","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"6eFfG":[function(require,module,exports) {
+},{"./ButtonSecondary":"6eFfG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6eFfG":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$86fd = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -27624,7 +28089,7 @@ $RefreshReg$(_c, "ButtonSecondary");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","./style.css":"40264","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"7wKI2":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","./style.css":"40264","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7wKI2":[function(require,module,exports) {
 /**
  * Copyright (c) 2013-present, Facebook, Inc.
  *
@@ -28377,7 +28842,7 @@ parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ContentCta", ()=>(0, _contentCta.ContentCta));
 var _contentCta = require("./ContentCta");
 
-},{"./ContentCta":"6iWWC","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"6iWWC":[function(require,module,exports) {
+},{"./ContentCta":"6iWWC","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6iWWC":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$22b0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28454,7 +28919,7 @@ $RefreshReg$(_c, "ContentCta");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"eBR8N","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"eBR8N":[function() {},{}],"jBAXe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"eBR8N","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"eBR8N":[function() {},{}],"jBAXe":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$279a = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28753,13 +29218,13 @@ $RefreshReg$(_c, "Search");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../Search component/components/Dropdown":"hI7DG","../../Search component/icons/IconsSearch":"dvFTl","./style.css":"bYIyU","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"hI7DG":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../Search component/components/Dropdown":"hI7DG","../../Search component/icons/IconsSearch":"dvFTl","./style.css":"bYIyU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hI7DG":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Dropdown", ()=>(0, _dropdown.Dropdown));
 var _dropdown = require("./Dropdown");
 
-},{"./Dropdown":"lUbAl","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"lUbAl":[function(require,module,exports) {
+},{"./Dropdown":"lUbAl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lUbAl":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$df85 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28830,13 +29295,13 @@ $RefreshReg$(_c, "Dropdown");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","./style.css":"3zzKY","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"3zzKY":[function() {},{}],"dvFTl":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","./style.css":"3zzKY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3zzKY":[function() {},{}],"dvFTl":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "IconsSearch", ()=>(0, _iconsSearch.IconsSearch));
 var _iconsSearch = require("./IconsSearch");
 
-},{"./IconsSearch":"kZr1A","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"kZr1A":[function(require,module,exports) {
+},{"./IconsSearch":"kZr1A","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"kZr1A":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$9596 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -28924,13 +29389,13 @@ $RefreshReg$(_c, "IconsSearch");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"bYIyU":[function() {},{}],"hfXNk":[function() {},{}],"eDTYY":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bYIyU":[function() {},{}],"hfXNk":[function() {},{}],"eDTYY":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "OurFeature", ()=>(0, _ourFeature.OurFeature));
 var _ourFeature = require("./OurFeature");
 
-},{"./OurFeature":"jpRgE","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"jpRgE":[function(require,module,exports) {
+},{"./OurFeature":"jpRgE","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"jpRgE":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$296e = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -29081,13 +29546,13 @@ $RefreshReg$(_c, "OurFeature");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"3KU1I","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"3KU1I":[function() {},{}],"1ymem":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"3KU1I","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3KU1I":[function() {},{}],"1ymem":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "FeaturedProperties", ()=>(0, _featuredProperties.FeaturedProperties));
 var _featuredProperties = require("./FeaturedProperties");
 
-},{"./FeaturedProperties":"s28Bu","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"s28Bu":[function(require,module,exports) {
+},{"./FeaturedProperties":"s28Bu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"s28Bu":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$0a93 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -29216,13 +29681,13 @@ $RefreshReg$(_c, "FeaturedProperties");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"hygpl","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"hygpl":[function() {},{}],"2sHyA":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"hygpl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hygpl":[function() {},{}],"2sHyA":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Team", ()=>(0, _team.Team));
 var _team = require("./Team");
 
-},{"./Team":"hvIBW","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"hvIBW":[function(require,module,exports) {
+},{"./Team":"hvIBW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hvIBW":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$58f7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -29497,13 +29962,13 @@ $RefreshReg$(_c, "Team");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"e89W3","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"e89W3":[function() {},{}],"jMOOi":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"e89W3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"e89W3":[function() {},{}],"jMOOi":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Cta", ()=>(0, _cta.Cta));
 var _cta = require("./Cta");
 
-},{"./Cta":"eIS5a","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"eIS5a":[function(require,module,exports) {
+},{"./Cta":"eIS5a","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eIS5a":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$5b36 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -29661,13 +30126,13 @@ $RefreshReg$(_c, "Cta");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./ButtonTextOnly":"dLF5w","./Input":"6dbH2","./style.css":"3i9bq","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"dLF5w":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./ButtonTextOnly":"dLF5w","./Input":"6dbH2","./style.css":"3i9bq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dLF5w":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ButtonTextOnly", ()=>(0, _buttonTextOnly.ButtonTextOnly));
 var _buttonTextOnly = require("./ButtonTextOnly");
 
-},{"./ButtonTextOnly":"cQ4dO","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"cQ4dO":[function(require,module,exports) {
+},{"./ButtonTextOnly":"cQ4dO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cQ4dO":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$5ab6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -29720,13 +30185,13 @@ $RefreshReg$(_c, "ButtonTextOnly");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","./style.css":"dNy1G","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"dNy1G":[function() {},{}],"6dbH2":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","./style.css":"dNy1G","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dNy1G":[function() {},{}],"6dbH2":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Input", ()=>(0, _input.Input));
 var _input = require("./Input");
 
-},{"./Input":"8NsFZ","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"8NsFZ":[function(require,module,exports) {
+},{"./Input":"8NsFZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8NsFZ":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$1a05 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -29781,7 +30246,7 @@ $RefreshReg$(_c, "Input");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","./style.css":"2c4j1","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"2c4j1":[function() {},{}],"3i9bq":[function() {},{}],"gyxw0":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","./style.css":"2c4j1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2c4j1":[function() {},{}],"3i9bq":[function() {},{}],"gyxw0":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$ea2b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -29948,13 +30413,13 @@ $RefreshReg$(_c, "Mortgcalc");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./mortg.css":"5gbcB","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"5gbcB":[function() {},{}],"fAykt":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./mortg.css":"5gbcB","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5gbcB":[function() {},{}],"fAykt":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "PropertyList", ()=>(0, _propertyList.PropertyList));
 var _propertyList = require("./PropertyList");
 
-},{"./PropertyList":"a7sq9","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe"}],"a7sq9":[function(require,module,exports) {
+},{"./PropertyList":"a7sq9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"a7sq9":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$188f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -30113,6 +30578,2289 @@ $RefreshReg$(_c, "PropertyList");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./PropertyList.css":"esJvN","@parcel/transformer-js/src/esmodule-helpers.js":"hiSRe","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"cxbbb"}],"esJvN":[function() {},{}]},["7j8ph","g0LDX","d8Dch"], "d8Dch", "parcelRequire6432")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./PropertyList.css":"esJvN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"esJvN":[function() {},{}],"dTe8K":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ListingProp", ()=>(0, _listingProp.ListingProp));
+var _listingProp = require("./ListingProp");
+
+},{"./ListingProp":"7IoxF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"7IoxF":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$cb2f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$cb2f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ListingProp", ()=>ListingProp);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _styleCss = require("./style.css");
+var _reactResponsiveCarousel = require("react-responsive-carousel");
+var _carouselMinCss = require("react-responsive-carousel/lib/styles/carousel.min.css");
+const Feature = ({ title, content })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+        className: "feature",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                className: "feature-title",
+                children: title
+            }, void 0, false, {
+                fileName: "src/ListingProp/ListingProp.jsx",
+                lineNumber: 8,
+                columnNumber: 5
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                className: "feature-content",
+                children: content
+            }, void 0, false, {
+                fileName: "src/ListingProp/ListingProp.jsx",
+                lineNumber: 9,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/ListingProp/ListingProp.jsx",
+        lineNumber: 7,
+        columnNumber: 3
+    }, undefined);
+_c = Feature;
+const images = [
+    "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
+    "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
+    "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
+    "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
+    "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
+    "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
+    "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
+    "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
+    "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg"
+];
+const ListingProp = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "listing-prop",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "top-fixed-container",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "brand",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "IMG",
+                            alt: "",
+                            src: "https://i.ibb.co/TbH49Cr/luxium.png"
+                        }, void 0, false, {
+                            fileName: "src/ListingProp/ListingProp.jsx",
+                            lineNumber: 30,
+                            columnNumber: 9
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/ListingProp/ListingProp.jsx",
+                        lineNumber: 29,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "links",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "link",
+                                children: "Find a home"
+                            }, void 0, false, {
+                                fileName: "src/ListingProp/ListingProp.jsx",
+                                lineNumber: 33,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "link",
+                                children: "Mortage Calculator"
+                            }, void 0, false, {
+                                fileName: "src/ListingProp/ListingProp.jsx",
+                                lineNumber: 34,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "link",
+                                children: "Find a broker"
+                            }, void 0, false, {
+                                fileName: "src/ListingProp/ListingProp.jsx",
+                                lineNumber: 35,
+                                columnNumber: 9
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "link",
+                                children: "Saved properties"
+                            }, void 0, false, {
+                                fileName: "src/ListingProp/ListingProp.jsx",
+                                lineNumber: 36,
+                                columnNumber: 9
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/ListingProp/ListingProp.jsx",
+                        lineNumber: 32,
+                        columnNumber: 7
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/ListingProp/ListingProp.jsx",
+                lineNumber: 28,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "content-div",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "address-bar",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "address",
+                            children: "1234, RUE DU CHALET, MONTREAL, QUEBEC, H4H 2B7"
+                        }, void 0, false, {
+                            fileName: "src/ListingProp/ListingProp.jsx",
+                            lineNumber: 42,
+                            columnNumber: 9
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/ListingProp/ListingProp.jsx",
+                        lineNumber: 41,
+                        columnNumber: 5
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "overlap",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "box",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactResponsiveCarousel.Carousel), {
+                                useKeyboardArrows: true,
+                                style: {
+                                    maxWidth: "300px"
+                                },
+                                children: images.map((URL, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "slide",
+                                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                            alt: "sample_file",
+                                            src: URL
+                                        }, index, false, {
+                                            fileName: "src/ListingProp/ListingProp.jsx",
+                                            lineNumber: 51,
+                                            columnNumber: 13
+                                        }, undefined)
+                                    }, void 0, false, {
+                                        fileName: "src/ListingProp/ListingProp.jsx",
+                                        lineNumber: 50,
+                                        columnNumber: 11
+                                    }, undefined))
+                            }, void 0, false, {
+                                fileName: "src/ListingProp/ListingProp.jsx",
+                                lineNumber: 48,
+                                columnNumber: 5
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/ListingProp/ListingProp.jsx",
+                            lineNumber: 47,
+                            columnNumber: 5
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/ListingProp/ListingProp.jsx",
+                        lineNumber: 44,
+                        columnNumber: 5
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "price-section",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "price",
+                                children: "$ 1,500,000"
+                            }, void 0, false, {
+                                fileName: "src/ListingProp/ListingProp.jsx",
+                                lineNumber: 60,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "tax-info",
+                                children: " USD(incl. of all taxes)"
+                            }, void 0, false, {
+                                fileName: "src/ListingProp/ListingProp.jsx",
+                                lineNumber: 61,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/ListingProp/ListingProp.jsx",
+                        lineNumber: 59,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "description",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem tenetur, voluptatibus cupiditate id minima autem consequuntur nesciunt! Officiis similique, nisi explicabo provident perspiciatis impedit minima error quia asperiores enim in?"
+                            }, void 0, false, {
+                                fileName: "src/ListingProp/ListingProp.jsx",
+                                lineNumber: 64,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod perferendis vel quidem, iure alias exercitationem ullam saepe placeat aspernatur, accusamus fugiat harum eos culpa commodi ea quae fugit dolor mollitia?"
+                            }, void 0, false, {
+                                fileName: "src/ListingProp/ListingProp.jsx",
+                                lineNumber: 65,
+                                columnNumber: 9
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/ListingProp/ListingProp.jsx",
+                        lineNumber: 63,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Feature, {
+                        title: "Listing Status:",
+                        content: "Active"
+                    }, void 0, false, {
+                        fileName: "src/ListingProp/ListingProp.jsx",
+                        lineNumber: 68,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Feature, {
+                        title: "Presented by:",
+                        content: "Broker name"
+                    }, void 0, false, {
+                        fileName: "src/ListingProp/ListingProp.jsx",
+                        lineNumber: 69,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Feature, {
+                        title: "Appliances",
+                        content: "Central Air Conditioning, Dishwasher, Dryer, Refrigerator, Washer & Dryer."
+                    }, void 0, false, {
+                        fileName: "src/ListingProp/ListingProp.jsx",
+                        lineNumber: 70,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Feature, {
+                        title: "General Features",
+                        content: "Fireplace."
+                    }, void 0, false, {
+                        fileName: "src/ListingProp/ListingProp.jsx",
+                        lineNumber: 71,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Feature, {
+                        title: "Interior Features",
+                        content: "Elevator, Granite Counter Tops."
+                    }, void 0, false, {
+                        fileName: "src/ListingProp/ListingProp.jsx",
+                        lineNumber: 72,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Feature, {
+                        title: "Exterior Features",
+                        content: "Basketball Court, Outbuilding(s), Tennis Court(s)."
+                    }, void 0, false, {
+                        fileName: "src/ListingProp/ListingProp.jsx",
+                        lineNumber: 73,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Feature, {
+                        title: "Flooring",
+                        content: "Hardwood."
+                    }, void 0, false, {
+                        fileName: "src/ListingProp/ListingProp.jsx",
+                        lineNumber: 74,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Feature, {
+                        title: "View",
+                        content: "Panoramic, Water View."
+                    }, void 0, false, {
+                        fileName: "src/ListingProp/ListingProp.jsx",
+                        lineNumber: 75,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Feature, {
+                        title: "Heating & Cooling",
+                        content: "Electric Heating, Central air conditioning, Air exchanger."
+                    }, void 0, false, {
+                        fileName: "src/ListingProp/ListingProp.jsx",
+                        lineNumber: 76,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Feature, {
+                        title: "Amenities Nearby",
+                        content: "Locust Valley High School, Locust Valley Middle School."
+                    }, void 0, false, {
+                        fileName: "src/ListingProp/ListingProp.jsx",
+                        lineNumber: 77,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "actions",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "request-visit",
+                                children: "Request Visit"
+                            }, void 0, false, {
+                                fileName: "src/ListingProp/ListingProp.jsx",
+                                lineNumber: 82,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "save-to-fav",
+                                children: "Save to Favorite"
+                            }, void 0, false, {
+                                fileName: "src/ListingProp/ListingProp.jsx",
+                                lineNumber: 83,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/ListingProp/ListingProp.jsx",
+                        lineNumber: 81,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "property-images"
+                    }, void 0, false, {
+                        fileName: "src/ListingProp/ListingProp.jsx",
+                        lineNumber: 86,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/ListingProp/ListingProp.jsx",
+                lineNumber: 40,
+                columnNumber: 5
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/ListingProp/ListingProp.jsx",
+        lineNumber: 27,
+        columnNumber: 5
+    }, undefined);
+};
+_c1 = ListingProp;
+var _c, _c1;
+$RefreshReg$(_c, "Feature");
+$RefreshReg$(_c1, "ListingProp");
+
+  $parcel$ReactRefreshHelpers$cb2f.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"8q8AC","react-responsive-carousel":"avFxl","react-responsive-carousel/lib/styles/carousel.min.css":"2QDrW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8q8AC":[function() {},{}],"avFxl":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+Object.defineProperty(exports, "Carousel", {
+    enumerable: true,
+    get: function get() {
+        return _Carousel.default;
+    }
+});
+Object.defineProperty(exports, "CarouselProps", {
+    enumerable: true,
+    get: function get() {
+        return _types.CarouselProps;
+    }
+});
+Object.defineProperty(exports, "Thumbs", {
+    enumerable: true,
+    get: function get() {
+        return _Thumbs.default;
+    }
+});
+var _Carousel = _interopRequireDefault(require("c33098d82c8ce142"));
+var _types = require("bd9f417a95000df2");
+var _Thumbs = _interopRequireDefault(require("937256a94cd477ae"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+
+},{"c33098d82c8ce142":"io6jU","bd9f417a95000df2":"f1NKR","937256a94cd477ae":"gscvP"}],"io6jU":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireWildcard(require("e2611443e8028246"));
+var _reactEasySwipe = _interopRequireDefault(require("c9f393140c21d47c"));
+var _cssClasses = _interopRequireDefault(require("bfde4611b5f50ef5"));
+var _Thumbs = _interopRequireDefault(require("b5b4d5c8066c3b98"));
+var _document = _interopRequireDefault(require("3cc2caaea439419b"));
+var _window = _interopRequireDefault(require("6b21b5fb06ba11ba"));
+var _utils = require("f8d1320c11caaf95");
+var _animations = require("25ba500bca28f86f");
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+function _getRequireWildcardCache() {
+    if (typeof WeakMap !== "function") return null;
+    var cache = new WeakMap();
+    _getRequireWildcardCache = function _getRequireWildcardCache() {
+        return cache;
+    };
+    return cache;
+}
+function _interopRequireWildcard(obj) {
+    if (obj && obj.__esModule) return obj;
+    if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") return {
+        default: obj
+    };
+    var cache = _getRequireWildcardCache();
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {};
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj.default = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
+function _typeof(obj) {
+    "@babel/helpers - typeof";
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") _typeof = function _typeof(obj) {
+        return typeof obj;
+    };
+    else _typeof = function _typeof(obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+    return _typeof(obj);
+}
+function _extends() {
+    _extends = Object.assign || function(target) {
+        for(var i = 1; i < arguments.length; i++){
+            var source = arguments[i];
+            for(var key in source)if (Object.prototype.hasOwnProperty.call(source, key)) target[key] = source[key];
+        }
+        return target;
+    };
+    return _extends.apply(this, arguments);
+}
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) symbols = symbols.filter(function(sym) {
+            return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+        });
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _objectSpread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        if (i % 2) ownKeys(Object(source), true).forEach(function(key) {
+            _defineProperty(target, key, source[key]);
+        });
+        else if (Object.getOwnPropertyDescriptors) Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+        else ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function _defineProperties(target, props) {
+    for(var i = 0; i < props.length; i++){
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+    }
+}
+function _createClass(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    return Constructor;
+}
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function");
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            writable: true,
+            configurable: true
+        }
+    });
+    if (superClass) _setPrototypeOf(subClass, superClass);
+}
+function _setPrototypeOf(o, p) {
+    _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+        o.__proto__ = p;
+        return o;
+    };
+    return _setPrototypeOf(o, p);
+}
+function _createSuper(Derived) {
+    var hasNativeReflectConstruct = _isNativeReflectConstruct();
+    return function _createSuperInternal() {
+        var Super = _getPrototypeOf(Derived), result;
+        if (hasNativeReflectConstruct) {
+            var NewTarget = _getPrototypeOf(this).constructor;
+            result = Reflect.construct(Super, arguments, NewTarget);
+        } else result = Super.apply(this, arguments);
+        return _possibleConstructorReturn(this, result);
+    };
+}
+function _possibleConstructorReturn(self, call) {
+    if (call && (_typeof(call) === "object" || typeof call === "function")) return call;
+    return _assertThisInitialized(self);
+}
+function _assertThisInitialized(self) {
+    if (self === void 0) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return self;
+}
+function _isNativeReflectConstruct() {
+    if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+    if (Reflect.construct.sham) return false;
+    if (typeof Proxy === "function") return true;
+    try {
+        Date.prototype.toString.call(Reflect.construct(Date, [], function() {}));
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+function _getPrototypeOf(o) {
+    _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+        return o.__proto__ || Object.getPrototypeOf(o);
+    };
+    return _getPrototypeOf(o);
+}
+function _defineProperty(obj, key, value) {
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+}
+var Carousel = /*#__PURE__*/ function(_React$Component) {
+    _inherits(Carousel, _React$Component);
+    var _super = _createSuper(Carousel);
+    // @ts-ignore
+    function Carousel(props) {
+        var _this;
+        _classCallCheck(this, Carousel);
+        _this = _super.call(this, props);
+        _defineProperty(_assertThisInitialized(_this), "thumbsRef", void 0);
+        _defineProperty(_assertThisInitialized(_this), "carouselWrapperRef", void 0);
+        _defineProperty(_assertThisInitialized(_this), "listRef", void 0);
+        _defineProperty(_assertThisInitialized(_this), "itemsRef", void 0);
+        _defineProperty(_assertThisInitialized(_this), "timer", void 0);
+        _defineProperty(_assertThisInitialized(_this), "animationHandler", void 0);
+        _defineProperty(_assertThisInitialized(_this), "setThumbsRef", function(node) {
+            _this.thumbsRef = node;
+        });
+        _defineProperty(_assertThisInitialized(_this), "setCarouselWrapperRef", function(node) {
+            _this.carouselWrapperRef = node;
+        });
+        _defineProperty(_assertThisInitialized(_this), "setListRef", function(node) {
+            _this.listRef = node;
+        });
+        _defineProperty(_assertThisInitialized(_this), "setItemsRef", function(node, index) {
+            if (!_this.itemsRef) _this.itemsRef = [];
+            _this.itemsRef[index] = node;
+        });
+        _defineProperty(_assertThisInitialized(_this), "autoPlay", function() {
+            if (_react.Children.count(_this.props.children) <= 1) return;
+            _this.clearAutoPlay();
+            if (!_this.props.autoPlay) return;
+            _this.timer = setTimeout(function() {
+                _this.increment();
+            }, _this.props.interval);
+        });
+        _defineProperty(_assertThisInitialized(_this), "clearAutoPlay", function() {
+            if (_this.timer) clearTimeout(_this.timer);
+        });
+        _defineProperty(_assertThisInitialized(_this), "resetAutoPlay", function() {
+            _this.clearAutoPlay();
+            _this.autoPlay();
+        });
+        _defineProperty(_assertThisInitialized(_this), "stopOnHover", function() {
+            _this.setState({
+                isMouseEntered: true
+            }, _this.clearAutoPlay);
+        });
+        _defineProperty(_assertThisInitialized(_this), "startOnLeave", function() {
+            _this.setState({
+                isMouseEntered: false
+            }, _this.autoPlay);
+        });
+        _defineProperty(_assertThisInitialized(_this), "isFocusWithinTheCarousel", function() {
+            if (!_this.carouselWrapperRef) return false;
+            if ((0, _document.default)().activeElement === _this.carouselWrapperRef || _this.carouselWrapperRef.contains((0, _document.default)().activeElement)) return true;
+            return false;
+        });
+        _defineProperty(_assertThisInitialized(_this), "navigateWithKeyboard", function(e) {
+            if (!_this.isFocusWithinTheCarousel()) return;
+            var axis = _this.props.axis;
+            var isHorizontal = axis === "horizontal";
+            var keyNames = {
+                ArrowUp: 38,
+                ArrowRight: 39,
+                ArrowDown: 40,
+                ArrowLeft: 37
+            };
+            var nextKey = isHorizontal ? keyNames.ArrowRight : keyNames.ArrowDown;
+            var prevKey = isHorizontal ? keyNames.ArrowLeft : keyNames.ArrowUp;
+            if (nextKey === e.keyCode) _this.increment();
+            else if (prevKey === e.keyCode) _this.decrement();
+        });
+        _defineProperty(_assertThisInitialized(_this), "updateSizes", function() {
+            if (!_this.state.initialized || !_this.itemsRef || _this.itemsRef.length === 0) return;
+            var isHorizontal = _this.props.axis === "horizontal";
+            var firstItem = _this.itemsRef[0];
+            if (!firstItem) return;
+            var itemSize = isHorizontal ? firstItem.clientWidth : firstItem.clientHeight;
+            _this.setState({
+                itemSize: itemSize
+            });
+            if (_this.thumbsRef) _this.thumbsRef.updateSizes();
+        });
+        _defineProperty(_assertThisInitialized(_this), "setMountState", function() {
+            _this.setState({
+                hasMount: true
+            });
+            _this.updateSizes();
+        });
+        _defineProperty(_assertThisInitialized(_this), "handleClickItem", function(index, item) {
+            if (_react.Children.count(_this.props.children) === 0) return;
+            if (_this.state.cancelClick) {
+                _this.setState({
+                    cancelClick: false
+                });
+                return;
+            }
+            _this.props.onClickItem(index, item);
+            if (index !== _this.state.selectedItem) _this.setState({
+                selectedItem: index
+            });
+        });
+        _defineProperty(_assertThisInitialized(_this), "handleOnChange", function(index, item) {
+            if (_react.Children.count(_this.props.children) <= 1) return;
+            _this.props.onChange(index, item);
+        });
+        _defineProperty(_assertThisInitialized(_this), "handleClickThumb", function(index, item) {
+            _this.props.onClickThumb(index, item);
+            _this.moveTo(index);
+        });
+        _defineProperty(_assertThisInitialized(_this), "onSwipeStart", function(event) {
+            _this.setState({
+                swiping: true
+            });
+            _this.props.onSwipeStart(event);
+        });
+        _defineProperty(_assertThisInitialized(_this), "onSwipeEnd", function(event) {
+            _this.setState({
+                swiping: false,
+                cancelClick: false,
+                swipeMovementStarted: false
+            });
+            _this.props.onSwipeEnd(event);
+            _this.clearAutoPlay();
+            if (_this.state.autoPlay) _this.autoPlay();
+        });
+        _defineProperty(_assertThisInitialized(_this), "onSwipeMove", function(delta, event) {
+            _this.props.onSwipeMove(event);
+            var animationHandlerResponse = _this.props.swipeAnimationHandler(delta, _this.props, _this.state, _this.setState.bind(_assertThisInitialized(_this)));
+            _this.setState(_objectSpread({}, animationHandlerResponse)); // If we have not moved, we should have an empty object returned
+            // Return false to allow scrolling when not swiping
+            return !!Object.keys(animationHandlerResponse).length;
+        });
+        _defineProperty(_assertThisInitialized(_this), "decrement", function() {
+            var positions = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+            _this.moveTo(_this.state.selectedItem - (typeof positions === "number" ? positions : 1));
+        });
+        _defineProperty(_assertThisInitialized(_this), "increment", function() {
+            var positions = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 1;
+            _this.moveTo(_this.state.selectedItem + (typeof positions === "number" ? positions : 1));
+        });
+        _defineProperty(_assertThisInitialized(_this), "moveTo", function(position) {
+            if (typeof position !== "number") return;
+            var lastPosition = _react.Children.count(_this.props.children) - 1;
+            if (position < 0) position = _this.props.infiniteLoop ? lastPosition : 0;
+            if (position > lastPosition) position = _this.props.infiniteLoop ? 0 : lastPosition;
+            _this.selectItem({
+                // if it's not a slider, we don't need to set position here
+                selectedItem: position
+            }); // don't reset auto play when stop on hover is enabled, doing so will trigger a call to auto play more than once
+            // and will result in the interval function not being cleared correctly.
+            if (_this.state.autoPlay && _this.state.isMouseEntered === false) _this.resetAutoPlay();
+        });
+        _defineProperty(_assertThisInitialized(_this), "onClickNext", function() {
+            _this.increment(1);
+        });
+        _defineProperty(_assertThisInitialized(_this), "onClickPrev", function() {
+            _this.decrement(1);
+        });
+        _defineProperty(_assertThisInitialized(_this), "onSwipeForward", function() {
+            _this.increment(1);
+            if (_this.props.emulateTouch) _this.setState({
+                cancelClick: true
+            });
+        });
+        _defineProperty(_assertThisInitialized(_this), "onSwipeBackwards", function() {
+            _this.decrement(1);
+            if (_this.props.emulateTouch) _this.setState({
+                cancelClick: true
+            });
+        });
+        _defineProperty(_assertThisInitialized(_this), "changeItem", function(newIndex) {
+            return function(e) {
+                if (!(0, _utils.isKeyboardEvent)(e) || e.key === "Enter") _this.moveTo(newIndex);
+            };
+        });
+        _defineProperty(_assertThisInitialized(_this), "selectItem", function(state) {
+            // Merge in the new state while updating updating previous item
+            _this.setState(_objectSpread({
+                previousItem: _this.state.selectedItem
+            }, state), function() {
+                // Run animation handler and update styles based on it
+                _this.setState(_this.animationHandler(_this.props, _this.state));
+            });
+            _this.handleOnChange(state.selectedItem, _react.Children.toArray(_this.props.children)[state.selectedItem]);
+        });
+        _defineProperty(_assertThisInitialized(_this), "getInitialImage", function() {
+            var selectedItem = _this.props.selectedItem;
+            var item = _this.itemsRef && _this.itemsRef[selectedItem];
+            var images = item && item.getElementsByTagName("img") || [];
+            return images[0];
+        });
+        _defineProperty(_assertThisInitialized(_this), "getVariableItemHeight", function(position) {
+            var item = _this.itemsRef && _this.itemsRef[position];
+            if (_this.state.hasMount && item && item.children.length) {
+                var slideImages = item.children[0].getElementsByTagName("img") || [];
+                if (slideImages.length > 0) {
+                    var image = slideImages[0];
+                    if (!image.complete) {
+                        // if the image is still loading, the size won't be available so we trigger a new render after it's done
+                        var onImageLoad = function onImageLoad() {
+                            _this.forceUpdate();
+                            image.removeEventListener("load", onImageLoad);
+                        };
+                        image.addEventListener("load", onImageLoad);
+                    }
+                } // try to get img first, if img not there find first display tag
+                var displayItem = slideImages[0] || item.children[0];
+                var height = displayItem.clientHeight;
+                return height > 0 ? height : null;
+            }
+            return null;
+        });
+        var initState = {
+            initialized: false,
+            previousItem: props.selectedItem,
+            selectedItem: props.selectedItem,
+            hasMount: false,
+            isMouseEntered: false,
+            autoPlay: props.autoPlay,
+            swiping: false,
+            swipeMovementStarted: false,
+            cancelClick: false,
+            itemSize: 1,
+            itemListStyle: {},
+            slideStyle: {},
+            selectedStyle: {},
+            prevStyle: {}
+        };
+        _this.animationHandler = typeof props.animationHandler === "function" && props.animationHandler || props.animationHandler === "fade" && _animations.fadeAnimationHandler || _animations.slideAnimationHandler;
+        _this.state = _objectSpread(_objectSpread({}, initState), _this.animationHandler(props, initState));
+        return _this;
+    }
+    _createClass(Carousel, [
+        {
+            key: "componentDidMount",
+            value: function componentDidMount() {
+                if (!this.props.children) return;
+                this.setupCarousel();
+            }
+        },
+        {
+            key: "componentDidUpdate",
+            value: function componentDidUpdate(prevProps, prevState) {
+                if (!prevProps.children && this.props.children && !this.state.initialized) this.setupCarousel();
+                if (!prevProps.autoFocus && this.props.autoFocus) this.forceFocus();
+                if (prevState.swiping && !this.state.swiping) // We stopped swiping, ensure we are heading to the new/current slide and not stuck
+                this.setState(_objectSpread({}, this.props.stopSwipingHandler(this.props, this.state)));
+                if (prevProps.selectedItem !== this.props.selectedItem || prevProps.centerMode !== this.props.centerMode) {
+                    this.updateSizes();
+                    this.moveTo(this.props.selectedItem);
+                }
+                if (prevProps.autoPlay !== this.props.autoPlay) {
+                    if (this.props.autoPlay) this.setupAutoPlay();
+                    else this.destroyAutoPlay();
+                    this.setState({
+                        autoPlay: this.props.autoPlay
+                    });
+                }
+            }
+        },
+        {
+            key: "componentWillUnmount",
+            value: function componentWillUnmount() {
+                this.destroyCarousel();
+            }
+        },
+        {
+            key: "setupCarousel",
+            value: function setupCarousel() {
+                var _this2 = this;
+                this.bindEvents();
+                if (this.state.autoPlay && _react.Children.count(this.props.children) > 1) this.setupAutoPlay();
+                if (this.props.autoFocus) this.forceFocus();
+                this.setState({
+                    initialized: true
+                }, function() {
+                    var initialImage = _this2.getInitialImage();
+                    if (initialImage && !initialImage.complete) // if it's a carousel of images, we set the mount state after the first image is loaded
+                    initialImage.addEventListener("load", _this2.setMountState);
+                    else _this2.setMountState();
+                });
+            }
+        },
+        {
+            key: "destroyCarousel",
+            value: function destroyCarousel() {
+                if (this.state.initialized) {
+                    this.unbindEvents();
+                    this.destroyAutoPlay();
+                }
+            }
+        },
+        {
+            key: "setupAutoPlay",
+            value: function setupAutoPlay() {
+                this.autoPlay();
+                var carouselWrapper = this.carouselWrapperRef;
+                if (this.props.stopOnHover && carouselWrapper) {
+                    carouselWrapper.addEventListener("mouseenter", this.stopOnHover);
+                    carouselWrapper.addEventListener("mouseleave", this.startOnLeave);
+                }
+            }
+        },
+        {
+            key: "destroyAutoPlay",
+            value: function destroyAutoPlay() {
+                this.clearAutoPlay();
+                var carouselWrapper = this.carouselWrapperRef;
+                if (this.props.stopOnHover && carouselWrapper) {
+                    carouselWrapper.removeEventListener("mouseenter", this.stopOnHover);
+                    carouselWrapper.removeEventListener("mouseleave", this.startOnLeave);
+                }
+            }
+        },
+        {
+            key: "bindEvents",
+            value: function bindEvents() {
+                // as the widths are calculated, we need to resize
+                // the carousel when the window is resized
+                (0, _window.default)().addEventListener("resize", this.updateSizes); // issue #2 - image loading smaller
+                (0, _window.default)().addEventListener("DOMContentLoaded", this.updateSizes);
+                if (this.props.useKeyboardArrows) (0, _document.default)().addEventListener("keydown", this.navigateWithKeyboard);
+            }
+        },
+        {
+            key: "unbindEvents",
+            value: function unbindEvents() {
+                // removing listeners
+                (0, _window.default)().removeEventListener("resize", this.updateSizes);
+                (0, _window.default)().removeEventListener("DOMContentLoaded", this.updateSizes);
+                var initialImage = this.getInitialImage();
+                if (initialImage) initialImage.removeEventListener("load", this.setMountState);
+                if (this.props.useKeyboardArrows) (0, _document.default)().removeEventListener("keydown", this.navigateWithKeyboard);
+            }
+        },
+        {
+            key: "forceFocus",
+            value: function forceFocus() {
+                var _this$carouselWrapper;
+                (_this$carouselWrapper = this.carouselWrapperRef) === null || _this$carouselWrapper === void 0 || _this$carouselWrapper.focus();
+            }
+        },
+        {
+            key: "renderItems",
+            value: function renderItems(isClone) {
+                var _this3 = this;
+                if (!this.props.children) return [];
+                return _react.Children.map(this.props.children, function(item, index) {
+                    var isSelected = index === _this3.state.selectedItem;
+                    var isPrevious = index === _this3.state.previousItem;
+                    var style = isSelected && _this3.state.selectedStyle || isPrevious && _this3.state.prevStyle || _this3.state.slideStyle || {};
+                    if (_this3.props.centerMode && _this3.props.axis === "horizontal") style = _objectSpread(_objectSpread({}, style), {}, {
+                        minWidth: _this3.props.centerSlidePercentage + "%"
+                    });
+                    if (_this3.state.swiping && _this3.state.swipeMovementStarted) style = _objectSpread(_objectSpread({}, style), {}, {
+                        pointerEvents: "none"
+                    });
+                    var slideProps = {
+                        ref: function ref(e) {
+                            return _this3.setItemsRef(e, index);
+                        },
+                        key: "itemKey" + index + (isClone ? "clone" : ""),
+                        className: _cssClasses.default.ITEM(true, index === _this3.state.selectedItem, index === _this3.state.previousItem),
+                        onClick: _this3.handleClickItem.bind(_this3, index, item),
+                        style: style
+                    };
+                    return /*#__PURE__*/ _react.default.createElement("li", slideProps, _this3.props.renderItem(item, {
+                        isSelected: index === _this3.state.selectedItem,
+                        isPrevious: index === _this3.state.previousItem
+                    }));
+                });
+            }
+        },
+        {
+            key: "renderControls",
+            value: function renderControls() {
+                var _this4 = this;
+                var _this$props = this.props, showIndicators = _this$props.showIndicators, labels = _this$props.labels, renderIndicator = _this$props.renderIndicator, children = _this$props.children;
+                if (!showIndicators) return null;
+                return /*#__PURE__*/ _react.default.createElement("ul", {
+                    className: "control-dots"
+                }, _react.Children.map(children, function(_, index) {
+                    return renderIndicator && renderIndicator(_this4.changeItem(index), index === _this4.state.selectedItem, index, labels.item);
+                }));
+            }
+        },
+        {
+            key: "renderStatus",
+            value: function renderStatus() {
+                if (!this.props.showStatus) return null;
+                return /*#__PURE__*/ _react.default.createElement("p", {
+                    className: "carousel-status"
+                }, this.props.statusFormatter(this.state.selectedItem + 1, _react.Children.count(this.props.children)));
+            }
+        },
+        {
+            key: "renderThumbs",
+            value: function renderThumbs() {
+                if (!this.props.showThumbs || !this.props.children || _react.Children.count(this.props.children) === 0) return null;
+                return /*#__PURE__*/ _react.default.createElement(_Thumbs.default, {
+                    ref: this.setThumbsRef,
+                    onSelectItem: this.handleClickThumb,
+                    selectedItem: this.state.selectedItem,
+                    transitionTime: this.props.transitionTime,
+                    thumbWidth: this.props.thumbWidth,
+                    labels: this.props.labels,
+                    emulateTouch: this.props.emulateTouch
+                }, this.props.renderThumbs(this.props.children));
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                var _this5 = this;
+                if (!this.props.children || _react.Children.count(this.props.children) === 0) return null;
+                var isSwipeable = this.props.swipeable && _react.Children.count(this.props.children) > 1;
+                var isHorizontal = this.props.axis === "horizontal";
+                var canShowArrows = this.props.showArrows && _react.Children.count(this.props.children) > 1; // show left arrow?
+                var hasPrev = canShowArrows && (this.state.selectedItem > 0 || this.props.infiniteLoop) || false; // show right arrow
+                var hasNext = canShowArrows && (this.state.selectedItem < _react.Children.count(this.props.children) - 1 || this.props.infiniteLoop) || false;
+                var itemsClone = this.renderItems(true);
+                var firstClone = itemsClone.shift();
+                var lastClone = itemsClone.pop();
+                var swiperProps = {
+                    className: _cssClasses.default.SLIDER(true, this.state.swiping),
+                    onSwipeMove: this.onSwipeMove,
+                    onSwipeStart: this.onSwipeStart,
+                    onSwipeEnd: this.onSwipeEnd,
+                    style: this.state.itemListStyle,
+                    tolerance: this.props.swipeScrollTolerance
+                };
+                var containerStyles = {};
+                if (isHorizontal) {
+                    swiperProps.onSwipeLeft = this.onSwipeForward;
+                    swiperProps.onSwipeRight = this.onSwipeBackwards;
+                    if (this.props.dynamicHeight) {
+                        var itemHeight = this.getVariableItemHeight(this.state.selectedItem); // swiperProps.style.height = itemHeight || 'auto';
+                        containerStyles.height = itemHeight || "auto";
+                    }
+                } else {
+                    swiperProps.onSwipeUp = this.props.verticalSwipe === "natural" ? this.onSwipeBackwards : this.onSwipeForward;
+                    swiperProps.onSwipeDown = this.props.verticalSwipe === "natural" ? this.onSwipeForward : this.onSwipeBackwards;
+                    swiperProps.style = _objectSpread(_objectSpread({}, swiperProps.style), {}, {
+                        height: this.state.itemSize
+                    });
+                    containerStyles.height = this.state.itemSize;
+                }
+                return /*#__PURE__*/ _react.default.createElement("div", {
+                    "aria-label": this.props.ariaLabel,
+                    className: _cssClasses.default.ROOT(this.props.className),
+                    ref: this.setCarouselWrapperRef,
+                    tabIndex: this.props.useKeyboardArrows ? 0 : undefined
+                }, /*#__PURE__*/ _react.default.createElement("div", {
+                    className: _cssClasses.default.CAROUSEL(true),
+                    style: {
+                        width: this.props.width
+                    }
+                }, this.renderControls(), this.props.renderArrowPrev(this.onClickPrev, hasPrev, this.props.labels.leftArrow), /*#__PURE__*/ _react.default.createElement("div", {
+                    className: _cssClasses.default.WRAPPER(true, this.props.axis),
+                    style: containerStyles
+                }, isSwipeable ? /*#__PURE__*/ _react.default.createElement(_reactEasySwipe.default, _extends({
+                    tagName: "ul",
+                    innerRef: this.setListRef
+                }, swiperProps, {
+                    allowMouseEvents: this.props.emulateTouch
+                }), this.props.infiniteLoop && lastClone, this.renderItems(), this.props.infiniteLoop && firstClone) : /*#__PURE__*/ _react.default.createElement("ul", {
+                    className: _cssClasses.default.SLIDER(true, this.state.swiping),
+                    ref: function ref(node) {
+                        return _this5.setListRef(node);
+                    },
+                    style: this.state.itemListStyle || {}
+                }, this.props.infiniteLoop && lastClone, this.renderItems(), this.props.infiniteLoop && firstClone)), this.props.renderArrowNext(this.onClickNext, hasNext, this.props.labels.rightArrow), this.renderStatus()), this.renderThumbs());
+            }
+        }
+    ]);
+    return Carousel;
+}(_react.default.Component);
+exports.default = Carousel;
+_defineProperty(Carousel, "displayName", "Carousel");
+_defineProperty(Carousel, "defaultProps", {
+    ariaLabel: undefined,
+    axis: "horizontal",
+    centerSlidePercentage: 80,
+    interval: 3000,
+    labels: {
+        leftArrow: "previous slide / item",
+        rightArrow: "next slide / item",
+        item: "slide item"
+    },
+    onClickItem: _utils.noop,
+    onClickThumb: _utils.noop,
+    onChange: _utils.noop,
+    onSwipeStart: function onSwipeStart() {},
+    onSwipeEnd: function onSwipeEnd() {},
+    onSwipeMove: function onSwipeMove() {
+        return false;
+    },
+    preventMovementUntilSwipeScrollTolerance: false,
+    renderArrowPrev: function renderArrowPrev(onClickHandler, hasPrev, label) {
+        return /*#__PURE__*/ _react.default.createElement("button", {
+            type: "button",
+            "aria-label": label,
+            className: _cssClasses.default.ARROW_PREV(!hasPrev),
+            onClick: onClickHandler
+        });
+    },
+    renderArrowNext: function renderArrowNext(onClickHandler, hasNext, label) {
+        return /*#__PURE__*/ _react.default.createElement("button", {
+            type: "button",
+            "aria-label": label,
+            className: _cssClasses.default.ARROW_NEXT(!hasNext),
+            onClick: onClickHandler
+        });
+    },
+    renderIndicator: function renderIndicator(onClickHandler, isSelected, index, label) {
+        return /*#__PURE__*/ _react.default.createElement("li", {
+            className: _cssClasses.default.DOT(isSelected),
+            onClick: onClickHandler,
+            onKeyDown: onClickHandler,
+            value: index,
+            key: index,
+            role: "button",
+            tabIndex: 0,
+            "aria-label": "".concat(label, " ").concat(index + 1)
+        });
+    },
+    renderItem: function renderItem(item) {
+        return item;
+    },
+    renderThumbs: function renderThumbs(children) {
+        var images = _react.Children.map(children, function(item) {
+            var img = item; // if the item is not an image, try to find the first image in the item's children.
+            if (item.type !== "img") img = _react.Children.toArray(item.props.children).find(function(children) {
+                return children.type === "img";
+            });
+            if (!img) return undefined;
+            return img;
+        });
+        if (images.filter(function(image) {
+            return image;
+        }).length === 0) {
+            console.warn("No images found! Can't build the thumb list without images. If you don't need thumbs, set showThumbs={false} in the Carousel. Note that it's not possible to get images rendered inside custom components. More info at https://github.com/leandrowd/react-responsive-carousel/blob/master/TROUBLESHOOTING.md");
+            return [];
+        }
+        return images;
+    },
+    statusFormatter: _utils.defaultStatusFormatter,
+    selectedItem: 0,
+    showArrows: true,
+    showIndicators: true,
+    showStatus: true,
+    showThumbs: true,
+    stopOnHover: true,
+    swipeScrollTolerance: 5,
+    swipeable: true,
+    transitionTime: 350,
+    verticalSwipe: "standard",
+    width: "100%",
+    animationHandler: "slide",
+    swipeAnimationHandler: _animations.slideSwipeAnimationHandler,
+    stopSwipingHandler: _animations.slideStopSwipingHandler
+});
+
+},{"e2611443e8028246":"21dqq","c9f393140c21d47c":"drRTj","bfde4611b5f50ef5":"hYm5y","b5b4d5c8066c3b98":"gscvP","3cc2caaea439419b":"dNmdd","6b21b5fb06ba11ba":"l0TRr","f8d1320c11caaf95":"aHp0r","25ba500bca28f86f":"P35rV"}],"drRTj":[function(require,module,exports) {
+(function(global, factory) {
+    if (typeof define === "function" && define.amd) define([
+        "exports",
+        "./react-swipe"
+    ], factory);
+    else {
+        var mod;
+        factory(exports, require("dbf559a38a8c3be0"));
+    }
+})(this, function(exports1, _reactSwipe) {
+    "use strict";
+    Object.defineProperty(exports1, "__esModule", {
+        value: true
+    });
+    var _reactSwipe2 = _interopRequireDefault(_reactSwipe);
+    function _interopRequireDefault(obj) {
+        return obj && obj.__esModule ? obj : {
+            default: obj
+        };
+    }
+    exports1.default = _reactSwipe2.default;
+});
+
+},{"dbf559a38a8c3be0":"cmj6I"}],"cmj6I":[function(require,module,exports) {
+(function(global, factory) {
+    if (typeof define === "function" && define.amd) define([
+        "exports",
+        "react",
+        "prop-types"
+    ], factory);
+    else {
+        var mod;
+        factory(exports, require("f4303922a055a6cd"), require("a45b0606b32d2698"));
+    }
+})(this, function(exports1, _react, _propTypes) {
+    "use strict";
+    Object.defineProperty(exports1, "__esModule", {
+        value: true
+    });
+    exports1.setHasSupportToCaptureOption = setHasSupportToCaptureOption;
+    var _react2 = _interopRequireDefault(_react);
+    var _propTypes2 = _interopRequireDefault(_propTypes);
+    function _interopRequireDefault(obj) {
+        return obj && obj.__esModule ? obj : {
+            default: obj
+        };
+    }
+    var _extends = Object.assign || function(target) {
+        for(var i = 1; i < arguments.length; i++){
+            var source = arguments[i];
+            for(var key in source)if (Object.prototype.hasOwnProperty.call(source, key)) target[key] = source[key];
+        }
+        return target;
+    };
+    function _objectWithoutProperties(obj, keys) {
+        var target = {};
+        for(var i in obj){
+            if (keys.indexOf(i) >= 0) continue;
+            if (!Object.prototype.hasOwnProperty.call(obj, i)) continue;
+            target[i] = obj[i];
+        }
+        return target;
+    }
+    function _classCallCheck(instance, Constructor) {
+        if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+    }
+    var _createClass = function() {
+        function defineProperties(target, props) {
+            for(var i = 0; i < props.length; i++){
+                var descriptor = props[i];
+                descriptor.enumerable = descriptor.enumerable || false;
+                descriptor.configurable = true;
+                if ("value" in descriptor) descriptor.writable = true;
+                Object.defineProperty(target, descriptor.key, descriptor);
+            }
+        }
+        return function(Constructor, protoProps, staticProps) {
+            if (protoProps) defineProperties(Constructor.prototype, protoProps);
+            if (staticProps) defineProperties(Constructor, staticProps);
+            return Constructor;
+        };
+    }();
+    function _possibleConstructorReturn(self, call) {
+        if (!self) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+        return call && (typeof call === "object" || typeof call === "function") ? call : self;
+    }
+    function _inherits(subClass, superClass) {
+        if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function, not " + typeof superClass);
+        subClass.prototype = Object.create(superClass && superClass.prototype, {
+            constructor: {
+                value: subClass,
+                enumerable: false,
+                writable: true,
+                configurable: true
+            }
+        });
+        if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass;
+    }
+    var supportsCaptureOption = false;
+    function setHasSupportToCaptureOption(hasSupport) {
+        supportsCaptureOption = hasSupport;
+    }
+    try {
+        addEventListener("test", null, Object.defineProperty({}, "capture", {
+            get: function get() {
+                setHasSupportToCaptureOption(true);
+            }
+        }));
+    } catch (e) {} // eslint-disable-line no-empty
+    function getSafeEventHandlerOpts() {
+        var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {
+            capture: true
+        };
+        return supportsCaptureOption ? options : options.capture;
+    }
+    /**
+   * [getPosition returns a position element that works for mouse or touch events]
+   * @param  {[Event]} event [the received event]
+   * @return {[Object]}      [x and y coords]
+   */ function getPosition(event) {
+        if ("touches" in event) {
+            var _event$touches$ = event.touches[0], pageX = _event$touches$.pageX, pageY = _event$touches$.pageY;
+            return {
+                x: pageX,
+                y: pageY
+            };
+        }
+        var screenX = event.screenX, screenY = event.screenY;
+        return {
+            x: screenX,
+            y: screenY
+        };
+    }
+    var ReactSwipe = function(_Component) {
+        _inherits(ReactSwipe, _Component);
+        function ReactSwipe() {
+            var _ref;
+            _classCallCheck(this, ReactSwipe);
+            for(var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++)args[_key] = arguments[_key];
+            var _this = _possibleConstructorReturn(this, (_ref = ReactSwipe.__proto__ || Object.getPrototypeOf(ReactSwipe)).call.apply(_ref, [
+                this
+            ].concat(args)));
+            _this._handleSwipeStart = _this._handleSwipeStart.bind(_this);
+            _this._handleSwipeMove = _this._handleSwipeMove.bind(_this);
+            _this._handleSwipeEnd = _this._handleSwipeEnd.bind(_this);
+            _this._onMouseDown = _this._onMouseDown.bind(_this);
+            _this._onMouseMove = _this._onMouseMove.bind(_this);
+            _this._onMouseUp = _this._onMouseUp.bind(_this);
+            _this._setSwiperRef = _this._setSwiperRef.bind(_this);
+            return _this;
+        }
+        _createClass(ReactSwipe, [
+            {
+                key: "componentDidMount",
+                value: function componentDidMount() {
+                    if (this.swiper) this.swiper.addEventListener("touchmove", this._handleSwipeMove, getSafeEventHandlerOpts({
+                        capture: true,
+                        passive: false
+                    }));
+                }
+            },
+            {
+                key: "componentWillUnmount",
+                value: function componentWillUnmount() {
+                    if (this.swiper) this.swiper.removeEventListener("touchmove", this._handleSwipeMove, getSafeEventHandlerOpts({
+                        capture: true,
+                        passive: false
+                    }));
+                }
+            },
+            {
+                key: "_onMouseDown",
+                value: function _onMouseDown(event) {
+                    if (!this.props.allowMouseEvents) return;
+                    this.mouseDown = true;
+                    document.addEventListener("mouseup", this._onMouseUp);
+                    document.addEventListener("mousemove", this._onMouseMove);
+                    this._handleSwipeStart(event);
+                }
+            },
+            {
+                key: "_onMouseMove",
+                value: function _onMouseMove(event) {
+                    if (!this.mouseDown) return;
+                    this._handleSwipeMove(event);
+                }
+            },
+            {
+                key: "_onMouseUp",
+                value: function _onMouseUp(event) {
+                    this.mouseDown = false;
+                    document.removeEventListener("mouseup", this._onMouseUp);
+                    document.removeEventListener("mousemove", this._onMouseMove);
+                    this._handleSwipeEnd(event);
+                }
+            },
+            {
+                key: "_handleSwipeStart",
+                value: function _handleSwipeStart(event) {
+                    var _getPosition = getPosition(event), x = _getPosition.x, y = _getPosition.y;
+                    this.moveStart = {
+                        x: x,
+                        y: y
+                    };
+                    this.props.onSwipeStart(event);
+                }
+            },
+            {
+                key: "_handleSwipeMove",
+                value: function _handleSwipeMove(event) {
+                    if (!this.moveStart) return;
+                    var _getPosition2 = getPosition(event), x = _getPosition2.x, y = _getPosition2.y;
+                    var deltaX = x - this.moveStart.x;
+                    var deltaY = y - this.moveStart.y;
+                    this.moving = true;
+                    // handling the responsability of cancelling the scroll to
+                    // the component handling the event
+                    var shouldPreventDefault = this.props.onSwipeMove({
+                        x: deltaX,
+                        y: deltaY
+                    }, event);
+                    if (shouldPreventDefault && event.cancelable) event.preventDefault();
+                    this.movePosition = {
+                        deltaX: deltaX,
+                        deltaY: deltaY
+                    };
+                }
+            },
+            {
+                key: "_handleSwipeEnd",
+                value: function _handleSwipeEnd(event) {
+                    this.props.onSwipeEnd(event);
+                    var tolerance = this.props.tolerance;
+                    if (this.moving && this.movePosition) {
+                        if (this.movePosition.deltaX < -tolerance) this.props.onSwipeLeft(1, event);
+                        else if (this.movePosition.deltaX > tolerance) this.props.onSwipeRight(1, event);
+                        if (this.movePosition.deltaY < -tolerance) this.props.onSwipeUp(1, event);
+                        else if (this.movePosition.deltaY > tolerance) this.props.onSwipeDown(1, event);
+                    }
+                    this.moveStart = null;
+                    this.moving = false;
+                    this.movePosition = null;
+                }
+            },
+            {
+                key: "_setSwiperRef",
+                value: function _setSwiperRef(node) {
+                    this.swiper = node;
+                    this.props.innerRef(node);
+                }
+            },
+            {
+                key: "render",
+                value: function render() {
+                    var _props = this.props, tagName = _props.tagName, className = _props.className, style = _props.style, children = _props.children, allowMouseEvents = _props.allowMouseEvents, onSwipeUp = _props.onSwipeUp, onSwipeDown = _props.onSwipeDown, onSwipeLeft = _props.onSwipeLeft, onSwipeRight = _props.onSwipeRight, onSwipeStart = _props.onSwipeStart, onSwipeMove = _props.onSwipeMove, onSwipeEnd = _props.onSwipeEnd, innerRef = _props.innerRef, tolerance = _props.tolerance, props = _objectWithoutProperties(_props, [
+                        "tagName",
+                        "className",
+                        "style",
+                        "children",
+                        "allowMouseEvents",
+                        "onSwipeUp",
+                        "onSwipeDown",
+                        "onSwipeLeft",
+                        "onSwipeRight",
+                        "onSwipeStart",
+                        "onSwipeMove",
+                        "onSwipeEnd",
+                        "innerRef",
+                        "tolerance"
+                    ]);
+                    return _react2.default.createElement(this.props.tagName, _extends({
+                        ref: this._setSwiperRef,
+                        onMouseDown: this._onMouseDown,
+                        onTouchStart: this._handleSwipeStart,
+                        onTouchEnd: this._handleSwipeEnd,
+                        className: className,
+                        style: style
+                    }, props), children);
+                }
+            }
+        ]);
+        return ReactSwipe;
+    }(_react.Component);
+    ReactSwipe.displayName = "ReactSwipe";
+    ReactSwipe.propTypes = {
+        tagName: _propTypes2.default.string,
+        className: _propTypes2.default.string,
+        style: _propTypes2.default.object,
+        children: _propTypes2.default.node,
+        allowMouseEvents: _propTypes2.default.bool,
+        onSwipeUp: _propTypes2.default.func,
+        onSwipeDown: _propTypes2.default.func,
+        onSwipeLeft: _propTypes2.default.func,
+        onSwipeRight: _propTypes2.default.func,
+        onSwipeStart: _propTypes2.default.func,
+        onSwipeMove: _propTypes2.default.func,
+        onSwipeEnd: _propTypes2.default.func,
+        innerRef: _propTypes2.default.func,
+        tolerance: _propTypes2.default.number.isRequired
+    };
+    ReactSwipe.defaultProps = {
+        tagName: "div",
+        allowMouseEvents: false,
+        onSwipeUp: function onSwipeUp() {},
+        onSwipeDown: function onSwipeDown() {},
+        onSwipeLeft: function onSwipeLeft() {},
+        onSwipeRight: function onSwipeRight() {},
+        onSwipeStart: function onSwipeStart() {},
+        onSwipeMove: function onSwipeMove() {},
+        onSwipeEnd: function onSwipeEnd() {},
+        innerRef: function innerRef() {},
+        tolerance: 0
+    };
+    exports1.default = ReactSwipe;
+});
+
+},{"f4303922a055a6cd":"21dqq","a45b0606b32d2698":"7wKI2"}],"hYm5y":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _classnames = _interopRequireDefault(require("99104ff522e78b01"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+function _defineProperty(obj, key, value) {
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+}
+var _default = {
+    ROOT: function ROOT(customClassName) {
+        return (0, _classnames.default)(_defineProperty({
+            "carousel-root": true
+        }, customClassName || "", !!customClassName));
+    },
+    CAROUSEL: function CAROUSEL(isSlider) {
+        return (0, _classnames.default)({
+            carousel: true,
+            "carousel-slider": isSlider
+        });
+    },
+    WRAPPER: function WRAPPER(isSlider, axis) {
+        return (0, _classnames.default)({
+            "thumbs-wrapper": !isSlider,
+            "slider-wrapper": isSlider,
+            "axis-horizontal": axis === "horizontal",
+            "axis-vertical": axis !== "horizontal"
+        });
+    },
+    SLIDER: function SLIDER(isSlider, isSwiping) {
+        return (0, _classnames.default)({
+            thumbs: !isSlider,
+            slider: isSlider,
+            animated: !isSwiping
+        });
+    },
+    ITEM: function ITEM(isSlider, selected, previous) {
+        return (0, _classnames.default)({
+            thumb: !isSlider,
+            slide: isSlider,
+            selected: selected,
+            previous: previous
+        });
+    },
+    ARROW_PREV: function ARROW_PREV(disabled) {
+        return (0, _classnames.default)({
+            "control-arrow control-prev": true,
+            "control-disabled": disabled
+        });
+    },
+    ARROW_NEXT: function ARROW_NEXT(disabled) {
+        return (0, _classnames.default)({
+            "control-arrow control-next": true,
+            "control-disabled": disabled
+        });
+    },
+    DOT: function DOT(selected) {
+        return (0, _classnames.default)({
+            dot: true,
+            selected: selected
+        });
+    }
+};
+exports.default = _default;
+
+},{"99104ff522e78b01":"jocGM"}],"jocGM":[function(require,module,exports) {
+/*!
+	Copyright (c) 2018 Jed Watson.
+	Licensed under the MIT License (MIT), see
+	http://jedwatson.github.io/classnames
+*/ /* global define */ (function() {
+    "use strict";
+    var hasOwn = {}.hasOwnProperty;
+    var nativeCodeString = "[native code]";
+    function classNames() {
+        var classes = [];
+        for(var i = 0; i < arguments.length; i++){
+            var arg = arguments[i];
+            if (!arg) continue;
+            var argType = typeof arg;
+            if (argType === "string" || argType === "number") classes.push(arg);
+            else if (Array.isArray(arg)) {
+                if (arg.length) {
+                    var inner = classNames.apply(null, arg);
+                    if (inner) classes.push(inner);
+                }
+            } else if (argType === "object") {
+                if (arg.toString !== Object.prototype.toString && !arg.toString.toString().includes("[native code]")) {
+                    classes.push(arg.toString());
+                    continue;
+                }
+                for(var key in arg)if (hasOwn.call(arg, key) && arg[key]) classes.push(key);
+            }
+        }
+        return classes.join(" ");
+    }
+    if (0, module.exports) {
+        classNames.default = classNames;
+        module.exports = classNames;
+    } else if (typeof define === "function" && typeof define.amd === "object" && define.amd) // register as 'classnames', consistent with npm package name
+    define("classnames", [], function() {
+        return classNames;
+    });
+    else window.classNames = classNames;
+})();
+
+},{}],"gscvP":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _react = _interopRequireWildcard(require("7e3cfefc7c6a52b8"));
+var _cssClasses = _interopRequireDefault(require("a081a5244f3d429f"));
+var _dimensions = require("3d0246f53d8a58de");
+var _CSSTranslate = _interopRequireDefault(require("bcc1f3e4f087dd65"));
+var _reactEasySwipe = _interopRequireDefault(require("8ab658bbe4f746a0"));
+var _window = _interopRequireDefault(require("70286c4d89adeedc"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+function _getRequireWildcardCache() {
+    if (typeof WeakMap !== "function") return null;
+    var cache = new WeakMap();
+    _getRequireWildcardCache = function _getRequireWildcardCache() {
+        return cache;
+    };
+    return cache;
+}
+function _interopRequireWildcard(obj) {
+    if (obj && obj.__esModule) return obj;
+    if (obj === null || _typeof(obj) !== "object" && typeof obj !== "function") return {
+        default: obj
+    };
+    var cache = _getRequireWildcardCache();
+    if (cache && cache.has(obj)) return cache.get(obj);
+    var newObj = {};
+    var hasPropertyDescriptor = Object.defineProperty && Object.getOwnPropertyDescriptor;
+    for(var key in obj)if (Object.prototype.hasOwnProperty.call(obj, key)) {
+        var desc = hasPropertyDescriptor ? Object.getOwnPropertyDescriptor(obj, key) : null;
+        if (desc && (desc.get || desc.set)) Object.defineProperty(newObj, key, desc);
+        else newObj[key] = obj[key];
+    }
+    newObj.default = obj;
+    if (cache) cache.set(obj, newObj);
+    return newObj;
+}
+function _typeof(obj) {
+    "@babel/helpers - typeof";
+    if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") _typeof = function _typeof(obj) {
+        return typeof obj;
+    };
+    else _typeof = function _typeof(obj) {
+        return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
+    };
+    return _typeof(obj);
+}
+function _extends() {
+    _extends = Object.assign || function(target) {
+        for(var i = 1; i < arguments.length; i++){
+            var source = arguments[i];
+            for(var key in source)if (Object.prototype.hasOwnProperty.call(source, key)) target[key] = source[key];
+        }
+        return target;
+    };
+    return _extends.apply(this, arguments);
+}
+function _classCallCheck(instance, Constructor) {
+    if (!(instance instanceof Constructor)) throw new TypeError("Cannot call a class as a function");
+}
+function _defineProperties(target, props) {
+    for(var i = 0; i < props.length; i++){
+        var descriptor = props[i];
+        descriptor.enumerable = descriptor.enumerable || false;
+        descriptor.configurable = true;
+        if ("value" in descriptor) descriptor.writable = true;
+        Object.defineProperty(target, descriptor.key, descriptor);
+    }
+}
+function _createClass(Constructor, protoProps, staticProps) {
+    if (protoProps) _defineProperties(Constructor.prototype, protoProps);
+    if (staticProps) _defineProperties(Constructor, staticProps);
+    return Constructor;
+}
+function _inherits(subClass, superClass) {
+    if (typeof superClass !== "function" && superClass !== null) throw new TypeError("Super expression must either be null or a function");
+    subClass.prototype = Object.create(superClass && superClass.prototype, {
+        constructor: {
+            value: subClass,
+            writable: true,
+            configurable: true
+        }
+    });
+    if (superClass) _setPrototypeOf(subClass, superClass);
+}
+function _setPrototypeOf(o, p) {
+    _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) {
+        o.__proto__ = p;
+        return o;
+    };
+    return _setPrototypeOf(o, p);
+}
+function _createSuper(Derived) {
+    var hasNativeReflectConstruct = _isNativeReflectConstruct();
+    return function _createSuperInternal() {
+        var Super = _getPrototypeOf(Derived), result;
+        if (hasNativeReflectConstruct) {
+            var NewTarget = _getPrototypeOf(this).constructor;
+            result = Reflect.construct(Super, arguments, NewTarget);
+        } else result = Super.apply(this, arguments);
+        return _possibleConstructorReturn(this, result);
+    };
+}
+function _possibleConstructorReturn(self, call) {
+    if (call && (_typeof(call) === "object" || typeof call === "function")) return call;
+    return _assertThisInitialized(self);
+}
+function _assertThisInitialized(self) {
+    if (self === void 0) throw new ReferenceError("this hasn't been initialised - super() hasn't been called");
+    return self;
+}
+function _isNativeReflectConstruct() {
+    if (typeof Reflect === "undefined" || !Reflect.construct) return false;
+    if (Reflect.construct.sham) return false;
+    if (typeof Proxy === "function") return true;
+    try {
+        Date.prototype.toString.call(Reflect.construct(Date, [], function() {}));
+        return true;
+    } catch (e) {
+        return false;
+    }
+}
+function _getPrototypeOf(o) {
+    _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) {
+        return o.__proto__ || Object.getPrototypeOf(o);
+    };
+    return _getPrototypeOf(o);
+}
+function _defineProperty(obj, key, value) {
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+}
+var isKeyboardEvent = function isKeyboardEvent(e) {
+    return e.hasOwnProperty("key");
+};
+var Thumbs = /*#__PURE__*/ function(_Component) {
+    _inherits(Thumbs, _Component);
+    var _super = _createSuper(Thumbs);
+    function Thumbs(_props) {
+        var _this;
+        _classCallCheck(this, Thumbs);
+        _this = _super.call(this, _props);
+        _defineProperty(_assertThisInitialized(_this), "itemsWrapperRef", void 0);
+        _defineProperty(_assertThisInitialized(_this), "itemsListRef", void 0);
+        _defineProperty(_assertThisInitialized(_this), "thumbsRef", void 0);
+        _defineProperty(_assertThisInitialized(_this), "setItemsWrapperRef", function(node) {
+            _this.itemsWrapperRef = node;
+        });
+        _defineProperty(_assertThisInitialized(_this), "setItemsListRef", function(node) {
+            _this.itemsListRef = node;
+        });
+        _defineProperty(_assertThisInitialized(_this), "setThumbsRef", function(node, index) {
+            if (!_this.thumbsRef) _this.thumbsRef = [];
+            _this.thumbsRef[index] = node;
+        });
+        _defineProperty(_assertThisInitialized(_this), "updateSizes", function() {
+            if (!_this.props.children || !_this.itemsWrapperRef || !_this.thumbsRef) return;
+            var total = _react.Children.count(_this.props.children);
+            var wrapperSize = _this.itemsWrapperRef.clientWidth;
+            var itemSize = _this.props.thumbWidth ? _this.props.thumbWidth : (0, _dimensions.outerWidth)(_this.thumbsRef[0]);
+            var visibleItems = Math.floor(wrapperSize / itemSize);
+            var showArrows = visibleItems < total;
+            var lastPosition = showArrows ? total - visibleItems : 0;
+            _this.setState(function(_state, props) {
+                return {
+                    itemSize: itemSize,
+                    visibleItems: visibleItems,
+                    firstItem: showArrows ? _this.getFirstItem(props.selectedItem) : 0,
+                    lastPosition: lastPosition,
+                    showArrows: showArrows
+                };
+            });
+        });
+        _defineProperty(_assertThisInitialized(_this), "handleClickItem", function(index, item, e) {
+            if (!isKeyboardEvent(e) || e.key === "Enter") {
+                var handler = _this.props.onSelectItem;
+                if (typeof handler === "function") handler(index, item);
+            }
+        });
+        _defineProperty(_assertThisInitialized(_this), "onSwipeStart", function() {
+            _this.setState({
+                swiping: true
+            });
+        });
+        _defineProperty(_assertThisInitialized(_this), "onSwipeEnd", function() {
+            _this.setState({
+                swiping: false
+            });
+        });
+        _defineProperty(_assertThisInitialized(_this), "onSwipeMove", function(delta) {
+            var deltaX = delta.x;
+            if (!_this.state.itemSize || !_this.itemsWrapperRef || !_this.state.visibleItems) return false;
+            var leftBoundary = 0;
+            var childrenLength = _react.Children.count(_this.props.children);
+            var currentPosition = -(_this.state.firstItem * 100) / _this.state.visibleItems;
+            var lastLeftItem = Math.max(childrenLength - _this.state.visibleItems, 0);
+            var lastLeftBoundary = -lastLeftItem * 100 / _this.state.visibleItems; // prevent user from swiping left out of boundaries
+            if (currentPosition === leftBoundary && deltaX > 0) deltaX = 0;
+             // prevent user from swiping right out of boundaries
+            if (currentPosition === lastLeftBoundary && deltaX < 0) deltaX = 0;
+            var wrapperSize = _this.itemsWrapperRef.clientWidth;
+            var position = currentPosition + 100 / (wrapperSize / deltaX); // if 3d isn't available we will use left to move
+            if (_this.itemsListRef) [
+                "WebkitTransform",
+                "MozTransform",
+                "MsTransform",
+                "OTransform",
+                "transform",
+                "msTransform"
+            ].forEach(function(prop) {
+                _this.itemsListRef.style[prop] = (0, _CSSTranslate.default)(position, "%", _this.props.axis);
+            });
+            return true;
+        });
+        _defineProperty(_assertThisInitialized(_this), "slideRight", function(positions) {
+            _this.moveTo(_this.state.firstItem - (typeof positions === "number" ? positions : 1));
+        });
+        _defineProperty(_assertThisInitialized(_this), "slideLeft", function(positions) {
+            _this.moveTo(_this.state.firstItem + (typeof positions === "number" ? positions : 1));
+        });
+        _defineProperty(_assertThisInitialized(_this), "moveTo", function(position) {
+            // position can't be lower than 0
+            position = position < 0 ? 0 : position; // position can't be higher than last postion
+            position = position >= _this.state.lastPosition ? _this.state.lastPosition : position;
+            _this.setState({
+                firstItem: position
+            });
+        });
+        _this.state = {
+            selectedItem: _props.selectedItem,
+            swiping: false,
+            showArrows: false,
+            firstItem: 0,
+            visibleItems: 0,
+            lastPosition: 0
+        };
+        return _this;
+    }
+    _createClass(Thumbs, [
+        {
+            key: "componentDidMount",
+            value: function componentDidMount() {
+                this.setupThumbs();
+            }
+        },
+        {
+            key: "componentDidUpdate",
+            value: function componentDidUpdate(prevProps) {
+                if (this.props.selectedItem !== this.state.selectedItem) this.setState({
+                    selectedItem: this.props.selectedItem,
+                    firstItem: this.getFirstItem(this.props.selectedItem)
+                });
+                if (this.props.children === prevProps.children) return;
+                 // This will capture any size changes for arrow adjustments etc.
+                // usually in the same render cycle so we don't see any flickers
+                this.updateSizes();
+            }
+        },
+        {
+            key: "componentWillUnmount",
+            value: function componentWillUnmount() {
+                this.destroyThumbs();
+            }
+        },
+        {
+            key: "setupThumbs",
+            value: function setupThumbs() {
+                // as the widths are calculated, we need to resize
+                // the carousel when the window is resized
+                (0, _window.default)().addEventListener("resize", this.updateSizes); // issue #2 - image loading smaller
+                (0, _window.default)().addEventListener("DOMContentLoaded", this.updateSizes); // when the component is rendered we need to calculate
+                // the container size to adjust the responsive behaviour
+                this.updateSizes();
+            }
+        },
+        {
+            key: "destroyThumbs",
+            value: function destroyThumbs() {
+                // removing listeners
+                (0, _window.default)().removeEventListener("resize", this.updateSizes);
+                (0, _window.default)().removeEventListener("DOMContentLoaded", this.updateSizes);
+            }
+        },
+        {
+            key: "getFirstItem",
+            value: function getFirstItem(selectedItem) {
+                var firstItem = selectedItem;
+                if (selectedItem >= this.state.lastPosition) firstItem = this.state.lastPosition;
+                if (selectedItem < this.state.firstItem + this.state.visibleItems) firstItem = this.state.firstItem;
+                if (selectedItem < this.state.firstItem) firstItem = selectedItem;
+                return firstItem;
+            }
+        },
+        {
+            key: "renderItems",
+            value: function renderItems() {
+                var _this2 = this;
+                return this.props.children.map(function(img, index) {
+                    var itemClass = _cssClasses.default.ITEM(false, index === _this2.state.selectedItem);
+                    var thumbProps = {
+                        key: index,
+                        ref: function ref(e) {
+                            return _this2.setThumbsRef(e, index);
+                        },
+                        className: itemClass,
+                        onClick: _this2.handleClickItem.bind(_this2, index, _this2.props.children[index]),
+                        onKeyDown: _this2.handleClickItem.bind(_this2, index, _this2.props.children[index]),
+                        "aria-label": "".concat(_this2.props.labels.item, " ").concat(index + 1),
+                        style: {
+                            width: _this2.props.thumbWidth
+                        }
+                    };
+                    return /*#__PURE__*/ _react.default.createElement("li", _extends({}, thumbProps, {
+                        role: "button",
+                        tabIndex: 0
+                    }), img);
+                });
+            }
+        },
+        {
+            key: "render",
+            value: function render() {
+                var _this3 = this;
+                if (!this.props.children) return null;
+                var isSwipeable = _react.Children.count(this.props.children) > 1; // show left arrow?
+                var hasPrev = this.state.showArrows && this.state.firstItem > 0; // show right arrow
+                var hasNext = this.state.showArrows && this.state.firstItem < this.state.lastPosition; // obj to hold the transformations and styles
+                var itemListStyles = {};
+                var currentPosition = -this.state.firstItem * (this.state.itemSize || 0);
+                var transformProp = (0, _CSSTranslate.default)(currentPosition, "px", this.props.axis);
+                var transitionTime = this.props.transitionTime + "ms";
+                itemListStyles = {
+                    WebkitTransform: transformProp,
+                    MozTransform: transformProp,
+                    MsTransform: transformProp,
+                    OTransform: transformProp,
+                    transform: transformProp,
+                    msTransform: transformProp,
+                    WebkitTransitionDuration: transitionTime,
+                    MozTransitionDuration: transitionTime,
+                    MsTransitionDuration: transitionTime,
+                    OTransitionDuration: transitionTime,
+                    transitionDuration: transitionTime,
+                    msTransitionDuration: transitionTime
+                };
+                return /*#__PURE__*/ _react.default.createElement("div", {
+                    className: _cssClasses.default.CAROUSEL(false)
+                }, /*#__PURE__*/ _react.default.createElement("div", {
+                    className: _cssClasses.default.WRAPPER(false),
+                    ref: this.setItemsWrapperRef
+                }, /*#__PURE__*/ _react.default.createElement("button", {
+                    type: "button",
+                    className: _cssClasses.default.ARROW_PREV(!hasPrev),
+                    onClick: function onClick() {
+                        return _this3.slideRight();
+                    },
+                    "aria-label": this.props.labels.leftArrow
+                }), isSwipeable ? /*#__PURE__*/ _react.default.createElement(_reactEasySwipe.default, {
+                    tagName: "ul",
+                    className: _cssClasses.default.SLIDER(false, this.state.swiping),
+                    onSwipeLeft: this.slideLeft,
+                    onSwipeRight: this.slideRight,
+                    onSwipeMove: this.onSwipeMove,
+                    onSwipeStart: this.onSwipeStart,
+                    onSwipeEnd: this.onSwipeEnd,
+                    style: itemListStyles,
+                    innerRef: this.setItemsListRef,
+                    allowMouseEvents: this.props.emulateTouch
+                }, this.renderItems()) : /*#__PURE__*/ _react.default.createElement("ul", {
+                    className: _cssClasses.default.SLIDER(false, this.state.swiping),
+                    ref: function ref(node) {
+                        return _this3.setItemsListRef(node);
+                    },
+                    style: itemListStyles
+                }, this.renderItems()), /*#__PURE__*/ _react.default.createElement("button", {
+                    type: "button",
+                    className: _cssClasses.default.ARROW_NEXT(!hasNext),
+                    onClick: function onClick() {
+                        return _this3.slideLeft();
+                    },
+                    "aria-label": this.props.labels.rightArrow
+                })));
+            }
+        }
+    ]);
+    return Thumbs;
+}(_react.Component);
+exports.default = Thumbs;
+_defineProperty(Thumbs, "displayName", "Thumbs");
+_defineProperty(Thumbs, "defaultProps", {
+    axis: "horizontal",
+    labels: {
+        leftArrow: "previous slide / item",
+        rightArrow: "next slide / item",
+        item: "slide item"
+    },
+    selectedItem: 0,
+    thumbWidth: 80,
+    transitionTime: 350
+});
+
+},{"7e3cfefc7c6a52b8":"21dqq","a081a5244f3d429f":"hYm5y","3d0246f53d8a58de":"coVlg","bcc1f3e4f087dd65":"e8Ljj","8ab658bbe4f746a0":"drRTj","70286c4d89adeedc":"l0TRr"}],"coVlg":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.outerWidth = void 0;
+var outerWidth = function outerWidth(el) {
+    var width = el.offsetWidth;
+    var style = getComputedStyle(el);
+    width += parseInt(style.marginLeft) + parseInt(style.marginRight);
+    return width;
+};
+exports.outerWidth = outerWidth;
+
+},{}],"e8Ljj":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _default = function _default(position, metric, axis) {
+    var positionPercent = position === 0 ? position : position + metric;
+    var positionCss = axis === "horizontal" ? [
+        positionPercent,
+        0,
+        0
+    ] : [
+        0,
+        positionPercent,
+        0
+    ];
+    var transitionProp = "translate3d";
+    var translatedPosition = "(" + positionCss.join(",") + ")";
+    return transitionProp + translatedPosition;
+};
+exports.default = _default;
+
+},{}],"l0TRr":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _default = function _default() {
+    return window;
+};
+exports.default = _default;
+
+},{}],"dNmdd":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.default = void 0;
+var _default = function _default() {
+    return document;
+};
+exports.default = _default;
+
+},{}],"aHp0r":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.setPosition = exports.getPosition = exports.isKeyboardEvent = exports.defaultStatusFormatter = exports.noop = void 0;
+var _react = require("109f003d9499b423");
+var _CSSTranslate = _interopRequireDefault(require("c4fa6f5ef2ee411f"));
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+var noop = function noop() {};
+exports.noop = noop;
+var defaultStatusFormatter = function defaultStatusFormatter(current, total) {
+    return "".concat(current, " of ").concat(total);
+};
+exports.defaultStatusFormatter = defaultStatusFormatter;
+var isKeyboardEvent = function isKeyboardEvent(e) {
+    return e ? e.hasOwnProperty("key") : false;
+};
+/**
+ * Gets the list 'position' relative to a current index
+ * @param index
+ */ exports.isKeyboardEvent = isKeyboardEvent;
+var getPosition = function getPosition(index, props) {
+    if (props.infiniteLoop) // index has to be added by 1 because of the first cloned slide
+    ++index;
+    if (index === 0) return 0;
+    var childrenLength = _react.Children.count(props.children);
+    if (props.centerMode && props.axis === "horizontal") {
+        var currentPosition = -index * props.centerSlidePercentage;
+        var lastPosition = childrenLength - 1;
+        if (index && (index !== lastPosition || props.infiniteLoop)) currentPosition += (100 - props.centerSlidePercentage) / 2;
+        else if (index === lastPosition) currentPosition += 100 - props.centerSlidePercentage;
+        return currentPosition;
+    }
+    return -index * 100;
+};
+/**
+ * Sets the 'position' transform for sliding animations
+ * @param position
+ * @param forceReflow
+ */ exports.getPosition = getPosition;
+var setPosition = function setPosition(position, axis) {
+    var style = {};
+    [
+        "WebkitTransform",
+        "MozTransform",
+        "MsTransform",
+        "OTransform",
+        "transform",
+        "msTransform"
+    ].forEach(function(prop) {
+        // @ts-ignore
+        style[prop] = (0, _CSSTranslate.default)(position, "%", axis);
+    });
+    return style;
+};
+exports.setPosition = setPosition;
+
+},{"109f003d9499b423":"21dqq","c4fa6f5ef2ee411f":"e8Ljj"}],"P35rV":[function(require,module,exports) {
+"use strict";
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
+exports.fadeAnimationHandler = exports.slideStopSwipingHandler = exports.slideSwipeAnimationHandler = exports.slideAnimationHandler = void 0;
+var _react = require("304221a9115d231d");
+var _CSSTranslate = _interopRequireDefault(require("90ee154d1d153634"));
+var _utils = require("ba9602e6f910f7f4");
+function _interopRequireDefault(obj) {
+    return obj && obj.__esModule ? obj : {
+        default: obj
+    };
+}
+function ownKeys(object, enumerableOnly) {
+    var keys = Object.keys(object);
+    if (Object.getOwnPropertySymbols) {
+        var symbols = Object.getOwnPropertySymbols(object);
+        if (enumerableOnly) symbols = symbols.filter(function(sym) {
+            return Object.getOwnPropertyDescriptor(object, sym).enumerable;
+        });
+        keys.push.apply(keys, symbols);
+    }
+    return keys;
+}
+function _objectSpread(target) {
+    for(var i = 1; i < arguments.length; i++){
+        var source = arguments[i] != null ? arguments[i] : {};
+        if (i % 2) ownKeys(Object(source), true).forEach(function(key) {
+            _defineProperty(target, key, source[key]);
+        });
+        else if (Object.getOwnPropertyDescriptors) Object.defineProperties(target, Object.getOwnPropertyDescriptors(source));
+        else ownKeys(Object(source)).forEach(function(key) {
+            Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
+        });
+    }
+    return target;
+}
+function _defineProperty(obj, key, value) {
+    if (key in obj) Object.defineProperty(obj, key, {
+        value: value,
+        enumerable: true,
+        configurable: true,
+        writable: true
+    });
+    else obj[key] = value;
+    return obj;
+}
+/**
+ * Main animation handler for the default 'sliding' style animation
+ * @param props
+ * @param state
+ */ var slideAnimationHandler = function slideAnimationHandler(props, state) {
+    var returnStyles = {};
+    var selectedItem = state.selectedItem;
+    var previousItem = selectedItem;
+    var lastPosition = _react.Children.count(props.children) - 1;
+    var needClonedSlide = props.infiniteLoop && (selectedItem < 0 || selectedItem > lastPosition); // Handle list position if it needs a clone
+    if (needClonedSlide) {
+        if (previousItem < 0) {
+            if (props.centerMode && props.centerSlidePercentage && props.axis === "horizontal") returnStyles.itemListStyle = (0, _utils.setPosition)(-(lastPosition + 2) * props.centerSlidePercentage - (100 - props.centerSlidePercentage) / 2, props.axis);
+            else returnStyles.itemListStyle = (0, _utils.setPosition)(-(lastPosition + 2) * 100, props.axis);
+        } else if (previousItem > lastPosition) returnStyles.itemListStyle = (0, _utils.setPosition)(0, props.axis);
+        return returnStyles;
+    }
+    var currentPosition = (0, _utils.getPosition)(selectedItem, props); // if 3d is available, let's take advantage of the performance of transform
+    var transformProp = (0, _CSSTranslate.default)(currentPosition, "%", props.axis);
+    var transitionTime = props.transitionTime + "ms";
+    returnStyles.itemListStyle = {
+        WebkitTransform: transformProp,
+        msTransform: transformProp,
+        OTransform: transformProp,
+        transform: transformProp
+    };
+    if (!state.swiping) returnStyles.itemListStyle = _objectSpread(_objectSpread({}, returnStyles.itemListStyle), {}, {
+        WebkitTransitionDuration: transitionTime,
+        MozTransitionDuration: transitionTime,
+        OTransitionDuration: transitionTime,
+        transitionDuration: transitionTime,
+        msTransitionDuration: transitionTime
+    });
+    return returnStyles;
+};
+/**
+ * Swiping animation handler for the default 'sliding' style animation
+ * @param delta
+ * @param props
+ * @param state
+ * @param setState
+ */ exports.slideAnimationHandler = slideAnimationHandler;
+var slideSwipeAnimationHandler = function slideSwipeAnimationHandler(delta, props, state, setState) {
+    var returnStyles = {};
+    var isHorizontal = props.axis === "horizontal";
+    var childrenLength = _react.Children.count(props.children);
+    var initialBoundry = 0;
+    var currentPosition = (0, _utils.getPosition)(state.selectedItem, props);
+    var finalBoundry = props.infiniteLoop ? (0, _utils.getPosition)(childrenLength - 1, props) - 100 : (0, _utils.getPosition)(childrenLength - 1, props);
+    var axisDelta = isHorizontal ? delta.x : delta.y;
+    var handledDelta = axisDelta; // prevent user from swiping left out of boundaries
+    if (currentPosition === initialBoundry && axisDelta > 0) handledDelta = 0;
+     // prevent user from swiping right out of boundaries
+    if (currentPosition === finalBoundry && axisDelta < 0) handledDelta = 0;
+    var position = currentPosition + 100 / (state.itemSize / handledDelta);
+    var hasMoved = Math.abs(axisDelta) > props.swipeScrollTolerance;
+    if (props.infiniteLoop && hasMoved) {
+        // When allowing infinite loop, if we slide left from position 0 we reveal the cloned last slide that appears before it
+        // if we slide even further we need to jump to other side so it can continue - and vice versa for the last slide
+        if (state.selectedItem === 0 && position > -100) position -= childrenLength * 100;
+        else if (state.selectedItem === childrenLength - 1 && position < -childrenLength * 100) position += childrenLength * 100;
+    }
+    if (!props.preventMovementUntilSwipeScrollTolerance || hasMoved || state.swipeMovementStarted) {
+        if (!state.swipeMovementStarted) setState({
+            swipeMovementStarted: true
+        });
+        returnStyles.itemListStyle = (0, _utils.setPosition)(position, props.axis);
+    } //allows scroll if the swipe was within the tolerance
+    if (hasMoved && !state.cancelClick) setState({
+        cancelClick: true
+    });
+    return returnStyles;
+};
+/**
+ * Default 'sliding' style animination handler for when a swipe action stops.
+ * @param props
+ * @param state
+ */ exports.slideSwipeAnimationHandler = slideSwipeAnimationHandler;
+var slideStopSwipingHandler = function slideStopSwipingHandler(props, state) {
+    var currentPosition = (0, _utils.getPosition)(state.selectedItem, props);
+    var itemListStyle = (0, _utils.setPosition)(currentPosition, props.axis);
+    return {
+        itemListStyle: itemListStyle
+    };
+};
+/**
+ * Main animation handler for the default 'fade' style animation
+ * @param props
+ * @param state
+ */ exports.slideStopSwipingHandler = slideStopSwipingHandler;
+var fadeAnimationHandler = function fadeAnimationHandler(props, state) {
+    var transitionTime = props.transitionTime + "ms";
+    var transitionTimingFunction = "ease-in-out";
+    var slideStyle = {
+        position: "absolute",
+        display: "block",
+        zIndex: -2,
+        minHeight: "100%",
+        opacity: 0,
+        top: 0,
+        right: 0,
+        left: 0,
+        bottom: 0,
+        transitionTimingFunction: transitionTimingFunction,
+        msTransitionTimingFunction: transitionTimingFunction,
+        MozTransitionTimingFunction: transitionTimingFunction,
+        WebkitTransitionTimingFunction: transitionTimingFunction,
+        OTransitionTimingFunction: transitionTimingFunction
+    };
+    if (!state.swiping) slideStyle = _objectSpread(_objectSpread({}, slideStyle), {}, {
+        WebkitTransitionDuration: transitionTime,
+        MozTransitionDuration: transitionTime,
+        OTransitionDuration: transitionTime,
+        transitionDuration: transitionTime,
+        msTransitionDuration: transitionTime
+    });
+    return {
+        slideStyle: slideStyle,
+        selectedStyle: _objectSpread(_objectSpread({}, slideStyle), {}, {
+            opacity: 1,
+            position: "relative"
+        }),
+        prevStyle: _objectSpread({}, slideStyle)
+    };
+};
+exports.fadeAnimationHandler = fadeAnimationHandler;
+
+},{"304221a9115d231d":"21dqq","90ee154d1d153634":"e8Ljj","ba9602e6f910f7f4":"aHp0r"}],"f1NKR":[function(require,module,exports) {
+"use strict";
+
+},{}],"2QDrW":[function() {},{}]},["4s3Ar","1xC6H","d8Dch"], "d8Dch", "parcelRequire6432")
 
 //# sourceMappingURL=index.b4b6dfad.js.map
