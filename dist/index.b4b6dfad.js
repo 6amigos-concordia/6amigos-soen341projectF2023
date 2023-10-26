@@ -2952,7 +2952,7 @@ var _appDefault = parcelHelpers.interopDefault(_app);
 const app = document.getElementById("app");
 (0, _reactDomDefault.default).render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {}, void 0, false, {
     fileName: "src/index.jsx",
-    lineNumber: 7,
+    lineNumber: 9,
     columnNumber: 17
 }, undefined), app);
 
@@ -27140,29 +27140,47 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _landingPage = require("./Landing component/LandingPage");
 var _featureComponent = require("./Feature component");
 var _featuredProperties = require("./FeaturedProperties");
+var _featuredBroker = require("./FeaturedBroker");
+var _newsletter = require("./newsletter");
+var _frame = require("./booking component/Frame");
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "app",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _landingPage.LandingPage), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 9,
+                lineNumber: 13,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _featureComponent.OurFeature), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 10,
+                lineNumber: 14,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _featuredProperties.FeaturedProperties), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 11,
+                lineNumber: 15,
                 columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _featuredBroker.Team), {}, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 16,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newsletter.Cta), {}, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 17,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _frame.Frame), {}, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 18,
+                columnNumber: 6
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 8,
+        lineNumber: 12,
         columnNumber: 5
     }, undefined);
 };
@@ -27176,7 +27194,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Landing component/LandingPage":"bQzRZ","./Feature component":"eDTYY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./FeaturedProperties":"1ymem"}],"bQzRZ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Landing component/LandingPage":"bQzRZ","./Feature component":"eDTYY","./FeaturedProperties":"1ymem","./FeaturedBroker":"2sHyA","./newsletter":"jMOOi","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./booking component/Frame":"hqo5w"}],"bQzRZ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "LandingPage", ()=>(0, _landingPage.LandingPage));
@@ -29661,6 +29679,731 @@ $RefreshReg$(_c, "FeaturedProperties");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"hygpl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hygpl":[function() {},{}]},["4s3Ar","1xC6H","d8Dch"], "d8Dch", "parcelRequire6432")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"hygpl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hygpl":[function() {},{}],"2sHyA":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Team", ()=>(0, _team.Team));
+var _team = require("./Team");
+
+},{"./Team":"hvIBW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hvIBW":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$58f7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$58f7.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Team", ()=>Team);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _styleCss = require("./style.css");
+const Team = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "team",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "div",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "title-description",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "title",
+                            children: "Featured Brokers"
+                        }, void 0, false, {
+                            fileName: "src/FeaturedBroker/Team.jsx",
+                            lineNumber: 9,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "description",
+                            children: "Our team of dedicated brokers is here to guide you through every step of the buying or selling process."
+                        }, void 0, false, {
+                            fileName: "src/FeaturedBroker/Team.jsx",
+                            lineNumber: 10,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/FeaturedBroker/Team.jsx",
+                    lineNumber: 8,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "content",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "element",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "team-member",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "avatar-mask",
+                                        alt: "Avatar mask",
+                                        src: "https://i.ibb.co/M2LJjHY/Staci.webp"
+                                    }, void 0, false, {
+                                        fileName: "src/FeaturedBroker/Team.jsx",
+                                        lineNumber: 17,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "div-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "title-2",
+                                                children: "Kathryn Murphy"
+                                            }, void 0, false, {
+                                                fileName: "src/FeaturedBroker/Team.jsx",
+                                                lineNumber: 19,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                className: "sub-title",
+                                                children: "See More"
+                                            }, void 0, false, {
+                                                fileName: "src/FeaturedBroker/Team.jsx",
+                                                lineNumber: 20,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/FeaturedBroker/Team.jsx",
+                                        lineNumber: 18,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/FeaturedBroker/Team.jsx",
+                                lineNumber: 16,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/FeaturedBroker/Team.jsx",
+                            lineNumber: 15,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "element",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "team-member",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "avatar-mask",
+                                        alt: "Avatar mask",
+                                        src: "https://i.ibb.co/r0N3Ffb/Jimbo.webp"
+                                    }, void 0, false, {
+                                        fileName: "src/FeaturedBroker/Team.jsx",
+                                        lineNumber: 27,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "div-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "title-2",
+                                                children: "Floyd Miles"
+                                            }, void 0, false, {
+                                                fileName: "src/FeaturedBroker/Team.jsx",
+                                                lineNumber: 29,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                className: "sub-title",
+                                                children: "See More"
+                                            }, void 0, false, {
+                                                fileName: "src/FeaturedBroker/Team.jsx",
+                                                lineNumber: 30,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/FeaturedBroker/Team.jsx",
+                                        lineNumber: 28,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/FeaturedBroker/Team.jsx",
+                                lineNumber: 26,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/FeaturedBroker/Team.jsx",
+                            lineNumber: 25,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "element",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "team-member",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "avatar-mask",
+                                        alt: "Avatar mask",
+                                        src: "https://i.ibb.co/s1yGF6k/static1-squarespace.jpg"
+                                    }, void 0, false, {
+                                        fileName: "src/FeaturedBroker/Team.jsx",
+                                        lineNumber: 36,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "div-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "title-2",
+                                                children: "Floyd Miles"
+                                            }, void 0, false, {
+                                                fileName: "src/FeaturedBroker/Team.jsx",
+                                                lineNumber: 38,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                className: "sub-title",
+                                                children: "See More"
+                                            }, void 0, false, {
+                                                fileName: "src/FeaturedBroker/Team.jsx",
+                                                lineNumber: 39,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/FeaturedBroker/Team.jsx",
+                                        lineNumber: 37,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/FeaturedBroker/Team.jsx",
+                                lineNumber: 35,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/FeaturedBroker/Team.jsx",
+                            lineNumber: 34,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "element",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "team-member",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "avatar-mask",
+                                        alt: "Avatar mask",
+                                        src: "https://i.ibb.co/vVDbJxs/688-6883042-boss-baby-triplets-png-png-download-transparent-png.png"
+                                    }, void 0, false, {
+                                        fileName: "src/FeaturedBroker/Team.jsx",
+                                        lineNumber: 45,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "div-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "title-2",
+                                                children: "Ronald Richards"
+                                            }, void 0, false, {
+                                                fileName: "src/FeaturedBroker/Team.jsx",
+                                                lineNumber: 47,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                className: "sub-title",
+                                                children: "See More"
+                                            }, void 0, false, {
+                                                fileName: "src/FeaturedBroker/Team.jsx",
+                                                lineNumber: 48,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/FeaturedBroker/Team.jsx",
+                                        lineNumber: 46,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/FeaturedBroker/Team.jsx",
+                                lineNumber: 44,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/FeaturedBroker/Team.jsx",
+                            lineNumber: 43,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/FeaturedBroker/Team.jsx",
+                    lineNumber: 14,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/FeaturedBroker/Team.jsx",
+            lineNumber: 7,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/FeaturedBroker/Team.jsx",
+        lineNumber: 6,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Team;
+var _c;
+$RefreshReg$(_c, "Team");
+
+  $parcel$ReactRefreshHelpers$58f7.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"e89W3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"e89W3":[function() {},{}],"jMOOi":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Cta", ()=>(0, _cta.Cta));
+var _cta = require("./Cta");
+
+},{"./Cta":"eIS5a","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eIS5a":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5b36 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5b36.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Cta", ()=>Cta);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _buttonTextOnly = require("./ButtonTextOnly");
+var _input = require("./Input");
+var _styleCss = require("./style.css");
+var _s = $RefreshSig$();
+const Cta = ()=>{
+    _s();
+    const [email, setEmail] = (0, _react.useState)(""); // Step 1: Capture the Email
+    const handleSubscribe = ()=>{
+        // Step 2: Handle the Submission
+        if (email) // Step 3: Send the Brochure (example API call)
+        fetch("/api/sendBrochure", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                email
+            })
+        }).then((response)=>response.json()).then((data)=>{
+            if (data.success) alert("Brochure sent successfully!");
+            else alert("There was an error. Please try again later.");
+        });
+        else alert("Please enter a valid email address.");
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "CTA",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "div",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "shapes",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "overlap-group",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "rectangle"
+                            }, void 0, false, {
+                                fileName: "src/newsletter/Cta.jsx",
+                                lineNumber: 38,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "rectangle-2"
+                            }, void 0, false, {
+                                fileName: "src/newsletter/Cta.jsx",
+                                lineNumber: 39,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/newsletter/Cta.jsx",
+                        lineNumber: 37,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/newsletter/Cta.jsx",
+                    lineNumber: 36,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "subscribe-wrapper",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "title-description",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "title",
+                                    children: "Stay Ahead in Luxury Living"
+                                }, void 0, false, {
+                                    fileName: "src/newsletter/Cta.jsx",
+                                    lineNumber: 44,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "description",
+                                    children: "Sign up with your email and receive exclusive updates on elite properties every day."
+                                }, void 0, false, {
+                                    fileName: "src/newsletter/Cta.jsx",
+                                    lineNumber: 45,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/newsletter/Cta.jsx",
+                            lineNumber: 43,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "input-2",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "email",
+                                    id: "email",
+                                    className: "input-instance design-component-instance-node",
+                                    placeholder: "Your email here",
+                                    value: email,
+                                    onChange: (e)=>setEmail(e.target.value)
+                                }, void 0, false, {
+                                    fileName: "src/newsletter/Cta.jsx",
+                                    lineNumber: 50,
+                                    columnNumber: 11
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonTextOnly.ButtonTextOnly), {
+                                    className: "button-text-only-instance",
+                                    text: "Subscribe",
+                                    onClick: handleSubscribe
+                                }, void 0, false, {
+                                    fileName: "src/newsletter/Cta.jsx",
+                                    lineNumber: 58,
+                                    columnNumber: 12
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/newsletter/Cta.jsx",
+                            lineNumber: 49,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/newsletter/Cta.jsx",
+                    lineNumber: 42,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/newsletter/Cta.jsx",
+            lineNumber: 35,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/newsletter/Cta.jsx",
+        lineNumber: 34,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Cta, "Pe1zWWKcsJK82m3WyFiCTurRPxo=");
+_c = Cta;
+var _c;
+$RefreshReg$(_c, "Cta");
+
+  $parcel$ReactRefreshHelpers$5b36.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./ButtonTextOnly":"dLF5w","./Input":"6dbH2","./style.css":"3i9bq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dLF5w":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ButtonTextOnly", ()=>(0, _buttonTextOnly.ButtonTextOnly));
+var _buttonTextOnly = require("./ButtonTextOnly");
+
+},{"./ButtonTextOnly":"cQ4dO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cQ4dO":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5ab6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5ab6.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ButtonTextOnly", ()=>ButtonTextOnly);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _styleCss = require("./style.css");
+const ButtonTextOnly = ({ className, text = "Button CTA", onClick })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: `button-text-only ${className}`,
+        onClick: onClick,
+        role: "button",
+        tabIndex: "0",
+        onKeyPress: (event)=>{
+            // Enables "click" on pressing Enter key
+            if (event.key === "Enter") onClick(event);
+        },
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "text-wrapper",
+            children: text
+        }, void 0, false, {
+            fileName: "src/newsletter/ButtonTextOnly/ButtonTextOnly.jsx",
+            lineNumber: 17,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/newsletter/ButtonTextOnly/ButtonTextOnly.jsx",
+        lineNumber: 7,
+        columnNumber: 5
+    }, undefined);
+};
+_c = ButtonTextOnly;
+ButtonTextOnly.propTypes = {
+    text: (0, _propTypesDefault.default).string,
+    onClick: (0, _propTypesDefault.default).func
+};
+var _c;
+$RefreshReg$(_c, "ButtonTextOnly");
+
+  $parcel$ReactRefreshHelpers$5ab6.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","./style.css":"dNy1G","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dNy1G":[function() {},{}],"6dbH2":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Input", ()=>(0, _input.Input));
+var _input = require("./Input");
+
+},{"./Input":"8NsFZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8NsFZ":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1a05 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1a05.prelude(module);
+
+try {
+/*
+We're constantly improving the code you see. 
+Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcNg&d=1152665201300829
+*/ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Input", ()=>Input);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _styleCss = require("./style.css");
+const Input = ({ className, textClassName, text = "Select team member" })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: `input ${className}`,
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "content",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: `text ${textClassName}`,
+                children: text
+            }, void 0, false, {
+                fileName: "src/newsletter/Input/Input.jsx",
+                lineNumber: 14,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/newsletter/Input/Input.jsx",
+            lineNumber: 13,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/newsletter/Input/Input.jsx",
+        lineNumber: 12,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Input;
+Input.propTypes = {
+    text: (0, _propTypesDefault.default).string
+};
+var _c;
+$RefreshReg$(_c, "Input");
+
+  $parcel$ReactRefreshHelpers$1a05.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","./style.css":"2c4j1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2c4j1":[function() {},{}],"3i9bq":[function() {},{}],"hqo5w":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$3950 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3950.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Frame", ()=>Frame);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _styleCss = require("./style.css");
+var _s = $RefreshSig$();
+const Frame = ()=>{
+    _s();
+    const [displayFlag, setDisplayFlag] = (0, _react.useState)(true);
+    const submitForm = ()=>{
+        alert("Form Submitted!");
+    };
+    const closeFrame = ()=>{
+        setDisplayFlag(false);
+    };
+    if (!displayFlag) return null;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "main-frame",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "content-body-container",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "content-body-header",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: "Request an Appointment"
+                    }, void 0, false, {
+                        fileName: "src/booking component/Frame.jsx",
+                        lineNumber: 24,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/booking component/Frame.jsx",
+                    lineNumber: 23,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "content-body",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            children: [
+                                "Type of Request:",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                                    className: "textarea-input"
+                                }, void 0, false, {
+                                    fileName: "src/booking component/Frame.jsx",
+                                    lineNumber: 30,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/booking component/Frame.jsx",
+                            lineNumber: 28,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            children: [
+                                "Date:",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "date",
+                                    className: "date-input"
+                                }, void 0, false, {
+                                    fileName: "src/booking component/Frame.jsx",
+                                    lineNumber: 34,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/booking component/Frame.jsx",
+                            lineNumber: 32,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            children: [
+                                "Time:",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "time",
+                                    className: "time-input"
+                                }, void 0, false, {
+                                    fileName: "src/booking component/Frame.jsx",
+                                    lineNumber: 38,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/booking component/Frame.jsx",
+                            lineNumber: 36,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/booking component/Frame.jsx",
+                    lineNumber: 27,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "content-footer",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "submit-button",
+                            onClick: submitForm,
+                            children: "SUBMIT"
+                        }, void 0, false, {
+                            fileName: "src/booking component/Frame.jsx",
+                            lineNumber: 43,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "cancel-button",
+                            children: "CANCEL RESERVATION"
+                        }, void 0, false, {
+                            fileName: "src/booking component/Frame.jsx",
+                            lineNumber: 44,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "close-button",
+                            onClick: closeFrame,
+                            children: "CLOSE"
+                        }, void 0, false, {
+                            fileName: "src/booking component/Frame.jsx",
+                            lineNumber: 45,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/booking component/Frame.jsx",
+                    lineNumber: 42,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/booking component/Frame.jsx",
+            lineNumber: 21,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/booking component/Frame.jsx",
+        lineNumber: 20,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Frame, "tqCKBZqyY2yMs55vF1Zfu4iuPyY=");
+_c = Frame;
+var _c;
+$RefreshReg$(_c, "Frame");
+
+  $parcel$ReactRefreshHelpers$3950.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"gUbcP","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gUbcP":[function() {},{}]},["4s3Ar","1xC6H","d8Dch"], "d8Dch", "parcelRequire6432")
 
 //# sourceMappingURL=index.b4b6dfad.js.map
