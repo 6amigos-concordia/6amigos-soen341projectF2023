@@ -1,0 +1,18 @@
+name: Unit Test Running
+
+on:
+  push:
+    branches:
+      - 'main'
+     - 'Frontend'
+  pull_request: 
+    branches:
+    - 'main'
+    - 'Frontend'
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Unit Test Running
+        run: echo "Unit Test Running" 

@@ -1,4 +1,4 @@
-import React from 'react';
+import ReactDOM from "react-dom";
 import {LandingPage} from './Landing component/LandingPage';
 import {OurFeature} from './Feature component';
 import {FeaturedProperties} from './FeaturedProperties';
@@ -8,6 +8,7 @@ import {Frame} from './booking component/Frame';
 import {PropertyList} from './Listing component/PropertyList';
 import {ListingForm} from "./Form/ListingForm";
 
+
 const App = () => {
   return (
     <div className="app">
@@ -16,10 +17,16 @@ const App = () => {
       <FeaturedProperties/>   
       <Team/> 
       <Cta/>
-      {/*<PropertyList/>*/}
+      
+     
+ {/*<PropertyList/>*/}
        {/*<ListingProp/>*/}
        {/*<Frame/>*/}
        {/*<ListingForm/>*/}
+       
+       
+
+     
     </div>
   );
 };
