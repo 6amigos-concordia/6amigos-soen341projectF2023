@@ -1010,6 +1010,12 @@ img.IMG {
   display: table;
 }
 
+.team .contact {
+  color: #2f234f;
+  margin-top: 1rem;
+  font-size: .9rem;
+}
+
 .button-text-only {
   background-color: #7f57f1;
   border-radius: 8px;

@@ -30013,7 +30013,32 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _styleCss = require("./style.css");
+var _s = $RefreshSig$();
 const Team = ()=>{
+    _s();
+    const [selectedMember, setSelectedMember] = (0, _react.useState)(null);
+    const teamMembers = [
+        {
+            name: "Kathryn Murphy",
+            avatar: "https://i.ibb.co/M2LJjHY/Staci.webp",
+            email: "kathryn@example.com"
+        },
+        {
+            name: "Floyd Miles",
+            avatar: "https://i.ibb.co/r0N3Ffb/Jimbo.webp",
+            email: "floyd@example.com"
+        },
+        {
+            name: "Floyd Miles",
+            avatar: "https://i.ibb.co/s1yGF6k/static1-squarespace.jpg",
+            email: "floyd@example.com"
+        },
+        {
+            name: "Ronald Richards",
+            avatar: "https://i.ibb.co/vVDbJxs/688-6883042-boss-baby-triplets-png-png-download-transparent-png.png",
+            email: "ronald@example.com"
+        }
+    ];
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "team",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -30027,7 +30052,7 @@ const Team = ()=>{
                             children: "Featured Brokers"
                         }, void 0, false, {
                             fileName: "src/FeaturedBroker/Team.jsx",
-                            lineNumber: 9,
+                            lineNumber: 34,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
@@ -30035,236 +30060,97 @@ const Team = ()=>{
                             children: "Our team of dedicated brokers is here to guide you through every step of the buying or selling process."
                         }, void 0, false, {
                             fileName: "src/FeaturedBroker/Team.jsx",
-                            lineNumber: 10,
+                            lineNumber: 35,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/FeaturedBroker/Team.jsx",
-                    lineNumber: 8,
+                    lineNumber: 33,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "content",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    children: teamMembers.map((member, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "element",
+                            onClick: ()=>setSelectedMember(member.name === selectedMember ? null : member.name),
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "team-member",
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                                         className: "avatar-mask",
                                         alt: "Avatar mask",
-                                        src: "https://i.ibb.co/M2LJjHY/Staci.webp"
+                                        src: member.avatar
                                     }, void 0, false, {
                                         fileName: "src/FeaturedBroker/Team.jsx",
-                                        lineNumber: 17,
-                                        columnNumber: 15
+                                        lineNumber: 47,
+                                        columnNumber: 17
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "div-2",
                                         children: [
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                                 className: "title-2",
-                                                children: "Kathryn Murphy"
+                                                children: member.name
                                             }, void 0, false, {
                                                 fileName: "src/FeaturedBroker/Team.jsx",
-                                                lineNumber: 19,
-                                                columnNumber: 17
+                                                lineNumber: 49,
+                                                columnNumber: 19
                                             }, undefined),
                                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
                                                 className: "sub-title",
                                                 children: "See More"
                                             }, void 0, false, {
                                                 fileName: "src/FeaturedBroker/Team.jsx",
-                                                lineNumber: 20,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/FeaturedBroker/Team.jsx",
-                                        lineNumber: 18,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/FeaturedBroker/Team.jsx",
-                                lineNumber: 16,
-                                columnNumber: 13
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/FeaturedBroker/Team.jsx",
-                            lineNumber: 15,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "element",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "team-member",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        className: "avatar-mask",
-                                        alt: "Avatar mask",
-                                        src: "https://i.ibb.co/r0N3Ffb/Jimbo.webp"
-                                    }, void 0, false, {
-                                        fileName: "src/FeaturedBroker/Team.jsx",
-                                        lineNumber: 27,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "div-2",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "title-2",
-                                                children: "Floyd Miles"
-                                            }, void 0, false, {
-                                                fileName: "src/FeaturedBroker/Team.jsx",
-                                                lineNumber: 29,
-                                                columnNumber: 17
+                                                lineNumber: 50,
+                                                columnNumber: 19
                                             }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                className: "sub-title",
-                                                children: "See More"
-                                            }, void 0, false, {
+                                            member.name === selectedMember && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "contact",
+                                                children: [
+                                                    "Email: ",
+                                                    member.email
+                                                ]
+                                            }, void 0, true, {
                                                 fileName: "src/FeaturedBroker/Team.jsx",
-                                                lineNumber: 30,
-                                                columnNumber: 17
+                                                lineNumber: 52,
+                                                columnNumber: 21
                                             }, undefined)
                                         ]
                                     }, void 0, true, {
                                         fileName: "src/FeaturedBroker/Team.jsx",
-                                        lineNumber: 28,
-                                        columnNumber: 15
+                                        lineNumber: 48,
+                                        columnNumber: 17
                                     }, undefined)
                                 ]
                             }, void 0, true, {
                                 fileName: "src/FeaturedBroker/Team.jsx",
-                                lineNumber: 26,
-                                columnNumber: 13
+                                lineNumber: 46,
+                                columnNumber: 15
                             }, undefined)
-                        }, void 0, false, {
+                        }, index, false, {
                             fileName: "src/FeaturedBroker/Team.jsx",
-                            lineNumber: 25,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "element",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "team-member",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        className: "avatar-mask",
-                                        alt: "Avatar mask",
-                                        src: "https://i.ibb.co/s1yGF6k/static1-squarespace.jpg"
-                                    }, void 0, false, {
-                                        fileName: "src/FeaturedBroker/Team.jsx",
-                                        lineNumber: 36,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "div-2",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "title-2",
-                                                children: "Floyd Miles"
-                                            }, void 0, false, {
-                                                fileName: "src/FeaturedBroker/Team.jsx",
-                                                lineNumber: 38,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                className: "sub-title",
-                                                children: "See More"
-                                            }, void 0, false, {
-                                                fileName: "src/FeaturedBroker/Team.jsx",
-                                                lineNumber: 39,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/FeaturedBroker/Team.jsx",
-                                        lineNumber: 37,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/FeaturedBroker/Team.jsx",
-                                lineNumber: 35,
-                                columnNumber: 13
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/FeaturedBroker/Team.jsx",
-                            lineNumber: 34,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "element",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "team-member",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                        className: "avatar-mask",
-                                        alt: "Avatar mask",
-                                        src: "https://i.ibb.co/vVDbJxs/688-6883042-boss-baby-triplets-png-png-download-transparent-png.png"
-                                    }, void 0, false, {
-                                        fileName: "src/FeaturedBroker/Team.jsx",
-                                        lineNumber: 45,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "div-2",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                                className: "title-2",
-                                                children: "Ronald Richards"
-                                            }, void 0, false, {
-                                                fileName: "src/FeaturedBroker/Team.jsx",
-                                                lineNumber: 47,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                className: "sub-title",
-                                                children: "See More"
-                                            }, void 0, false, {
-                                                fileName: "src/FeaturedBroker/Team.jsx",
-                                                lineNumber: 48,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/FeaturedBroker/Team.jsx",
-                                        lineNumber: 46,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, void 0, true, {
-                                fileName: "src/FeaturedBroker/Team.jsx",
-                                lineNumber: 44,
-                                columnNumber: 13
-                            }, undefined)
-                        }, void 0, false, {
-                            fileName: "src/FeaturedBroker/Team.jsx",
-                            lineNumber: 43,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
+                            lineNumber: 41,
+                            columnNumber: 13
+                        }, undefined))
+                }, void 0, false, {
                     fileName: "src/FeaturedBroker/Team.jsx",
-                    lineNumber: 14,
+                    lineNumber: 39,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/FeaturedBroker/Team.jsx",
-            lineNumber: 7,
+            lineNumber: 32,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/FeaturedBroker/Team.jsx",
-        lineNumber: 6,
+        lineNumber: 31,
         columnNumber: 5
     }, undefined);
 };
+_s(Team, "CDQVvwwMCuh995SoGdZo9kMUyvM=");
 _c = Team;
 var _c;
 $RefreshReg$(_c, "Team");

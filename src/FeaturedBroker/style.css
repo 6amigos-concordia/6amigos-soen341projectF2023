@@ -218,3 +218,8 @@ font-weight: 400;
   display: table;
   clear: both;
 }
+.team .contact {
+  margin-top: 1rem;
+  color: #2f234f;
+  font-size: 0.9rem;
+}
