@@ -2952,7 +2952,7 @@ var _appDefault = parcelHelpers.interopDefault(_app);
 const app = document.getElementById("app");
 (0, _reactDomDefault.default).render(/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _appDefault.default), {}, void 0, false, {
     fileName: "src/index.jsx",
-    lineNumber: 7,
+    lineNumber: 9,
     columnNumber: 17
 }, undefined), app);
 
@@ -27135,34 +27135,49 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactDom = require("react-dom");
+var _reactDomDefault = parcelHelpers.interopDefault(_reactDom);
 var _landingPage = require("./Landing component/LandingPage");
 var _featureComponent = require("./Feature component");
 var _featuredProperties = require("./FeaturedProperties");
+var _featuredBroker = require("./FeaturedBroker");
+var _newsletter = require("./newsletter");
+var _frame = require("./booking component/Frame");
+var _propertyList = require("./Listing component/PropertyList");
+var _listingForm = require("./Form/ListingForm");
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "app",
         children: [
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _landingPage.LandingPage), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 9,
+                lineNumber: 15,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _featureComponent.OurFeature), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 10,
+                lineNumber: 16,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _featuredProperties.FeaturedProperties), {}, void 0, false, {
                 fileName: "src/App.jsx",
-                lineNumber: 11,
+                lineNumber: 17,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _featuredBroker.Team), {}, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 18,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newsletter.Cta), {}, void 0, false, {
+                fileName: "src/App.jsx",
+                lineNumber: 19,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/App.jsx",
-        lineNumber: 8,
+        lineNumber: 14,
         columnNumber: 5
     }, undefined);
 };
@@ -27176,7 +27191,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Landing component/LandingPage":"bQzRZ","./Feature component":"eDTYY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./FeaturedProperties":"1ymem"}],"bQzRZ":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-dom":"j6uA9","./Landing component/LandingPage":"bQzRZ","./Feature component":"eDTYY","./FeaturedProperties":"1ymem","./FeaturedBroker":"2sHyA","./newsletter":"jMOOi","./booking component/Frame":"hqo5w","./Listing component/PropertyList":"a7sq9","./Form/ListingForm":"jBcRw","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bQzRZ":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "LandingPage", ()=>(0, _landingPage.LandingPage));
@@ -28914,6 +28929,7 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _dropdown = require("../../Search component/components/Dropdown");
 var _iconsSearch = require("../../Search component/icons/IconsSearch");
+var _filterForm = require("../Filtercomponent/FilterForm");
 var _styleCss = require("./style.css");
 var _s = $RefreshSig$();
 const Search = ()=>{
@@ -29061,6 +29077,11 @@ const Search = ()=>{
             value: "Sold"
         }
     ];
+    const [isModalVisible, setIsModalVisible] = (0, _react.useState)(false);
+    const handleFilterButtonClick1 = ()=>{
+        console.log("Filter button clicked!");
+        setIsModalVisible(!isModalVisible);
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "search",
         children: [
@@ -29072,20 +29093,20 @@ const Search = ()=>{
                         children: " Find Your Home"
                     }, void 0, false, {
                         fileName: "src/Search component/screens/Search.jsx",
-                        lineNumber: 89,
+                        lineNumber: 96,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _iconsSearch.IconsSearch), {
                         className: "icons-search"
                     }, void 0, false, {
                         fileName: "src/Search component/screens/Search.jsx",
-                        lineNumber: 90,
+                        lineNumber: 97,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Search component/screens/Search.jsx",
-                lineNumber: 88,
+                lineNumber: 95,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29100,13 +29121,13 @@ const Search = ()=>{
                         onChange: handleInputChange
                     }, void 0, false, {
                         fileName: "src/Search component/screens/Search.jsx",
-                        lineNumber: 93,
-                        columnNumber: 11
+                        lineNumber: 100,
+                        columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Search component/screens/Search.jsx",
-                lineNumber: 92,
+                lineNumber: 99,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -29121,7 +29142,7 @@ const Search = ()=>{
                         onChange: handleDistrictChange
                     }, void 0, false, {
                         fileName: "src/Search component/screens/Search.jsx",
-                        lineNumber: 102,
+                        lineNumber: 109,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _dropdown.Dropdown), {
@@ -29133,7 +29154,7 @@ const Search = ()=>{
                         onChange: handleMinPriceChange
                     }, void 0, false, {
                         fileName: "src/Search component/screens/Search.jsx",
-                        lineNumber: 109,
+                        lineNumber: 116,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _dropdown.Dropdown), {
@@ -29145,7 +29166,7 @@ const Search = ()=>{
                         onChange: handleMaxPriceChange
                     }, void 0, false, {
                         fileName: "src/Search component/screens/Search.jsx",
-                        lineNumber: 116,
+                        lineNumber: 123,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _dropdown.Dropdown), {
@@ -29157,7 +29178,7 @@ const Search = ()=>{
                         onChange: handlePropertyTypeChange
                     }, void 0, false, {
                         fileName: "src/Search component/screens/Search.jsx",
-                        lineNumber: 123,
+                        lineNumber: 130,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -29167,28 +29188,67 @@ const Search = ()=>{
                             className: "icons-search"
                         }, void 0, false, {
                             fileName: "src/Search component/screens/Search.jsx",
-                            lineNumber: 131,
+                            lineNumber: 138,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Search component/screens/Search.jsx",
-                        lineNumber: 130,
+                        lineNumber: 137,
                         columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "button-with-icon",
+                        type: "button",
+                        onClick: handleFilterButtonClick1,
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                            className: "vector",
+                            alt: "Vector",
+                            src: "https://i.ibb.co/nnx7Z0V/vector.png"
+                        }, void 0, false, {
+                            fileName: "src/Search component/screens/Search.jsx",
+                            lineNumber: 141,
+                            columnNumber: 11
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/Search component/screens/Search.jsx",
+                        lineNumber: 140,
+                        columnNumber: 9
+                    }, undefined),
+                    isModalVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "modal",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "modal-content",
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _filterForm.FilterForm), {
+                                onSubmit: (formData)=>console.log(formData)
+                            }, void 0, false, {
+                                fileName: "src/Search component/screens/Search.jsx",
+                                lineNumber: 146,
+                                columnNumber: 13
+                            }, undefined)
+                        }, void 0, false, {
+                            fileName: "src/Search component/screens/Search.jsx",
+                            lineNumber: 145,
+                            columnNumber: 13
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/Search component/screens/Search.jsx",
+                        lineNumber: 144,
+                        columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Search component/screens/Search.jsx",
-                lineNumber: 101,
+                lineNumber: 108,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Search component/screens/Search.jsx",
-        lineNumber: 87,
+        lineNumber: 94,
         columnNumber: 5
     }, undefined);
 };
-_s(Search, "Hsiu7EsuejCXiXYQYvy2hAxLCVQ=");
+_s(Search, "Nn42zQvfOMS0sQdSsELhgarBZ2E=");
 _c = Search;
 var _c;
 $RefreshReg$(_c, "Search");
@@ -29198,7 +29258,7 @@ $RefreshReg$(_c, "Search");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../Search component/components/Dropdown":"hI7DG","../../Search component/icons/IconsSearch":"dvFTl","./style.css":"bYIyU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hI7DG":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../Search component/components/Dropdown":"hI7DG","../../Search component/icons/IconsSearch":"dvFTl","../Filtercomponent/FilterForm":"lRAGc","./style.css":"bYIyU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hI7DG":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Dropdown", ()=>(0, _dropdown.Dropdown));
@@ -29312,7 +29372,7 @@ const IconsSearch = ({ className })=>{
                 strokeWidth: "2"
             }, void 0, false, {
                 fileName: "src/Search component/icons/IconsSearch/IconsSearch.jsx",
-                lineNumber: 14,
+                lineNumber: 13,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -29325,7 +29385,7 @@ const IconsSearch = ({ className })=>{
                 strokeWidth: "2"
             }, void 0, false, {
                 fileName: "src/Search component/icons/IconsSearch/IconsSearch.jsx",
-                lineNumber: 22,
+                lineNumber: 21,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -29337,7 +29397,7 @@ const IconsSearch = ({ className })=>{
                 strokeWidth: "2"
             }, void 0, false, {
                 fileName: "src/Search component/icons/IconsSearch/IconsSearch.jsx",
-                lineNumber: 31,
+                lineNumber: 30,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("path", {
@@ -29350,13 +29410,13 @@ const IconsSearch = ({ className })=>{
                 strokeWidth: "2"
             }, void 0, false, {
                 fileName: "src/Search component/icons/IconsSearch/IconsSearch.jsx",
-                lineNumber: 39,
+                lineNumber: 38,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Search component/icons/IconsSearch/IconsSearch.jsx",
-        lineNumber: 6,
+        lineNumber: 5,
         columnNumber: 5
     }, undefined);
 };
@@ -29365,6 +29425,278 @@ var _c;
 $RefreshReg$(_c, "IconsSearch");
 
   $parcel$ReactRefreshHelpers$9596.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lRAGc":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f5e3 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$f5e3.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _s = $RefreshSig$();
+const FilterFormComponent = ({ onSubmit })=>{
+    _s();
+    const [transactionType, setTransactionType] = (0, _react.useState)("");
+    const [minPrice, setMinPrice] = (0, _react.useState)("");
+    const [maxPrice, setMaxPrice] = (0, _react.useState)("");
+    const [minBeds, setMinBeds] = (0, _react.useState)("");
+    const [maxBeds, setMaxBeds] = (0, _react.useState)("");
+    const [minBaths, setMinBaths] = (0, _react.useState)("");
+    const [maxBaths, setMaxBaths] = (0, _react.useState)("");
+    const [ownership, setOwnership] = (0, _react.useState)("");
+    const [yearBuilt, setYearBuilt] = (0, _react.useState)("");
+    const handleSubmit = (e)=>{
+        e.preventDefault();
+        // Prepare the form data as needed and pass it to the onSubmit function
+        const formData = {
+            transactionType,
+            minPrice,
+            maxPrice,
+            minBeds,
+            maxBeds,
+            minBaths,
+            maxBaths,
+            ownership,
+            yearBuilt
+        };
+        // Call the onSubmit function and pass the form data
+        onSubmit(formData);
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "filter-form",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+            onSubmit: handleSubmit,
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                    children: [
+                        "Transaction Type:",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
+                            value: transactionType,
+                            onChange: (e)=>setTransactionType(e.target.value),
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                    value: "",
+                                    children: "Select"
+                                }, void 0, false, {
+                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                    lineNumber: 41,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                    value: "for sale",
+                                    children: "For Sale"
+                                }, void 0, false, {
+                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                    lineNumber: 42,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                    value: "for rent",
+                                    children: "For Rent"
+                                }, void 0, false, {
+                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                    lineNumber: 43,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                    value: "sold",
+                                    children: "Sold"
+                                }, void 0, false, {
+                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                    lineNumber: 44,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                            lineNumber: 37,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                    lineNumber: 35,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                    children: [
+                        "Min Price:",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            value: minPrice,
+                            onChange: (e)=>setMinPrice(e.target.value)
+                        }, void 0, false, {
+                            fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                            lineNumber: 49,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                    lineNumber: 47,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                    children: [
+                        "Max Price:",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            value: maxPrice,
+                            onChange: (e)=>setMaxPrice(e.target.value)
+                        }, void 0, false, {
+                            fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                            lineNumber: 57,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                    lineNumber: 55,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                    children: [
+                        "Min Beds:",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            value: minBeds,
+                            onChange: (e)=>setMinBeds(e.target.value)
+                        }, void 0, false, {
+                            fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                            lineNumber: 65,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                    lineNumber: 63,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                    children: [
+                        "Max Beds:",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            value: maxBeds,
+                            onChange: (e)=>setMaxBeds(e.target.value)
+                        }, void 0, false, {
+                            fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                            lineNumber: 73,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                    lineNumber: 71,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                    children: [
+                        "Min Baths:",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            value: minBaths,
+                            onChange: (e)=>setMinBaths(e.target.value)
+                        }, void 0, false, {
+                            fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                            lineNumber: 81,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                    lineNumber: 79,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                    children: [
+                        "Max Baths:",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            value: maxBaths,
+                            onChange: (e)=>setMaxBaths(e.target.value)
+                        }, void 0, false, {
+                            fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                            lineNumber: 89,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                    lineNumber: 87,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                    children: [
+                        "Ownership/Title:",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            value: ownership,
+                            onChange: (e)=>setOwnership(e.target.value)
+                        }, void 0, false, {
+                            fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                            lineNumber: 97,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                    lineNumber: 95,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                    children: [
+                        "Year Built:",
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            value: yearBuilt,
+                            onChange: (e)=>setYearBuilt(e.target.value)
+                        }, void 0, false, {
+                            fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                            lineNumber: 105,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                    lineNumber: 103,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    type: "submit",
+                    children: "Apply Filters"
+                }, void 0, false, {
+                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                    lineNumber: 111,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+            lineNumber: 34,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+        lineNumber: 33,
+        columnNumber: 5
+    }, undefined);
+};
+_s(FilterFormComponent, "0eIfi+8csErWTfZD8pqfXafJvbI=");
+_c = FilterFormComponent;
+exports.default = FilterFormComponent;
+var _c;
+$RefreshReg$(_c, "FilterFormComponent");
+
+  $parcel$ReactRefreshHelpers$f5e3.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
@@ -29661,6 +29993,1012 @@ $RefreshReg$(_c, "FeaturedProperties");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"hygpl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hygpl":[function() {},{}]},["4s3Ar","1xC6H","d8Dch"], "d8Dch", "parcelRequire6432")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"hygpl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hygpl":[function() {},{}],"2sHyA":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Team", ()=>(0, _team.Team));
+var _team = require("./Team");
+
+},{"./Team":"hvIBW","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"hvIBW":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$58f7 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$58f7.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Team", ()=>Team);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _styleCss = require("./style.css");
+var _s = $RefreshSig$();
+const Team = ()=>{
+    _s();
+    const [selectedMember, setSelectedMember] = (0, _react.useState)(null);
+    const teamMembers = [
+        {
+            name: "Kathryn Murphy",
+            avatar: "https://i.ibb.co/M2LJjHY/Staci.webp",
+            email: "kathryn@example.com"
+        },
+        {
+            name: "Floyd Miles",
+            avatar: "https://i.ibb.co/r0N3Ffb/Jimbo.webp",
+            email: "floyd@example.com"
+        },
+        {
+            name: "Floyd Miles",
+            avatar: "https://i.ibb.co/s1yGF6k/static1-squarespace.jpg",
+            email: "floyd@example.com"
+        },
+        {
+            name: "Ronald Richards",
+            avatar: "https://i.ibb.co/vVDbJxs/688-6883042-boss-baby-triplets-png-png-download-transparent-png.png",
+            email: "ronald@example.com"
+        }
+    ];
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "team",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "div",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "title-description",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "title",
+                            children: "Featured Brokers"
+                        }, void 0, false, {
+                            fileName: "src/FeaturedBroker/Team.jsx",
+                            lineNumber: 34,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            className: "description",
+                            children: "Our team of dedicated brokers is here to guide you through every step of the buying or selling process."
+                        }, void 0, false, {
+                            fileName: "src/FeaturedBroker/Team.jsx",
+                            lineNumber: 35,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/FeaturedBroker/Team.jsx",
+                    lineNumber: 33,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "content",
+                    children: teamMembers.map((member, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "element",
+                            onClick: ()=>setSelectedMember(member.name === selectedMember ? null : member.name),
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "team-member",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        className: "avatar-mask",
+                                        alt: "Avatar mask",
+                                        src: member.avatar
+                                    }, void 0, false, {
+                                        fileName: "src/FeaturedBroker/Team.jsx",
+                                        lineNumber: 47,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "div-2",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "title-2",
+                                                children: member.name
+                                            }, void 0, false, {
+                                                fileName: "src/FeaturedBroker/Team.jsx",
+                                                lineNumber: 49,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                                className: "sub-title",
+                                                children: "See More"
+                                            }, void 0, false, {
+                                                fileName: "src/FeaturedBroker/Team.jsx",
+                                                lineNumber: 50,
+                                                columnNumber: 19
+                                            }, undefined),
+                                            member.name === selectedMember && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                                className: "contact",
+                                                children: [
+                                                    "Email: ",
+                                                    member.email
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/FeaturedBroker/Team.jsx",
+                                                lineNumber: 52,
+                                                columnNumber: 21
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/FeaturedBroker/Team.jsx",
+                                        lineNumber: 48,
+                                        columnNumber: 17
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/FeaturedBroker/Team.jsx",
+                                lineNumber: 46,
+                                columnNumber: 15
+                            }, undefined)
+                        }, index, false, {
+                            fileName: "src/FeaturedBroker/Team.jsx",
+                            lineNumber: 41,
+                            columnNumber: 13
+                        }, undefined))
+                }, void 0, false, {
+                    fileName: "src/FeaturedBroker/Team.jsx",
+                    lineNumber: 39,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/FeaturedBroker/Team.jsx",
+            lineNumber: 32,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/FeaturedBroker/Team.jsx",
+        lineNumber: 31,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Team, "CDQVvwwMCuh995SoGdZo9kMUyvM=");
+_c = Team;
+var _c;
+$RefreshReg$(_c, "Team");
+
+  $parcel$ReactRefreshHelpers$58f7.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"e89W3","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"e89W3":[function() {},{}],"jMOOi":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Cta", ()=>(0, _cta.Cta));
+var _cta = require("./Cta");
+
+},{"./Cta":"eIS5a","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eIS5a":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5b36 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5b36.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Cta", ()=>Cta);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _buttonTextOnly = require("./ButtonTextOnly");
+var _input = require("./Input");
+var _styleCss = require("./style.css");
+var _s = $RefreshSig$();
+const Cta = ()=>{
+    _s();
+    const [email, setEmail] = (0, _react.useState)(""); // Step 1: Capture the Email
+    const handleSubscribe = ()=>{
+        // Step 2: Handle the Submission
+        if (email) // Step 3: Send the Brochure (example API call)
+        fetch("/api/sendBrochure", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({
+                email
+            })
+        }).then((response)=>response.json()).then((data)=>{
+            if (data.success) alert("Brochure sent successfully!");
+            else alert("There was an error. Please try again later.");
+        });
+        else alert("Please enter a valid email address.");
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "CTA",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "div",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "shapes",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "overlap-group",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "rectangle"
+                            }, void 0, false, {
+                                fileName: "src/newsletter/Cta.jsx",
+                                lineNumber: 38,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "rectangle-2"
+                            }, void 0, false, {
+                                fileName: "src/newsletter/Cta.jsx",
+                                lineNumber: 39,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/newsletter/Cta.jsx",
+                        lineNumber: 37,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/newsletter/Cta.jsx",
+                    lineNumber: 36,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "subscribe-wrapper",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "title-description",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "title",
+                                    children: "Stay Ahead in Luxury Living"
+                                }, void 0, false, {
+                                    fileName: "src/newsletter/Cta.jsx",
+                                    lineNumber: 44,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                    className: "description",
+                                    children: "Sign up with your email and receive exclusive updates on elite properties every day."
+                                }, void 0, false, {
+                                    fileName: "src/newsletter/Cta.jsx",
+                                    lineNumber: 45,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/newsletter/Cta.jsx",
+                            lineNumber: 43,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                            className: "input-2",
+                            children: [
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "email",
+                                    id: "email",
+                                    className: "input-instance design-component-instance-node",
+                                    placeholder: "Your email here",
+                                    value: email,
+                                    onChange: (e)=>setEmail(e.target.value)
+                                }, void 0, false, {
+                                    fileName: "src/newsletter/Cta.jsx",
+                                    lineNumber: 50,
+                                    columnNumber: 11
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _buttonTextOnly.ButtonTextOnly), {
+                                    className: "button-text-only-instance",
+                                    text: "Subscribe",
+                                    onClick: handleSubscribe
+                                }, void 0, false, {
+                                    fileName: "src/newsletter/Cta.jsx",
+                                    lineNumber: 58,
+                                    columnNumber: 12
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/newsletter/Cta.jsx",
+                            lineNumber: 49,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/newsletter/Cta.jsx",
+                    lineNumber: 42,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/newsletter/Cta.jsx",
+            lineNumber: 35,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/newsletter/Cta.jsx",
+        lineNumber: 34,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Cta, "Pe1zWWKcsJK82m3WyFiCTurRPxo=");
+_c = Cta;
+var _c;
+$RefreshReg$(_c, "Cta");
+
+  $parcel$ReactRefreshHelpers$5b36.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./ButtonTextOnly":"dLF5w","./Input":"6dbH2","./style.css":"3i9bq","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dLF5w":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ButtonTextOnly", ()=>(0, _buttonTextOnly.ButtonTextOnly));
+var _buttonTextOnly = require("./ButtonTextOnly");
+
+},{"./ButtonTextOnly":"cQ4dO","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"cQ4dO":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$5ab6 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$5ab6.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "ButtonTextOnly", ()=>ButtonTextOnly);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _styleCss = require("./style.css");
+const ButtonTextOnly = ({ className, text = "Button CTA", onClick })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: `button-text-only ${className}`,
+        onClick: onClick,
+        role: "button",
+        tabIndex: "0",
+        onKeyPress: (event)=>{
+            // Enables "click" on pressing Enter key
+            if (event.key === "Enter") onClick(event);
+        },
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "text-wrapper",
+            children: text
+        }, void 0, false, {
+            fileName: "src/newsletter/ButtonTextOnly/ButtonTextOnly.jsx",
+            lineNumber: 17,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/newsletter/ButtonTextOnly/ButtonTextOnly.jsx",
+        lineNumber: 7,
+        columnNumber: 5
+    }, undefined);
+};
+_c = ButtonTextOnly;
+ButtonTextOnly.propTypes = {
+    text: (0, _propTypesDefault.default).string,
+    onClick: (0, _propTypesDefault.default).func
+};
+var _c;
+$RefreshReg$(_c, "ButtonTextOnly");
+
+  $parcel$ReactRefreshHelpers$5ab6.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","./style.css":"dNy1G","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dNy1G":[function() {},{}],"6dbH2":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Input", ()=>(0, _input.Input));
+var _input = require("./Input");
+
+},{"./Input":"8NsFZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8NsFZ":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$1a05 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$1a05.prelude(module);
+
+try {
+/*
+We're constantly improving the code you see. 
+Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcNg&d=1152665201300829
+*/ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Input", ()=>Input);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _propTypes = require("prop-types");
+var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _styleCss = require("./style.css");
+const Input = ({ className, textClassName, text = "Select team member" })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: `input ${className}`,
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "content",
+            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: `text ${textClassName}`,
+                children: text
+            }, void 0, false, {
+                fileName: "src/newsletter/Input/Input.jsx",
+                lineNumber: 14,
+                columnNumber: 9
+            }, undefined)
+        }, void 0, false, {
+            fileName: "src/newsletter/Input/Input.jsx",
+            lineNumber: 13,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/newsletter/Input/Input.jsx",
+        lineNumber: 12,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Input;
+Input.propTypes = {
+    text: (0, _propTypesDefault.default).string
+};
+var _c;
+$RefreshReg$(_c, "Input");
+
+  $parcel$ReactRefreshHelpers$1a05.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","./style.css":"2c4j1","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"2c4j1":[function() {},{}],"3i9bq":[function() {},{}],"hqo5w":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$3950 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$3950.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Frame", ()=>Frame);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _styleCss = require("./style.css");
+var _s = $RefreshSig$();
+const Frame = ()=>{
+    _s();
+    const [displayFlag, setDisplayFlag] = (0, _react.useState)(true);
+    const submitForm = ()=>{
+        alert("Form Submitted!");
+    };
+    const closeFrame = ()=>{
+        setDisplayFlag(false);
+    };
+    if (!displayFlag) return null;
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "main-frame",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "content-body-container",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "content-body-header",
+                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: "Request an Appointment"
+                    }, void 0, false, {
+                        fileName: "src/booking component/Frame.jsx",
+                        lineNumber: 24,
+                        columnNumber: 11
+                    }, undefined)
+                }, void 0, false, {
+                    fileName: "src/booking component/Frame.jsx",
+                    lineNumber: 23,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "content-body",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            children: [
+                                "Type of Request:",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                                    className: "textarea-input"
+                                }, void 0, false, {
+                                    fileName: "src/booking component/Frame.jsx",
+                                    lineNumber: 30,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/booking component/Frame.jsx",
+                            lineNumber: 28,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            children: [
+                                "Date:",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "date",
+                                    className: "date-input"
+                                }, void 0, false, {
+                                    fileName: "src/booking component/Frame.jsx",
+                                    lineNumber: 34,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/booking component/Frame.jsx",
+                            lineNumber: 32,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            children: [
+                                "Time:",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "time",
+                                    className: "time-input"
+                                }, void 0, false, {
+                                    fileName: "src/booking component/Frame.jsx",
+                                    lineNumber: 38,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/booking component/Frame.jsx",
+                            lineNumber: 36,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/booking component/Frame.jsx",
+                    lineNumber: 27,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "content-footer",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "submit-button",
+                            onClick: submitForm,
+                            children: "SUBMIT"
+                        }, void 0, false, {
+                            fileName: "src/booking component/Frame.jsx",
+                            lineNumber: 43,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "cancel-button",
+                            children: "CANCEL RESERVATION"
+                        }, void 0, false, {
+                            fileName: "src/booking component/Frame.jsx",
+                            lineNumber: 44,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "close-button",
+                            onClick: closeFrame,
+                            children: "CLOSE"
+                        }, void 0, false, {
+                            fileName: "src/booking component/Frame.jsx",
+                            lineNumber: 45,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/booking component/Frame.jsx",
+                    lineNumber: 42,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/booking component/Frame.jsx",
+            lineNumber: 21,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/booking component/Frame.jsx",
+        lineNumber: 20,
+        columnNumber: 5
+    }, undefined);
+};
+_s(Frame, "tqCKBZqyY2yMs55vF1Zfu4iuPyY=");
+_c = Frame;
+var _c;
+$RefreshReg$(_c, "Frame");
+
+  $parcel$ReactRefreshHelpers$3950.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"gUbcP","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gUbcP":[function() {},{}],"a7sq9":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$188f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$188f.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "PropertyList", ()=>PropertyList);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _propertyListCss = require("./PropertyList.css");
+var _s = $RefreshSig$();
+const properties = [
+    {
+        id: 1,
+        name: "Property 1",
+        price: 2000000,
+        image: "https://i.ibb.co/85wDgBm/Eleonon-House.jpg"
+    },
+    {
+        id: 2,
+        name: "Property 2",
+        price: 2500000,
+        image: "https://i.ibb.co/F6wxK8w/Tour-the-Homes-Designed-by-Hollywood-s-Newest-A-List-Architect.jpg"
+    },
+    {
+        id: 3,
+        name: "Property 3",
+        price: 1800000,
+        image: "https://i.ibb.co/bWf5j8v/Custom-Mantels-UT-Stone-Mountain-Castings-Design.jpg"
+    },
+    {
+        id: 4,
+        name: "Property 4",
+        price: 3000000,
+        image: "https://i.ibb.co/9bW0w7B/The-12-000-000-Montreal-Mansion-You-ll-Want-To-Buy-Right-Meow.jpg"
+    },
+    {
+        id: 5,
+        name: "Property 5",
+        price: 2200000,
+        image: "https://i.ibb.co/zJYdCZk/image.jpg"
+    },
+    {
+        id: 6,
+        name: "Property 6",
+        price: 3700000,
+        image: "https://i.ibb.co/48YZtTt/2021-Dream-Home.jpg"
+    },
+    {
+        id: 7,
+        name: "Property 7",
+        price: 1900000,
+        image: "https://i.ibb.co/dWjqQrS/2-Story-home-gallery.jpg"
+    },
+    {
+        id: 8,
+        name: "Property 8",
+        price: 2800000,
+        image: "https://i.ibb.co/CBZTxgj/Exteriors-Gallery.jpg"
+    },
+    {
+        id: 9,
+        name: "Property 9",
+        price: 4000000,
+        image: "https://i.ibb.co/5rxyzDR/House-Plan-1020-00083-European-Plan-4-381-Square-Feet-4-Bedrooms-4-5-Bathrooms.jpg"
+    },
+    {
+        id: 10,
+        name: "Property 10",
+        price: 3200000,
+        image: "https://i.ibb.co/DDbtcs0/17-Gorgeous-Traditional-Home-Exterior-Designs-You-Will-Find-Inspiration-In.jpg"
+    }
+];
+const PropertyList = ()=>{
+    _s();
+    const [interestStatus, setInterestStatus] = (0, _react.useState)({});
+    const handleInterestToggle = (propertyId, propertyName)=>{
+        if (!interestStatus[propertyId]) {
+            setInterestStatus((prevState)=>({
+                    ...prevState,
+                    [propertyId]: true
+                }));
+            alert(`You are interested in ${propertyName}`);
+        } else alert(`You are already interested in ${propertyName}`);
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "property-list",
+        children: properties.map((property)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "property",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: property.image,
+                        alt: property.name,
+                        className: "property-image"
+                    }, void 0, false, {
+                        fileName: "src/Listing component/PropertyList.jsx",
+                        lineNumber: 35,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "property-details",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                children: property.name
+                            }, void 0, false, {
+                                fileName: "src/Listing component/PropertyList.jsx",
+                                lineNumber: 37,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: [
+                                    "Price: $",
+                                    property.price
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Listing component/PropertyList.jsx",
+                                lineNumber: 38,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                onClick: ()=>handleInterestToggle(property.id, property.name),
+                                children: interestStatus[property.id] ? "Interested" : "Show Interest"
+                            }, void 0, false, {
+                                fileName: "src/Listing component/PropertyList.jsx",
+                                lineNumber: 39,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Listing component/PropertyList.jsx",
+                        lineNumber: 36,
+                        columnNumber: 11
+                    }, undefined)
+                ]
+            }, property.id, true, {
+                fileName: "src/Listing component/PropertyList.jsx",
+                lineNumber: 34,
+                columnNumber: 9
+            }, undefined))
+    }, void 0, false, {
+        fileName: "src/Listing component/PropertyList.jsx",
+        lineNumber: 32,
+        columnNumber: 5
+    }, undefined);
+};
+_s(PropertyList, "67l1/WHuEiNtw7qnGLnLekiwJqc=");
+_c = PropertyList;
+var _c;
+$RefreshReg$(_c, "PropertyList");
+
+  $parcel$ReactRefreshHelpers$188f.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./PropertyList.css":"esJvN","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"esJvN":[function() {},{}],"jBcRw":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$f7ff = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$f7ff.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _styleCss = require("./style.css");
+var _s = $RefreshSig$();
+const ListingForm = ()=>{
+    _s();
+    const [photos, setPhotos] = (0, _reactDefault.default).useState([]);
+    const [showForm, setShowForm] = (0, _reactDefault.default).useState(false);
+    const handlePhotos = (e)=>{
+        const uploadedPhotos = Array.from(e.target.files);
+        setPhotos(uploadedPhotos);
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "form-container",
+        children: !showForm ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+            onClick: ()=>setShowForm(true),
+            children: "Add Listing"
+        }, void 0, false, {
+            fileName: "src/Form/ListingForm.jsx",
+            lineNumber: 16,
+            columnNumber: 17
+        }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "listing-form",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                    children: "Add a Listing"
+                }, void 0, false, {
+                    fileName: "src/Form/ListingForm.jsx",
+                    lineNumber: 19,
+                    columnNumber: 21
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-group",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            children: "Property Address:"
+                        }, void 0, false, {
+                            fileName: "src/Form/ListingForm.jsx",
+                            lineNumber: 22,
+                            columnNumber: 25
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            placeholder: "Description"
+                        }, void 0, false, {
+                            fileName: "src/Form/ListingForm.jsx",
+                            lineNumber: 23,
+                            columnNumber: 25
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            placeholder: "Price"
+                        }, void 0, false, {
+                            fileName: "src/Form/ListingForm.jsx",
+                            lineNumber: 24,
+                            columnNumber: 25
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Form/ListingForm.jsx",
+                    lineNumber: 21,
+                    columnNumber: 21
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-group",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            children: "Property Description:"
+                        }, void 0, false, {
+                            fileName: "src/Form/ListingForm.jsx",
+                            lineNumber: 28,
+                            columnNumber: 25
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                            placeholder: "Description"
+                        }, void 0, false, {
+                            fileName: "src/Form/ListingForm.jsx",
+                            lineNumber: 29,
+                            columnNumber: 25
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Form/ListingForm.jsx",
+                    lineNumber: 27,
+                    columnNumber: 21
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-group",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            htmlFor: "photos",
+                            children: "Upload Photos:"
+                        }, void 0, false, {
+                            fileName: "src/Form/ListingForm.jsx",
+                            lineNumber: 33,
+                            columnNumber: 25
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "file",
+                            id: "photos",
+                            name: "photos",
+                            accept: "image/*",
+                            multiple: true,
+                            onChange: handlePhotos
+                        }, void 0, false, {
+                            fileName: "src/Form/ListingForm.jsx",
+                            lineNumber: 34,
+                            columnNumber: 25
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Form/ListingForm.jsx",
+                    lineNumber: 32,
+                    columnNumber: 21
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "form-group",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            children: "Property Features:"
+                        }, void 0, false, {
+                            fileName: "src/Form/ListingForm.jsx",
+                            lineNumber: 38,
+                            columnNumber: 25
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            placeholder: "Appliances"
+                        }, void 0, false, {
+                            fileName: "src/Form/ListingForm.jsx",
+                            lineNumber: 39,
+                            columnNumber: 25
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            placeholder: "Interior Features"
+                        }, void 0, false, {
+                            fileName: "src/Form/ListingForm.jsx",
+                            lineNumber: 40,
+                            columnNumber: 25
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            placeholder: "Flooring"
+                        }, void 0, false, {
+                            fileName: "src/Form/ListingForm.jsx",
+                            lineNumber: 41,
+                            columnNumber: 25
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            placeholder: "Heating & Cooling"
+                        }, void 0, false, {
+                            fileName: "src/Form/ListingForm.jsx",
+                            lineNumber: 42,
+                            columnNumber: 25
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            placeholder: "General Features"
+                        }, void 0, false, {
+                            fileName: "src/Form/ListingForm.jsx",
+                            lineNumber: 43,
+                            columnNumber: 25
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            placeholder: "Exterior Features"
+                        }, void 0, false, {
+                            fileName: "src/Form/ListingForm.jsx",
+                            lineNumber: 44,
+                            columnNumber: 25
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            placeholder: "View"
+                        }, void 0, false, {
+                            fileName: "src/Form/ListingForm.jsx",
+                            lineNumber: 45,
+                            columnNumber: 25
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                            type: "text",
+                            placeholder: "Amenities Nearby"
+                        }, void 0, false, {
+                            fileName: "src/Form/ListingForm.jsx",
+                            lineNumber: 46,
+                            columnNumber: 25
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Form/ListingForm.jsx",
+                    lineNumber: 37,
+                    columnNumber: 21
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                    type: "submit",
+                    children: "Submit Listing"
+                }, void 0, false, {
+                    fileName: "src/Form/ListingForm.jsx",
+                    lineNumber: 49,
+                    columnNumber: 21
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/Form/ListingForm.jsx",
+            lineNumber: 18,
+            columnNumber: 17
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/Form/ListingForm.jsx",
+        lineNumber: 14,
+        columnNumber: 9
+    }, undefined);
+};
+_s(ListingForm, "jwMbXNGlSGbhTh+q1SyquOmKgDU=");
+_c = ListingForm;
+exports.default = ListingForm;
+var _c;
+$RefreshReg$(_c, "ListingForm");
+
+  $parcel$ReactRefreshHelpers$f7ff.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"bWSUJ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bWSUJ":[function() {},{}]},["4s3Ar","1xC6H","d8Dch"], "d8Dch", "parcelRequire6432")
 
 //# sourceMappingURL=index.b4b6dfad.js.map

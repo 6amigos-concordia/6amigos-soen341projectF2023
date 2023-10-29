@@ -1,8 +1,3 @@
-/*
-We're constantly improving the code you see. 
-Please share your feedback here: https://form.asana.com/?k=uvp-HPgd3_hyoXRBw1IcNg&d=1152665201300829
-*/
-
 import React from "react";
 
 export const IconsSearch1 = ({ className }) => {
@@ -15,6 +10,7 @@ export const IconsSearch1 = ({ className }) => {
       width="24"
       xmlns="http://www.w3.org/2000/svg"
     >
+      
       <path
         className="path"
         d="M11 19C15.4183 19 19 15.4183 19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19Z"
