@@ -19,4 +19,12 @@ public class BrokerService {
     public Property addNewProperty(Property property) {
         return brokerRepository.save(property);
     }
+
+    public boolean deleteProperty(String id) {
+        if(brokerRepository.existsById(id)) {
+            brokerRepository.deleteById(id);
+            return true;
+        }
+        return false;
+    }
 }

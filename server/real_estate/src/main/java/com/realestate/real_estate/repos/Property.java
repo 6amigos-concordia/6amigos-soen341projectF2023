@@ -10,7 +10,7 @@ import org.springframework.data.annotation.Id;
 @Jacksonized
 public class Property {
     @Id
-    String id;
+    private String id;
     String address;
     PropertyDetails details;
     String[] appointmentIds;
