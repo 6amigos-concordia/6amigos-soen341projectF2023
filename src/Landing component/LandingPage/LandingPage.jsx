@@ -24,8 +24,10 @@ export const LandingPage = () => {
       </div>
       </div>
       <div className="signing">
-        <ButtonSecondary className="log-in2" text="Log in" textClassName="button-secondary-instance" />
+        
+      <ButtonSecondary className="sign-up" divClassName="design-component-instance-node" frameClassName="button-instance" />
         <Button className="sign-up" divClassName="design-component-instance-node" frameClassName="button-instance" />
+        
       </div>
       </div>
       <ContentCta />
