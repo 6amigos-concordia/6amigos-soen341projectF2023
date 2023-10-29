@@ -8,7 +8,7 @@
   }
   
   .content-body-container {
-    background-color: #D9D9D9;
+    background-color: #fcfcfc;
     border-radius: 10px;
     padding: 2rem;
     width: 60%;
@@ -29,7 +29,7 @@
   .content-body label {
     display: block;
     margin-bottom: 1.5rem;
-    color: #093568;
+    color: #14339E;
     font-size: 1.2rem;
   }
   
@@ -37,7 +37,7 @@
     width: 100%;
     padding: 12px;
     font-size: 1rem;
-    border: 2px solid #093568;
+    border: 2px solid #14339E;
     border-radius: 4px;
     margin-top: 0.5rem;
   }
@@ -62,11 +62,11 @@
     cursor: pointer;
     outline: none;
     transition: background-color 0.3s ease, color 0.3s ease;
-    border: 2px solid #093568;
+    border: 2px solid #14339E;
   }
   
   .submit-button {
-    background-color: #093568;
+    background-color: #14339E;
     color: #ffffff;
   }
   
@@ -76,12 +76,12 @@
   }
   
   .cancel-button {
-    background-color: #d9534f;
+    background-color: #14339E;
     color: #ffffff;
   }
   
   .cancel-button:hover {
-    background-color: #c9302c;
+    background-color: #14339E;
   }
   
   .close-button {

@@ -1,20 +1,11 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style.css";
 
-export const Frame = () => {
-  const [displayFlag, setDisplayFlag] = useState(true);
+export const Frame = ({ onClose }) => {
 
   const submitForm = () => {
     alert("Form Submitted!");
   };
-
-  const closeFrame = () => {
-    setDisplayFlag(false);
-  };
-
-  if (!displayFlag) {
-    return null;
-  }
 
   return (
     <div className="main-frame">
@@ -22,6 +13,8 @@ export const Frame = () => {
         
         <div className="content-body-header">
           <h1>Request an Appointment</h1>
+          {/* Added a close button at the top right corner */}
+          <button onClick={onClose} style={{ position: 'absolute', top: '10px', right: '10px' }}>X</button>
         </div>
         
         <div className="content-body">
@@ -42,7 +35,7 @@ export const Frame = () => {
         <div className="content-footer">
           <button className="submit-button" onClick={submitForm}>SUBMIT</button>
           <button className="cancel-button">CANCEL RESERVATION</button>
-          <button className="close-button" onClick={closeFrame}>CLOSE</button>
+         
         </div>
         
       </div>

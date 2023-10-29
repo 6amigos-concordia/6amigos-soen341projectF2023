@@ -1,7 +1,10 @@
 import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
+import {Frame} from "../Frame/Frame"
+
 
 const Feature = ({ title, content }) => (
   <p className="feature">
@@ -23,8 +26,18 @@ const images = [
 
 
 export const ListingProp = () => {
+
+  const [isFrameVisible, setIsFrameVisible] = useState(false);
+
+  if (isFrameVisible) {
+    return (
+      <Frame onClose={() => setIsFrameVisible(false)} />
+    );
+  }
+
   return (
     <div className="listing-prop">
+
       <div className="top-fixed-container">
       <div className="brand">
         <img className="IMG" alt="" src="https://i.ibb.co/TbH49Cr/luxium.png"/>
@@ -79,9 +92,13 @@ export const ListingProp = () => {
        
 
         <div className="actions">
-          <div className="request-visit">Request Visit</div>
-          <div className="save-to-fav">Save to Favorite</div>
+        <div className="request-visit">
+          <button onClick={() => setIsFrameVisible(true)}>
+            Request a Visit
+          </button>
         </div>
+        <div className="save-to-fav">Save to Favorite</div>
+      </div>
 
         <div className="property-images">
           {/* ... Any additional images for the property ... */}
