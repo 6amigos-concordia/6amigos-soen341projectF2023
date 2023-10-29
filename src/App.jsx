@@ -6,7 +6,7 @@ import {Team} from './FeaturedBroker';
 import {Cta} from './newsletter';
 import {Frame} from './booking component/Frame';
 import {PropertyList} from './Listing component/PropertyList';
-import {ListingForm} from "./Form/ListingForm";
+import {ListingForm} from "./ListingForm/ListingForm";
 
 
 const App = () => {
@@ -17,6 +17,9 @@ const App = () => {
       <FeaturedProperties/>   
       <Team/> 
       <Cta/>
+      <ListingForm/>
+   
+      
       
      
  {/*<PropertyList/>*/}

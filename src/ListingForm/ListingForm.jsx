@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-const ListingForm = () => {
+export const ListingForm = () => {
     const [photos, setPhotos] = React.useState([]);
     const [showForm, setShowForm] = React.useState(false);
 
@@ -53,4 +53,3 @@ const ListingForm = () => {
     );
 };
 
-export default ListingForm;
