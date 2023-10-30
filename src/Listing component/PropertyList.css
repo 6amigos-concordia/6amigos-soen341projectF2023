@@ -2,36 +2,43 @@
   display: flex;
   flex-wrap: wrap;
   background-image: url("https://wallpapers.com/images/hd/real-estate-modern-white-house-dcxpp5xsw4e7wqgc.jpg");
-  background-color: hsla(217, 67%, 49%, 0.3); /* Reduced opacity */
+  background-color: #2969cf;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  
 }
+
 
 .property {
   border: 1px solid #ccc;
   color: rgb(0, 0, 0);
   background-color: rgba(243, 243, 247, 0.555);
-  font-size: 20px;
+  font-size: 30px;
   margin: 10px;
-  padding: 10px;
+  padding: 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   width: 300px; /* Increase the width of each property */
-  height: 400px;
+  height: 350px;
+  margin-top: 145px; /* Adjust the top margin to your desired value */
+  padding-top: 50px; /* Optionally, add padding at the top */
 }
 
 .property-image {
   width: 100%;
-  max-height: 300px; /* Increase the maximum height of the property images */
+  max-height: 200px; /* Increase the maximum height of the property images */
   object-fit: cover;
-  margin-bottom: 10px;
+  margin:0px;
+  padding:0px;
+
 }
 
 .property-details h2 {
   margin: 0;
+  padding:0;
 }
 
 .favorite-button {

@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import './PropertyList.css';
+import { NavBarLogo } from '../NavBar&Logo/NavBar&Logo';
+import { Search } from '../Search component/screens/Search';
 
 const properties = [
   { id: 1, name: 'Property 1', price: 2000000, image: 'https://i.ibb.co/85wDgBm/Eleonon-House.jpg' },
@@ -12,6 +14,7 @@ const properties = [
   { id: 8, name: 'Property 8', price: 2800000, image: 'https://i.ibb.co/CBZTxgj/Exteriors-Gallery.jpg' },
   { id: 9, name: 'Property 9', price: 4000000, image: 'https://i.ibb.co/5rxyzDR/House-Plan-1020-00083-European-Plan-4-381-Square-Feet-4-Bedrooms-4-5-Bathrooms.jpg' },
   { id: 10, name: 'Property 10', price: 3200000, image: 'https://i.ibb.co/DDbtcs0/17-Gorgeous-Traditional-Home-Exterior-Designs-You-Will-Find-Inspiration-In.jpg' },
+  
 ];
 export const PropertyList = () => {
   const [favoritedProperties, setFavoritedProperties] = useState([]);
@@ -26,8 +29,10 @@ export const PropertyList = () => {
       // Add to favorites
       setFavoritedProperties((prevFavoritedProperties) => [...prevFavoritedProperties, propertyId]);
     }
-  };return (
+  };
+  return (
     <div className="property-list">
+      <NavBarLogo/>
       {properties.map((property) => (
         <div className="property" key={property.id}>
           <img src={property.image} alt={property.name} className="property-image" />
@@ -37,10 +42,13 @@ export const PropertyList = () => {
             <button
               className={`favorite-button ${favoritedProperties.includes(property.id) ? 'favorited' : ''}`}
               onClick={() => handleInterestToggle(property.id)}
-            ></button>
+            >
+            </button>
           </div>
         </div>
       ))}
+       <Search/>
+       <br/>
     </div>
   );
 };

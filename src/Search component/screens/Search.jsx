@@ -84,12 +84,12 @@ export const Search = () => {
     { label: "Sold", value: "Sold" }
   ];
   const [isModalVisible, setIsModalVisible] = useState(false);
- 
+
   const handleFilterButtonClick1 = () => {
     console.log("Filter button clicked!");
     setIsModalVisible(!isModalVisible);
   };
-  
+
   return (
     <div className="search">
       <div className="subtitle-icon">
@@ -141,9 +141,9 @@ export const Search = () => {
           <img className="vector" alt="Vector" src="https://i.ibb.co/nnx7Z0V/vector.png" />
         </button>
         {isModalVisible && (
-          <div className="modal">
+          <div className={`modal ${isModalVisible ? 'visible' : ''}`}>
             <div className="modal-content">
-            <FilterForm onSubmit={formData => console.log(formData)} />
+              <FilterForm onSubmit={formData => console.log(formData)} />
             </div>
           </div>
         )}
