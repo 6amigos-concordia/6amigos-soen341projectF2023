@@ -1,6 +1,5 @@
 :root {
   --search-bar-height: 15%;
-  /* Adjust this percentage based on your design needs */
 }
 
 .search {
@@ -26,11 +25,8 @@
   display: flex;
   gap: 12px;
   width: 100%;
-  /* Use 100% width to fill the parent container */
   text-align: center;
-  /* Center the text */
   margin-top: 20px;
-  /* Add top margin to subtitle */
 }
 
 .search .description {
@@ -59,32 +55,21 @@
   display: flex;
   gap: 42px;
   width: 100%;
-  /* Use 100% width to fill the parent container */
   text-align: center;
-  /* Center the children elements */
   margin-bottom: 20px;
-  /* Add bottom margin to the dropdown section */
   margin-left: 10px;
-  /* Add right margin to move the input box to the right */
 
 }
-
-
 .search .dropdown-instance {
   flex: 1 !important;
   flex-grow: 1 !important;
   width: unset !important;
-
-
-
 }
 
 .input-wrapper {
   position: relative;
   margin-bottom: 5px;
-  /* Adjust the value to set the desired space after the input box */
   margin-left: 10px;
-  /* Add right margin to move the input box to the right */
 }
 
 .input-instance {
@@ -108,14 +93,11 @@
   align-items: center;
   justify-content: center;
   width: 50px;
-  /* Set a fixed width to maintain the circular shape */
   height: 50px;
-  /* Set a fixed height to maintain the circular shape */
   border: none;
   background-color: #f8f8f9;
   color: white;
   border-radius: 50%;
-  /* Set border-radius to 50% for a round shape */
   cursor: pointer;
   transition: background-color 0.3s ease;
 
@@ -124,7 +106,6 @@
   }
 }
 
-/* Default styles for the search bar */
 .search-bar {
   background-color: #f0f0f0;
   padding: 10px;
@@ -226,7 +207,7 @@
   /* Your existing styles */
   .modal {
     z-index: 9999;
-    display: none; /* Set to none by default */
+    display: none; 
     justify-content: center;
     align-items: center;
     position: fixed;
@@ -238,7 +219,7 @@
   }
   
   .modal.visible {
-    display: flex; /* Display only when isModalVisible is true */
+    display: flex; 
   }
   
   .modal-content {

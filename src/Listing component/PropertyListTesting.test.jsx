@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from '@testing-library/react';
-import {PropertyList} from './PropertyList'; // Make sure the path is correct
+import {PropertyList} from './PropertyList';
+import styles from "../Listing component/PropertyList.css";
 
 test('renders PropertyList component without errors', () => {
   render(<PropertyList />);

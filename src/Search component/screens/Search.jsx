@@ -69,7 +69,6 @@ export const Search = () => {
   ];
 
   const handleButtonClick = () => {
-    // Handle button click actions here
     console.log('Button clicked!');
   };
 
@@ -96,7 +95,7 @@ export const Search = () => {
         <div className="description"> Find Your Home</div>
         <IconsSearch className="icons-search" />
       </div>
-      <div className="input-wrapper"> {/* Wrap location input in a div */}
+      <div className="input-wrapper"> {}
         <input
           className="input-instance"
           iconsArrowDownColor="#2F234F"
@@ -147,6 +146,7 @@ export const Search = () => {
             </div>
           </div>
         )}
+
       </div>
     </div>
   );

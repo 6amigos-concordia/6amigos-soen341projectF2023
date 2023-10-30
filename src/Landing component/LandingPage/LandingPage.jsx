@@ -5,7 +5,7 @@ import { Button } from "../../Landing component/components landing/Button";
 import { Button1 } from "../components landing/Button1"
 import { ButtonSecondary } from "../../Landing component/components landing/ButtonSecondary";
 import { ContentCta } from "../../Landing component/components landing/CTA";
-import {Search} from "../../Search component/screens/Search";
+import { Search } from "../../Search component/screens/Search";
 import "./style.css";
 
 export const LandingPage = () => {
@@ -21,13 +21,13 @@ export const LandingPage = () => {
       <div className="top-fixed-container">
         <div className="brand">
           <Link to="/">
-          <img className="IMG" alt="" src="https://i.ibb.co/TbH49Cr/luxium.png" />
+            <img className="IMG" alt="" src="https://i.ibb.co/TbH49Cr/luxium.png" />
           </Link>
         </div>
         <div className="hamburger-menu">
           <div className="links">
-            <div className="button">
-              <Button1 onClick={handleFindHomeClick} />
+            <div className="link">
+              <Link to="/property-listing" onClick={handleFindHomeClick}> Find a home </Link>
             </div>
             <div className="link">Mortage Calculator</div>
             <div className="link">Find a broker</div>
@@ -40,7 +40,7 @@ export const LandingPage = () => {
         </div>
       </div>
       <ContentCta />
-      <Search/>
+      <Search />
 
     </div>
   );

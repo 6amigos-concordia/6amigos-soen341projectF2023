@@ -16,27 +16,27 @@ export const NavBarLogo = () => {
 
   return (
     <div className="header">
-    <div className="top-fixed-container">
-    <div className="brand">
-      <Link to="/">
-      <img className="IMG" alt="" src="https://i.ibb.co/TbH49Cr/luxium.png" />
-      </Link>
-    </div>
-    <div className="hamburger-menu">
-      <div className="links">
-        <div className="button">
-          <Button1 onClick={handleFindHomeClick} />
+      <div className="top-fixed-container">
+        <div className="brand">
+          <Link to="/">
+            <img className="IMG" alt="" src="https://i.ibb.co/TbH49Cr/luxium.png" />
+          </Link>
         </div>
-        <div className="link">Mortage Calculator</div>
-        <div className="link">Find a broker</div>
-        <div className="link">Saved properties</div>
+        <div className="hamburger-menu">
+          <div className="links">
+            <div className="link">
+              <Link to="/property-listing" onClick={handleFindHomeClick}> Find a home </Link>
+            </div>
+            <div className="link">Mortage Calculator</div>
+            <div className="link">Find a broker</div>
+            <div className="link">Saved properties</div>
+          </div>
+        </div>
+        <div className="signing">
+          <ButtonSecondary className="log-in2" text="Log in" textClassName="button-secondary-instance" />
+          <Button className="sign-up" divClassName="design-component-instance-node" frameClassName="button-instance" />
+        </div>
       </div>
     </div>
-    <div className="signing">
-      <ButtonSecondary className="log-in2" text="Log in" textClassName="button-secondary-instance" />
-      <Button className="sign-up" divClassName="design-component-instance-node" frameClassName="button-instance" />
-    </div>
-  </div>
-  </div>
   );
 };
