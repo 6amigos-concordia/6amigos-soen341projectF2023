@@ -13,7 +13,6 @@ const FilterFormComponent = ({ onSubmit }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Prepare the form data as needed and pass it to the onSubmit function
     const formData = {
       transactionType,
       minPrice,
@@ -25,7 +24,6 @@ const FilterFormComponent = ({ onSubmit }) => {
       ownership,
       yearBuilt,
     };
-    // Call the onSubmit function and pass the form data
     onSubmit(formData);
   };
 

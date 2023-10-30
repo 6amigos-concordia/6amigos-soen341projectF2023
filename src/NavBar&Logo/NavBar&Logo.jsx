@@ -1,14 +1,12 @@
-import React from "react";
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import { Button } from "../../Landing component/components landing/Button";
-import { Button1 } from "../components landing/Button1"
-import { ButtonSecondary } from "../../Landing component/components landing/ButtonSecondary";
-import { ContentCta } from "../../Landing component/components landing/CTA";
-import { Search } from "../../Search component/screens/Search";
+import { Button1 } from '../Landing component/components landing/Button1';
+import { Button } from '../Landing component/components landing/Button';
+import { ButtonSecondary } from '../Landing component/components landing/ButtonSecondary';
 import "./style.css";
 
-export const LandingPage = () => {
+export const NavBarLogo = () => {
   const navigate = useNavigate();
 
   const handleFindHomeClick = () => {
@@ -17,7 +15,7 @@ export const LandingPage = () => {
   };
 
   return (
-    <div className="landing-page">
+    <div className="header">
       <div className="top-fixed-container">
         <div className="brand">
           <Link to="/">
@@ -39,9 +37,6 @@ export const LandingPage = () => {
           <Button className="sign-up" divClassName="design-component-instance-node" frameClassName="button-instance" />
         </div>
       </div>
-      <ContentCta />
-      <Search />
-
     </div>
   );
 };

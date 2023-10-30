@@ -69,7 +69,6 @@ export const Search = () => {
   ];
 
   const handleButtonClick = () => {
-    // Handle button click actions here
     console.log('Button clicked!');
   };
 
@@ -84,19 +83,19 @@ export const Search = () => {
     { label: "Sold", value: "Sold" }
   ];
   const [isModalVisible, setIsModalVisible] = useState(false);
- 
+
   const handleFilterButtonClick1 = () => {
     console.log("Filter button clicked!");
     setIsModalVisible(!isModalVisible);
   };
-  
+
   return (
     <div className="search">
       <div className="subtitle-icon">
         <div className="description"> Find Your Home</div>
         <IconsSearch className="icons-search" />
       </div>
-      <div className="input-wrapper"> {/* Wrap location input in a div */}
+      <div className="input-wrapper"> {}
         <input
           className="input-instance"
           iconsArrowDownColor="#2F234F"
@@ -141,12 +140,13 @@ export const Search = () => {
           <img className="vector" alt="Vector" src="https://i.ibb.co/nnx7Z0V/vector.png" />
         </button>
         {isModalVisible && (
-          <div className="modal">
+          <div className={`modal ${isModalVisible ? 'visible' : ''}`}>
             <div className="modal-content">
-            <FilterForm onSubmit={formData => console.log(formData)} />
+              <FilterForm onSubmit={formData => console.log(formData)} />
             </div>
           </div>
         )}
+
       </div>
     </div>
   );
