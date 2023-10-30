@@ -5,10 +5,11 @@ import com.realestate.real_estate.repos.User;
 import com.realestate.real_estate.services.AppointmentService;
 import com.realestate.real_estate.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
 import java.util.List;
+
 @RestController
 @RequestMapping(value = "/api")
 public class AppointmentsController {
@@ -20,9 +21,18 @@ public class AppointmentsController {
     public ResponseEntity<List<Appointment>> getAllAppointments() {
         return ResponseEntity.ok().body(appointmentService.getAppointments());
     }
-    @PostMapping(path = "/bookAppointment")
-    public Appointment bookAppointment(@RequestBody AppointmentRequest appointmentRequest) {
-        return appointmentService.makeAppointment(appointmentRequest.getDateTime(), appointmentRequest.getUsername());
+    @PostMapping(path = "/appointments/add")
+    public ResponseEntity<Appointment> bookAppointemt(@RequestBody Appointment appointment) {
+        return ResponseEntity.ok(appointmentService.bookAppointment(appointment));
     }
+
+//    @POSTMapping(path = "/appointments/cancel")
+//    public ResponseEntity<Appointment> cancelAppointment(@PathVariable String propertyId) {
+//        if (brokerService.deleteProperty(propertyId)) {
+//            return ResponseEntity.ok().build();
+//        }
+//        return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+//    }
+
 
 }
