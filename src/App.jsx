@@ -6,6 +6,7 @@ import { FeaturedProperties } from './FeaturedProperties';
 import { Team } from './FeaturedBroker';
 import { Cta } from './newsletter';
 import { PropertyList } from "./Listing component";
+
 import { Frame } from './Frame/Frame';
 import { ListingForm } from "./ListingForm/ListingForm";
 import { ListingProp } from "./ListingProp/ListingProp";
@@ -22,6 +23,8 @@ const App = () => {
               <FeaturedProperties />
               <Team />
               <Cta />
+              
+             
             </>
           } />
           <Route path="/property-listing" element={<PropertyList />} />

@@ -12,13 +12,16 @@
   "jest": {
     "moduleNameMapper": {
       "\\.(css)$": "identity-obj-proxy"
-    }, 
+    },
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
     }
   },
   "babel": {
-    "presets": ["@babel/preset-react", "@babel/preset-env"]
+    "presets": [
+      "@babel/preset-react",
+      "@babel/preset-env"
+    ]
   },
   "dependencies": {
     "@testing-library/jest-dom": "^6.1.4",
