@@ -29,9 +29,4 @@ public class AppointmentService {
                 .orElseThrow(() -> new RuntimeException("No appointment by ID: " + id));
     }
 
-//    public String cancelAppointment(String appointmentId, String username) {
-//
-//    }
-
-
 }

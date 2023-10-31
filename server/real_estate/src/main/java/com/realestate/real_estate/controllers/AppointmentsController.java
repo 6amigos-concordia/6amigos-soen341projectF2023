@@ -26,13 +26,5 @@ public class AppointmentsController {
         return ResponseEntity.ok(appointmentService.bookAppointment(appointment));
     }
 
-//    @POSTMapping(path = "/appointments/cancel")
-//    public ResponseEntity<Appointment> cancelAppointment(@PathVariable String propertyId) {
-//        if (brokerService.deleteProperty(propertyId)) {
-//            return ResponseEntity.ok().build();
-//        }
-//        return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
-//    }
-
 
 }
