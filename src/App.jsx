@@ -25,12 +25,13 @@ const App = () => {
               <FeaturedProperties />
               <Team />
               <Cta />
-              <Mortgcalc />
+              
               
              
             </>
           } />
           <Route path="/property-listing" element={<PropertyList />} />
+          <Route path="/Mortgcalc" element={<Mortgcalc />} />
            {/*<ListingProp/>*/}
           {/*<PropertyList/>*/}
           {/*<ListingProp/>*/}

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { NavBarLogo } from '../NavBar&Logo/NavBar&Logo';
 import './mortg.css';
 
 export const Mortgcalc = () => {
@@ -23,7 +24,11 @@ export const Mortgcalc = () => {
   };
 
   return (
-    <div className="calculator">
+    <div className="container">
+   <div className="Navbar" >
+      <NavBarLogo/>
+      </div>
+      <div className='calculator'>
       <h1>Mortgage Calculator</h1>
       <label>
         Property Price: ${propertyPrice}
@@ -43,6 +48,7 @@ export const Mortgcalc = () => {
       </label>
       <button onClick={calculateMonthlyPayment}>Calculate</button>
       {showResult && <p>Monthly Payment: ${monthlyPayment}</p>}  {/* Conditionally render */}
+    </div>
     </div>
   );
 }

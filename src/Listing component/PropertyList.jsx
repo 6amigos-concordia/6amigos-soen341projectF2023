@@ -32,7 +32,17 @@ export const PropertyList = () => {
   };
   return (
     <div className="property-list">
+
+      <div className="Navbar" >
       <NavBarLogo/>
+      </div>
+
+      <div className="Searchbar">
+      <Search/>
+      </div>
+     
+       <div className='Postings'>
+
       {properties.map((property) => (
         <div className="property" key={property.id}>
           <img src={property.image} alt={property.name} className="property-image" />
@@ -40,15 +50,16 @@ export const PropertyList = () => {
             <h2>{property.name}</h2>
             <p>Price: ${property.price}</p>
             <button
-              className={`favorite-button ${favoritedProperties.includes(property.id) ? 'favorited' : ''}`}
-              onClick={() => handleInterestToggle(property.id)}
-            >
-            </button>
+  className={`favorite-button ${favoritedProperties.includes(property.id) ? 'favorited' : ''}`}
+  onClick={() => handleInterestToggle(property.id)}
+>
+  ♥
+</button>
           </div>
         </div>
       ))}
-       <Search/>
-       <br/>
+       </div>
+       
     </div>
   );
-};
+}; 

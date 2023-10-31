@@ -1,4 +1,4 @@
-.calculator {
+.container {
   background-image: url('https://wallpapers.com/images/hd/real-estate-modern-white-house-dcxpp5xsw4e7wqgc.jpg');
   background-size: cover;
   background-repeat: no-repeat;
@@ -8,13 +8,17 @@
   padding: 2rem;
   border: 1px solid #ddd;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  background-color: rgba(255, 255, 255, 0.90);  
+  
   overflow: hidden;
   margin: 2rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.calculator {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.50);  
 }
 
 .calculator::before {
@@ -114,4 +118,10 @@ button:hover {
   p {
       font-size: 1rem;
   }
+}
+.Navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 160px; /* Increase this value for more space */
 }
