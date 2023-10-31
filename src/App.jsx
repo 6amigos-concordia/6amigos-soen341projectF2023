@@ -7,6 +7,11 @@ import { Team } from './FeaturedBroker';
 import { Cta } from './newsletter';
 import { PropertyList } from "./Listing component";
 import {Mortgcalc} from './Mortgcalc';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { PropertyList, PropertyDetail } from './Listing component';
+
+
+
 
 
 import { Frame } from './Frame/Frame';
@@ -25,13 +30,22 @@ const App = () => {
               <FeaturedProperties />
               <Team />
               <Cta />
-              
-              
-             
             </>
           } />
           <Route path="/property-listing" element={<PropertyList />} />
           <Route path="/Mortgcalc" element={<Mortgcalc />} />
+          <Route path="/" element={<PropertyList />} />
+        <Route path="/property/:id" element={<PropertyDetail />} />
+
+        <Route path="/" element={<PropertyList />} />
+        <Route path="/property/:id" element={<ListingProp />} />
+
+      
+       
+
+    
+  
+          
            {/*<ListingProp/>*/}
           {/*<PropertyList/>*/}
           {/*<ListingProp/>*/}
@@ -40,6 +54,7 @@ const App = () => {
         </Routes>
       </div>
     </Router>
+    
   );
 };
 
