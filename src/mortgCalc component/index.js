@@ -1,1 +1,0 @@
-export {Mortgcalc} from './mortgcalc';

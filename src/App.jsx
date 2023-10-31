@@ -6,6 +6,8 @@ import { FeaturedProperties } from './FeaturedProperties';
 import { Team } from './FeaturedBroker';
 import { Cta } from './newsletter';
 import { PropertyList } from "./Listing component";
+import {Mortgcalc} from './Mortgcalc';
+
 
 import { Frame } from './Frame/Frame';
 import { ListingForm } from "./ListingForm/ListingForm";
@@ -23,6 +25,7 @@ const App = () => {
               <FeaturedProperties />
               <Team />
               <Cta />
+              <Mortgcalc />
               
              
             </>
