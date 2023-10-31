@@ -10,6 +10,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Optional;
 
 @RestController
 @RequestMapping(value = "/api")
@@ -31,5 +32,16 @@ public class BrokersController {
             return ResponseEntity.ok().build();
         }
         return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+    }
+
+    @PutMapping(path = "/brokers/update/{propertyId}")
+    public ResponseEntity<Property> updateProperty(
+                @PathVariable String propertyId, @RequestBody Property property) {
+        Optional<Property> updated = brokerService.updateProperty(propertyId, property);
+
+        return updated.map(value -> ResponseEntity.ok().body(value))
+                .orElseGet(() -> {
+                    return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+                });
     }
 }
