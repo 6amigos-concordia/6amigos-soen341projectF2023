@@ -2,11 +2,11 @@ package com.realestate.real_estate.services;
 
 import com.realestate.real_estate.repos.BrokerRepository;
 import com.realestate.real_estate.repos.Property;
-import com.realestate.real_estate.repos.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class BrokerService {
@@ -26,5 +26,12 @@ public class BrokerService {
             return true;
         }
         return false;
+    }
+
+    public Optional<Property> updateProperty(String id, Property property) {
+        return brokerRepository.findById(id).map(i -> {
+            Property updatedProperty = i.updateWith(property);
+            return brokerRepository.save(updatedProperty);
+        });
     }
 }

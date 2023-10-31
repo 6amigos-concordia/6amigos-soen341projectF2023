@@ -49,7 +49,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Brokers-DELETE-DeleteProperty",
+    "git-widget-placeholder": "Brokers-PUT-updateProperty",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -78,7 +78,7 @@
       <updated>1696888515658</updated>
       <workItem from="1696888519157" duration="5126000" />
       <workItem from="1696984775543" duration="1061000" />
-      <workItem from="1698272451490" duration="3434000" />
+      <workItem from="1698272451490" duration="5117000" />
     </task>
     <servers />
   </component>

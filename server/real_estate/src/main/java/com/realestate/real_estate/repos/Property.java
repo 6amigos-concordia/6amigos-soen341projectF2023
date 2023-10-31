@@ -14,4 +14,13 @@ public class Property {
     String address;
     PropertyDetails details;
     String[] appointmentIds;
+
+    public Property updateWith(Property item) {
+        return new Property(
+                this.id,
+                item.address,
+                item.details,
+                item.appointmentIds
+        );
+    }
 }
