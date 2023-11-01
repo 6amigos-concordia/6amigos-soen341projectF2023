@@ -1,0 +1,140 @@
+.broker-profile {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .broker-details {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content */
+}
+
+.info-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Slight white background, you can adjust this */
+    border-radius: 5px; /* Round the corners */
+    padding: 10px; /* Some space inside the box */
+    margin-top: 10px; /* Some space between the name and the box */
+    width: 80%; /* Set the width of the box, adjust as needed */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add a slight shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Horizontally centers its children */
+    justify-content: center; /* Vertically centers its children */
+}
+  
+  .broker-image {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: 30px;
+   margin-bottom: 50px;
+  }
+  
+  .broker-details h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .broker-details p {
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: #888;
+  }
+  
+  .contact-icons {
+    display: flex;
+    justify-content: center; /* Horizontally center the icons */
+    align-items: center; /* Vertically center the icons */
+    width: 100%; /* Take the full width of its parent */
+    margin-top: 10px; /* Some space above the icons, adjust as necessary */
+}
+
+  
+.contact-icons span {
+  margin: 0 5px; /* 0 margin on top/bottom, 5px margin on left/right */
+}
+  
+  .agency {
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .agency-address {
+    font-size: 16px;
+    color: #666;
+  }
+  
+  .more-info {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+  }
+  
+  .more-info h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .more-info ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .more-info li {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .broker-properties h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .properties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .property-card {
+    border: 1px solid #e5e5e5;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .property-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .property-card h3 {
+    font-size: 20px;
+    background-color: #f5f5f5;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .property-card p {
+    padding: 0 10px;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .property-icons {
+    padding: 0 10px;
+    margin-bottom: 10px;
+    display: flex;
+    gap: 10px;
+    color: #666;
+  }
+  
+  .property-icons span {
+    display: flex;
+    align-items: center;
+  }
+  
