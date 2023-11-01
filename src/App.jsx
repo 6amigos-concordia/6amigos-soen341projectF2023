@@ -9,6 +9,7 @@ import { PropertyList } from "./Listing component";
 import {Mortgcalc} from './Mortgcalc';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { PropertyList, PropertyDetail } from './Listing component';
+import{BrokerList} from './BrokerList'
 
 
 
@@ -34,6 +35,7 @@ const App = () => {
           } />
           <Route path="/property-listing" element={<PropertyList />} />
           <Route path="/Mortgcalc" element={<Mortgcalc />} />
+          <Route path="/BrokerList" element={<BrokerList />} />
           <Route path="/" element={<PropertyList />} />
         <Route path="/property/:id" element={<PropertyDetail />} />
 

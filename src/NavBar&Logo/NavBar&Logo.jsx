@@ -20,6 +20,11 @@ export const NavBarLogo = () => {
     navigate('/Mortgcalc');
   };
 
+  const handleFindBrokerClick = () => {
+    console.log('Find a broker button clicked');
+    navigate('/BrokerList');
+  };
+
   return (
     <div className="header">
       <div className="top-fixed-container">
@@ -36,7 +41,9 @@ export const NavBarLogo = () => {
             <div className="link">
               <Link to="/Mortgcalc" onClick={MortgcalcClick}> Mortage Calculator </Link>
             </div>
-            <div className="link">Find a broker</div>
+            <div className="link">
+              <Link to="/BrokerList" onClick={handleFindBrokerClick}> Find a broker </Link>
+            </div>
             <div className="link">Saved properties</div>
           </div>
         </div>

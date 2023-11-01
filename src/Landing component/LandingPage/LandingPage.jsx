@@ -21,8 +21,11 @@ export const LandingPage = () => {
     console.log('Mortgage Calc button clicked');
     navigate('/Mortgcalc');
   };
+  const handleFindBrokerClick = () => {
+    console.log('Find a broker button clicked');
+    navigate('/BrokerList');
+  };
   
-
   return (
     <div className="landing-page">
       <div className="top-fixed-container">
@@ -43,7 +46,9 @@ export const LandingPage = () => {
             </div>
 
   
-            <div className="link">Find a broker</div>
+            <div className="link">
+              <Link to="/BrokerList" onClick={handleFindBrokerClick}> Find a broker </Link>
+            </div>
             <div className="link">Saved properties</div>
           </div>
         </div>
