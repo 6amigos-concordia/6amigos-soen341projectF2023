@@ -1,10 +1,9 @@
-import React from "react";
 import React, { useState } from "react";
 import "./style.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import {Frame} from "../Frame/Frame"
-
+import { Frame } from "../Frame/Frame";
+import { useParams } from 'react-router-dom';
 
 const Feature = ({ title, content }) => (
   <p className="feature">
@@ -13,20 +12,26 @@ const Feature = ({ title, content }) => (
   </p>
 );
 
-const images = [
-  "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
-  "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
-  "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
-  "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
-  "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
-  "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
-  "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
-  "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
-  "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",]
-
-
 export const ListingProp = () => {
+  const { id } = useParams();
 
+  // State variables for broker's form inputs
+  const [address, setAddress] = useState('');
+  const [propertyImages, setPropertyImages] = useState([]);
+  const [price, setPrice] = useState('');
+  const [description, setDescription] = useState('');
+  const [features, setFeatures] = useState({
+    appliances: '',
+    generalFeatures: '',
+    interiorFeatures: '',
+    exteriorFeatures: '',
+    flooring: '',
+    view: '',
+    heatingCooling: '',
+    amenitiesNearby: ''
+  });
+  const [listingStatus, setListingStatus] = useState('');
+  const [brokerName, setBrokerName] = useState('');
   const [isFrameVisible, setIsFrameVisible] = useState(false);
 
   if (isFrameVisible) {
@@ -34,6 +39,7 @@ export const ListingProp = () => {
       <Frame onClose={() => setIsFrameVisible(false)} />
     );
   }
+
 
   return (
     <div className="listing-prop">
@@ -52,42 +58,41 @@ export const ListingProp = () => {
     
     <div className="content-div">
     <div className="address-bar">
-        <p className="address">1234, RUE DU CHALET, MONTREAL, QUEBEC, H4H 2B7</p>
-    </div>
+        <p className="address">{address}</p>
+      </div>
     <div className="overlap">
 
 
     <div className="box">
     <Carousel useKeyboardArrows={true} style={{ maxWidth: "300px" }}>
-        {images.map((URL, index) => (
-          <div className="slide">
-            <img alt="sample_file" src={URL} key={index} />
+        {propertyImages.map((URL, index) => (
+          <div className="slide" key={index}>
+            <img alt="Property" src={URL} />
           </div>
         ))}
       </Carousel>
     </div>
     </div>
       
+    <div className="price-section">
+        <div className="price">{price}</div>
+        <p className="tax-info">USD (incl. of all taxes)</p>
+      </div>
 
-        <div className="price-section">
-          <div className="price">$ 1,500,000</div>
-          <p className="tax-info"> USD(incl. of all taxes)</p>
-        </div>
-        <div className="description">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem tenetur, voluptatibus cupiditate id minima autem consequuntur nesciunt! Officiis similique, nisi explicabo provident perspiciatis impedit minima error quia asperiores enim in?</p>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod perferendis vel quidem, iure alias exercitationem ullam saepe placeat aspernatur, accusamus fugiat harum eos culpa commodi ea quae fugit dolor mollitia?</p>
-        </div>
+      <div className="description">
+        <p>{description}</p>
+      </div>
 
-        <Feature title="Listing Status:" content="Active" />
-        <Feature title="Presented by:" content="Broker name" />
-        <Feature title="Appliances" content="Central Air Conditioning, Dishwasher, Dryer, Refrigerator, Washer & Dryer." />
-        <Feature title="General Features" content="Fireplace." />
-        <Feature title="Interior Features" content="Elevator, Granite Counter Tops." />
-        <Feature title="Exterior Features" content="Basketball Court, Outbuilding(s), Tennis Court(s)." />
-        <Feature title="Flooring" content="Hardwood." />
-        <Feature title="View" content="Panoramic, Water View." />
-        <Feature title="Heating & Cooling" content="Electric Heating, Central air conditioning, Air exchanger." />
-        <Feature title="Amenities Nearby" content="Locust Valley High School, Locust Valley Middle School." />
+      <Feature title="Listing Status:" content={listingStatus} />
+      <Feature title="Presented by:" content={brokerName} />
+      <Feature title="Appliances" content={features.appliances} />
+      <Feature title="General Features" content={features.generalFeatures} />
+      <Feature title="Interior Features" content={features.interiorFeatures} />
+      <Feature title="Exterior Features" content={features.exteriorFeatures} />
+      <Feature title="Flooring" content={features.flooring} />
+      <Feature title="View" content={features.view} />
+      <Feature title="Heating & Cooling" content={features.heatingCooling} />
+      <Feature title="Amenities Nearby" content={features.amenitiesNearby} />
 
        
 

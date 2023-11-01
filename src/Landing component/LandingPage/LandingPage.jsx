@@ -6,6 +6,7 @@ import { Button1 } from "../components landing/Button1"
 import { ButtonSecondary } from "../../Landing component/components landing/ButtonSecondary";
 import { ContentCta } from "../../Landing component/components landing/CTA";
 import { Search } from "../../Search component/screens/Search";
+import {Mortgcalc} from '../../Mortgcalc/Mortgcalc';
 import "./style.css";
 
 export const LandingPage = () => {
@@ -16,21 +17,38 @@ export const LandingPage = () => {
     navigate('/property-listing');
   };
 
+  const MortgcalcClick = () => {
+    console.log('Mortgage Calc button clicked');
+    navigate('/Mortgcalc');
+  };
+  const handleFindBrokerClick = () => {
+    console.log('Find a broker button clicked');
+    navigate('/BrokerList');
+  };
+  
   return (
     <div className="landing-page">
       <div className="top-fixed-container">
         <div className="brand">
           <Link to="/">
-            <img className="IMG" alt="" src="https://i.ibb.co/TbH49Cr/luxium.png" />
+            <img className="IMG" alt="" src="https://i.ibb.co/zh7bVNh/luxium.png" />
           </Link>
         </div>
         <div className="hamburger-menu">
+          
           <div className="links">
             <div className="link">
               <Link to="/property-listing" onClick={handleFindHomeClick}> Find a home </Link>
             </div>
-            <div className="link">Mortage Calculator</div>
-            <div className="link">Find a broker</div>
+
+            <div className="link">
+              <Link to="/Mortgcalc" onClick={MortgcalcClick}> Mortage Calculator </Link>
+            </div>
+
+  
+            <div className="link">
+              <Link to="/BrokerList" onClick={handleFindBrokerClick}> Find a broker </Link>
+            </div>
             <div className="link">Saved properties</div>
           </div>
         </div>

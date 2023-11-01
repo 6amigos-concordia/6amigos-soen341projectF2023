@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import './PropertyList.css';
 import { NavBarLogo } from '../NavBar&Logo/NavBar&Logo';
 import { Search } from '../Search component/screens/Search';
+
 
 const properties = [
   { id: 1, name: 'Property 1', price: 2000000, image: 'https://i.ibb.co/85wDgBm/Eleonon-House.jpg' },
@@ -32,23 +34,54 @@ export const PropertyList = () => {
   };
   return (
     <div className="property-list">
-      <NavBarLogo/>
-      {properties.map((property) => (
-        <div className="property" key={property.id}>
-          <img src={property.image} alt={property.name} className="property-image" />
-          <div className="property-details">
-            <h2>{property.name}</h2>
-            <p>Price: ${property.price}</p>
+      <div className="Navbar" >
+        <NavBarLogo/>
+      </div>
+
+      <div className="Searchbar">
+        <Search/>
+      </div>
+     
+      <div className='Postings'>
+        {properties.map((property) => (
+          <div className="property" key={property.id}>
+            <Link to={`/property/${property.id}`}>
+              <img src={property.image} alt={property.name} className="property-image" />
+              <div className="property-details">
+                <h2>{property.name}</h2>
+                <p>Price: ${property.price}</p>
+              </div>
+            </Link>
             <button
               className={`favorite-button ${favoritedProperties.includes(property.id) ? 'favorited' : ''}`}
               onClick={() => handleInterestToggle(property.id)}
             >
+              ♥
             </button>
           </div>
-        </div>
-      ))}
-       <Search/>
-       <br/>
+        ))}
+      </div>
+    </div>
+  );
+};
+
+import { useParams } from 'react-router-dom';
+
+export const PropertyDetail = () => {
+  const { id } = useParams();
+  const propertyId = parseInt(id, 10);
+  const property = properties.find(p => p.id === propertyId);
+
+  if (!property) {
+    return <div>Property not found!</div>;
+  }
+
+  return (
+    <div className="property-detail">
+      <img src={property.image} alt={property.name} />
+      <h2>{property.name}</h2>
+      <p>Price: ${property.price}</p>
+      {/* You can add more details here */}
     </div>
   );
 };
