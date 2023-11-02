@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3cde203-a638-44a9-b897-3804d44118f9" name="Changes" comment="" />
+    <list default="true" id="d3cde203-a638-44a9-b897-3804d44118f9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/Broker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/Broker.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,7 +89,7 @@
       <workItem from="1698358921062" duration="4035000" />
       <workItem from="1698615310409" duration="2492000" />
       <workItem from="1698706799367" duration="171000" />
-      <workItem from="1698870725763" duration="4704000" />
+      <workItem from="1698870725763" duration="5088000" />
     </task>
     <servers />
   </component>
