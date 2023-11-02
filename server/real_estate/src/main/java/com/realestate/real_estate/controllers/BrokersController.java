@@ -15,6 +15,7 @@ import java.util.List;
 public class BrokersController {
     @Autowired
     private BrokerService brokerService;
+    
     @GetMapping(path = "/properties")
     public ResponseEntity<List<Property>> getAllProperties() {
         return ResponseEntity.ok().body(brokerService.getAllProperties());
