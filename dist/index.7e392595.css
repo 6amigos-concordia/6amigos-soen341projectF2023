@@ -9,11 +9,16 @@
   --x-1433-9e: #14339e;
 }
 
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+}
+
 .base-button {
   text-align: center;
   box-sizing: border-box;
   cursor: pointer;
-  border: none;
+  border: 1px solid #0000;
   border-radius: 16px;
   justify-content: center;
   align-items: center;
@@ -41,12 +46,133 @@
   font-family: Roboto, Helvetica;
   font-size: 18px;
   font-weight: 400;
+  display: flex;
+}
+
+.button .text-wrapper {
+  letter-spacing: 0;
+  font-weight: 500;
+  line-height: normal;
+}
+
+@media (width <= 480px) {
+  .base-button {
+    padding: 10px 28px;
+    font-size: 16px;
+  }
+}
+
+.frame {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.sign-up-content {
+  background-color: #fffc;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  box-shadow: 0 0 15px #0000001a;
+}
+
+h1 {
+  text-align: center;
+  color: #14339e;
+  text-shadow: 2px 2px 4px #0000001a;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: block;
+}
+
+input[type="email"], input[type="password"], form input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  box-shadow: inset 0 0 10px #0000000d;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+  border-color: #14339e;
+  outline: none;
+  box-shadow: inset 0 0 10px #0000001a;
+}
+
+.sign-up-button2, form button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #14339e;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 18px;
+}
+
+.sign-up-button:disabled {
+  cursor: not-allowed;
+  background-color: #ddd;
+}
+
+.sign-up-modal {
+  z-index: 1000;
+  background-image: url("https://wallpapers.com/images/hd/real-estate-modern-white-house-dcxpp5xsw4e7wqgc.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  inset: 0;
+}
+
+.sign-up-content button {
+  cursor: pointer;
+  z-index: 1001;
+  background: none;
+  border: none;
+  font-size: 24px;
+  top: 10px;
+  right: 10px;
+}
+
+.button {
+  color: #fff;
+  text-align: center;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: #0000;
+  border: none;
+  border-radius: 16px;
+  justify-content: center;
+  align-items: center;
+  min-width: 128px;
+  padding: 12px 32px;
+  font-family: Roboto, Helvetica;
+  font-size: 18px;
+  font-weight: 400;
   transition: all .3s;
   display: flex;
 }
 
 .button:hover {
-  background-color: #345ab1;
+  color: #555;
+  background-color: #0000;
 }
 
 .button .text-wrapper {
@@ -71,13 +197,18 @@
   display: flex;
 }
 
-.button-secondary {
+body {
+  background-color: #f7f7f7;
+  font-family: Arial, sans-serif;
+}
+
+.button {
   text-align: center;
   box-sizing: border-box;
-  color: #fff;
   cursor: pointer;
+  color: #fff;
   background-color: #14339e;
-  border: 1px solid #fff;
+  border: 1px solid #0000;
   border-radius: 16px;
   justify-content: center;
   align-items: center;
@@ -86,23 +217,114 @@
   font-family: Roboto, Helvetica;
   font-size: 18px;
   font-weight: 400;
-  transition: background-color .3s;
+  transition: all .3s;
   display: flex;
 }
 
-.button-secondary:hover {
-  background-color: #14339e;
+.frame {
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
-.button-secondary .text {
-  font-weight: 400;
+.text-wrapper {
+  letter-spacing: 0;
+  font-weight: 500;
+  line-height: normal;
 }
 
 @media (width <= 480px) {
-  .base-button {
+  .button {
     padding: 10px 28px;
     font-size: 16px;
   }
+}
+
+.sign-in-modal {
+  z-index: 1000;
+  background-image: url("https://wallpapers.com/images/hd/real-estate-modern-white-house-dcxpp5xsw4e7wqgc.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  position: fixed;
+  inset: 0;
+}
+
+.sign-in-content {
+  background-color: #fffc;
+  border-radius: 10px;
+  width: 80%;
+  max-width: 600px;
+  padding: 20px;
+  box-shadow: 0 0 15px #0000001a;
+}
+
+h1 {
+  text-align: center;
+  color: #14339e;
+  text-shadow: 2px 2px 4px #0000001a;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  display: block;
+}
+
+input[type="email"], input[type="password"] {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  box-shadow: inset 0 0 10px #0000000d;
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+  border-color: #14339e;
+  outline: none;
+  box-shadow: inset 0 0 10px #0000001a;
+}
+
+.sign-in-button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #14339e;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 18px;
+}
+
+.sign-in-button:disabled {
+  cursor: not-allowed;
+  background-color: #ddd;
+}
+
+.error-message {
+  color: red;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.sign-in-content button {
+  cursor: pointer;
+  z-index: 1001;
+  background: none;
+  border: none;
+  font-size: 24px;
+  top: 10px;
+  right: 10px;
 }
 
 .content-CTA {
@@ -1266,6 +1488,129 @@ img.IMG {
   }
 }
 
+.property-list {
+  background-color: #2969cf;
+  background-image: url("https://wallpapers.com/images/hd/real-estate-modern-white-house-dcxpp5xsw4e7wqgc.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.property {
+  color: #000;
+  text-align: center;
+  background-color: #f3f3f78e;
+  border: 1px solid #ccc;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 350px;
+  margin: 145px 10px 10px;
+  padding: 50px 2px 2px;
+  font-size: 30px;
+  display: flex;
+}
+
+.property-image {
+  object-fit: cover;
+  width: 100%;
+  max-height: 200px;
+  margin: 0;
+  padding: 0;
+}
+
+.property-details h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.favorite-button {
+  cursor: pointer;
+  background-color: #0000;
+  border: none;
+  outline: none;
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  transition: color .3s;
+}
+
+.favorite-button:before {
+  content: "♥";
+  color: #000;
+  font-size: 36px;
+}
+
+.favorite-button.favorited:before, .favorite-button:active:before {
+  color: red;
+}
+
+@media (width <= 768px) {
+  .property {
+    width: 100%;
+  }
+}
+
+.top-fixed-container {
+  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+img.IMG {
+  width: 145px;
+  height: 120px;
+}
+
+.header .brand {
+  align-items: center;
+  display: flex;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  align-items: center;
+  font-size: 24px;
+  display: flex;
+}
+
+.links {
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  display: flex;
+}
+
+.header .links .link {
+  color: #fff;
+  font-family: Roboto, Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.header .links .link:hover {
+  color: #555;
+}
+
+.header .links .link:active {
+  color: #222;
+}
+
+.header .signing {
+  gap: 1vw;
+  display: flex;
+}
+
 .main-frame {
   background-color: #fff;
   justify-content: center;
@@ -1275,7 +1620,7 @@ img.IMG {
 }
 
 .content-body-container {
-  background-color: #d9d9d9;
+  background-color: #fcfcfc;
   border-radius: 10px;
   width: 60%;
   padding: 2rem;
@@ -1292,14 +1637,14 @@ img.IMG {
 }
 
 .content-body label {
-  color: #093568;
+  color: #14339e;
   margin-bottom: 1.5rem;
   font-size: 1.2rem;
   display: block;
 }
 
 .textarea-input, .date-input, .time-input {
-  border: 2px solid #093568;
+  border: 2px solid #14339e;
   border-radius: 4px;
   width: 100%;
   margin-top: .5rem;
@@ -1320,7 +1665,7 @@ img.IMG {
 
 .submit-button, .close-button, .cancel-button {
   cursor: pointer;
-  border: 2px solid #093568;
+  border: 2px solid #14339e;
   outline: none;
   padding: 12px 24px;
   font-family: Source Serif Pro, Helvetica;
@@ -1331,7 +1676,7 @@ img.IMG {
 
 .submit-button {
   color: #fff;
-  background-color: #093568;
+  background-color: #14339e;
 }
 
 .submit-button:hover, .close-button:hover {
@@ -1341,11 +1686,11 @@ img.IMG {
 
 .cancel-button {
   color: #fff;
-  background-color: #d9534f;
+  background-color: #14339e;
 }
 
 .cancel-button:hover {
-  background-color: #c9302c;
+  background-color: #14339e;
 }
 
 .close-button {
@@ -1372,44 +1717,6 @@ img.IMG {
   .submit-button, .close-button, .cancel-button {
     width: 100%;
     margin-top: .5rem;
-  }
-}
-
-.property-list {
-  flex-wrap: wrap;
-  justify-content: space-around;
-  display: flex;
-}
-
-.property {
-  text-align: center;
-  border: 1px solid #ccc;
-  flex-direction: column;
-  align-items: center;
-  width: 250px;
-  margin: 10px;
-  padding: 10px;
-  display: flex;
-}
-
-.property-image {
-  object-fit: cover;
-  width: 100%;
-  max-height: 200px;
-  margin-bottom: 10px;
-}
-
-.property-details h2 {
-  margin: 0;
-}
-
-.property-details button {
-  margin-top: 10px;
-}
-
-@media (width <= 768px) {
-  .property {
-    width: 100%;
   }
 }
 
@@ -1512,6 +1819,496 @@ textarea {
   padding: 12px 15px;
   transition: border .3s;
   overflow-y: auto;
+}
+
+listing-prop {
+  background-color: #e9ecf6;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px #0000001a;
+}
+
+.top-fixed-container {
+  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+img.IMG {
+  width: 145px;
+  height: 120px;
+}
+
+.landing-page .brand {
+  align-items: center;
+  display: flex;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  align-items: center;
+  font-size: 24px;
+  display: flex;
+}
+
+.links {
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  display: flex;
+}
+
+.landing-page .links .link {
+  color: #fff;
+  font-family: Roboto, Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.landing-page .links .link:hover {
+  color: #555;
+}
+
+.landing-page .links .link:active {
+  color: #222;
+}
+
+.listing-prop .content-div {
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+  display: flex;
+}
+
+.listing-prop .overlap img, .listing-prop .img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.listing-prop .address-bar {
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+}
+
+.listing-prop .address {
+  text-align: center;
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.listing-prop .brand {
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.listing-prop .price-section {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.listing-prop .price {
+  margin-right: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.listing-prop .tax-info {
+  color: #888;
+  font-size: 14px;
+}
+
+.listing-prop .feature {
+  border-bottom: 1px solid #ccc;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 30px 0;
+  display: flex;
+}
+
+.listing-prop .feature-title {
+  text-align: left;
+  flex: 1;
+  margin-left: 20px;
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.listing-prop .feature-content {
+  text-align: center;
+  flex: 2;
+}
+
+.listing-prop .actions {
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+}
+
+.listing-prop .request-visit, .listing-prop .save-to-fav {
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: background-color .3s;
+}
+
+.listing-prop .request-visit {
+  color: #fff;
+  background-color: #14339e;
+}
+
+.listing-prop .save-to-fav {
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+.listing-prop .request-visit:hover {
+  background-color: #14339e;
+}
+
+.listing-prop .save-to-fav:hover {
+  background-color: #e0e0e0;
+}
+
+.listing-prop .property-images {
+  margin-top: 20px;
+}
+
+.listing-prop .overlap {
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  display: flex;
+}
+
+.listing-prop .carousel-container {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-width: 80%;
+  overflow: hidden;
+  box-shadow: 0 2px 4px #0003;
+}
+
+.listing-prop .overlap {
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.listing-prop .carousel-container {
+  width: 100%;
+}
+
+.listing-prop .carousel {
+  max-width: 100%;
+}
+
+.main-frame {
+  z-index: 1000;
+  background-color: #ffffffe6;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-y: auto;
+}
+
+.carousel .control-arrow, .carousel.carousel-slider .control-arrow {
+  -o-transition: all .25s ease-in;
+  opacity: .4;
+  filter: alpha(opacity= 40);
+  z-index: 2;
+  cursor: pointer;
+  background: none;
+  border: 0;
+  font-size: 32px;
+  transition: all .25s ease-in;
+  position: absolute;
+  top: 20px;
+}
+
+.carousel .control-arrow:focus, .carousel .control-arrow:hover {
+  opacity: 1;
+  filter: alpha(opacity= 100);
+}
+
+.carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+  content: "";
+  border-top: 8px solid #0000;
+  border-bottom: 8px solid #0000;
+  margin: 0 5px;
+  display: inline-block;
+}
+
+.carousel .control-disabled.control-arrow {
+  opacity: 0;
+  filter: alpha(opacity= 0);
+  cursor: inherit;
+  display: none;
+}
+
+.carousel .control-prev.control-arrow {
+  left: 0;
+}
+
+.carousel .control-prev.control-arrow:before {
+  border-right: 8px solid #fff;
+}
+
+.carousel .control-next.control-arrow {
+  right: 0;
+}
+
+.carousel .control-next.control-arrow:before {
+  border-left: 8px solid #fff;
+}
+
+.carousel-root {
+  outline: none;
+}
+
+.carousel {
+  width: 100%;
+  position: relative;
+}
+
+.carousel * {
+  box-sizing: border-box;
+}
+
+.carousel img {
+  pointer-events: none;
+  width: 100%;
+  display: inline-block;
+}
+
+.carousel .carousel {
+  position: relative;
+}
+
+.carousel .control-arrow {
+  background: none;
+  border: 0;
+  outline: 0;
+  margin-top: -13px;
+  font-size: 18px;
+  top: 50%;
+}
+
+.carousel .thumbs-wrapper {
+  margin: 20px;
+  overflow: hidden;
+}
+
+.carousel .thumbs {
+  -o-transition: all .15s ease-in;
+  white-space: nowrap;
+  list-style: none;
+  transition: all .15s ease-in;
+  position: relative;
+  transform: translate3d(0, 0, 0);
+}
+
+.carousel .thumb {
+  -o-transition: border .15s ease-in;
+  white-space: nowrap;
+  border: 3px solid #fff;
+  margin-right: 6px;
+  padding: 2px;
+  transition: border .15s ease-in;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.carousel .thumb:focus {
+  border: 3px solid #ccc;
+  outline: none;
+}
+
+.carousel .thumb.selected, .carousel .thumb:hover {
+  border: 3px solid #333;
+}
+
+.carousel .thumb img {
+  vertical-align: top;
+}
+
+.carousel.carousel-slider {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel.carousel-slider .control-arrow {
+  color: #fff;
+  margin-top: 0;
+  padding: 5px;
+  font-size: 26px;
+  top: 0;
+  bottom: 0;
+}
+
+.carousel.carousel-slider .control-arrow:hover {
+  background: #0003;
+}
+
+.carousel .slider-wrapper {
+  -o-transition: height .15s ease-in;
+  width: 100%;
+  margin: auto;
+  transition: height .15s ease-in;
+  overflow: hidden;
+}
+
+.carousel .slider-wrapper.axis-horizontal .slider {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: flex;
+}
+
+.carousel .slider-wrapper.axis-horizontal .slider .slide {
+  flex-flow: column;
+}
+
+.carousel .slider-wrapper.axis-vertical {
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: flex;
+}
+
+.carousel .slider-wrapper.axis-vertical .slider {
+  flex-direction: column;
+}
+
+.carousel .slider {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: relative;
+}
+
+.carousel .slider.animated {
+  -o-transition: all .35s ease-in-out;
+  transition: all .35s ease-in-out;
+}
+
+.carousel .slide {
+  text-align: center;
+  min-width: 100%;
+  margin: 0;
+  position: relative;
+}
+
+.carousel .slide img {
+  vertical-align: top;
+  border: 0;
+  width: 100%;
+}
+
+.carousel .slide iframe {
+  border: 0;
+  width: calc(100% - 80px);
+  margin: 0 40px 40px;
+  display: inline-block;
+}
+
+.carousel .slide .legend {
+  -o-transition: all .5s ease-in-out;
+  color: #fff;
+  text-align: center;
+  opacity: .25;
+  transition: all .5s ease-in-out;
+  -o-transition: opacity .35s ease-in-out;
+  background: #000;
+  border-radius: 10px;
+  width: 90%;
+  margin-left: -45%;
+  padding: 10px;
+  font-size: 12px;
+  transition: opacity .35s ease-in-out;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+}
+
+.carousel .control-dots {
+  text-align: center;
+  z-index: 1;
+  width: 100%;
+  margin: 10px 0;
+  padding: 0;
+  position: absolute;
+  bottom: 0;
+}
+
+@media (width >= 960px) {
+  .carousel .control-dots {
+    bottom: 0;
+  }
+}
+
+.carousel .control-dots .dot {
+  -o-transition: opacity .25s ease-in;
+  opacity: .3;
+  filter: alpha(opacity= 30);
+  cursor: pointer;
+  background: #fff;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  margin: 0 8px;
+  transition: opacity .25s ease-in;
+  display: inline-block;
+  box-shadow: 1px 1px 2px #000000e6;
+}
+
+.carousel .control-dots .dot.selected, .carousel .control-dots .dot:hover {
+  opacity: 1;
+  filter: alpha(opacity= 100);
+}
+
+.carousel .carousel-status {
+  text-shadow: 1px 1px 1px #000000e6;
+  color: #fff;
+  padding: 5px;
+  font-size: 10px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.carousel:hover .slide .legend {
+  opacity: 1;
 }
 
 /*# sourceMappingURL=index.7e392595.css.map */
