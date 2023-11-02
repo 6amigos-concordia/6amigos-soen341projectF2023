@@ -1,9 +1,8 @@
 package com.realestate.real_estate.controllers;
 
 import com.realestate.real_estate.repos.Property;
-import com.realestate.real_estate.repos.User;
 import com.realestate.real_estate.services.BrokerService;
-import com.realestate.real_estate.services.UserService;
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -27,7 +26,7 @@ public class BrokersController {
     }
 
     @DeleteMapping(path = "/brokers/delete/{propertyId}")
-    public ResponseEntity<Property> deleteProperty(@PathVariable String propertyId) {
+    public ResponseEntity<Property> deleteProperty(@PathVariable ObjectId propertyId) {
         if (brokerService.deleteProperty(propertyId)) {
             return ResponseEntity.ok().build();
         }
@@ -36,7 +35,7 @@ public class BrokersController {
 
     @PutMapping(path = "/brokers/update/{propertyId}")
     public ResponseEntity<Property> updateProperty(
-                @PathVariable String propertyId, @RequestBody Property property) {
+                @PathVariable ObjectId propertyId, @RequestBody Property property) {
         Optional<Property> updated = brokerService.updateProperty(propertyId, property);
 
         return updated.map(value -> ResponseEntity.ok().body(value))

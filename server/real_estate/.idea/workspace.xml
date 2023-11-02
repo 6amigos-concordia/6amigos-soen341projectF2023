@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3cde203-a638-44a9-b897-3804d44118f9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/controllers/BrokersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/controllers/BrokersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/Property.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/services/BrokerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/services/BrokerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/Broker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/Broker.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,11 +16,15 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -48,8 +49,9 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Brokers-PUT-updateProperty",
+    "git-widget-placeholder": "Admin-GET-getAllBrokers",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -59,6 +61,11 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.realestate.real_estate" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="RealEstateApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="real_estate" />
@@ -78,7 +85,11 @@
       <updated>1696888515658</updated>
       <workItem from="1696888519157" duration="5126000" />
       <workItem from="1696984775543" duration="1061000" />
-      <workItem from="1698272451490" duration="5117000" />
+      <workItem from="1698272451490" duration="5450000" />
+      <workItem from="1698358921062" duration="4035000" />
+      <workItem from="1698615310409" duration="2492000" />
+      <workItem from="1698706799367" duration="171000" />
+      <workItem from="1698870725763" duration="5088000" />
     </task>
     <servers />
   </component>
