@@ -1,11 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="SCOPE_TYPE" value="3" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3cde203-a638-44a9-b897-3804d44118f9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/Broker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/Broker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/realestate/real_estate/repos/PropertyRepositoryTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/real_estate.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/Property.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/Appointment$AppointmentBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/Appointment$AppointmentBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/Appointment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/Appointment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/Broker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/Broker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/Property$PropertyBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/Property$PropertyBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/Property.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/Property.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/realestate/real_estate/RealEstateApplicationTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/realestate/real_estate/RealEstateApplicationTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +28,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -24,10 +37,22 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/pom.xml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/resources/application.properties" root0="FORCE_HIGHLIGHTING" />
   </component>
+  <component name="JavaAutoRunManager">
+    <enabled-run-configurations>
+      <run-configuration type="JUnit" name="Rerun Failed Tests" />
+    </enabled-run-configurations>
+  </component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -51,11 +76,12 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Admin-GET-getAllBrokers",
+    "git-widget-placeholder": "Brokers-POST-CreateNewProperty",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs.jest.jest_package": "",
     "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "advanced.settings",
     "vue.rearranger.settings.migration": "true"
@@ -66,7 +92,52 @@
       <recent name="com.realestate.real_estate" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.java in real_estate">
+    <configuration name="PropertyRepositoryTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="real_estate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.realestate.real_estate.repos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.realestate.real_estate.repos" />
+      <option name="MAIN_CLASS_NAME" value="com.realestate.real_estate.repos.PropertyRepositoryTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RealEstateApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="real_estate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.realestate.real_estate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.realestate.real_estate" />
+      <option name="MAIN_CLASS_NAME" value="com.realestate.real_estate.RealEstateApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="java in real_estate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="real_estate" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/src/test/java" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All Tests" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <envs />
+      <scope-kind value="ALL" />
+      <method v="2" />
+    </configuration>
     <configuration name="RealEstateApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="real_estate" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.realestate.real_estate.RealEstateApplication" />
@@ -74,6 +145,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.java in real_estate" />
+        <item itemvalue="Jest.All Tests" />
+        <item itemvalue="JUnit.PropertyRepositoryTests" />
+        <item itemvalue="JUnit.RealEstateApplicationTests.contextLoads" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -89,7 +168,8 @@
       <workItem from="1698358921062" duration="4035000" />
       <workItem from="1698615310409" duration="2492000" />
       <workItem from="1698706799367" duration="171000" />
-      <workItem from="1698870725763" duration="5088000" />
+      <workItem from="1698870725763" duration="5381000" />
+      <workItem from="1699124384170" duration="164000" />
     </task>
     <servers />
   </component>
