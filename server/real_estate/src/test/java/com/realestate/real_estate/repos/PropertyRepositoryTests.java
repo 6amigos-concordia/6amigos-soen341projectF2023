@@ -41,12 +41,12 @@ public class PropertyRepositoryTests {
     public void setUp() {
         // Act
         mongoTemplate.save(propertySample);
-        Optional<Property> savedProperty = propertyRepository.findById(id);
     }
     @Test
     public void PropertyRepository_Save_ReturnSavedPropertyById() {
         // Assert
+        Optional<Property> savedProperty = propertyRepository.findById(id);
         MatcherAssert.assertThat(propertyRepository.findById(id).isPresent(), equalTo(true));
-        MatcherAssert.assertThat(propertyRepository.findById(id).get(), equalTo(propertySample));
+        MatcherAssert.assertThat(propertyRepository.findById(id).map(i -> i), equalTo(savedProperty));
     }
 }
