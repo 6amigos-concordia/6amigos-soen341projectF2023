@@ -9,13 +9,7 @@ import org.springframework.data.mongodb.repository.Query;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface PropertyRepository extends MongoRepository<PropertyDetails, Integer> {
+public interface PropertyRepository extends MongoRepository<Property, ObjectId> {
     @Query("{bedrooms: ?0, bathrooms: ?1, minPrice: ?2, maxPrice: ?3, district: ?4}")                            
     List<PropertyDetails> searchProperties(int bedrooms, int bathrooms, double minPrice, double maxPrice, String district);
-
-    Property save(Property property);
-
-    Optional<PropertyDetails> findById(ObjectId id);
-
-    boolean existsById(ObjectId propertyId);
 }

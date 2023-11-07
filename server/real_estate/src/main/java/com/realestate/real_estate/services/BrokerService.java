@@ -16,7 +16,7 @@ public class BrokerService {
     @Autowired
     private PropertyRepository propertyRepository;
 
-    public List<PropertyDetails> getAllProperties() {
+    public List<Property> getAllProperties() {
         return propertyRepository.findAll();
     }
     public Property addNewProperty(Property property) {
@@ -25,7 +25,7 @@ public class BrokerService {
 
     public boolean deleteProperty(ObjectId propertyId) {
         if(propertyRepository.existsById(propertyId)) {
-         //   propertyRepository.deleteById(id);
+            propertyRepository.deleteById(propertyId);
             return true;
         }
         return false;

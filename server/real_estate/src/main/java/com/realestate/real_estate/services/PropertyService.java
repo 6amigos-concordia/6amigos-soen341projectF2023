@@ -1,6 +1,7 @@
 package com.realestate.real_estate.services;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,6 +22,12 @@ public class PropertyService {
 
     }
     public List<PropertyDetails> getAllPropertyDetails() {
-        return propertyRepository.findAll();
+        // This returns a list of properties. You have to implement a method to extract property details from this list for each index.
+         List<Property> properties = propertyRepository.findAll();
+         List<PropertyDetails> details = properties.stream()
+                                   .map(Property::getDetails)
+                                   .collect(Collectors.toList());
+        return details;
+         
     }
 }

@@ -19,7 +19,7 @@ public class BrokersController {
     private BrokerService brokerService;
     
     @GetMapping(path = "/properties")
-    public ResponseEntity<List<PropertyDetails>> getAllProperties() {
+    public ResponseEntity<List<Property>> getAllProperties() {
         return ResponseEntity.ok().body(brokerService.getAllProperties());
     }
     @PostMapping(path = "/brokers/add")

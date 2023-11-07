@@ -45,7 +45,7 @@ public class PropertyRepositoryTests {
     @Test
     public void PropertyRepository_Save_ReturnSavedPropertyById() {
         // Assert
-        Optional<PropertyDetails> savedProperty = propertyRepository.findById(id);
+        Optional<Property> savedProperty = propertyRepository.findById(id);
         MatcherAssert.assertThat(propertyRepository.findById(id).isPresent(), equalTo(true));
         MatcherAssert.assertThat(propertyRepository.findById(id).map(i -> i), equalTo(savedProperty));
     }
