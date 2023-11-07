@@ -3,6 +3,7 @@ package com.realestate.real_estate.repos;
 import lombok.Builder;
 import lombok.Data;
 import lombok.extern.jackson.Jacksonized;
+import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 @Data
@@ -11,7 +12,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "appointments")
 public class Appointment {
     @Id
-    private String id;
+    private ObjectId id;
     String dateTime;
     String username;
 }

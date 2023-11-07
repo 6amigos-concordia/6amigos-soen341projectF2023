@@ -25,6 +25,10 @@ public class AppointmentsController {
     public ResponseEntity<Appointment> bookAppointemt(@RequestBody Appointment appointment) {
         return ResponseEntity.ok(appointmentService.bookAppointment(appointment));
     }
+    @PostMapping(path = "/appointments/cancel")
+    public void cancelAppointment(@RequestBody Appointment appointment){
+        appointmentService.cancelAppointment(appointment);
+    }
 
 
 }
