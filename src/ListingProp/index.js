@@ -1,0 +1,2 @@
+export { ListingProp } from "./ListingProp";
+

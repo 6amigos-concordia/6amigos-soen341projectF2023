@@ -1,0 +1,224 @@
+listing-prop {
+  width: 100%;
+  margin: 0 auto;
+  font-family: Arial, sans-serif;
+  background-color: #E9ECF6;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.top-fixed-container {
+  position: absolute; /* Added this */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 10; 
+}
+
+img.IMG{
+  height: 120px;
+  width: 145px;
+}
+.landing-page .brand {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  font-size: 24px;
+  display: flex; /* Make sure the container is always flex */
+  align-items: center;
+}
+
+.links {
+  display: flex; /* Display the links by default */
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+
+.landing-page .links .link {
+  font-family: "Roboto", Helvetica; 
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;       
+  color: white;                
+  transition: color 0.3s;     
+}
+
+/* Hover effect */
+.landing-page .links .link:hover {
+  color: #555;
+}
+
+/* Active effect (when the link is clicked) */
+.landing-page .links .link:active {
+  color: #222;                 /* even darker when clicked */
+}
+
+
+
+
+
+
+.listing-prop .content-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.listing-prop .overlap img,
+.listing-prop .img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.listing-prop .address-bar {
+  display: flex;
+  justify-content: center; /* Centers the content horizontally */
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.listing-prop .address {
+  font-weight: bold;
+  margin: 0;
+  text-align: center; /* Centers the text within the element */
+  font-size: 24px; /* Adjust this value to your desired size */
+}
+
+.listing-prop .brand {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+}
+.listing-prop .price-section {
+  margin-top: 20px; /* Space above the price section */
+  margin-bottom: 20px; /* Space below the price section */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.listing-prop .price {
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 10px; /* Add space between price and tax information */
+}
+
+.listing-prop .tax-info {
+  font-size: 14px;
+  color: #888;
+}
+
+
+
+.listing-prop .feature {
+  display: flex;
+  justify-content: space-between; /* Aligns the category to the right */
+  align-items: center;           /* Centers the content vertically */
+  border-bottom: 1px solid #ccc;
+  padding: 30px 0;
+  width: 100%;
+}
+
+.listing-prop .feature-title {
+  font-weight: bold;
+  text-align: left; /* Aligns the category to the left */
+  flex: 1; /* Allows the title to take up available space */
+  margin-right: 10px; /* Adds space between category and content */
+  margin-left: 20px;
+}
+
+.listing-prop .feature-content {
+  text-align: center; /* Centers the content */
+  flex: 2; /* Allows the content to take up more space */
+}
+
+
+.listing-prop .actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.listing-prop .request-visit,
+.listing-prop .save-to-fav {
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.listing-prop .request-visit {
+  background-color: #14339E;
+  color: #fff;
+}
+
+.listing-prop .save-to-fav {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.listing-prop .request-visit:hover {
+  background-color: #14339E;
+}
+
+.listing-prop .save-to-fav:hover {
+  background-color: #e0e0e0;
+}
+
+.listing-prop .property-images {
+  margin-top: 20px;
+}
+
+.listing-prop .overlap {
+  display: flex;
+  justify-content: center; /* Center the carousel horizontally */
+  align-items: center; /* Center the carousel vertically */
+  margin-top: 20px;
+}
+
+.listing-prop .carousel-container {
+  max-width: 80%; /* Adjust the maximum width as needed */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.listing-prop .overlap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Adjust the margin as needed */
+  max-width: 1000px; /* Adjust the maximum width of the carousel */
+  margin: 0 auto; /* Center the carousel horizontally */
+}
+
+.listing-prop .carousel-container {
+  width: 100%;
+}
+
+.listing-prop .carousel {
+  max-width: 100%;
+}
+.main-frame {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255,255,255,0.9); /* You can adjust the color and opacity as needed */
+  z-index: 1000; /* Ensure the Frame is on top of other content */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+}

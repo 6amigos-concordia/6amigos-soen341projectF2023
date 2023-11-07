@@ -1,0 +1,64 @@
+.top-fixed-container {
+  position: absolute;
+  /* Added this */
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+img.IMG {
+  height: 120px;
+  width: 145px;
+}
+
+.header .brand {
+  display: flex;
+  align-items: center;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  font-size: 24px;
+  display: flex;
+  /* Make sure the container is always flex */
+  align-items: center;
+}
+
+.links {
+  display: flex;
+  /* Display the links by default */
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+
+.header .links .link {
+  font-family: "Roboto", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+/* Hover effect */
+.header .links .link:hover {
+  color: #555;
+}
+
+/* Active effect (when the link is clicked) */
+.header .links .link:active {
+  color: #222;
+  /* even darker when clicked */
+}
+
+
+.header .signing {
+  display: flex;
+  gap: 1vw;
+}

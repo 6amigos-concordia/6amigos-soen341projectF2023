@@ -1,6 +1,7 @@
 :root {
-  --search-bar-height: 15%; /* Adjust this percentage based on your design needs */
+  --search-bar-height: 15%;
 }
+
 .search {
   background-color: #ffffff;
   border-radius: 8px;
@@ -13,9 +14,10 @@
   padding-top: 0%;
   padding-left: 2%;
   padding-right: 2%;
-  height: var(--search-bar-height); /* Set the height using the variable */
-  margin-bottom: calc(var(--search-bar-height) / -2); 
-  
+  height: var(--search-bar-height);
+  /* Set the height using the variable */
+  margin-bottom: calc(var(--search-bar-height) / -2);
+
 }
 
 .search .subtitle-icon {
@@ -23,11 +25,8 @@
   display: flex;
   gap: 12px;
   width: 100%;
-  /* Use 100% width to fill the parent container */
   text-align: center;
-  /* Center the text */
   margin-top: 20px;
-  /* Add top margin to subtitle */
 }
 
 .search .description {
@@ -56,32 +55,21 @@
   display: flex;
   gap: 42px;
   width: 100%;
-  /* Use 100% width to fill the parent container */
   text-align: center;
-  /* Center the children elements */
   margin-bottom: 20px;
-  /* Add bottom margin to the dropdown section */
   margin-left: 10px;
-  /* Add right margin to move the input box to the right */
 
 }
-
-
 .search .dropdown-instance {
   flex: 1 !important;
   flex-grow: 1 !important;
   width: unset !important;
-
-
-
 }
 
 .input-wrapper {
   position: relative;
   margin-bottom: 5px;
-  /* Adjust the value to set the desired space after the input box */
   margin-left: 10px;
-  /* Add right margin to move the input box to the right */
 }
 
 .input-instance {
@@ -105,14 +93,11 @@
   align-items: center;
   justify-content: center;
   width: 50px;
-  /* Set a fixed width to maintain the circular shape */
   height: 50px;
-  /* Set a fixed height to maintain the circular shape */
   border: none;
   background-color: #f8f8f9;
   color: white;
   border-radius: 50%;
-  /* Set border-radius to 50% for a round shape */
   cursor: pointer;
   transition: background-color 0.3s ease;
 
@@ -120,7 +105,7 @@
     background-color: #c5ced7;
   }
 }
-/* Default styles for the search bar */
+
 .search-bar {
   background-color: #f0f0f0;
   padding: 10px;
@@ -150,15 +135,16 @@
   flex-grow: 1 !important;
   width: unset !important;
 
-  
+
 }
 
 .dropdown {
-  align-items: center!important;
-  background-color: #ffffff!important;
-  border: none!important; /* Remove the border */
-  border-radius: 6px!important;
-  box-shadow: var(--shadow-xs)!important;
+  align-items: center !important;
+  background-color: #ffffff !important;
+  border: none !important;
+  /* Remove the border */
+  border-radius: 6px !important;
+  box-shadow: var(--shadow-xs) !important;
   display: flex;
   gap: 8px;
   padding: 10px 14px;
@@ -166,15 +152,16 @@
   width: 320px;
 }
 
-  .dropdown .content {
+.dropdown .content {
   align-items: center;
   display: flex;
   flex: 1;
   flex-grow: 1;
   gap: 8px;
   position: relative;
-  }
-  .dropdown .text {
+}
+
+.dropdown .text {
   color: #667084;
   font-family: "Montserrat-Regular", Helvetica;
   font-size: 16px;
@@ -185,13 +172,14 @@
   position: relative;
   white-space: nowrap;
   width: fit-content;
-  }
-  .dropdown .icons-arrow-down {
+}
+
+.dropdown .icons-arrow-down {
   height: 20px !important;
   position: relative !important;
   width: 20px !important;
-  }
-  
+}
+
 /* Responsive styles using media queries */
 @media screen and (max-width: 768px) {
   .search-bar input[type="text"] {
@@ -216,8 +204,30 @@
     font-size: 12px;
   }
 
+  /* Your existing styles */
+  .modal {
+    z-index: 9999;
+    display: none; 
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal.visible {
+    display: flex; 
+  }
+  
+  .modal-content {
+    background: white;
+    z-index: 9999;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
 
 }
-
-
-

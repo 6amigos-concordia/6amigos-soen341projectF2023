@@ -20,4 +20,7 @@ public class PropertyDetails {
     int bathrooms;
     int price;
     String district;
+    public Property updateWith(Property property) {
+        return null;
+    }
 }

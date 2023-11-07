@@ -1,39 +1,135 @@
+/* General reset and styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f7f7f7;
+}
 
 
-.button-secondary {
+.button {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 16px;   /* Rounded corners for consistency */
-  padding: 12px 32px;    /* Padding for sizing */
-  min-width: 128px;      /* Minimum width */
+  border-radius: 16px;
+  padding: 12px 32px;
+  min-width: 128px;
   font-family: "Roboto", Helvetica;
-  font-size: 18px;       /* Default font size */
+  font-size: 18px;
   font-weight: 400;
   text-align: center;
-  box-sizing: border-box; /* To include padding and border in total width/height */
+  box-sizing: border-box;
   transition: all 0.3s;
-  border: none;           /* No border by default */
-  background-color: transparent; /* No background for an outlined button */
-  color: rgb(255, 255, 255);                /* Text color matches the border */
-  border: 1px solid #ffffff;     /* Outline */
+  border: 1px solid transparent;
+  cursor: pointer;
   background-color: #14339E;
-  transition: background-color 0.3s; /* Smooth transition for background color */
+  color: #ffffff;
+}
+
+.frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-wrapper {
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+@media (max-width: 480px) {
+  .button {
+    font-size: 16px;
+    padding: 10px 28px;
+  }
+}
+
+/* Sign In styles */
+.sign-in-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://wallpapers.com/images/hd/real-estate-modern-white-house-dcxpp5xsw4e7wqgc.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.sign-in-content {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 80%;
+}
+
+h1 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #14339E;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input[type="email"], input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+input[type="email"]:focus, input[type="password"]:focus {
+  border-color: #14339E;
+  outline: none;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sign-in-button {
+  width: 100%;
+  background-color: #14339E;
+  color: white;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
   cursor: pointer;
 }
 
-.button-secondary:hover {
-  background-color: #14339E; /* Light shade on hover for a subtle effect */
+.sign-in-button:disabled {
+  background-color: #ddd;
+  cursor: not-allowed;
 }
 
-.button-secondary .text {
-  font-weight: 400; /* Adjusting font weight for consistency */
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+  text-align: center;
 }
 
-/* For screens smaller than 480px */
-@media (max-width: 480px) {
-  .base-button {
-    font-size: 16px;
-    padding: 10px 28px;  /* Adjust padding for smaller screens */
-  }
+.sign-in-content button {
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1001;
 }

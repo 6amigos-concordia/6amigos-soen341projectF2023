@@ -1,0 +1,76 @@
+
+.property-list {
+  font-family: 'Arial', sans-serif;
+  
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  
+  
+}
+
+.Navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 120px; /* Increase this value for more space */
+}
+
+.Searchbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 100;
+  gap: 20px;
+}
+
+.Postings {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.property {
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  justify-content: space-between; /* Distribute space evenly between children */
+  border: 1px solid #e0e0e0;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 250px; /* You can adjust this value */
+}
+
+.property:hover {
+  transform: scale(1.05);
+}
+
+.property-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.property-details {
+  padding: 10px;
+  display: flex;
+  flex-direction: column; /* Stack children vertically */
+  align-items: center; /* Center children horizontally */
+  width: 100%;
+}
+
+/* ... Previous CSS ... */
+
+.favorite-button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  color: #aaa;
+  margin-top: 20px; /* Add space above the button */
+}
+
+.favorite-button:hover, .favorite-button.favorited {
+  color: #f00;
+}
