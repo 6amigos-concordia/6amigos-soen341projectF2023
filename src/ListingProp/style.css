@@ -161,7 +161,7 @@ img.IMG{
 }
 
 .listing-prop .request-visit {
-  background-color: #14339E;
+  
   color: #fff;
 }
 
@@ -170,9 +170,6 @@ img.IMG{
   color: #333;
 }
 
-.listing-prop .request-visit:hover {
-  background-color: #14339E;
-}
 
 .listing-prop .save-to-fav:hover {
   background-color: #e0e0e0;
@@ -222,3 +219,69 @@ img.IMG{
   z-index: 1000; /* Ensure the Frame is on top of other content */
   overflow-y: auto; /* Allow scrolling if content overflows */
 }
+.offer-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 1000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.offer-form {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+}
+.close-offer-form {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.offer-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.offer-form input,
+.offer-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.offer-form button[type="submit"] {
+  background-color: #14339E;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .offer-form {
+    padding: 20px;
+  }
+}
+
