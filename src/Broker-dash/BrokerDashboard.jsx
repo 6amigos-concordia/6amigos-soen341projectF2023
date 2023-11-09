@@ -1,5 +1,6 @@
 import React, { useState,useEffect } from 'react';
 import './BrokerDashboard.css';
+import { NavBarLogo } from '../NavBar&Logo/NavBar&Logo';
 
 // Properties data as provided earlier
 const properties = [
@@ -29,7 +30,7 @@ const brokerInfo = {
     phone: '+1234567890',
 };
 
-const BrokerDashboard = () => {
+export const BrokerDashboard = () => {
     const [requests, setRequests] = useState(visitRequests);
     const [notification, setNotification] = useState('');
   
@@ -57,6 +58,7 @@ const BrokerDashboard = () => {
   
     return (
       <div className="broker-dashboard">
+        <NavBarLogo/>
         <h1>Broker Dashboard</h1>
         
         {/* Popup Notification */}
@@ -123,4 +125,3 @@ const BrokerDashboard = () => {
     );
   };
   
-  export default BrokerDashboard;

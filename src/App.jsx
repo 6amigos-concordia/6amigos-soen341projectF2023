@@ -11,6 +11,7 @@ import {BrokerList} from './BrokerList';
 import { ListingProp } from "./ListingProp/ListingProp";
 import { BrokerProfile } from "./BrokerProfile/BrokerProfile";
 import { ListingProp } from "./ListingProp/ListingProp";
+import { BrokerDashboard } from "./Broker-dash/BrokerDashboard";
 
 
 const App = () => {
@@ -25,17 +26,15 @@ const App = () => {
               <FeaturedProperties />
               <Team />
               <Cta />
-              <ListingProp />
-              
-             
-             
-            </>
+              {/*<ListingProp/>*/}
+              </>
           } />
           <Route path="/property-listing" element={<PropertyList />} />
           <Route path="/Mortgcalc" element={<Mortgcalc />} />
           <Route path="/BrokerList" element={<BrokerList />} />
           <Route path="/property/:id" element={<PropertyDetail />} />
           <Route path="/listing/:id" element={<ListingProp />} />
+          <Route path="/BrokerDash" element={<BrokerDashboard/>}/>
         </Routes>
       </div>
     </Router>
