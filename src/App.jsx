@@ -10,7 +10,7 @@ import {Mortgcalc} from './Mortgcalc';
 import {BrokerList} from './BrokerList';
 import { ListingProp } from "./ListingProp/ListingProp";
 import { BrokerProfile } from "./BrokerProfile/BrokerProfile";
-
+import { ListingProp } from "./ListingProp/ListingProp";
 
 
 const App = () => {
@@ -25,6 +25,8 @@ const App = () => {
               <FeaturedProperties />
               <Team />
               <Cta />
+              <ListingProp />
+              
              
              
             </>
