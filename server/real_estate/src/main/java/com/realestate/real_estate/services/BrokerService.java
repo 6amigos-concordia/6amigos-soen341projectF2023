@@ -2,6 +2,8 @@ package com.realestate.real_estate.services;
 
 import com.realestate.real_estate.repos.PropertyRepository;
 import com.realestate.real_estate.repos.Property;
+import com.realestate.real_estate.repos.PropertyDetails;
+
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -21,16 +23,16 @@ public class BrokerService {
         return propertyRepository.save(property);
     }
 
-    public boolean deleteProperty(ObjectId id) {
-        if(propertyRepository.existsById(id)) {
-            propertyRepository.deleteById(id);
+    public boolean deleteProperty(ObjectId propertyId) {
+        if(propertyRepository.existsById(propertyId)) {
+            propertyRepository.deleteById(propertyId);
             return true;
         }
         return false;
     }
 
-    public Optional<Property> updateProperty(ObjectId id, Property property) {
-        return propertyRepository.findById(id).map(i -> {
+    public Optional<Property> updateProperty(ObjectId propertyId, Property property) {
+      return propertyRepository.findById(propertyId).map(i -> {
             Property updatedProperty = i.updateWith(property);
             return propertyRepository.save(updatedProperty);
         });

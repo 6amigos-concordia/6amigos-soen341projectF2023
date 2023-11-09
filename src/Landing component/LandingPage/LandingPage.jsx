@@ -2,11 +2,9 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { Button } from "../../Landing component/components landing/Button";
-import { Button1 } from "../components landing/Button1"
 import { ButtonSecondary } from "../../Landing component/components landing/ButtonSecondary";
 import { ContentCta } from "../../Landing component/components landing/CTA";
 import { Search } from "../../Search component/screens/Search";
-import {Mortgcalc} from '../../Mortgcalc/Mortgcalc';
 import "./style.css";
 
 export const LandingPage = () => {
