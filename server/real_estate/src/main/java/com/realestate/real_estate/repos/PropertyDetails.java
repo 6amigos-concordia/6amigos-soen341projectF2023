@@ -20,4 +20,13 @@ public class PropertyDetails {
     int bathrooms;
     int price;
     String district;
+
+    public PropertyDetails(ObjectId id, String description, int bedrooms, int bathrooms, int price, String district) {
+        this.id = id;
+        this.description = description;
+        this.bedrooms = bedrooms;
+        this.bathrooms = bathrooms;
+        this.price = price;
+        this.district = district;
+    }
 }

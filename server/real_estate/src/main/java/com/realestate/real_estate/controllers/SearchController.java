@@ -33,4 +33,9 @@ public class SearchController {
         return ResponseEntity.ok().body(propertyService.getAllPropertyDetails());
     }
 
+    @Autowired
+    public void setPropertyService(PropertyService propertyService) {
+        this.propertyService = propertyService;
+    }
+
 }
