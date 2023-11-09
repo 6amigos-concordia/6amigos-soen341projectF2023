@@ -1,0 +1,63 @@
+.base-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;   /* Rounded corners for consistency */
+  padding: 12px 32px;    /* Padding for sizing */
+  min-width: 128px;      /* Minimum width */
+  font-family: "Roboto", Helvetica;
+  font-size: 18px;       /* Default font size */
+  font-weight: 400;
+  text-align: center;
+  box-sizing: border-box; /* To include padding and border in total width/height */
+  transition: all 0.3s;
+  border: none;           /* No border by default */
+  cursor: pointer;
+}
+
+.button {
+  background-color: #14339E;
+  color: #ffffff;        /* Text color for filled button */
+  display: flex;
+  align-items: center;
+  border-color:white;     /* Outline */
+  justify-content: center;
+  border-radius: 16px;   /* Rounded corners for consistency */
+  padding: 12px 32px;    /* Padding for sizing */
+  min-width: 128px;      /* Minimum width */
+  font-family: "Roboto", Helvetica;
+  font-size: 18px;       /* Default font size */
+  font-weight: 400;
+  text-align: center;
+  box-sizing: border-box; /* To include padding and border in total width/height */
+  transition: all 0.3s;
+  border: none;           /* No border by default */
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #345AB1; /* Slightly lighter shade for hover effect */
+}
+
+.button .text-wrapper {
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: normal;
+}
+
+/* Adjust font-size on smaller screens */
+@media (max-width: 480px) {
+  .base-button {
+    font-size: 16px;
+    padding: 10px 28px;  /* Adjust padding for smaller screens */
+    cursor: pointer;
+  }
+}
+.frame {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
