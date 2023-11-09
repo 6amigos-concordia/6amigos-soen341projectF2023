@@ -5,12 +5,22 @@ import { Button } from "../../Landing component/components landing/Button";
 import { ButtonSecondary } from "../../Landing component/components landing/ButtonSecondary";
 import { ContentCta } from "../../Landing component/components landing/CTA";
 import { Search } from "../../Search component/screens/Search";
+import { Mortgcalc } from '../../Mortgcalc/Mortgcalc';
 import "./style.css";
+import api from "../../api";
 
 export const LandingPage = () => {
   const navigate = useNavigate();
 
-  const handleFindHomeClick = () => {
+  const handleFindHomeClick = async () => {
+
+    try {
+      const properties = await api.properties.getAllProperties();
+      console.log(properties);
+      return properties;
+    } catch (error) {
+      console.log(error);
+    }
     console.log('Find a Home button clicked');
     navigate('/property-listing');
   };
@@ -23,7 +33,7 @@ export const LandingPage = () => {
     console.log('Find a broker button clicked');
     navigate('/BrokerList');
   };
-  
+
   return (
     <div className="landing-page">
       <div className="top-fixed-container">
@@ -33,7 +43,7 @@ export const LandingPage = () => {
           </Link>
         </div>
         <div className="hamburger-menu">
-          
+
           <div className="links">
             <div className="link">
               <Link to="/property-listing" onClick={handleFindHomeClick}> Find a home </Link>
@@ -43,7 +53,7 @@ export const LandingPage = () => {
               <Link to="/Mortgcalc" onClick={MortgcalcClick}> Mortage Calculator </Link>
             </div>
 
-  
+
             <div className="link">
               <Link to="/BrokerList" onClick={handleFindBrokerClick}> Find a broker </Link>
             </div>
