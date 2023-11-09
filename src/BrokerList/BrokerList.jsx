@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link, useParams } from 'react-router-dom';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+// Removed the duplicate import line
 import './style.css';
 import { NavBarLogo } from '../NavBar&Logo/NavBar&Logo';
 import { Search } from '../SearchBrokers/Search';
+// ... rest of your code ...
 
 const brokers = [
   { 
@@ -58,9 +59,10 @@ export const BrokerList = () => {
         <NavBarLogo />
       </div>
 
-      <div className="Searchbar">
-        <Search />
-      </div>
+      <div className="Searchbar" data-testid="searchbar">
+  <Search />
+</div>
+
       
       <div className='Postings'>
         {brokers.map((broker) => (
