@@ -6,6 +6,10 @@ import lombok.extern.jackson.Jacksonized;
 import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
+import org.springframework.data.mongodb.core.mapping.DocumentReference;
+import java.util.Date;
+import java.util.List;
+
 @Data
 @Builder
 @Jacksonized
@@ -15,4 +19,6 @@ public class Appointment {
     private ObjectId id;
     String dateTime;
     String username;
+    String userEmail;
+    String address;
 }
