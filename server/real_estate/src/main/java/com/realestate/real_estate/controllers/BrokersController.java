@@ -1,6 +1,7 @@
 package com.realestate.real_estate.controllers;
 
 import com.realestate.real_estate.repos.Property;
+import com.realestate.real_estate.repos.PropertyDetails;
 import com.realestate.real_estate.services.BrokerService;
 import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,6 +18,7 @@ import java.util.Optional;
 public class BrokersController {
     @Autowired
     private BrokerService brokerService;
+    
     @GetMapping(path = "/properties")
     public ResponseEntity<List<Property>> getAllProperties() {
         return ResponseEntity.ok().body(brokerService.getAllProperties());

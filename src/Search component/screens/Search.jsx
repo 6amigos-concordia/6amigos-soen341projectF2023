@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Dropdown } from "../../Search component/components/Dropdown";
 import { IconsSearch } from "../../Search component/icons/IconsSearch";
-import { FilterForm } from "../Filtercomponent/FilterForm";
+import FilterFormComponent from "../Filtercomponent/FilterForm";
 import "./style.css";
 
 export const Search = () => {
@@ -142,7 +142,7 @@ export const Search = () => {
         {isModalVisible && (
           <div className={`modal ${isModalVisible ? 'visible' : ''}`}>
             <div className="modal-content">
-              <FilterForm onSubmit={formData => console.log(formData)} />
+              <FilterFormComponent onSubmit={formData => console.log(formData)} />
             </div>
           </div>
         )}

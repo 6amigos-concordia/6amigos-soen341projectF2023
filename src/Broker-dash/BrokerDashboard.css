@@ -1,0 +1,97 @@
+.broker-dashboard {
+    font-family: 'Arial', sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .my-postings, .visit-requests, .broker-info {
+    margin-bottom: 40px;
+  }
+  
+  .posting {
+    border: 1px solid #e0e0e0;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 250px;
+    cursor: pointer;
+    display: inline-block; /* or flex for a different layout */
+  }
+  
+  .posting:hover {
+    transform: scale(1.05);
+  }
+  
+  .posting-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .posting-details {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  /* Requested Visits styles */
+.visit-requests ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .visit-requests .request-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    padding: 15px;
+    position: relative;
+  }
+  
+  .request-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  .button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .accept {
+    background-color: #4CAF50; /* Green */
+    color: white;
+  }
+  
+  .decline {
+    background-color: #f44336; /* Red */
+    color: white;
+  }
+  
+  /* Responsive button styling */
+  @media (max-width: 768px) {
+    .request-actions {
+      flex-direction: column;
+    }
+    .button {
+      width: 100%;
+      margin-top: 10px;
+    }
+  }
+  
+  /* Broker Information styles */
+  .broker-info {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+  }
+  
+  .info-box {
+    border: 1px solid #eaeaea;
+    padding: 15px;
+    border-radius: 4px;
+  }
