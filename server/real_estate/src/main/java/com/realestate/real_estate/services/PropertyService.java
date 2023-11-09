@@ -14,20 +14,41 @@ import com.realestate.real_estate.repos.PropertyRepository;
 
 @Service
 public class PropertyService {
-    @Autowired
+    
+     @Autowired
     private PropertyRepository propertyRepository;
+    public PropertyService() {
+        // Default constructor
+    }
+    public void setPropertyRepository(PropertyRepository propertyRepository) {
+        this.propertyRepository = propertyRepository;
+    }
+    
 
     public List<PropertyDetails> searchProperties(int bedrooms, int bathrooms, double minPrice, double maxPrice, String district){
-        return propertyRepository.searchProperties(bedrooms, bathrooms, minPrice, maxPrice, district);
-
+        if(propertyRepository != null){
+            return propertyRepository.searchProperties(bedrooms, bathrooms, minPrice, maxPrice, district);
+        }
+        else{
+            throw new IllegalStateException("Property repository not initialized");
+        }
+        
     }
+
+    
+
     public List<PropertyDetails> getAllPropertyDetails() {
         // This returns a list of properties. You have to implement a method to extract property details from this list for each index.
-         List<Property> properties = propertyRepository.findAll();
-         List<PropertyDetails> details = properties.stream()
+        if(propertyRepository != null){
+            List<Property> properties = propertyRepository.findAll();
+            List<PropertyDetails> details = properties.stream()
                                    .map(Property::getDetails)
                                    .collect(Collectors.toList());
-        return details;
+            return details;
+        } else{
+            throw new IllegalStateException("Property repository not initialized");
+        }
+        
          
     }
 }
