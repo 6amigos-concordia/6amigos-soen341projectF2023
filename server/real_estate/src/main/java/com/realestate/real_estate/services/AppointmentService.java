@@ -2,6 +2,7 @@ package com.realestate.real_estate.services;
 
 import com.realestate.real_estate.repos.AppointmentRepository;
 import com.realestate.real_estate.repos.Appointment;
+import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import java.util.List;
@@ -21,12 +22,17 @@ public class AppointmentService {
     }
 
     public Appointment bookAppointment(Appointment appointment) {
+
         return appointmentRepository.save(appointment);
     }
 
-    public Appointment getAppointmentById(String id) {
+    public Appointment getAppointmentById(ObjectId id) {
         return appointmentRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("No appointment by ID: " + id));
+    }
+
+    public void cancelAppointment(Appointment appointment) {
+        appointmentRepository.delete(appointment);
     }
 
 }
