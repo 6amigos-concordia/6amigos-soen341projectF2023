@@ -12,10 +12,39 @@ const Feature = ({ title, content }) => (
   </p>
 );
 
+// Full-Page Offer Form Component
+const OfferForm = ({ onClose, onSubmit, offerPrice, setOfferPrice, personalMessage, setPersonalMessage }) => {
+  return (
+    <div className="offer-form-overlay">
+      <button className="close-offer-form" onClick={onClose}>Close</button>
+      <form onSubmit={onSubmit} className="offer-form">
+        <label>
+          Offered Price:
+          <input 
+            type="number" 
+            value={offerPrice} 
+            onChange={(e) => setOfferPrice(e.target.value)} 
+            placeholder="Enter your offer price" 
+          />
+        </label>
+        <label>
+          Personal Message or Notes:
+          <textarea 
+            value={personalMessage} 
+            onChange={(e) => setPersonalMessage(e.target.value)} 
+            placeholder="Add any personal messages or notes here"
+          />
+        </label>
+        <button type="submit">Submit Offer</button>
+      </form>
+    </div>
+  );
+};
+
 export const ListingProp = () => {
   const { id } = useParams();
 
-  // State variables for broker's form inputs
+  // State variables for the listing and offer form
   const [address, setAddress] = useState('');
   const [propertyImages, setPropertyImages] = useState([]);
   const [price, setPrice] = useState('');
@@ -33,10 +62,38 @@ export const ListingProp = () => {
   const [listingStatus, setListingStatus] = useState('');
   const [brokerName, setBrokerName] = useState('');
   const [isFrameVisible, setIsFrameVisible] = useState(false);
+  const [showOfferForm, setShowOfferForm] = useState(false);
+  const [offerPrice, setOfferPrice] = useState('');
+  const [personalMessage, setPersonalMessage] = useState('');
+
+  // Form handling functions
+  const handleOfferSubmit = (e) => {
+    e.preventDefault();
+    // Form validation logic here
+    // For example:
+    if (offerPrice.trim() === '') {
+      alert('Please enter an offer price.');
+      return;
+    }
+    // Additional validation as needed
+    setShowOfferForm(false); // Hide the form after submission
+    // Handle offer submission logic (e.g., send to server)
+  };
 
   if (isFrameVisible) {
+    return <Frame onClose={() => setIsFrameVisible(false)} />;
+  }
+
+  if (showOfferForm) {
     return (
-      <Frame onClose={() => setIsFrameVisible(false)} />
+      <OfferForm
+        onClose={() => setShowOfferForm(false)}
+        onSubmit={handleOfferSubmit}
+        offerPrice={offerPrice}
+        setOfferPrice={setOfferPrice}
+        personalMessage={personalMessage}
+        setPersonalMessage={setPersonalMessage}
+      />
     );
   }
 
@@ -98,16 +155,19 @@ export const ListingProp = () => {
 
         <div className="actions">
         <div className="request-visit">
-          <button onClick={() => setIsFrameVisible(true)}>
-            Request a Visit
-          </button>
+            <button onClick={() => setIsFrameVisible(true)}>
+              Request a Visit
+            </button>
+          </div>
+          <div className="save-to-fav">Save to Favorite</div>
+          <div className="submit-offer">
+            <button onClick={() => setShowOfferForm(true)}>
+              Submit Offer
+            </button>
+          </div>
         </div>
-        <div className="save-to-fav">Save to Favorite</div>
-      </div>
 
-        <div className="property-images">
-          {/* ... Any additional images for the property ... */}
-        </div>
+        {/* ... Additional property images or content ... */}
       </div>
     </div>
   );

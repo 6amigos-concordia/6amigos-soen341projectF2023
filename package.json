@@ -10,8 +10,9 @@
     "test": "jest"
   },
   "jest": {
+    "testEnvironment": "jsdom",
     "moduleNameMapper": {
-      "\\.(css)$": "identity-obj-proxy"
+      "\\.(css|less)$": "identity-obj-proxy"
     },
     "transform": {
       "^.+\\.jsx?$": "babel-jest"
@@ -46,6 +47,8 @@
     "@storybook/react-webpack5": "7.0.3",
     "@storybook/testing-library": "0.2.0",
     "htmlnano": "2.0.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest-environment-jsdom": "^29.7.0",
     "parcel": "^2.8.0",
     "parcel-reporter-static-files-copy": "^1.5.0",
     "process": "^0.11.10",
