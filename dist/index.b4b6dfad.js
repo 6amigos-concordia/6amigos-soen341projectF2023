@@ -27144,9 +27144,10 @@ var _featuredProperties = require("./FeaturedProperties");
 var _featuredBroker = require("./FeaturedBroker");
 var _newsletter = require("./newsletter");
 var _listingComponent = require("./Listing component");
-var _frame = require("./Frame/Frame");
-var _listingForm = require("./ListingForm/ListingForm");
+var _mortgcalc = require("./Mortgcalc");
+var _brokerList = require("./BrokerList");
 var _listingProp = require("./ListingProp/ListingProp");
+var _brokerProfile = require("./BrokerProfile/BrokerProfile");
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27161,12 +27162,13 @@ const App = ()=>{
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _featureComponent.OurFeature), {}, void 0, false, void 0, void 0),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _featuredProperties.FeaturedProperties), {}, void 0, false, void 0, void 0),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _featuredBroker.Team), {}, void 0, false, void 0, void 0),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newsletter.Cta), {}, void 0, false, void 0, void 0)
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newsletter.Cta), {}, void 0, false, void 0, void 0),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _listingProp.ListingProp), {}, void 0, false, void 0, void 0)
                             ]
                         }, void 0, true)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 19,
+                        lineNumber: 21,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27174,23 +27176,55 @@ const App = ()=>{
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _listingComponent.PropertyList), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 30,
+                        lineNumber: 34,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/Mortgcalc",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mortgcalc.Mortgcalc), {}, void 0, false, void 0, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 35,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/BrokerList",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _brokerList.BrokerList), {}, void 0, false, void 0, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 36,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/property/:id",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _listingComponent.PropertyDetail), {}, void 0, false, void 0, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 37,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/listing/:id",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _listingProp.ListingProp), {}, void 0, false, void 0, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 38,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 18,
+                lineNumber: 20,
                 columnNumber: 9
             }, undefined)
         }, void 0, false, {
             fileName: "src/App.jsx",
-            lineNumber: 17,
+            lineNumber: 19,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.jsx",
-        lineNumber: 16,
+        lineNumber: 18,
         columnNumber: 5
     }, undefined);
 };
@@ -27204,7 +27238,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react-dom":"j6uA9","react-router-dom":"9xmpe","./Landing component/LandingPage":"bQzRZ","./Feature component":"eDTYY","./FeaturedProperties":"1ymem","./FeaturedBroker":"2sHyA","./newsletter":"jMOOi","./Listing component":"fAykt","./Frame/Frame":"9fFZX","./ListingForm/ListingForm":"hU2tZ","./ListingProp/ListingProp":"7IoxF","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react-dom":"j6uA9","react-router-dom":"9xmpe","./Landing component/LandingPage":"bQzRZ","./Feature component":"eDTYY","./FeaturedProperties":"1ymem","./FeaturedBroker":"2sHyA","./newsletter":"jMOOi","./Listing component":"fAykt","./Mortgcalc":"i6AhA","./BrokerList":"a2FRC","./ListingProp/ListingProp":"7IoxF","./BrokerProfile/BrokerProfile":"6nZSa","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.17.0
  *
@@ -33439,7 +33473,6 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
 var _button = require("../../Landing component/components landing/Button");
-var _button1 = require("../components landing/Button1");
 var _buttonSecondary = require("../../Landing component/components landing/ButtonSecondary");
 var _cta = require("../../Landing component/components landing/CTA");
 var _search = require("../../Search component/screens/Search");
@@ -33451,6 +33484,14 @@ const LandingPage = ()=>{
     const handleFindHomeClick = ()=>{
         console.log("Find a Home button clicked");
         navigate("/property-listing");
+    };
+    const MortgcalcClick = ()=>{
+        console.log("Mortgage Calc button clicked");
+        navigate("/Mortgcalc");
+    };
+    const handleFindBrokerClick = ()=>{
+        console.log("Find a broker button clicked");
+        navigate("/BrokerList");
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "landing-page",
@@ -33465,20 +33506,20 @@ const LandingPage = ()=>{
                             children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                                 className: "IMG",
                                 alt: "",
-                                src: "https://i.ibb.co/TbH49Cr/luxium.png"
+                                src: "https://i.ibb.co/zh7bVNh/luxium.png"
                             }, void 0, false, {
                                 fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                                lineNumber: 24,
+                                lineNumber: 32,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                            lineNumber: 23,
+                            lineNumber: 31,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                        lineNumber: 22,
+                        lineNumber: 30,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -33494,28 +33535,44 @@ const LandingPage = ()=>{
                                         children: " Find a home "
                                     }, void 0, false, {
                                         fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                                        lineNumber: 30,
+                                        lineNumber: 39,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                                    lineNumber: 29,
+                                    lineNumber: 38,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "link",
-                                    children: "Mortage Calculator"
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                        to: "/Mortgcalc",
+                                        onClick: MortgcalcClick,
+                                        children: " Mortage Calculator "
+                                    }, void 0, false, {
+                                        fileName: "src/Landing component/LandingPage/LandingPage.jsx",
+                                        lineNumber: 43,
+                                        columnNumber: 15
+                                    }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                                    lineNumber: 32,
+                                    lineNumber: 42,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "link",
-                                    children: "Find a broker"
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                        to: "/BrokerList",
+                                        onClick: handleFindBrokerClick,
+                                        children: " Find a broker "
+                                    }, void 0, false, {
+                                        fileName: "src/Landing component/LandingPage/LandingPage.jsx",
+                                        lineNumber: 48,
+                                        columnNumber: 15
+                                    }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                                    lineNumber: 33,
+                                    lineNumber: 47,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -33523,18 +33580,18 @@ const LandingPage = ()=>{
                                     children: "Saved properties"
                                 }, void 0, false, {
                                     fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                                    lineNumber: 34,
+                                    lineNumber: 50,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                            lineNumber: 28,
+                            lineNumber: 37,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                        lineNumber: 27,
+                        lineNumber: 35,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -33546,7 +33603,7 @@ const LandingPage = ()=>{
                                 textClassName: "button-secondary-instance"
                             }, void 0, false, {
                                 fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                                lineNumber: 38,
+                                lineNumber: 54,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _button.Button), {
@@ -33555,35 +33612,35 @@ const LandingPage = ()=>{
                                 frameClassName: "button-instance"
                             }, void 0, false, {
                                 fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                                lineNumber: 39,
+                                lineNumber: 55,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                        lineNumber: 37,
+                        lineNumber: 53,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                lineNumber: 21,
+                lineNumber: 29,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cta.ContentCta), {}, void 0, false, {
                 fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                lineNumber: 42,
+                lineNumber: 58,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _search.Search), {}, void 0, false, {
                 fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                lineNumber: 43,
+                lineNumber: 59,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-        lineNumber: 20,
+        lineNumber: 28,
         columnNumber: 5
     }, undefined);
 };
@@ -33601,7 +33658,7 @@ $RefreshReg$(_c, "LandingPage");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../Landing component/components landing/Button":"5kGK3","../components landing/Button1":"ejG9p","../../Landing component/components landing/ButtonSecondary":"3ybRV","../../Landing component/components landing/CTA":"63x6C","../../Search component/screens/Search":"jBAXe","./style.css":"hfXNk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5kGK3":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../../Landing component/components landing/Button":"5kGK3","../../Landing component/components landing/ButtonSecondary":"3ybRV","../../Landing component/components landing/CTA":"63x6C","../../Search component/screens/Search":"jBAXe","./style.css":"hfXNk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"5kGK3":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Button", ()=>(0, _button.Button));
@@ -34426,64 +34483,7 @@ module.exports = require("9e039173d01172ab");
     exports.setSignature = setSignature;
 })();
 
-},{}],"ejG9p":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Button1", ()=>(0, _button1.Button1));
-var _button1 = require("./Button1");
-
-},{"./Button1":"gIfgZ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gIfgZ":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$e4ae = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$e4ae.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Button1", ()=>Button1);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _styleCss = require("./style.css");
-const Button1 = ({ className, frameClassName, divClassName, onClick })=>{
-    const handleClick = ()=>{
-        if (onClick) onClick();
-    };
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-        className: `button ${className}`,
-        onClick: handleClick,
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: `frame ${frameClassName}`,
-            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: `text-wrapper ${divClassName}`,
-                children: "Find a home"
-            }, void 0, false, {
-                fileName: "src/Landing component/components landing/Button1/Button1.jsx",
-                lineNumber: 13,
-                columnNumber: 9
-            }, undefined)
-        }, void 0, false, {
-            fileName: "src/Landing component/components landing/Button1/Button1.jsx",
-            lineNumber: 12,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/Landing component/components landing/Button1/Button1.jsx",
-        lineNumber: 11,
-        columnNumber: 5
-    }, undefined);
-};
-_c = Button1;
-var _c;
-$RefreshReg$(_c, "Button1");
-
-  $parcel$ReactRefreshHelpers$e4ae.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"hYzBk","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hYzBk":[function() {},{}],"3ybRV":[function(require,module,exports) {
+},{}],"3ybRV":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "ButtonSecondary", ()=>(0, _buttonSecondary.ButtonSecondary));
@@ -34798,6 +34798,7 @@ var _reactDefault = parcelHelpers.interopDefault(_react);
 var _dropdown = require("../../Search component/components/Dropdown");
 var _iconsSearch = require("../../Search component/icons/IconsSearch");
 var _filterForm = require("../Filtercomponent/FilterForm");
+var _filterFormDefault = parcelHelpers.interopDefault(_filterForm);
 var _styleCss = require("./style.css");
 var _s = $RefreshSig$();
 const Search = ()=>{
@@ -35085,7 +35086,7 @@ const Search = ()=>{
                         className: `modal ${isModalVisible ? "visible" : ""}`,
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                             className: "modal-content",
-                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _filterForm.FilterForm), {
+                            children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _filterFormDefault.default), {
                                 onSubmit: (formData)=>console.log(formData)
                             }, void 0, false, {
                                 fileName: "src/Search component/screens/Search.jsx",
@@ -37060,6 +37061,7 @@ $RefreshReg$(_c, "Input");
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "PropertyList", ()=>(0, _propertyList.PropertyList));
+parcelHelpers.export(exports, "PropertyDetail", ()=>(0, _propertyList.PropertyDetail));
 var _propertyList = require("./PropertyList");
 
 },{"./PropertyList":"a7sq9","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"a7sq9":[function(require,module,exports) {
@@ -37072,13 +37074,15 @@ try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "PropertyList", ()=>PropertyList);
+parcelHelpers.export(exports, "PropertyDetail", ()=>PropertyDetail);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
 var _propertyListCss = require("./PropertyList.css");
 var _navBarLogo = require("../NavBar&Logo/NavBar&Logo");
 var _search = require("../Search component/screens/Search");
-var _s = $RefreshSig$();
+var _s = $RefreshSig$(), _s1 = $RefreshSig$();
 const properties = [
     {
         id: 1,
@@ -37156,91 +37160,171 @@ const PropertyList = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "property-list",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBarLogo.NavBarLogo), {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "Navbar",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBarLogo.NavBarLogo), {}, void 0, false, {
+                    fileName: "src/Listing component/PropertyList.jsx",
+                    lineNumber: 38,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
                 fileName: "src/Listing component/PropertyList.jsx",
-                lineNumber: 35,
+                lineNumber: 37,
                 columnNumber: 7
             }, undefined),
-            properties.map((property)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "property",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                            src: property.image,
-                            alt: property.name,
-                            className: "property-image"
-                        }, void 0, false, {
-                            fileName: "src/Listing component/PropertyList.jsx",
-                            lineNumber: 38,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "property-details",
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                    children: property.name
-                                }, void 0, false, {
-                                    fileName: "src/Listing component/PropertyList.jsx",
-                                    lineNumber: 40,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    children: [
-                                        "Price: $",
-                                        property.price
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/Listing component/PropertyList.jsx",
-                                    lineNumber: 41,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                    className: `favorite-button ${favoritedProperties.includes(property.id) ? "favorited" : ""}`,
-                                    onClick: ()=>handleInterestToggle(property.id)
-                                }, void 0, false, {
-                                    fileName: "src/Listing component/PropertyList.jsx",
-                                    lineNumber: 42,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Listing component/PropertyList.jsx",
-                            lineNumber: 39,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, property.id, true, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "Searchbar",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _search.Search), {}, void 0, false, {
                     fileName: "src/Listing component/PropertyList.jsx",
-                    lineNumber: 37,
+                    lineNumber: 42,
                     columnNumber: 9
-                }, undefined)),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _search.Search), {}, void 0, false, {
+                }, undefined)
+            }, void 0, false, {
                 fileName: "src/Listing component/PropertyList.jsx",
-                lineNumber: 50,
-                columnNumber: 8
+                lineNumber: 41,
+                columnNumber: 7
             }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "Postings",
+                children: properties.map((property)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "property",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: `/property/${property.id}`,
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        src: property.image,
+                                        alt: property.name,
+                                        className: "property-image"
+                                    }, void 0, false, {
+                                        fileName: "src/Listing component/PropertyList.jsx",
+                                        lineNumber: 49,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "property-details",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                                children: property.name
+                                            }, void 0, false, {
+                                                fileName: "src/Listing component/PropertyList.jsx",
+                                                lineNumber: 51,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                children: [
+                                                    "Price: $",
+                                                    property.price
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/Listing component/PropertyList.jsx",
+                                                lineNumber: 52,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/Listing component/PropertyList.jsx",
+                                        lineNumber: 50,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Listing component/PropertyList.jsx",
+                                lineNumber: 48,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                className: `favorite-button ${favoritedProperties.includes(property.id) ? "favorited" : ""}`,
+                                onClick: ()=>handleInterestToggle(property.id),
+                                children: "♥"
+                            }, void 0, false, {
+                                fileName: "src/Listing component/PropertyList.jsx",
+                                lineNumber: 55,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, property.id, true, {
+                        fileName: "src/Listing component/PropertyList.jsx",
+                        lineNumber: 47,
+                        columnNumber: 11
+                    }, undefined))
+            }, void 0, false, {
                 fileName: "src/Listing component/PropertyList.jsx",
-                lineNumber: 51,
-                columnNumber: 8
+                lineNumber: 45,
+                columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Listing component/PropertyList.jsx",
-        lineNumber: 34,
+        lineNumber: 36,
         columnNumber: 5
     }, undefined);
 };
 _s(PropertyList, "cGjeqKAxMW5SWG7H9ak1IwiYgaY=");
 _c = PropertyList;
-var _c;
+const PropertyDetail = ()=>{
+    _s1();
+    const { id } = (0, _reactRouterDom.useParams)();
+    const propertyId = parseInt(id, 10);
+    const property = properties.find((p)=>p.id === propertyId);
+    if (!property) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        children: "Property not found!"
+    }, void 0, false, {
+        fileName: "src/Listing component/PropertyList.jsx",
+        lineNumber: 76,
+        columnNumber: 12
+    }, undefined);
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "property-detail",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                src: property.image,
+                alt: property.name
+            }, void 0, false, {
+                fileName: "src/Listing component/PropertyList.jsx",
+                lineNumber: 81,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                children: property.name
+            }, void 0, false, {
+                fileName: "src/Listing component/PropertyList.jsx",
+                lineNumber: 82,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                children: [
+                    "Price: $",
+                    property.price
+                ]
+            }, void 0, true, {
+                fileName: "src/Listing component/PropertyList.jsx",
+                lineNumber: 83,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Listing component/PropertyList.jsx",
+        lineNumber: 80,
+        columnNumber: 5
+    }, undefined);
+};
+_s1(PropertyDetail, "yQgCIz/jJfqV1l9s2yoba81MT5A=", false, function() {
+    return [
+        (0, _reactRouterDom.useParams)
+    ];
+});
+_c1 = PropertyDetail;
+var _c, _c1;
 $RefreshReg$(_c, "PropertyList");
+$RefreshReg$(_c1, "PropertyDetail");
 
   $parcel$ReactRefreshHelpers$188f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./PropertyList.css":"esJvN","../NavBar&Logo/NavBar&Logo":"6ELei","../Search component/screens/Search":"jBAXe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"esJvN":[function() {},{}],"6ELei":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./PropertyList.css":"esJvN","../NavBar&Logo/NavBar&Logo":"6ELei","../Search component/screens/Search":"jBAXe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"esJvN":[function() {},{}],"6ELei":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$857f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -37254,7 +37338,6 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _reactRouterDom = require("react-router-dom");
-var _button1 = require("../Landing component/components landing/Button1");
 var _button = require("../Landing component/components landing/Button");
 var _buttonSecondary = require("../Landing component/components landing/ButtonSecondary");
 var _styleCss = require("./style.css");
@@ -37265,6 +37348,14 @@ const NavBarLogo = ()=>{
     const handleFindHomeClick = ()=>{
         console.log("Find a Home button clicked");
         navigate("/property-listing");
+    };
+    const MortgcalcClick = ()=>{
+        console.log("Mortgage Calc button clicked");
+        navigate("/Mortgcalc");
+    };
+    const handleFindBrokerClick = ()=>{
+        console.log("Find a broker button clicked");
+        navigate("/BrokerList");
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "header",
@@ -37278,20 +37369,20 @@ const NavBarLogo = ()=>{
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
                             className: "IMG",
                             alt: "",
-                            src: "https://i.ibb.co/TbH49Cr/luxium.png"
+                            src: "https://i.ibb.co/zh7bVNh/luxium.png"
                         }, void 0, false, {
                             fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-                            lineNumber: 22,
+                            lineNumber: 32,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-                        lineNumber: 21,
+                        lineNumber: 31,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-                    lineNumber: 20,
+                    lineNumber: 30,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37307,28 +37398,44 @@ const NavBarLogo = ()=>{
                                     children: " Find a home "
                                 }, void 0, false, {
                                     fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-                                    lineNumber: 28,
+                                    lineNumber: 38,
                                     columnNumber: 15
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-                                lineNumber: 27,
+                                lineNumber: 37,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "link",
-                                children: "Mortage Calculator"
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    to: "/Mortgcalc",
+                                    onClick: MortgcalcClick,
+                                    children: " Mortage Calculator "
+                                }, void 0, false, {
+                                    fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
+                                    lineNumber: 41,
+                                    columnNumber: 15
+                                }, undefined)
                             }, void 0, false, {
                                 fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-                                lineNumber: 30,
+                                lineNumber: 40,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "link",
-                                children: "Find a broker"
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    to: "/BrokerList",
+                                    onClick: handleFindBrokerClick,
+                                    children: " Find a broker "
+                                }, void 0, false, {
+                                    fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
+                                    lineNumber: 44,
+                                    columnNumber: 15
+                                }, undefined)
                             }, void 0, false, {
                                 fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-                                lineNumber: 31,
+                                lineNumber: 43,
                                 columnNumber: 13
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37336,18 +37443,18 @@ const NavBarLogo = ()=>{
                                 children: "Saved properties"
                             }, void 0, false, {
                                 fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-                                lineNumber: 32,
+                                lineNumber: 46,
                                 columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-                        lineNumber: 26,
+                        lineNumber: 36,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-                    lineNumber: 25,
+                    lineNumber: 35,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37359,7 +37466,7 @@ const NavBarLogo = ()=>{
                             textClassName: "button-secondary-instance"
                         }, void 0, false, {
                             fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-                            lineNumber: 36,
+                            lineNumber: 50,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _button.Button), {
@@ -37368,24 +37475,24 @@ const NavBarLogo = ()=>{
                             frameClassName: "button-instance"
                         }, void 0, false, {
                             fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-                            lineNumber: 37,
+                            lineNumber: 51,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-                    lineNumber: 35,
+                    lineNumber: 49,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-            lineNumber: 19,
+            lineNumber: 29,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-        lineNumber: 18,
+        lineNumber: 28,
         columnNumber: 5
     }, undefined);
 };
@@ -37403,401 +37510,472 @@ $RefreshReg$(_c, "NavBarLogo");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../Landing component/components landing/Button1":"ejG9p","../Landing component/components landing/Button":"5kGK3","../Landing component/components landing/ButtonSecondary":"3ybRV","./style.css":"bHiTb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bHiTb":[function() {},{}],"9fFZX":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$4731 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","../Landing component/components landing/Button":"5kGK3","../Landing component/components landing/ButtonSecondary":"3ybRV","./style.css":"bHiTb","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"bHiTb":[function() {},{}],"i6AhA":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Mortgcalc", ()=>(0, _mortgcalc.Mortgcalc));
+var _mortgcalc = require("./Mortgcalc");
+
+},{"./Mortgcalc":"eit1j","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"eit1j":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$96e4 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$4731.prelude(module);
+$parcel$ReactRefreshHelpers$96e4.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Frame", ()=>Frame);
+parcelHelpers.export(exports, "Mortgcalc", ()=>Mortgcalc);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _styleCss = require("./style.css");
-const Frame = ({ onClose })=>{
-    const submitForm = ()=>{
-        alert("Form Submitted!");
+var _navBarLogo = require("../NavBar&Logo/NavBar&Logo");
+var _mortgCss = require("./mortg.css");
+var _s = $RefreshSig$();
+const Mortgcalc = ()=>{
+    _s();
+    const [propertyPrice, setPropertyPrice] = (0, _react.useState)(100000);
+    const [downPaymentPercentage, setDownPaymentPercentage] = (0, _react.useState)(20);
+    const [interestRate, setInterestRate] = (0, _react.useState)(5);
+    const [loanPeriod, setLoanPeriod] = (0, _react.useState)(15);
+    const [monthlyPayment, setMonthlyPayment] = (0, _react.useState)(0);
+    const [showResult, setShowResult] = (0, _react.useState)(false); // New state
+    const downPaymentAmount = propertyPrice * downPaymentPercentage / 100;
+    const calculateMonthlyPayment = ()=>{
+        const principal = propertyPrice - downPaymentAmount;
+        const r = interestRate / 1200; // Monthly interest rate
+        const n = loanPeriod * 12; // Number of months
+        const payment = principal * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+        setMonthlyPayment(payment.toFixed(2));
+        setShowResult(true); // Show the result when the button is clicked
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "main-frame",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "content-body-container",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "content-body-header",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                            children: "Request an Appointment"
-                        }, void 0, false, {
-                            fileName: "src/Frame/Frame.jsx",
-                            lineNumber: 15,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            onClick: onClose,
-                            style: {
-                                position: "absolute",
-                                top: "10px",
-                                right: "10px"
-                            },
-                            children: "X"
-                        }, void 0, false, {
-                            fileName: "src/Frame/Frame.jsx",
-                            lineNumber: 17,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Frame/Frame.jsx",
-                    lineNumber: 14,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "content-body",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                            children: [
-                                "Type of Request:",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
-                                    className: "textarea-input"
-                                }, void 0, false, {
-                                    fileName: "src/Frame/Frame.jsx",
-                                    lineNumber: 23,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Frame/Frame.jsx",
-                            lineNumber: 21,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                            children: [
-                                "Date:",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                    type: "date",
-                                    className: "date-input"
-                                }, void 0, false, {
-                                    fileName: "src/Frame/Frame.jsx",
-                                    lineNumber: 27,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Frame/Frame.jsx",
-                            lineNumber: 25,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                            children: [
-                                "Time:",
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                                    type: "time",
-                                    className: "time-input"
-                                }, void 0, false, {
-                                    fileName: "src/Frame/Frame.jsx",
-                                    lineNumber: 31,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Frame/Frame.jsx",
-                            lineNumber: 29,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Frame/Frame.jsx",
-                    lineNumber: 20,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "content-footer",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: "submit-button",
-                            onClick: submitForm,
-                            children: "SUBMIT"
-                        }, void 0, false, {
-                            fileName: "src/Frame/Frame.jsx",
-                            lineNumber: 36,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            className: "cancel-button",
-                            children: "CANCEL RESERVATION"
-                        }, void 0, false, {
-                            fileName: "src/Frame/Frame.jsx",
-                            lineNumber: 37,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Frame/Frame.jsx",
-                    lineNumber: 35,
-                    columnNumber: 9
+        className: "container",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "Navbar",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBarLogo.NavBarLogo), {}, void 0, false, {
+                    fileName: "src/Mortgcalc/Mortgcalc.jsx",
+                    lineNumber: 29,
+                    columnNumber: 7
                 }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/Frame/Frame.jsx",
-            lineNumber: 12,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/Frame/Frame.jsx",
-        lineNumber: 11,
+            }, void 0, false, {
+                fileName: "src/Mortgcalc/Mortgcalc.jsx",
+                lineNumber: 28,
+                columnNumber: 4
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "calculator",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: "Mortgage Calculator"
+                    }, void 0, false, {
+                        fileName: "src/Mortgcalc/Mortgcalc.jsx",
+                        lineNumber: 32,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        children: [
+                            "Property Price: $",
+                            propertyPrice,
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "range",
+                                min: "50000",
+                                max: "1000000",
+                                value: propertyPrice,
+                                onChange: (e)=>setPropertyPrice(e.target.value)
+                            }, void 0, false, {
+                                fileName: "src/Mortgcalc/Mortgcalc.jsx",
+                                lineNumber: 35,
+                                columnNumber: 9
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Mortgcalc/Mortgcalc.jsx",
+                        lineNumber: 33,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        children: [
+                            "Down Payment: ",
+                            downPaymentPercentage,
+                            "% ($",
+                            downPaymentAmount.toFixed(2),
+                            ")",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "range",
+                                min: "0",
+                                max: "100",
+                                value: downPaymentPercentage,
+                                onChange: (e)=>setDownPaymentPercentage(e.target.value)
+                            }, void 0, false, {
+                                fileName: "src/Mortgcalc/Mortgcalc.jsx",
+                                lineNumber: 39,
+                                columnNumber: 9
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Mortgcalc/Mortgcalc.jsx",
+                        lineNumber: 37,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        children: [
+                            "Interest Rate: ",
+                            interestRate,
+                            "%",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "range",
+                                min: "1",
+                                max: "20",
+                                value: interestRate,
+                                onChange: (e)=>setInterestRate(e.target.value)
+                            }, void 0, false, {
+                                fileName: "src/Mortgcalc/Mortgcalc.jsx",
+                                lineNumber: 43,
+                                columnNumber: 9
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Mortgcalc/Mortgcalc.jsx",
+                        lineNumber: 41,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        children: [
+                            "Loan Period: ",
+                            loanPeriod,
+                            " years",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "range",
+                                min: "1",
+                                max: "30",
+                                value: loanPeriod,
+                                onChange: (e)=>setLoanPeriod(e.target.value)
+                            }, void 0, false, {
+                                fileName: "src/Mortgcalc/Mortgcalc.jsx",
+                                lineNumber: 47,
+                                columnNumber: 9
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Mortgcalc/Mortgcalc.jsx",
+                        lineNumber: 45,
+                        columnNumber: 7
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        onClick: calculateMonthlyPayment,
+                        children: "Calculate"
+                    }, void 0, false, {
+                        fileName: "src/Mortgcalc/Mortgcalc.jsx",
+                        lineNumber: 49,
+                        columnNumber: 7
+                    }, undefined),
+                    showResult && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                        children: [
+                            "Monthly Payment: $",
+                            monthlyPayment
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Mortgcalc/Mortgcalc.jsx",
+                        lineNumber: 50,
+                        columnNumber: 22
+                    }, undefined),
+                    "  "
+                ]
+            }, void 0, true, {
+                fileName: "src/Mortgcalc/Mortgcalc.jsx",
+                lineNumber: 31,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/Mortgcalc/Mortgcalc.jsx",
+        lineNumber: 27,
         columnNumber: 5
     }, undefined);
 };
-_c = Frame;
+_s(Mortgcalc, "Vy5CVjtzTKJCYPiNur/D30YKjgc=");
+_c = Mortgcalc;
 var _c;
-$RefreshReg$(_c, "Frame");
+$RefreshReg$(_c, "Mortgcalc");
 
-  $parcel$ReactRefreshHelpers$4731.postlude(module);
+  $parcel$ReactRefreshHelpers$96e4.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"cZ84d","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cZ84d":[function() {},{}],"hU2tZ":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$d1b0 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../NavBar&Logo/NavBar&Logo":"6ELei","./mortg.css":"8kyVG","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8kyVG":[function() {},{}],"a2FRC":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "BrokerList", ()=>(0, _brokerList.BrokerList));
+var _brokerList = require("./BrokerList");
+
+},{"./BrokerList":"6wNvc","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6wNvc":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$8246 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$d1b0.prelude(module);
+$parcel$ReactRefreshHelpers$8246.prelude(module);
 
 try {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "ListingForm", ()=>ListingForm);
+parcelHelpers.export(exports, "BrokerList", ()=>BrokerList);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _reactRouterDom = require("react-router-dom");
+var _styleCss = require("./style.css");
+var _navBarLogo = require("../NavBar&Logo/NavBar&Logo");
+var _search = require("../SearchBrokers/Search");
+const brokers = [
+    {
+        id: 1,
+        name: "Broker 1",
+        numberOfListings: 15,
+        bio: "Experienced broker specializing in luxury residential properties. Adept at catering to high-end clientele.",
+        image: "https://i.ibb.co/r0N3Ffb/Jimbo.webp"
+    },
+    {
+        id: 2,
+        name: "Broker 2",
+        numberOfListings: 25,
+        bio: "Distinguished expert in luxury commercial properties with a decade of exclusive dealings.",
+        image: "https://i.ibb.co/r0N3Ffb/Jimbo.webp"
+    },
+    {
+        id: 3,
+        name: "Broker 3",
+        numberOfListings: 5,
+        bio: "Emerging star in the luxury property scene, bringing fresh insights and impeccable service.",
+        image: "https://i.ibb.co/r0N3Ffb/Jimbo.webp"
+    },
+    {
+        id: 4,
+        name: "Broker 4",
+        numberOfListings: 40,
+        bio: "Veteran luxury properties broker with unmatched intuition for premium real estate opportunities.",
+        image: "https://i.ibb.co/r0N3Ffb/Jimbo.webp"
+    },
+    {
+        id: 5,
+        name: "Broker 5",
+        numberOfListings: 12,
+        bio: "Renowned for fostering elite connections and ensuring swift transactions in the luxury market.",
+        image: "https://i.ibb.co/r0N3Ffb/Jimbo.webp"
+    },
+    {
+        id: 6,
+        name: "Broker 6",
+        numberOfListings: 18,
+        bio: "Specializes in opulent suburban and countryside estates, providing clients with unrivaled local insights.",
+        image: "https://i.ibb.co/r0N3Ffb/Jimbo.webp"
+    }
+];
+const BrokerList = ()=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "broker-list",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "Navbar",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBarLogo.NavBarLogo), {}, void 0, false, {
+                    fileName: "src/BrokerList/BrokerList.jsx",
+                    lineNumber: 58,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/BrokerList/BrokerList.jsx",
+                lineNumber: 57,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "Searchbar",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _search.Search), {}, void 0, false, {
+                    fileName: "src/BrokerList/BrokerList.jsx",
+                    lineNumber: 62,
+                    columnNumber: 9
+                }, undefined)
+            }, void 0, false, {
+                fileName: "src/BrokerList/BrokerList.jsx",
+                lineNumber: 61,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "Postings",
+                children: brokers.map((broker)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "property",
+                        children: [
+                            " ",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                to: `/broker/${broker.id}`,
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        src: broker.image,
+                                        alt: broker.name,
+                                        className: "property-image"
+                                    }, void 0, false, {
+                                        fileName: "src/BrokerList/BrokerList.jsx",
+                                        lineNumber: 69,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "property-details",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                                children: broker.name
+                                            }, void 0, false, {
+                                                fileName: "src/BrokerList/BrokerList.jsx",
+                                                lineNumber: 71,
+                                                columnNumber: 5
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                className: "bio",
+                                                children: [
+                                                    " ",
+                                                    broker.bio
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/BrokerList/BrokerList.jsx",
+                                                lineNumber: 73,
+                                                columnNumber: 5
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                                children: [
+                                                    "Listings: ",
+                                                    broker.numberOfListings
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/BrokerList/BrokerList.jsx",
+                                                lineNumber: 74,
+                                                columnNumber: 5
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/BrokerList/BrokerList.jsx",
+                                        lineNumber: 70,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/BrokerList/BrokerList.jsx",
+                                lineNumber: 68,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, broker.id, true, {
+                        fileName: "src/BrokerList/BrokerList.jsx",
+                        lineNumber: 67,
+                        columnNumber: 11
+                    }, undefined))
+            }, void 0, false, {
+                fileName: "src/BrokerList/BrokerList.jsx",
+                lineNumber: 65,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/BrokerList/BrokerList.jsx",
+        lineNumber: 56,
+        columnNumber: 5
+    }, undefined);
+};
+_c = BrokerList;
+var _c;
+$RefreshReg$(_c, "BrokerList");
+
+  $parcel$ReactRefreshHelpers$8246.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-router-dom":"9xmpe","./style.css":"3FarD","../NavBar&Logo/NavBar&Logo":"6ELei","../SearchBrokers/Search":"j2hqQ","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3FarD":[function() {},{}],"j2hqQ":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$b45b = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$b45b.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Search", ()=>Search);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _styleCss = require("./style.css");
 var _s = $RefreshSig$();
-const ListingForm = ()=>{
+const Search = ()=>{
     _s();
-    const [photos, setPhotos] = (0, _reactDefault.default).useState([]);
-    const [showForm, setShowForm] = (0, _reactDefault.default).useState(false);
-    const handlePhotos = (e)=>{
-        const uploadedPhotos = Array.from(e.target.files);
-        setPhotos(uploadedPhotos);
+    const [inputValue, setInputValue] = (0, _react.useState)("");
+    const handleInputChange = (e)=>{
+        setInputValue(e.target.value);
+    };
+    const handleButtonClick = ()=>{
+        console.log("Button clicked!", inputValue);
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "form-container",
-        children: !showForm ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-            onClick: ()=>setShowForm(true),
-            children: "Add Listing"
-        }, void 0, false, {
-            fileName: "src/ListingForm/ListingForm.jsx",
-            lineNumber: 16,
-            columnNumber: 17
-        }, undefined) : /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-            className: "listing-form",
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                    children: "Add a Listing"
+        className: "search",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "subtitle-icon",
+                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "description",
+                    children: " Find a Trusted Broker "
                 }, void 0, false, {
-                    fileName: "src/ListingForm/ListingForm.jsx",
-                    lineNumber: 19,
-                    columnNumber: 21
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "form-group",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                            children: "Property Address:"
-                        }, void 0, false, {
-                            fileName: "src/ListingForm/ListingForm.jsx",
-                            lineNumber: 22,
-                            columnNumber: 25
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            type: "text",
-                            placeholder: "Description"
-                        }, void 0, false, {
-                            fileName: "src/ListingForm/ListingForm.jsx",
-                            lineNumber: 23,
-                            columnNumber: 25
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            type: "text",
-                            placeholder: "Price"
-                        }, void 0, false, {
-                            fileName: "src/ListingForm/ListingForm.jsx",
-                            lineNumber: 24,
-                            columnNumber: 25
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/ListingForm/ListingForm.jsx",
-                    lineNumber: 21,
-                    columnNumber: 21
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "form-group",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                            children: "Property Description:"
-                        }, void 0, false, {
-                            fileName: "src/ListingForm/ListingForm.jsx",
-                            lineNumber: 28,
-                            columnNumber: 25
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
-                            placeholder: "Description"
-                        }, void 0, false, {
-                            fileName: "src/ListingForm/ListingForm.jsx",
-                            lineNumber: 29,
-                            columnNumber: 25
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/ListingForm/ListingForm.jsx",
-                    lineNumber: 27,
-                    columnNumber: 21
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "form-group",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                            htmlFor: "photos",
-                            children: "Upload Photos:"
-                        }, void 0, false, {
-                            fileName: "src/ListingForm/ListingForm.jsx",
-                            lineNumber: 33,
-                            columnNumber: 25
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            type: "file",
-                            id: "photos",
-                            name: "photos",
-                            accept: "image/*",
-                            multiple: true,
-                            onChange: handlePhotos
-                        }, void 0, false, {
-                            fileName: "src/ListingForm/ListingForm.jsx",
-                            lineNumber: 34,
-                            columnNumber: 25
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/ListingForm/ListingForm.jsx",
-                    lineNumber: 32,
-                    columnNumber: 21
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "form-group",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                            children: "Property Features:"
-                        }, void 0, false, {
-                            fileName: "src/ListingForm/ListingForm.jsx",
-                            lineNumber: 38,
-                            columnNumber: 25
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            type: "text",
-                            placeholder: "Appliances"
-                        }, void 0, false, {
-                            fileName: "src/ListingForm/ListingForm.jsx",
-                            lineNumber: 39,
-                            columnNumber: 25
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            type: "text",
-                            placeholder: "Interior Features"
-                        }, void 0, false, {
-                            fileName: "src/ListingForm/ListingForm.jsx",
-                            lineNumber: 40,
-                            columnNumber: 25
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            type: "text",
-                            placeholder: "Flooring"
-                        }, void 0, false, {
-                            fileName: "src/ListingForm/ListingForm.jsx",
-                            lineNumber: 41,
-                            columnNumber: 25
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            type: "text",
-                            placeholder: "Heating & Cooling"
-                        }, void 0, false, {
-                            fileName: "src/ListingForm/ListingForm.jsx",
-                            lineNumber: 42,
-                            columnNumber: 25
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            type: "text",
-                            placeholder: "General Features"
-                        }, void 0, false, {
-                            fileName: "src/ListingForm/ListingForm.jsx",
-                            lineNumber: 43,
-                            columnNumber: 25
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            type: "text",
-                            placeholder: "Exterior Features"
-                        }, void 0, false, {
-                            fileName: "src/ListingForm/ListingForm.jsx",
-                            lineNumber: 44,
-                            columnNumber: 25
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            type: "text",
-                            placeholder: "View"
-                        }, void 0, false, {
-                            fileName: "src/ListingForm/ListingForm.jsx",
-                            lineNumber: 45,
-                            columnNumber: 25
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            type: "text",
-                            placeholder: "Amenities Nearby"
-                        }, void 0, false, {
-                            fileName: "src/ListingForm/ListingForm.jsx",
-                            lineNumber: 46,
-                            columnNumber: 25
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/ListingForm/ListingForm.jsx",
-                    lineNumber: 37,
-                    columnNumber: 21
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                    type: "submit",
-                    children: "Submit Listing"
-                }, void 0, false, {
-                    fileName: "src/ListingForm/ListingForm.jsx",
-                    lineNumber: 49,
-                    columnNumber: 21
+                    fileName: "src/SearchBrokers/Search.jsx",
+                    lineNumber: 18,
+                    columnNumber: 9
                 }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/ListingForm/ListingForm.jsx",
-            lineNumber: 18,
-            columnNumber: 17
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/ListingForm/ListingForm.jsx",
-        lineNumber: 14,
-        columnNumber: 9
+            }, void 0, false, {
+                fileName: "src/SearchBrokers/Search.jsx",
+                lineNumber: 17,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "input-wrapper",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                        className: "input-instance",
+                        placeholder: "Last name, First name",
+                        value: inputValue,
+                        onChange: handleInputChange
+                    }, void 0, false, {
+                        fileName: "src/SearchBrokers/Search.jsx",
+                        lineNumber: 21,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        className: "button",
+                        onClick: handleButtonClick,
+                        children: "Search"
+                    }, void 0, false, {
+                        fileName: "src/SearchBrokers/Search.jsx",
+                        lineNumber: 27,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/SearchBrokers/Search.jsx",
+                lineNumber: 20,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/SearchBrokers/Search.jsx",
+        lineNumber: 16,
+        columnNumber: 5
     }, undefined);
 };
-_s(ListingForm, "jwMbXNGlSGbhTh+q1SyquOmKgDU=");
-_c = ListingForm;
+_s(Search, "iEYviHCJXqr/rxvP+SpzgvyJcbo=");
+_c = Search;
 var _c;
-$RefreshReg$(_c, "ListingForm");
+$RefreshReg$(_c, "Search");
 
-  $parcel$ReactRefreshHelpers$d1b0.postlude(module);
+  $parcel$ReactRefreshHelpers$b45b.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"lkPVt","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"lkPVt":[function() {},{}],"7IoxF":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"7kDcl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"7kDcl":[function() {},{}],"7IoxF":[function(require,module,exports) {
 var $parcel$ReactRefreshHelpers$cb2f = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
 var prevRefreshReg = window.$RefreshReg$;
 var prevRefreshSig = window.$RefreshSig$;
@@ -37814,6 +37992,7 @@ var _styleCss = require("./style.css");
 var _reactResponsiveCarousel = require("react-responsive-carousel");
 var _carouselMinCss = require("react-responsive-carousel/lib/styles/carousel.min.css");
 var _frame = require("../Frame/Frame");
+var _reactRouterDom = require("react-router-dom");
 var _s = $RefreshSig$();
 const Feature = ({ title, content })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
         className: "feature",
@@ -37823,7 +38002,7 @@ const Feature = ({ title, content })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("
                 children: title
             }, void 0, false, {
                 fileName: "src/ListingProp/ListingProp.jsx",
-                lineNumber: 11,
+                lineNumber: 10,
                 columnNumber: 5
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
@@ -37831,35 +38010,147 @@ const Feature = ({ title, content })=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("
                 children: content
             }, void 0, false, {
                 fileName: "src/ListingProp/ListingProp.jsx",
-                lineNumber: 12,
+                lineNumber: 11,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/ListingProp/ListingProp.jsx",
-        lineNumber: 10,
+        lineNumber: 9,
         columnNumber: 3
     }, undefined);
 _c = Feature;
-const images = [
-    "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
-    "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
-    "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
-    "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
-    "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
-    "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
-    "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
-    "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg",
-    "https://i.ibb.co/7kxNmJT/localimagereader-ashx.jpg"
-];
+// Full-Page Offer Form Component
+const OfferForm = ({ onClose, onSubmit, offerPrice, setOfferPrice, personalMessage, setPersonalMessage })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "offer-form-overlay",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                className: "close-offer-form",
+                onClick: onClose,
+                children: "Close"
+            }, void 0, false, {
+                fileName: "src/ListingProp/ListingProp.jsx",
+                lineNumber: 19,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                onSubmit: onSubmit,
+                className: "offer-form",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        children: [
+                            "Offered Price:",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "number",
+                                value: offerPrice,
+                                onChange: (e)=>setOfferPrice(e.target.value),
+                                placeholder: "Enter your offer price"
+                            }, void 0, false, {
+                                fileName: "src/ListingProp/ListingProp.jsx",
+                                lineNumber: 23,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/ListingProp/ListingProp.jsx",
+                        lineNumber: 21,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        children: [
+                            "Personal Message or Notes:",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                                value: personalMessage,
+                                onChange: (e)=>setPersonalMessage(e.target.value),
+                                placeholder: "Add any personal messages or notes here"
+                            }, void 0, false, {
+                                fileName: "src/ListingProp/ListingProp.jsx",
+                                lineNumber: 32,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/ListingProp/ListingProp.jsx",
+                        lineNumber: 30,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                        type: "submit",
+                        children: "Submit Offer"
+                    }, void 0, false, {
+                        fileName: "src/ListingProp/ListingProp.jsx",
+                        lineNumber: 38,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/ListingProp/ListingProp.jsx",
+                lineNumber: 20,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/ListingProp/ListingProp.jsx",
+        lineNumber: 18,
+        columnNumber: 5
+    }, undefined);
+};
+_c1 = OfferForm;
 const ListingProp = ()=>{
     _s();
+    const { id } = (0, _reactRouterDom.useParams)();
+    // State variables for the listing and offer form
+    const [address, setAddress] = (0, _react.useState)("");
+    const [propertyImages, setPropertyImages] = (0, _react.useState)([]);
+    const [price, setPrice] = (0, _react.useState)("");
+    const [description, setDescription] = (0, _react.useState)("");
+    const [features, setFeatures] = (0, _react.useState)({
+        appliances: "",
+        generalFeatures: "",
+        interiorFeatures: "",
+        exteriorFeatures: "",
+        flooring: "",
+        view: "",
+        heatingCooling: "",
+        amenitiesNearby: ""
+    });
+    const [listingStatus, setListingStatus] = (0, _react.useState)("");
+    const [brokerName, setBrokerName] = (0, _react.useState)("");
     const [isFrameVisible, setIsFrameVisible] = (0, _react.useState)(false);
+    const [showOfferForm, setShowOfferForm] = (0, _react.useState)(false);
+    const [offerPrice, setOfferPrice] = (0, _react.useState)("");
+    const [personalMessage, setPersonalMessage] = (0, _react.useState)("");
+    // Form handling functions
+    const handleOfferSubmit = (e)=>{
+        e.preventDefault();
+        // Form validation logic here
+        // For example:
+        if (offerPrice.trim() === "") {
+            alert("Please enter an offer price.");
+            return;
+        }
+        // Additional validation as needed
+        setShowOfferForm(false); // Hide the form after submission
+    // Handle offer submission logic (e.g., send to server)
+    };
     if (isFrameVisible) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _frame.Frame), {
         onClose: ()=>setIsFrameVisible(false)
     }, void 0, false, {
         fileName: "src/ListingProp/ListingProp.jsx",
-        lineNumber: 34,
+        lineNumber: 84,
+        columnNumber: 12
+    }, undefined);
+    if (showOfferForm) return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(OfferForm, {
+        onClose: ()=>setShowOfferForm(false),
+        onSubmit: handleOfferSubmit,
+        offerPrice: offerPrice,
+        setOfferPrice: setOfferPrice,
+        personalMessage: personalMessage,
+        setPersonalMessage: setPersonalMessage
+    }, void 0, false, {
+        fileName: "src/ListingProp/ListingProp.jsx",
+        lineNumber: 89,
         columnNumber: 7
     }, undefined);
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37876,12 +38167,12 @@ const ListingProp = ()=>{
                             src: "https://i.ibb.co/TbH49Cr/luxium.png"
                         }, void 0, false, {
                             fileName: "src/ListingProp/ListingProp.jsx",
-                            lineNumber: 43,
+                            lineNumber: 106,
                             columnNumber: 9
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/ListingProp/ListingProp.jsx",
-                        lineNumber: 42,
+                        lineNumber: 105,
                         columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37892,7 +38183,7 @@ const ListingProp = ()=>{
                                 children: "Find a home"
                             }, void 0, false, {
                                 fileName: "src/ListingProp/ListingProp.jsx",
-                                lineNumber: 46,
+                                lineNumber: 109,
                                 columnNumber: 9
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37900,7 +38191,7 @@ const ListingProp = ()=>{
                                 children: "Mortage Calculator"
                             }, void 0, false, {
                                 fileName: "src/ListingProp/ListingProp.jsx",
-                                lineNumber: 47,
+                                lineNumber: 110,
                                 columnNumber: 9
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37908,7 +38199,7 @@ const ListingProp = ()=>{
                                 children: "Find a broker"
                             }, void 0, false, {
                                 fileName: "src/ListingProp/ListingProp.jsx",
-                                lineNumber: 48,
+                                lineNumber: 111,
                                 columnNumber: 9
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37916,19 +38207,19 @@ const ListingProp = ()=>{
                                 children: "Saved properties"
                             }, void 0, false, {
                                 fileName: "src/ListingProp/ListingProp.jsx",
-                                lineNumber: 49,
+                                lineNumber: 112,
                                 columnNumber: 9
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/ListingProp/ListingProp.jsx",
-                        lineNumber: 45,
+                        lineNumber: 108,
                         columnNumber: 7
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/ListingProp/ListingProp.jsx",
-                lineNumber: 41,
+                lineNumber: 104,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37938,15 +38229,15 @@ const ListingProp = ()=>{
                         className: "address-bar",
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                             className: "address",
-                            children: "1234, RUE DU CHALET, MONTREAL, QUEBEC, H4H 2B7"
+                            children: address
                         }, void 0, false, {
                             fileName: "src/ListingProp/ListingProp.jsx",
-                            lineNumber: 55,
+                            lineNumber: 118,
                             columnNumber: 9
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/ListingProp/ListingProp.jsx",
-                        lineNumber: 54,
+                        lineNumber: 117,
                         columnNumber: 5
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37958,34 +38249,34 @@ const ListingProp = ()=>{
                                 style: {
                                     maxWidth: "300px"
                                 },
-                                children: images.map((URL, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                children: propertyImages.map((URL, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                         className: "slide",
                                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                            alt: "sample_file",
+                                            alt: "Property",
                                             src: URL
-                                        }, index, false, {
+                                        }, void 0, false, {
                                             fileName: "src/ListingProp/ListingProp.jsx",
-                                            lineNumber: 64,
+                                            lineNumber: 127,
                                             columnNumber: 13
                                         }, undefined)
-                                    }, void 0, false, {
+                                    }, index, false, {
                                         fileName: "src/ListingProp/ListingProp.jsx",
-                                        lineNumber: 63,
+                                        lineNumber: 126,
                                         columnNumber: 11
                                     }, undefined))
                             }, void 0, false, {
                                 fileName: "src/ListingProp/ListingProp.jsx",
-                                lineNumber: 61,
+                                lineNumber: 124,
                                 columnNumber: 5
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/ListingProp/ListingProp.jsx",
-                            lineNumber: 60,
+                            lineNumber: 123,
                             columnNumber: 5
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/ListingProp/ListingProp.jsx",
-                        lineNumber: 57,
+                        lineNumber: 120,
                         columnNumber: 5
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -37993,128 +38284,119 @@ const ListingProp = ()=>{
                         children: [
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "price",
-                                children: "$ 1,500,000"
+                                children: price
                             }, void 0, false, {
                                 fileName: "src/ListingProp/ListingProp.jsx",
-                                lineNumber: 73,
-                                columnNumber: 11
+                                lineNumber: 135,
+                                columnNumber: 9
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
                                 className: "tax-info",
-                                children: " USD(incl. of all taxes)"
+                                children: "USD (incl. of all taxes)"
                             }, void 0, false, {
                                 fileName: "src/ListingProp/ListingProp.jsx",
-                                lineNumber: 74,
-                                columnNumber: 11
-                            }, undefined)
-                        ]
-                    }, void 0, true, {
-                        fileName: "src/ListingProp/ListingProp.jsx",
-                        lineNumber: 72,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "description",
-                        children: [
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                children: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem tenetur, voluptatibus cupiditate id minima autem consequuntur nesciunt! Officiis similique, nisi explicabo provident perspiciatis impedit minima error quia asperiores enim in?"
-                            }, void 0, false, {
-                                fileName: "src/ListingProp/ListingProp.jsx",
-                                lineNumber: 77,
-                                columnNumber: 11
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                children: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod perferendis vel quidem, iure alias exercitationem ullam saepe placeat aspernatur, accusamus fugiat harum eos culpa commodi ea quae fugit dolor mollitia?"
-                            }, void 0, false, {
-                                fileName: "src/ListingProp/ListingProp.jsx",
-                                lineNumber: 78,
+                                lineNumber: 136,
                                 columnNumber: 9
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/ListingProp/ListingProp.jsx",
-                        lineNumber: 76,
-                        columnNumber: 9
+                        lineNumber: 134,
+                        columnNumber: 5
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "description",
+                        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                            children: description
+                        }, void 0, false, {
+                            fileName: "src/ListingProp/ListingProp.jsx",
+                            lineNumber: 140,
+                            columnNumber: 9
+                        }, undefined)
+                    }, void 0, false, {
+                        fileName: "src/ListingProp/ListingProp.jsx",
+                        lineNumber: 139,
+                        columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Feature, {
                         title: "Listing Status:",
-                        content: "Active"
+                        content: listingStatus
                     }, void 0, false, {
                         fileName: "src/ListingProp/ListingProp.jsx",
-                        lineNumber: 81,
-                        columnNumber: 9
+                        lineNumber: 143,
+                        columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Feature, {
                         title: "Presented by:",
-                        content: "Broker name"
+                        content: brokerName
                     }, void 0, false, {
                         fileName: "src/ListingProp/ListingProp.jsx",
-                        lineNumber: 82,
-                        columnNumber: 9
+                        lineNumber: 144,
+                        columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Feature, {
                         title: "Appliances",
-                        content: "Central Air Conditioning, Dishwasher, Dryer, Refrigerator, Washer & Dryer."
+                        content: features.appliances
                     }, void 0, false, {
                         fileName: "src/ListingProp/ListingProp.jsx",
-                        lineNumber: 83,
-                        columnNumber: 9
+                        lineNumber: 145,
+                        columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Feature, {
                         title: "General Features",
-                        content: "Fireplace."
+                        content: features.generalFeatures
                     }, void 0, false, {
                         fileName: "src/ListingProp/ListingProp.jsx",
-                        lineNumber: 84,
-                        columnNumber: 9
+                        lineNumber: 146,
+                        columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Feature, {
                         title: "Interior Features",
-                        content: "Elevator, Granite Counter Tops."
+                        content: features.interiorFeatures
                     }, void 0, false, {
                         fileName: "src/ListingProp/ListingProp.jsx",
-                        lineNumber: 85,
-                        columnNumber: 9
+                        lineNumber: 147,
+                        columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Feature, {
                         title: "Exterior Features",
-                        content: "Basketball Court, Outbuilding(s), Tennis Court(s)."
+                        content: features.exteriorFeatures
                     }, void 0, false, {
                         fileName: "src/ListingProp/ListingProp.jsx",
-                        lineNumber: 86,
-                        columnNumber: 9
+                        lineNumber: 148,
+                        columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Feature, {
                         title: "Flooring",
-                        content: "Hardwood."
+                        content: features.flooring
                     }, void 0, false, {
                         fileName: "src/ListingProp/ListingProp.jsx",
-                        lineNumber: 87,
-                        columnNumber: 9
+                        lineNumber: 149,
+                        columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Feature, {
                         title: "View",
-                        content: "Panoramic, Water View."
+                        content: features.view
                     }, void 0, false, {
                         fileName: "src/ListingProp/ListingProp.jsx",
-                        lineNumber: 88,
-                        columnNumber: 9
+                        lineNumber: 150,
+                        columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Feature, {
                         title: "Heating & Cooling",
-                        content: "Electric Heating, Central air conditioning, Air exchanger."
+                        content: features.heatingCooling
                     }, void 0, false, {
                         fileName: "src/ListingProp/ListingProp.jsx",
-                        lineNumber: 89,
-                        columnNumber: 9
+                        lineNumber: 151,
+                        columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(Feature, {
                         title: "Amenities Nearby",
-                        content: "Locust Valley High School, Locust Valley Middle School."
+                        content: features.amenitiesNearby
                     }, void 0, false, {
                         fileName: "src/ListingProp/ListingProp.jsx",
-                        lineNumber: 90,
-                        columnNumber: 9
+                        lineNumber: 152,
+                        columnNumber: 7
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         className: "actions",
@@ -38126,12 +38408,12 @@ const ListingProp = ()=>{
                                     children: "Request a Visit"
                                 }, void 0, false, {
                                     fileName: "src/ListingProp/ListingProp.jsx",
-                                    lineNumber: 96,
-                                    columnNumber: 11
+                                    lineNumber: 158,
+                                    columnNumber: 13
                                 }, undefined)
                             }, void 0, false, {
                                 fileName: "src/ListingProp/ListingProp.jsx",
-                                lineNumber: 95,
+                                lineNumber: 157,
                                 columnNumber: 9
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -38139,47 +38421,60 @@ const ListingProp = ()=>{
                                 children: "Save to Favorite"
                             }, void 0, false, {
                                 fileName: "src/ListingProp/ListingProp.jsx",
-                                lineNumber: 100,
-                                columnNumber: 9
+                                lineNumber: 162,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "submit-offer",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                    onClick: ()=>setShowOfferForm(true),
+                                    children: "Submit Offer"
+                                }, void 0, false, {
+                                    fileName: "src/ListingProp/ListingProp.jsx",
+                                    lineNumber: 164,
+                                    columnNumber: 13
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/ListingProp/ListingProp.jsx",
+                                lineNumber: 163,
+                                columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/ListingProp/ListingProp.jsx",
-                        lineNumber: 94,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                        className: "property-images"
-                    }, void 0, false, {
-                        fileName: "src/ListingProp/ListingProp.jsx",
-                        lineNumber: 103,
+                        lineNumber: 156,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/ListingProp/ListingProp.jsx",
-                lineNumber: 53,
+                lineNumber: 116,
                 columnNumber: 5
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/ListingProp/ListingProp.jsx",
-        lineNumber: 39,
+        lineNumber: 102,
         columnNumber: 5
     }, undefined);
 };
-_s(ListingProp, "rK+eqeyIWlBRhwycVqbAevHETIE=");
-_c1 = ListingProp;
-var _c, _c1;
+_s(ListingProp, "mpquugSEVrz7QiHY/6DbsLAlZug=", false, function() {
+    return [
+        (0, _reactRouterDom.useParams)
+    ];
+});
+_c2 = ListingProp;
+var _c, _c1, _c2;
 $RefreshReg$(_c, "Feature");
-$RefreshReg$(_c1, "ListingProp");
+$RefreshReg$(_c1, "OfferForm");
+$RefreshReg$(_c2, "ListingProp");
 
   $parcel$ReactRefreshHelpers$cb2f.postlude(module);
 } finally {
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"8q8AC","react-responsive-carousel":"avFxl","react-responsive-carousel/lib/styles/carousel.min.css":"2QDrW","../Frame/Frame":"9fFZX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8q8AC":[function() {},{}],"avFxl":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"8q8AC","react-responsive-carousel":"avFxl","react-responsive-carousel/lib/styles/carousel.min.css":"2QDrW","../Frame/Frame":"9fFZX","react-router-dom":"9xmpe","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"8q8AC":[function() {},{}],"avFxl":[function(require,module,exports) {
 "use strict";
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -40093,6 +40388,446 @@ exports.fadeAnimationHandler = fadeAnimationHandler;
 },{"304221a9115d231d":"21dqq","90ee154d1d153634":"e8Ljj","ba9602e6f910f7f4":"aHp0r"}],"f1NKR":[function(require,module,exports) {
 "use strict";
 
-},{}],"2QDrW":[function() {},{}]},["4s3Ar","1xC6H","d8Dch"], "d8Dch", "parcelRequire6432")
+},{}],"2QDrW":[function() {},{}],"9fFZX":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4731 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4731.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "Frame", ()=>Frame);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _styleCss = require("./style.css");
+const Frame = ({ onClose })=>{
+    const submitForm = ()=>{
+        alert("Form Submitted!");
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "main-frame",
+        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+            className: "content-body-container",
+            children: [
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "content-body-header",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                            children: "Request an Appointment"
+                        }, void 0, false, {
+                            fileName: "src/Frame/Frame.jsx",
+                            lineNumber: 15,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            onClick: onClose,
+                            style: {
+                                position: "absolute",
+                                top: "10px",
+                                right: "10px"
+                            },
+                            children: "X"
+                        }, void 0, false, {
+                            fileName: "src/Frame/Frame.jsx",
+                            lineNumber: 17,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Frame/Frame.jsx",
+                    lineNumber: 14,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "content-body",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            children: [
+                                "Type of Request:",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("textarea", {
+                                    className: "textarea-input"
+                                }, void 0, false, {
+                                    fileName: "src/Frame/Frame.jsx",
+                                    lineNumber: 23,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Frame/Frame.jsx",
+                            lineNumber: 21,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            children: [
+                                "Date:",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "date",
+                                    className: "date-input"
+                                }, void 0, false, {
+                                    fileName: "src/Frame/Frame.jsx",
+                                    lineNumber: 27,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Frame/Frame.jsx",
+                            lineNumber: 25,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                            children: [
+                                "Time:",
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                    type: "time",
+                                    className: "time-input"
+                                }, void 0, false, {
+                                    fileName: "src/Frame/Frame.jsx",
+                                    lineNumber: 31,
+                                    columnNumber: 13
+                                }, undefined)
+                            ]
+                        }, void 0, true, {
+                            fileName: "src/Frame/Frame.jsx",
+                            lineNumber: 29,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Frame/Frame.jsx",
+                    lineNumber: 20,
+                    columnNumber: 9
+                }, undefined),
+                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                    className: "content-footer",
+                    children: [
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "submit-button",
+                            onClick: submitForm,
+                            children: "SUBMIT"
+                        }, void 0, false, {
+                            fileName: "src/Frame/Frame.jsx",
+                            lineNumber: 36,
+                            columnNumber: 11
+                        }, undefined),
+                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                            className: "cancel-button",
+                            children: "CANCEL RESERVATION"
+                        }, void 0, false, {
+                            fileName: "src/Frame/Frame.jsx",
+                            lineNumber: 37,
+                            columnNumber: 11
+                        }, undefined)
+                    ]
+                }, void 0, true, {
+                    fileName: "src/Frame/Frame.jsx",
+                    lineNumber: 35,
+                    columnNumber: 9
+                }, undefined)
+            ]
+        }, void 0, true, {
+            fileName: "src/Frame/Frame.jsx",
+            lineNumber: 12,
+            columnNumber: 7
+        }, undefined)
+    }, void 0, false, {
+        fileName: "src/Frame/Frame.jsx",
+        lineNumber: 11,
+        columnNumber: 5
+    }, undefined);
+};
+_c = Frame;
+var _c;
+$RefreshReg$(_c, "Frame");
+
+  $parcel$ReactRefreshHelpers$4731.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"cZ84d","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"cZ84d":[function() {},{}],"6nZSa":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$4833 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$4833.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "BrokerProfile", ()=>BrokerProfile);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _styleCss = require("./style.css");
+const jimbo = {
+    name: "Jimbo",
+    title: "Broker",
+    email: "jimbo@example.com",
+    phone: "04748292827",
+    agency: "Jimbo's Agency",
+    address: "123 Main St, City, Country",
+    experience: 10,
+    specialty: "Residential Properties",
+    image: "https://i.ibb.co/r0N3Ffb/Jimbo.webp",
+    properties: [
+        {
+            id: "12345",
+            description: "Beautiful 3-bedroom apartment in the heart of the city. Close to all amenities. Must see!",
+            bedrooms: 3,
+            bathrooms: 2,
+            image: "https://i.ibb.co/r0N3Ffb/Jimbo.webp"
+        }
+    ]
+};
+const BrokerProfile = ({ broker })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "broker-profile",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "broker-details",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                        src: broker.image,
+                        alt: broker.name,
+                        className: "broker-image"
+                    }, void 0, false, {
+                        fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                        lineNumber: 33,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                        children: broker.name
+                    }, void 0, false, {
+                        fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                        lineNumber: 34,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "info-box",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: broker.title
+                            }, void 0, false, {
+                                fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                                lineNumber: 37,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "contact-icons",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: "\uD83D\uDCE7"
+                                    }, void 0, false, {
+                                        fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                                        lineNumber: 39,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    " ",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        children: broker.email
+                                    }, void 0, false, {
+                                        fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                                        lineNumber: 39,
+                                        columnNumber: 33
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                        children: "\uD83D\uDCDE"
+                                    }, void 0, false, {
+                                        fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                                        lineNumber: 40,
+                                        columnNumber: 17
+                                    }, undefined),
+                                    " ",
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        children: broker.phone
+                                    }, void 0, false, {
+                                        fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                                        lineNumber: 40,
+                                        columnNumber: 33
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                                lineNumber: 38,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "agency",
+                                children: broker.agency
+                            }, void 0, false, {
+                                fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                                lineNumber: 42,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                className: "agency-address",
+                                children: broker.address
+                            }, void 0, false, {
+                                fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                                lineNumber: 43,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                        lineNumber: 36,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                lineNumber: 32,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "more-info",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        children: "More information"
+                    }, void 0, false, {
+                        fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                        lineNumber: 49,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: [
+                                    "Experience: ",
+                                    broker.experience,
+                                    " years"
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                                lineNumber: 51,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                                children: [
+                                    "Specialty: ",
+                                    broker.specialty
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                                lineNumber: 52,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                        lineNumber: 50,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                lineNumber: 48,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "broker-properties",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                        children: "Broker's properties"
+                    }, void 0, false, {
+                        fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                        lineNumber: 59,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "properties-grid",
+                        children: broker.properties.map((property)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "property-card",
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                        src: property.image,
+                                        alt: "Property",
+                                        className: "property-image"
+                                    }, void 0, false, {
+                                        fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                                        lineNumber: 64,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h3", {
+                                        children: [
+                                            "Property ID: ",
+                                            property.id
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                                        lineNumber: 65,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                        children: property.description
+                                    }, void 0, false, {
+                                        fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                                        lineNumber: 66,
+                                        columnNumber: 15
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                        className: "property-icons",
+                                        children: [
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                children: [
+                                                    "\uD83D\uDECF️ ",
+                                                    property.bedrooms
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                                                lineNumber: 68,
+                                                columnNumber: 17
+                                            }, undefined),
+                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("span", {
+                                                children: [
+                                                    "\uD83D\uDEBF ",
+                                                    property.bathrooms
+                                                ]
+                                            }, void 0, true, {
+                                                fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                                                lineNumber: 69,
+                                                columnNumber: 17
+                                            }, undefined)
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                                        lineNumber: 67,
+                                        columnNumber: 15
+                                    }, undefined)
+                                ]
+                            }, property.id, true, {
+                                fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                                lineNumber: 63,
+                                columnNumber: 13
+                            }, undefined))
+                    }, void 0, false, {
+                        fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                        lineNumber: 61,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/BrokerProfile/BrokerProfile.jsx",
+                lineNumber: 58,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/BrokerProfile/BrokerProfile.jsx",
+        lineNumber: 29,
+        columnNumber: 5
+    }, undefined);
+};
+_c = BrokerProfile;
+var _c;
+$RefreshReg$(_c, "BrokerProfile");
+
+  $parcel$ReactRefreshHelpers$4833.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./style.css":"gegcR","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"gegcR":[function() {},{}]},["4s3Ar","1xC6H","d8Dch"], "d8Dch", "parcelRequire6432")
 
 //# sourceMappingURL=index.b4b6dfad.js.map
