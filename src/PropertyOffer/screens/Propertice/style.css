@@ -1,0 +1,559 @@
+/* Base styles for your properties */
+.propertice {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  zoom: 0.57; /* Set the zoom level to 75% */
+
+}
+
+.propertice .div {
+  background-color: #ffffff;
+  height: 1898px;
+  position: relative;
+  width: 2878px;
+}
+
+.propertice .overlap {
+  background-image: url(../../../static/img/rectangle-25.png);
+  background-size: 100% 100%;
+  height: 429px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 2850px;
+}
+
+.propertice .div-wrapper {
+  align-items: center;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 12px;
+  left: 1213px;
+  position: absolute;
+  top: 215px;
+}
+
+.propertice .text-wrapper {
+  color: var(--graywhite)!important;
+  font-family: var(--display-font-family)!important;
+  font-size: 50px;
+  font-style: var(--display-font-style)!important;
+  font-weight: var(--display-font-weight)!important;
+  letter-spacing: var(--display-letter-spacing)!important;
+  line-height: var(--display-line-height)!important;
+  margin-top: -1px!important;
+  position: relative!important;
+  text-align: center!important;
+  white-space: nowrap!important;
+  width: fit-content!important;
+}
+.propertice .button-instance {
+  background-color: var(--x-1433-9e) !important;
+  border: 1px solid !important;
+  border-color: var(--x-1433-9e) !important;
+  border-radius: 8px !important;
+  height: 47px !important;
+  left: 2705px !important;
+  position: absolute !important;
+  top: 35px !important;
+  width: 140px !important;
+}
+
+.propertice .design-component-instance-node {
+  left: 40px !important;
+  top: 12px !important;
+}
+
+.propertice .sign-up-2 {
+  font-size: 16px !important;
+  font-weight: 400 !important;
+}
+
+.propertice .sign-up-3 {
+  background-color: var(--x-1433-9e) !important;
+  border: 1px solid !important;
+  border-color: var(--x-1433-9e) !important;
+  border-radius: 8px !important;
+  height: 47px !important;
+  left: 2544px !important;
+  position: absolute !important;
+  top: 35px !important;
+  width: 140px !important;
+}
+
+.propertice .frame-2 {
+  align-items: flex-start;
+  display: inline-flex;
+  gap: 16px;
+  left: 1297px;
+  position: absolute;
+  top: 1764px;
+}
+
+
+.propertice .icon-instance-node {
+  height: 24px !important;
+  position: relative !important;
+  width: 24px !important;
+}
+
+.propertice .frame-3 {
+  align-items: flex-start;
+  background-color: var(--primary-500);
+  border-radius: 3px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 9px;
+  position: relative;
+}
+
+.propertice .text-wrapper-2 {
+  color: var(--graywhite);
+  font-family: var(--body-regular-600-font-family);
+  font-size: var(--body-regular-600-font-size);
+  font-style: var(--body-regular-600-font-style);
+  font-weight: var(--body-regular-600-font-weight);
+  letter-spacing: var(--body-regular-600-letter-spacing);
+  line-height: var(--body-regular-600-line-height);
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  width: 26px;
+}
+
+.propertice .frame-4 {
+  align-items: flex-start;
+  background-color: var(--primary-50);
+  border-radius: 3px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 9px;
+  position: relative;
+}
+
+.propertice .text-wrapper-3 {
+  color: var(--primary-500);
+  font-family: var(--body-regular-600-font-family);
+  font-size: var(--body-regular-600-font-size);
+  font-style: var(--body-regular-600-font-style);
+  font-weight: var(--body-regular-600-font-weight);
+  letter-spacing: var(--body-regular-600-letter-spacing);
+  line-height: var(--body-regular-600-line-height);
+  margin-top: -1px;
+  position: relative;
+  text-align: center;
+  width: 26px;
+}
+
+.propertice .arrow-right-wrapper {
+  align-items: flex-start;
+  background-color: var(--primary-500);
+  border-radius: 4px;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.propertice .overlap-group {
+  height: 475px;
+  left: 115px;
+  position: absolute;
+  top: 1193px;
+  width: 1886px;
+}
+
+.propertice .line {
+  height: 1px;
+  left: 185px;
+  object-fit: cover;
+  position: absolute;
+  top: 304px;
+  width: 1320px;
+}
+
+.propertice .frame-5 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 475px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 690px;
+}
+
+.propertice .frame-wrapper {
+  align-items: flex-start;
+  display: flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 17.13px;
+  position: relative;
+  width: 536px;
+}
+
+.propertice .frame-6 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8.57px;
+  position: relative;
+}
+
+.propertice .ellipse {
+  height: 50px;
+  object-fit: cover;
+  position: relative;
+  width: 50px;
+}
+
+.propertice .text-wrapper-4 {
+  color: var(--gray-700);
+  font-family: "Inter", Helvetica;
+  font-size: 17.1px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 25.7px;
+  position: relative;
+  text-align: center;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.propertice .frame-7 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 16px;
+  position: relative;
+}
+
+.propertice .text-wrapper-5 {
+  color: var(--primary-500);
+  font-family: "Inter", Helvetica;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.05px;
+  line-height: 32px;
+  margin-top: -1px;
+  position: relative;
+  width: 536px;
+}
+
+.propertice .p {
+  color: rgb(128, 128, 128);
+  font-size: 25px;
+  font-style: var(--body-regular-400-font-style);
+  font-weight: var(--body-regular-400-font-weight);
+  letter-spacing: var(--body-regular-400-letter-spacing);
+  line-height: var(--body-regular-400-line-height);
+  position: relative;
+  width: 536px;
+}
+
+.propertice .frame-8 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 32px;
+  position: relative;
+}
+
+.propertice .text-wrapper-6 {
+  color: var(--primary-500);
+  font-family: var(--heading-heading-2-font-family);
+  font-size: var(--heading-heading-2-font-size);
+  font-style: var(--heading-heading-2-font-style);
+  font-weight: var(--heading-heading-2-font-weight);
+  letter-spacing: var(--heading-heading-2-letter-spacing);
+  line-height: var(--heading-heading-2-line-height);
+  margin-top: -1px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.propertice .frame-9 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  height: 399px;
+  left: 1088px;
+  position: absolute;
+  top: 4px;
+  width: 798px;
+}
+
+.propertice .frame-10 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  height: 282px;
+  position: relative;
+  width: 611px;
+}
+
+.propertice .text-wrapper-7 {
+  color: var(--primary-500);
+  font-family: var(--heading-heading-4-font-family);
+  font-size: var(--heading-heading-4-font-size);
+  font-style: var(--heading-heading-4-font-style);
+  font-weight: var(--heading-heading-4-font-weight);
+  letter-spacing: var(--heading-heading-4-letter-spacing);
+  line-height: var(--heading-heading-4-line-height);
+  margin-top: -1px;
+  position: relative;
+  width: 536px;
+}
+
+.propertice .text-wrapper-8 {
+  color: var(--primary-500);
+  font-family: var(--heading-heading-2-font-family);
+  font-size: var(--heading-heading-2-font-size);
+  font-style: var(--heading-heading-2-font-style);
+  font-weight: var(--heading-heading-2-font-weight);
+  letter-spacing: var(--heading-heading-2-letter-spacing);
+  line-height: var(--heading-heading-2-line-height);
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.propertice .rectangle {
+  height: 600px;
+  left: 2011px;
+  position: absolute;
+  top: 455px;
+  width: 800px;
+}
+
+.propertice .frame-11 {
+  align-items: flex-start;
+  background-color: var(--graywhite);
+  border-radius: 4px;
+  box-shadow: 0px 25.7px 72.81px #3b4d8114;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  left: 2240px;
+  padding: 24px;
+  position: absolute;
+  top: 1065px;
+}
+
+.propertice .frame-12 {
+  align-items: center;
+  display: flex;
+  flex: 0 0 auto;
+  justify-content: space-between;
+  position: relative;
+  width: 326px;
+}
+
+.propertice .frame-13 {
+  align-items: center;
+  display: inline-flex;
+  flex: 0 0 auto;
+  gap: 8px;
+  position: relative;
+}
+
+.propertice .text-wrapper-9 {
+  color: var(--primary-500);
+  font-family: var(--body-large-600-font-family);
+  font-size: var(--body-large-600-font-size);
+  font-style: var(--body-large-600-font-style);
+  font-weight: var(--body-large-600-font-weight);
+  letter-spacing: var(--body-large-600-letter-spacing);
+  line-height: var(--body-large-600-line-height);
+  margin-top: -1.07px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content;
+}
+
+.propertice .img {
+  height: 19px;
+  position: relative;
+  width: 1.5px;
+}
+
+.propertice .rectangle-2 {
+  height: 600px;
+  left: 7px;
+  object-fit: cover;
+  position: absolute;
+  top: 450px;
+  width: 800px;
+}
+
+.propertice .frame-14 {
+  align-items: flex-start;
+  background-color: var(--graywhite);
+  border-radius: 4px;
+  box-shadow: 0px 25.7px 72.81px #3b4d8114;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 10px;
+  left: 219px;
+  padding: 24px;
+  position: absolute;
+  top: 1067px;
+}
+
+.propertice .group {
+  height: 697px;
+  left: 1066px;
+  position: absolute;
+  top: 455px;
+  width: 921px;
+}
+
+.propertice .rectangle-3 {
+  height: 600px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 800px;
+}
+
+.propertice .frame-15 {
+  align-items: flex-start;
+  background-color: var(--graywhite);
+  border-radius: 4px;
+  box-shadow: 0px 25.7px 72.81px #3b4d8114;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 90px;
+  left: 282px;
+  padding: 24px;
+  position: absolute;
+  top: 607px;
+  width: 439px;
+}
+
+.propertice .frame-16 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  height: 440px;
+  left: 2146px;
+  position: absolute;
+  top: 1201px;
+  width: 690px;
+}
+
+.propertice .frame-17 {
+  align-items: flex-start;
+  display: inline-flex;
+  flex: 0 0 auto;
+  flex-direction: column;
+  gap: 24px;
+  position: relative;
+}
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px; /* Adjust margin according to your preference */
+}
+.button-offer:first-child {
+  margin-right: 10px; /* Adjust the space between the buttons */
+}
+
+.button-offer:last-child {
+  margin-left: 10px; /* Adjust the space between the buttons */
+}
+.button-offer {
+  border: 2px solid #3498db; /* Set border width and color */
+  border-radius: 50px; /* Make the button fully round */
+  background-color: transparent; /* Set background color to transparent */
+  color: #3498db; /* Text color */
+  font-size: 20px; /* Font size */
+  padding: 15px 30px; /* Adjust padding according to your preference */
+  text-align: center; /* Center text horizontally */
+  text-decoration: none; /* Remove underline from links */
+  cursor: pointer; /* Show pointer cursor on hover */
+  transition: all 0.3s ease; /* Add smooth transition for hover effect */
+}
+
+.button-offer:hover {
+  background-color: #3498db; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+}
+@media screen and (max-width: 768px) {
+  .propertice {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .propertice .div {
+    width: 100%; /* Make the width 100% on smaller screens */
+  }
+
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    margin-top: 20px; /* Adjust margin for spacing between buttons */
+  }
+
+  .button-offer:first-child {
+    margin-right: 0; /* Remove right margin for the first button */
+    margin-bottom: 10px; /* Add bottom margin for spacing between buttons */
+  }
+
+  .button-offer:last-child {
+    margin-left: 0; /* Remove left margin for the last button */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .propertice {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .propertice .div {
+    width: 100%; /* Make the width 100% on smaller screens */
+  }
+
+  .propertice .overlap-group {
+    height: auto; /* Set height to auto for dynamic content */
+  }
+
+  .propertice .frame-5,
+  .propertice .frame-9,
+  .propertice .frame-16 {
+    flex-direction: column; /* Stack offers one under another */
+    align-items: center; /* Center content in smaller screens */
+  }
+
+  .button-container {
+    flex-direction: column; /* Stack buttons vertically on smaller screens */
+    margin-top: 20px; /* Adjust margin for spacing between buttons */
+  }
+
+  .button-offer {
+    margin-bottom: 10px; /* Add bottom margin for spacing between buttons */
+  }
+}
+
+.offer-status{
+  font-size: 40px;
+  color: var(--primary-500);
+}
+
+
