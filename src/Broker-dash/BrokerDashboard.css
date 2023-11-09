@@ -1,97 +1,116 @@
 .broker-dashboard {
-    font-family: 'Arial', sans-serif;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
+  font-family: 'Arial', sans-serif;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.my-postings, .visit-requests, .broker-info {
+  margin-bottom: 40px;
+}
+
+.postings .posting {
+  border: 1px solid #e0e0e0;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 250px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.postings .posting:hover {
+  transform: scale(1.05);
+}
+
+.posting-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.posting-details {
+  padding: 10px;
+  text-align: center;
+}
+
+.visit-requests ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.visit-requests .request-item {
+  background: #f2f2f2;
+  border: 1px solid #e1e1e1;
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.request-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+.button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.accept {
+  background-color: #4CAF50; /* Green */
+  color: white;
+}
+
+.decline {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+/* Responsive button styling */
+@media (max-width: 768px) {
+  .request-actions {
+    flex-direction: column;
+    gap: 5px; /* Reduced gap for smaller screens */
   }
-  
-  .my-postings, .visit-requests, .broker-info {
-    margin-bottom: 40px;
-  }
-  
-  .posting {
-    border: 1px solid #e0e0e0;
-    margin: 20px;
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    width: 250px;
-    cursor: pointer;
-    display: inline-block; /* or flex for a different layout */
-  }
-  
-  .posting:hover {
-    transform: scale(1.05);
-  }
-  
-  .posting-image {
+
+  .button {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
+    margin-top: 10px;
   }
-  
-  .posting-details {
-    padding: 10px;
+}
+
+.broker-info {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+}
+
+.info-box {
+  border: 1px solid #eaeaea;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.notification {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* Width for the rectangle shape */
+  height: 150px; /* Height for the rectangle shape */
+    background-color: #0056b3;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
     text-align: center;
   }
   
-  /* Requested Visits styles */
-.visit-requests ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .visit-requests .request-item {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    margin-top: 10px;
-    padding: 15px;
-    position: relative;
-  }
-  
-  .request-actions {
-    display: flex;
-    justify-content: flex-end;
-    gap: 10px;
-  }
-  
-  .button {
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
-  .accept {
-    background-color: #4CAF50; /* Green */
-    color: white;
-  }
-  
-  .decline {
-    background-color: #f44336; /* Red */
-    color: white;
-  }
-  
-  /* Responsive button styling */
-  @media (max-width: 768px) {
-    .request-actions {
-      flex-direction: column;
-    }
-    .button {
-      width: 100%;
-      margin-top: 10px;
-    }
-  }
-  
-  /* Broker Information styles */
-  .broker-info {
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    padding: 20px;
-  }
-  
-  .info-box {
-    border: 1px solid #eaeaea;
-    padding: 15px;
-    border-radius: 4px;
-  }

@@ -1,5 +1,5 @@
-import React from 'react';
-import './BrokerDashboard.css'; // Assuming the CSS file is in the same directory
+import React, { useState,useEffect } from 'react';
+import './BrokerDashboard.css';
 
 // Properties data as provided earlier
 const properties = [
@@ -17,68 +17,110 @@ const properties = [
 
 // Mock data for visit requests
 const visitRequests = [
-  { id: 1, propertyId: 1, clientName: 'Client A', status: 'Pending' },
-  { id: 2, propertyId: 2, clientName: 'Client B', status: 'Confirmed' },
-  // ... additional requests
+    { id: 1, propertyId: 1, clientName: 'Client A', status: 'Pending' },
+    { id: 2, propertyId: 2, clientName: 'Client B', status: 'Confirmed' },
+    // ... additional requests
 ];
 
 // Broker's information
 const brokerInfo = {
-  name: 'Haifaa Brokerage',
-  email: 'contact@haifaabrokerage.com',
-  phone: '+1234567890',
+    name: 'Haifaa Brokerage',
+    email: 'contact@haifaabrokerage.com',
+    phone: '+1234567890',
 };
 
 const BrokerDashboard = () => {
-  return (
-    <div className="broker-dashboard">
-      <h1>Broker Dashboard</h1>
-      
-      {/* My Postings Section */}
-      <div className="my-postings">
-        <h2>My Postings</h2>
-        <div className="postings">
-          {properties.map((property) => (
-            <div className="posting" key={property.id}>
-              <img src={property.image} alt={property.name} className="posting-image" />
-              <div className="posting-details">
-                <h3>{property.name}</h3>
-                <p>Price: ${property.price.toLocaleString()}</p>
+    const [requests, setRequests] = useState(visitRequests);
+    const [notification, setNotification] = useState('');
+  
+    // Log the notification state whenever it changes
+    useEffect(() => {
+      if (notification) {
+        console.log(`Notification state updated to: ${notification}`);
+        const timer = setTimeout(() => {
+          setNotification('');
+        }, 3000);
+        return () => clearTimeout(timer); // Cleanup the timeout on component unmount
+      }
+    }, [notification]);
+  
+    const handleStatusChange = (id, newStatus) => {
+      const updatedRequests = requests.map(request => {
+        if (request.id === id) {
+          return { ...request, status: newStatus };
+        }
+        return request;
+      });
+      setRequests(updatedRequests);
+      setNotification(`Status for Property ID ${id} has been updated to ${newStatus}. Email sent to the user.`);
+    };
+  
+    return (
+      <div className="broker-dashboard">
+        <h1>Broker Dashboard</h1>
+        
+        {/* Popup Notification */}
+        {notification && (
+        <div className="notification">
+          {notification}
+        </div>
+      )}
+        
+        {/* My Postings Section */}
+        <div className="my-postings">
+          <h2>My Postings</h2>
+          <div className="postings">
+            {properties.map((property) => (
+              <div className="posting" key={property.id}>
+                <img src={property.image} alt={property.name} className="posting-image" />
+                <div className="posting-details">
+                  <h3>{property.name}</h3>
+                  <p>Price: ${property.price.toLocaleString()}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
+        </div>
+        
+        {/* Requested Visits Section */}
+        <div className="visit-requests">
+          <h2>Requested Visits</h2>
+          <ul>
+            {requests.map(request => (
+              <li key={request.id} className="request-item">
+                <p>Property ID: {request.propertyId}</p>
+                <p>Client Name: {request.clientName}</p>
+                <p>Status: {request.status}</p>
+                <div className="request-actions">
+                  <button
+                    className="button accept"
+                    onClick={() => handleStatusChange(request.id, 'Accepted')}
+                  >
+                    Accept
+                  </button>
+                  <button
+                    className="button decline"
+                    onClick={() => handleStatusChange(request.id, 'Declined')}
+                  >
+                    Decline
+                  </button>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+  
+        {/* Broker Information Section */}
+        <div className="broker-info">
+          <h2>Broker Information</h2>
+          <div className="info-box">
+            <p>Name: {brokerInfo.name}</p>
+            <p>Email: {brokerInfo.email}</p>
+            <p>Phone: {brokerInfo.phone}</p>
+          </div>
         </div>
       </div>
-      
-      {/* Requested Visits Section */}
-      <div className="visit-requests">
-        <h2>Requested Visits</h2>
-        <ul>
-          {visitRequests.map(request => (
-            <li key={request.id} className="request-item">
-              <p>Property ID: {request.propertyId}</p>
-              <p>Client Name: {request.clientName}</p>
-              <p>Status: {request.status}</p>
-              <div className="request-actions">
-                <button className="button accept">Accept</button>
-                <button className="button decline">Decline</button>
-              </div>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      {/* Broker Information Section */}
-      <div className="broker-info">
-        <h2>Broker Information</h2>
-        <div className="info-box">
-          <p>Name: {brokerInfo.name}</p>
-          <p>Email: {brokerInfo.email}</p>
-          <p>Phone: {brokerInfo.phone}</p>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-export default BrokerDashboard;
+    );
+  };
+  
+  export default BrokerDashboard;
