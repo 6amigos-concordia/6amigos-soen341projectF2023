@@ -23,22 +23,22 @@ public class BrokersController {
     public ResponseEntity<List<Property>> getAllProperties() {
         return ResponseEntity.ok().body(brokerService.getAllProperties());
     }
-    @PostMapping(path = "/brokers/add")
-    public ResponseEntity<Property> saveUser(@RequestBody Property property) {
+    @PostMapping(path = "/properties/add")
+    public ResponseEntity<Property> saveProperty(@RequestBody Property property) {
         return ResponseEntity.ok(brokerService.addNewProperty(property));
     }
 
-    @DeleteMapping(path = "/brokers/delete/{propertyId}")
-    public ResponseEntity<Property> deleteProperty(@PathVariable ObjectId propertyId) {
+    @DeleteMapping(path = "/properties/delete/{propertyId}")
+    public ResponseEntity<Property> deleteProperty(@PathVariable String propertyId) {
         if (brokerService.deleteProperty(propertyId)) {
             return ResponseEntity.ok().build();
         }
         return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
     }
 
-    @PutMapping(path = "/brokers/update/{propertyId}")
+    @PutMapping(path = "/properties/update/{propertyId}")
     public ResponseEntity<Property> updateProperty(
-                @PathVariable ObjectId propertyId, @RequestBody Property property) {
+                @PathVariable String propertyId, @RequestBody Property property) {
         Optional<Property> updated = brokerService.updateProperty(propertyId, property);
 
         return updated.map(value -> ResponseEntity.ok().body(value))
