@@ -7,14 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d3cde203-a638-44a9-b897-3804d44118f9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/RealEstateApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/RealEstateApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/controllers/OfferController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/controllers/OfferController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/Offer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/Offer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/OfferRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/OfferRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/services/OfferService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/services/OfferService.java" afterDir="false" />
-    </list>
+    <list default="true" id="d3cde203-a638-44a9-b897-3804d44118f9" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -168,7 +161,7 @@
       <workItem from="1699124384170" duration="164000" />
       <workItem from="1699488152207" duration="7612000" />
       <workItem from="1699558718514" duration="920000" />
-      <workItem from="1699635323062" duration="5972000" />
+      <workItem from="1699635323062" duration="6368000" />
     </task>
     <servers />
   </component>

@@ -25,4 +25,5 @@ public class Offer {
     Double priceOffered;
     String deedOfSaleDate;
     String occupancyDate;
+    Property property;
 }
