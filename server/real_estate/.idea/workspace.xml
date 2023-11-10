@@ -8,24 +8,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3cde203-a638-44a9-b897-3804d44118f9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/services/EmailSenderService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/RealEstateApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/RealEstateApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/controllers/AppointmentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/controllers/AppointmentsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/Appointment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/services/AppointmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/services/AppointmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/realestate/real_estate/repos/AppointmentRepositoryTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/realestate/real_estate/repos/AppointmentRepositoryTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/RealEstateApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/RealEstateApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/controllers/AppointmentsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/controllers/AppointmentsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/Appointment$AppointmentBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/Appointment$AppointmentBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/Appointment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/Appointment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/User$UserBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/services/AppointmentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/services/AppointmentService.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,14 +77,11 @@
       <recent name="com.realestate.real_estate" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.RealEstateApplication">
-    <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="JUnit.SearchControllerTest">
     <configuration name="generated-requests | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" requestIdentifier="#4" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests | #6" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="6" requestIdentifier="#6" runType="Run single request">
+    <configuration name="generated-requests | #7" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="7" requestIdentifier="#7" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="AppointmentRepositoryTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
@@ -119,16 +99,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PropertyRepositoryTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="real_estate" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.realestate.real_estate.repos.*" />
+          <option name="PATTERN" value="com.realestate.real_estate.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.realestate.real_estate.repos" />
-      <option name="MAIN_CLASS_NAME" value="com.realestate.real_estate.repos.PropertyRepositoryTests" />
+      <option name="PACKAGE_NAME" value="com.realestate.real_estate.controllers" />
+      <option name="MAIN_CLASS_NAME" value="com.realestate.real_estate.controllers.SearchControllerTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -147,13 +127,21 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.generated-requests | #4" />
-        <item itemvalue="HTTP Request.generated-requests | #6" />
-        <item itemvalue="HTTP Request.generated-requests | #3" />
-        <item itemvalue="JUnit.PropertyRepositoryTests" />
+        <item itemvalue="JUnit.SearchControllerTest" />
         <item itemvalue="JUnit.AppointmentRepositoryTests" />
+        <item itemvalue="HTTP Request.generated-requests | #7" />
+        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+        <item itemvalue="HTTP Request.generated-requests | #4" />
       </list>
     </recent_temporary>
   </component>

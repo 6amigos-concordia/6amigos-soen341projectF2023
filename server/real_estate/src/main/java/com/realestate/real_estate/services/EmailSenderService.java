@@ -12,7 +12,7 @@ public class EmailSenderService{
 
     public void sendAppointmentConfirmation(String toEmail, String body, String subject){
         SimpleMailMessage message = new SimpleMailMessage();
-        message.setFrom("kaotharr97@gmail.com");
+        message.setFrom("sixamigos.concordia@gmail.com");
         message.setTo(toEmail);
         message.setText(body);
         message.setSubject(subject);
