@@ -3,6 +3,7 @@ package com.realestate.real_estate.controllers;
 import com.realestate.real_estate.repos.Appointment;
 import com.realestate.real_estate.repos.User;
 import com.realestate.real_estate.services.AppointmentService;
+import com.realestate.real_estate.services.EmailSenderService;
 import com.realestate.real_estate.services.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -22,13 +23,11 @@ public class AppointmentsController {
         return ResponseEntity.ok().body(appointmentService.getAppointments());
     }
     @PostMapping(path = "/appointments/add")
-    public ResponseEntity<Appointment> bookAppointemt(@RequestBody Appointment appointment) {
+    public ResponseEntity<Appointment> bookAppointment(@RequestBody Appointment appointment) {
         return ResponseEntity.ok(appointmentService.bookAppointment(appointment));
     }
     @PostMapping(path = "/appointments/cancel")
     public void cancelAppointment(@RequestBody Appointment appointment){
         appointmentService.cancelAppointment(appointment);
     }
-
-
 }
