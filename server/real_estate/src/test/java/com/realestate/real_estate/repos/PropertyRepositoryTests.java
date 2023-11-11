@@ -27,7 +27,7 @@ public class PropertyRepositoryTests {
 
     // Arrange
     ObjectId id = new ObjectId();
-    PropertyDetails propertyDetailsSample = PropertyDetails.builder().bedrooms(2).bathrooms(2).build();
+    PropertyDetails propertyDetailsSample = PropertyDetails.builder().bedrooms(2).bathrooms(2).minPrice(20000).maxPrice(200000).build();
     List<String> appointmentIdsSample = new ArrayList<>();
     List<Broker> brokerIdsSample = new ArrayList<>();
     Property propertySample = Property.builder()
