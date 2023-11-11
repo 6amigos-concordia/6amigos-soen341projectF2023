@@ -596,6 +596,188 @@ input[type="email"]:focus, input[type="password"]:focus {
   }
 }
 
+.top-fixed-container {
+  z-index: 10;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  padding: 20px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+img.IMG {
+  width: 145px;
+  height: 120px;
+}
+
+.header .brand {
+  align-items: center;
+  display: flex;
+}
+
+.hamburger-menu {
+  cursor: pointer;
+  align-items: center;
+  font-size: 24px;
+  display: flex;
+}
+
+.links {
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+  display: flex;
+}
+
+.header .links .link {
+  color: #fff;
+  font-family: Roboto, Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  transition: color .3s;
+}
+
+.header .links .link:hover {
+  color: #555;
+}
+
+.header .links .link:active {
+  color: #222;
+}
+
+.header .signing {
+  gap: 1vw;
+  display: flex;
+}
+
+.container {
+  background-image: url("https://wallpapers.com/images/hd/real-estate-modern-white-house-dcxpp5xsw4e7wqgc.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  flex-direction: column;
+  align-items: center;
+  max-width: 100%;
+  margin: 2rem auto;
+  padding: 2rem;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.calculator {
+  background-color: #ffffff80;
+  box-shadow: 0 0 10px #0000001a;
+}
+
+.calculator:before {
+  content: "";
+  background-image: inherit;
+  filter: blur(8px);
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+}
+
+.calculator h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+label, h2 {
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  display: block;
+}
+
+input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  margin-top: .5rem;
+  padding: .5rem .75rem;
+  font-size: 1rem;
+}
+
+button {
+  color: #fff;
+  cursor: pointer;
+  background-color: #007bff;
+  border: none;
+  border-radius: 50px;
+  margin-top: 1rem;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+}
+
+p {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+@media (width <= 768px) {
+  .calculator {
+    padding: 1rem;
+  }
+
+  label, h2 {
+    font-size: 1.2rem;
+  }
+
+  input {
+    font-size: .9rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 1.2rem;
+  }
+}
+
+@media (width <= 480px) {
+  .calculator {
+    padding: .5rem;
+  }
+
+  label, h2 {
+    font-size: 1rem;
+  }
+
+  input {
+    font-size: .8rem;
+  }
+
+  button {
+    font-size: .9rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+.Navbar {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 160px;
+  display: flex;
+}
+
 .landing-page {
   background-color: #2969cf;
   background-image: url("https://wallpapers.com/images/hd/real-estate-modern-white-house-dcxpp5xsw4e7wqgc.jpg");
@@ -1511,188 +1693,6 @@ img.IMG {
 
 .favorite-button:hover, .favorite-button.favorited {
   color: red;
-}
-
-.top-fixed-container {
-  z-index: 10;
-  justify-content: space-between;
-  align-items: center;
-  width: 100vw;
-  padding: 20px;
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-img.IMG {
-  width: 145px;
-  height: 120px;
-}
-
-.header .brand {
-  align-items: center;
-  display: flex;
-}
-
-.hamburger-menu {
-  cursor: pointer;
-  align-items: center;
-  font-size: 24px;
-  display: flex;
-}
-
-.links {
-  justify-content: center;
-  align-items: center;
-  gap: 2vw;
-  display: flex;
-}
-
-.header .links .link {
-  color: #fff;
-  font-family: Roboto, Helvetica;
-  font-size: 18px;
-  font-weight: 400;
-  text-decoration: none;
-  transition: color .3s;
-}
-
-.header .links .link:hover {
-  color: #555;
-}
-
-.header .links .link:active {
-  color: #222;
-}
-
-.header .signing {
-  gap: 1vw;
-  display: flex;
-}
-
-.container {
-  background-image: url("https://wallpapers.com/images/hd/real-estate-modern-white-house-dcxpp5xsw4e7wqgc.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  flex-direction: column;
-  align-items: center;
-  max-width: 100%;
-  margin: 2rem auto;
-  padding: 2rem;
-  display: flex;
-  position: relative;
-  overflow: hidden;
-}
-
-.calculator {
-  background-color: #ffffff80;
-  box-shadow: 0 0 10px #0000001a;
-}
-
-.calculator:before {
-  content: "";
-  background-image: inherit;
-  filter: blur(8px);
-  z-index: -1;
-  position: absolute;
-  inset: 0;
-}
-
-.calculator h1 {
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-label, h2 {
-  margin-bottom: 1.5rem;
-  font-size: 1.5rem;
-  display: block;
-}
-
-input {
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  width: 100%;
-  margin-top: .5rem;
-  padding: .5rem .75rem;
-  font-size: 1rem;
-}
-
-button {
-  color: #fff;
-  cursor: pointer;
-  background-color: #007bff;
-  border: none;
-  border-radius: 50px;
-  margin-top: 1rem;
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-}
-
-p {
-  text-align: center;
-  margin-top: 1rem;
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-button:hover {
-  background-color: #0056b3;
-}
-
-@media (width <= 768px) {
-  .calculator {
-    padding: 1rem;
-  }
-
-  label, h2 {
-    font-size: 1.2rem;
-  }
-
-  input {
-    font-size: .9rem;
-  }
-
-  button {
-    font-size: 1rem;
-  }
-
-  p {
-    font-size: 1.2rem;
-  }
-}
-
-@media (width <= 480px) {
-  .calculator {
-    padding: .5rem;
-  }
-
-  label, h2 {
-    font-size: 1rem;
-  }
-
-  input {
-    font-size: .8rem;
-  }
-
-  button {
-    font-size: .9rem;
-  }
-
-  p {
-    font-size: 1rem;
-  }
-}
-
-.Navbar {
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 160px;
-  display: flex;
 }
 
 .broker-list {
