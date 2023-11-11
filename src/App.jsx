@@ -25,7 +25,7 @@ const App = () => {
               <FeaturedProperties />
               <Team />
               <Cta />
-              <ListingProp />
+            
               
              
              
