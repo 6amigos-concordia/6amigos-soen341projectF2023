@@ -31,7 +31,7 @@ const App = () => {
           <Route path="/BrokerList" element={<BrokerList />} />
           <Route path="/property/:id" element={<PropertyDetail />} />
           <Route path="/listing/:id" element={<ListingProp />} />
-          <Route path="/BrokerDash :id" element={<BrokerDashboard />} />
+          <Route path="/BrokerDash" element={<BrokerDashboard />} />
         </Routes>
       </div>
     </Router>
