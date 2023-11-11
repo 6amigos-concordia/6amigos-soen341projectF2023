@@ -29,7 +29,7 @@ const brokerInfo = {
   phone: '+1234567890',
 };
 
-const BrokerDashboard = () => {
+export const BrokerDashboard = () => {
   return (
     <div className="broker-dashboard">
       <h1>Broker Dashboard</h1>
@@ -80,5 +80,3 @@ const BrokerDashboard = () => {
     </div>
   );
 };
-
-export default BrokerDashboard;
