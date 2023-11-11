@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "source": "./index.html",
   "scripts": {
-    "build": "parcel build --public-url ./ --no-scope-hoist",
+    "build": "parcel build",
     "dev": "parcel",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
