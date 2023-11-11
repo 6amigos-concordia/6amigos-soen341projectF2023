@@ -12,7 +12,6 @@ import { ListingProp } from "./ListingProp/ListingProp";
 import { BrokerProfile } from "./BrokerProfile/BrokerProfile";
 import { ListingProp } from "./ListingProp/ListingProp";
 
-
 const App = () => {
   return (
     <Router>
@@ -25,11 +24,7 @@ const App = () => {
               <FeaturedProperties />
               <Team />
               <Cta />
-            
-              
-             
-             
-            </>
+             </>
           } />
           <Route path="/property-listing" element={<PropertyList />} />
           <Route path="/Mortgcalc" element={<Mortgcalc />} />

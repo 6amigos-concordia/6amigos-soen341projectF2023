@@ -1,0 +1,1 @@
+export { Bathtub } from "./Bathtub";
