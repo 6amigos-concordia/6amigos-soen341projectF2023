@@ -5,12 +5,11 @@ import { OurFeature } from './Feature component';
 import { FeaturedProperties } from './FeaturedProperties';
 import { Team } from './FeaturedBroker';
 import { Cta } from './newsletter';
-import { PropertyList, PropertyDetail } from "./Listing component";
+import { PropertyList } from "./Listing component"; // Import PropertyList
 import {Mortgcalc} from './Mortgcalc';
 import {BrokerList} from './BrokerList';
-import { ListingProp } from "./ListingProp/ListingProp";
+import { ListingProp } from "./ListingProp/ListingProp"; // Import ListingProp
 import { BrokerProfile } from "./BrokerProfile/BrokerProfile";
-import { ListingProp } from "./ListingProp/ListingProp";
 
 const App = () => {
   return (
@@ -29,8 +28,7 @@ const App = () => {
           <Route path="/property-listing" element={<PropertyList />} />
           <Route path="/Mortgcalc" element={<Mortgcalc />} />
           <Route path="/BrokerList" element={<BrokerList />} />
-          <Route path="/property/:id" element={<PropertyDetail />} />
-          <Route path="/listing/:id" element={<ListingProp />} />
+          <Route path="/property/:id" element={<ListingProp />} /> {/* Updated route for property details */}
         </Routes>
       </div>
     </Router>
