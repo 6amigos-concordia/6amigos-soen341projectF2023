@@ -26,12 +26,11 @@ public class PropertyRepositoryTests {
     private PropertyRepository propertyRepository;
 
     // Arrange
-    ObjectId id = new ObjectId();
     PropertyDetails propertyDetailsSample = PropertyDetails.builder().bedrooms(2).bathrooms(2).build();
     List<String> appointmentIdsSample = new ArrayList<>();
     List<Broker> brokerIdsSample = new ArrayList<>();
     Property propertySample = Property.builder()
-            .id(id)
+            .id("123")
             .address("1455 De Maisonneuve Blvd. W.")
             .details(propertyDetailsSample)
             .appointmentIds(appointmentIdsSample)
@@ -45,8 +44,8 @@ public class PropertyRepositoryTests {
     @Test
     public void PropertyRepository_Save_ReturnSavedPropertyById() {
         // Assert
-        Optional<Property> savedProperty = propertyRepository.findById(id);
-        MatcherAssert.assertThat(propertyRepository.findById(id).isPresent(), equalTo(true));
-        MatcherAssert.assertThat(propertyRepository.findById(id).map(i -> i), equalTo(savedProperty));
+        Optional<Property> savedProperty = propertyRepository.findById("123");
+        MatcherAssert.assertThat(propertyRepository.findById("123").isPresent(), equalTo(true));
+        MatcherAssert.assertThat(propertyRepository.findById("123").map(i -> i), equalTo(savedProperty));
     }
 }
