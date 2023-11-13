@@ -15,18 +15,33 @@ import lombok.extern.jackson.Jacksonized;
 public class PropertyDetails {
     @Id
     private ObjectId id;
-    String description;
     int bedrooms;
     int bathrooms;
-    int price;
+    int minPrice;
+    int maxPrice;
     String district;
+    String cityName;
+    String streetName;
+    String propertyType;
 
-    public PropertyDetails(ObjectId id, String description, int bedrooms, int bathrooms, int price, String district) {
+    public PropertyDetails(
+        ObjectId id, 
+        int bedrooms, 
+        int bathrooms, 
+        int minPrice, 
+        int maxPrice, 
+        String district, 
+        String cityName, 
+        String streetName, 
+        String propertyType) {
         this.id = id;
-        this.description = description;
         this.bedrooms = bedrooms;
         this.bathrooms = bathrooms;
-        this.price = price;
+        this.minPrice = minPrice;
+        this.maxPrice = maxPrice;
         this.district = district;
+        this.cityName = cityName;
+        this.streetName = streetName;
+        this.propertyType = propertyType;
     }
 }
