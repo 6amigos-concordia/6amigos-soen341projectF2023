@@ -14,7 +14,7 @@ import lombok.extern.jackson.Jacksonized;
 @Document(collection = "propertyDetails")
 public class PropertyDetails {
     @Id
-    private ObjectId id;
+    private String id;
     int bedrooms;
     int bathrooms;
     int minPrice;
@@ -25,7 +25,7 @@ public class PropertyDetails {
     String propertyType;
 
     public PropertyDetails(
-        ObjectId id, 
+        String id, 
         int bedrooms, 
         int bathrooms, 
         int minPrice, 
