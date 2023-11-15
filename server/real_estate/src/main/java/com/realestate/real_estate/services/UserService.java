@@ -27,7 +27,7 @@ public class UserService {
         return userRepository.save(user);
     }
 
-    public Optional<Broker> getBroker(ObjectId id){
+    public Optional<Broker> getBroker(String id){
         return brokerRepository.findById(id);
     }
 }

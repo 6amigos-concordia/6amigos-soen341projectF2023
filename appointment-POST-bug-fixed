@@ -1,0 +1,721 @@
+[33mcommit 5241106a6204702a824bc37578f13fe4f0f093e6[m[33m ([m[1;36mHEAD -> [m[1;32mAppointment-POST[m[33m)[m
+Author: KaotharReda <144386965+KaotharReda@users.noreply.github.com>
+Date:   Tue Oct 31 13:50:41 2023 -0400
+
+    requested changes done
+
+[33mcommit 528706e15d16a207acbdce038770416d0b45a757[m
+Merge: 03416d60 cdbde732
+Author: KaotharReda <144386965+KaotharReda@users.noreply.github.com>
+Date:   Tue Oct 31 13:47:50 2023 -0400
+
+    Merge branch 'main' of https://github.com/6amigos-concordia/6amigos-soen341projectF2023 into Appointment-POST
+
+[33mcommit cdbde732dd0dbeaee33f7b0c84af0962d703cd25[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Merge: 8877211a ce1c5604
+Author: Khanh Huy Nguyen <91811941+huy2272@users.noreply.github.com>
+Date:   Tue Oct 31 10:09:10 2023 -0400
+
+    Merge pull request #31 from 6amigos-concordia/Brokers-PUT-updateProperty
+
+[33mcommit 03416d60c5b63e1046dae7fae202bde146b76a93[m[33m ([m[1;31morigin/appointment-POST-bug-fixed[m[33m)[m
+Author: KaotharReda <144386965+KaotharReda@users.noreply.github.com>
+Date:   Mon Oct 30 13:37:11 2023 -0400
+
+    fixed bug in the controller and service files
+
+[33mcommit 8877211a185c8fe65c819b43acfeb2426c7deaf4[m[33m ([m[1;32mmain[m[33m)[m
+Merge: 107ace41 eb2245f2
+Author: HaifaaJanoudi <138940955+HaifaaJanoudi@users.noreply.github.com>
+Date:   Sun Oct 29 22:38:28 2023 -0400
+
+    Merge pull request #46 from 6amigos-concordia/Frontend
+    
+    Property Listing page changes
+
+[33mcommit eb2245f2e5a7d6751b81e2b92f132c9a2caa8636[m
+Author: HAWAAFNANE SAID <hawa21244@gmail.com>
+Date:   Sun Oct 29 22:34:44 2023 -0400
+
+    "Find a home" button
+    
+    its now a link and not a button
+
+[33mcommit 107ace4175028dc1c512116ca03b925d99bb5214[m
+Merge: b4eb2e6b e1d09395
+Author: KaotharReda <144386965+KaotharReda@users.noreply.github.com>
+Date:   Sun Oct 29 22:26:00 2023 -0400
+
+    Merge pull request #29 from 6amigos-concordia/appointment-POST
+    
+    POST API for appointments
+
+[33mcommit 5e1c5fc52df68a3cdd3c49b277f862cad31af5c1[m
+Author: HAWAAFNANE SAID <hawa21244@gmail.com>
+Date:   Sun Oct 29 20:01:55 2023 -0400
+
+    Property Listing page changes
+    
+    - The page is now in the "Find a home" link
+    - Favorite button(the heart button)
+    - Added a nav bar component( easier to include it in the other pages if its a component)
+    - Added a property listing unit test(fails so far but at least its there)
+
+[33mcommit b4eb2e6b80e65dc5424ac58a31ca7c80adbbfd70[m
+Merge: b0501d1a b50c0101
+Author: 6amigos-concordia <146400685+6amigos-concordia@users.noreply.github.com>
+Date:   Sun Oct 29 17:22:52 2023 -0400
+
+    Merge pull request #30 from 6amigos-concordia/Brokers-DELETE-DeleteProperty
+    
+    Implemented DELETE endpoint to delete property given id
+
+[33mcommit b0501d1a93bcd948a125a68da88c3982603b4490[m
+Merge: d457c91c 19a0734c
+Author: Hawa-Afnane Said <138806579+asu21244@users.noreply.github.com>
+Date:   Sun Oct 29 17:02:50 2023 -0400
+
+    Merge pull request #45 from 6amigos-concordia/Frontend
+    
+    Frontend
+
+[33mcommit 19a0734c1aaa8a9034aad92a7744f83c6530d449[m
+Merge: 95c0970b 57279a70
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Sun Oct 29 15:49:31 2023 -0400
+
+    Merge branch 'Frontend' of https://github.com/6amigos-concordia/6amigos-soen341projectF2023 into Frontend
+
+[33mcommit 95c0970ba592c5d40b1da82e692c5a2f01703614[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Sun Oct 29 12:41:46 2023 -0400
+
+    Linked the Request Visit to Proppage + css arrangement
+
+[33mcommit 57279a70f339a8035e032fc77882e9beea290a8f[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Sun Oct 29 12:37:21 2023 -0400
+
+    Linked the Request Visit to Proppage + css arrangement
+
+[33mcommit d617f1ecf24ebb138abf60725e6f4751f312bcb1[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Sun Oct 29 12:08:18 2023 -0400
+
+    Fixed the issue #34 : the key error
+
+[33mcommit f3b67ef659f5b43309cdc7429b95ee266cda4e9b[m[33m ([m[1;31morigin/43-sign-in-sign-up[m[33m)[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Sun Oct 29 02:08:31 2023 -0400
+
+    Sign Up and Sign In
+
+[33mcommit 0345ad1952a747615b698f6eacbeb90ab30fd8cd[m
+Author: HAWAAFNANE SAID <hawa21244@gmail.com>
+Date:   Fri Oct 27 22:42:36 2023 -0400
+
+    Enhacement of the Listings page
+    
+    - CSS now matches the overall aesthetic(still needs a little work)
+    - Favorite heart button added
+    -(Still need to work on the link "Find a home" which is now a button)
+
+[33mcommit ed6b513654aeddc9a1744caf24786683f6945187[m
+Author: Haifaa Janoudi <haifaa.janoudi3@gmail.com>
+Date:   Fri Oct 27 18:18:37 2023 -0400
+
+    brokers dashboard updated
+    
+    i added the feature of showing the contact information of the broker upon clicking on the name
+
+[33mcommit db882dcff10c5f59fb154fd2ab71b5c3323f596d[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Thu Oct 26 19:33:00 2023 -0400
+
+    Set Up Action git
+
+[33mcommit e1d09395f8686d8521bb493c758c8aeaec078cd8[m[33m ([m[1;31morigin/appointment-POST[m[33m)[m
+Author: KaotharReda <144386965+KaotharReda@users.noreply.github.com>
+Date:   Thu Oct 26 18:51:06 2023 -0400
+
+    added the appointmentRequest class that request date time and username to book appointment
+
+[33mcommit f894b2899c5c6adfe5c03bd9b49176a0aea391a0[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Thu Oct 26 17:17:07 2023 -0400
+
+    Button to add a new listing with its form
+
+[33mcommit 00deb1bff29df5dea1badcd7ad085eac1bb3bef1[m
+Author: HAWAAFNANE SAID <hawa21244@gmail.com>
+Date:   Thu Oct 26 16:43:25 2023 -0400
+
+    Filter button
+    
+    The filter button is now added, but theres still some issues to fix:
+    - the page is blank when the button is clicked(to fix soon)
+
+[33mcommit 68f586cec528c69908d5c6b5680eaa35b11cc131[m
+Merge: 02aab354 05a08457
+Author: Haifaa Janoudi <haifaa.janoudi3@gmail.com>
+Date:   Thu Oct 26 16:07:50 2023 -0400
+
+    Merge branch 'Frontend' of https://github.com/6amigos-concordia/6amigos-soen341projectF2023 into Frontend
+
+[33mcommit 02aab354f7cffcb155a515b4fcc1e40de917495e[m
+Author: Haifaa Janoudi <haifaa.janoudi3@gmail.com>
+Date:   Thu Oct 26 15:57:32 2023 -0400
+
+    booking
+
+[33mcommit c73eac3772140d896b39332ea1693dece75e1ca6[m
+Author: KaotharReda <144386965+KaotharReda@users.noreply.github.com>
+Date:   Thu Oct 26 15:01:15 2023 -0400
+
+    changed the saveUser function to saveAppointment
+
+[33mcommit 3f91df062a5d37fe01511a29ccb142cecec03b40[m
+Author: Haifaa Janoudi <haifaa.janoudi3@gmail.com>
+Date:   Thu Oct 26 14:45:52 2023 -0400
+
+    this is the code for booking an appointment form
+    
+    the code is fully functioning when inserted in the project folder
+
+[33mcommit 05a08457fcde129b25d00825570b79d10db13082[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Thu Oct 26 13:47:31 2023 -0400
+
+    I've added the Listing Page
+
+[33mcommit ce1c5604e06ffd8713f3917f1d3456851654ef8d[m[33m ([m[1;31morigin/Brokers-PUT-updateProperty[m[33m)[m
+Author: Khanh Huy Nguyen <huy2272@gmail.com>
+Date:   Wed Oct 25 23:09:47 2023 -0400
+
+    Implemented PUT endpoint to update property given id and new property object
+
+[33mcommit b50c010198b3acdd2a8d3cb311ab0681fb8f44bd[m[33m ([m[1;31morigin/Brokers-DELETE-DeleteProperty[m[33m)[m
+Author: Khanh Huy Nguyen <huy2272@gmail.com>
+Date:   Wed Oct 25 22:41:55 2023 -0400
+
+    Implemented DELETE endpoint to delete property given id
+
+[33mcommit ce57225a79cdd5d5421ab4d895905646cf521403[m
+Author: HAWAAFNANE SAID <hawa21244@gmail.com>
+Date:   Wed Oct 25 13:12:51 2023 -0400
+
+    Listing Property page
+    
+    - Added a page with all the properties( only have 10 so far)
+
+[33mcommit 049f1671211ee3dcc9afb260e95eb81d7e259a74[m
+Author: KaotharReda <144386965+KaotharReda@users.noreply.github.com>
+Date:   Tue Oct 17 12:24:30 2023 -0400
+
+    POST API for appointments
+
+[33mcommit d457c91c6d31e3c10e9ee2dcb16b62847f150579[m[33m ([m[1;31morigin/new_branch[m[33m, [m[1;31morigin/43-sign-in-sign-up-1[m[33m)[m
+Merge: b6340146 a88c0b57
+Author: Jainam Shah <98244939+jainammshah12@users.noreply.github.com>
+Date:   Sun Oct 15 18:57:22 2023 -0400
+
+    Merge pull request #28 from 6amigos-concordia/Brokers-GET-GetAllProperties
+    
+    Implemented GET endpoint to return all properties listings inside database
+
+[33mcommit a88c0b57a0acac65347d14cd91098eed2eab5afa[m[33m ([m[1;31morigin/Brokers-GET-GetAllProperties[m[33m)[m
+Merge: 398a67de b6340146
+Author: Khanh Huy Nguyen <huy2272@gmail.com>
+Date:   Tue Oct 10 20:47:08 2023 -0400
+
+    Merge branch 'Brokers-GET-GetAllProperties' of https://github.com/6amigos-concordia/6amigos-soen341projectF2023 into Brokers-GET-GetAllProperties
+
+[33mcommit 398a67debe92d9c615a6620b4f51ca1bf8eedeaa[m
+Author: Khanh Huy Nguyen <huy2272@gmail.com>
+Date:   Tue Oct 10 20:46:52 2023 -0400
+
+    Implemented GET endpoint to return all properties within the database
+
+[33mcommit b63401465f9d32b8b8d273728beecda5fe87fe39[m
+Merge: 3de7cc4d 1387fdf7
+Author: Jainam Shah <98244939+jainammshah12@users.noreply.github.com>
+Date:   Tue Oct 10 20:12:00 2023 -0400
+
+    Merge pull request #27 from 6amigos-concordia/Brokers-POST-CreateNewProperty
+    
+    Implemented POST endpoint for brokers to add new property
+
+[33mcommit 1387fdf731ff47f06ff5b5b173e37b70a8a1fbca[m[33m ([m[1;31morigin/Brokers-POST-CreateNewProperty[m[33m)[m
+Author: Khanh Huy Nguyen <huy2272@gmail.com>
+Date:   Mon Oct 9 20:01:30 2023 -0400
+
+    Implemented POST endpoint for brokers to add new property
+
+[33mcommit b203f764df9c35efb522c99b74edc99f2343302f[m
+Author: HAWAAFNANE SAID <hawa21244@gmail.com>
+Date:   Mon Oct 9 19:49:50 2023 -0400
+
+    Morgage Calculator changes
+    
+    - It's now working but a lot of changes are needed
+
+[33mcommit 623770938379b32c56b6ad03198d857367e744ac[m
+Author: HaifaaJanoudi <haifaa.janoudi3@gmail.com>
+Date:   Mon Oct 9 18:31:37 2023 -0400
+
+    Mortgage Calculator
+    
+    there is an error with the code when imported to 6amigos repository
+
+[33mcommit 3de7cc4deba72523880992e2a17a1ab05f5e296b[m
+Merge: a30ef63f 736b3842
+Author: HaifaaJanoudi <138940955+HaifaaJanoudi@users.noreply.github.com>
+Date:   Mon Oct 9 13:54:04 2023 -0400
+
+    Merge pull request #25 from 6amigos-concordia/Frontend
+    
+    Merging Frontend to Main
+
+[33mcommit 736b384237aa8d529453ce0d5b824bd8d97a7949[m
+Author: HAWAAFNANE SAID <hawa21244@gmail.com>
+Date:   Mon Oct 9 13:00:36 2023 -0400
+
+    "What sets us apart" page changes
+    
+    - The page is now fully responsive
+    - The title is now fully responsive+ the text boxes
+
+[33mcommit 20ef4424f0444aa568c8f842a3520e156ac4a0d4[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Sun Oct 8 18:19:54 2023 -0400
+
+    I've fixed the buttons problem
+
+[33mcommit 630abd0a72ab5497f13fd0950ba79fa5d7599cf4[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Sun Oct 8 18:15:55 2023 -0400
+
+    added to app.jsx
+
+[33mcommit 5b14ce50cd7e4c21800d2bc74224eb3f9998205c[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Sun Oct 8 18:15:11 2023 -0400
+
+    Added the Newsletter files
+
+[33mcommit ad4c3b1a406cf3e213640e5da90652bb2271539d[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Sun Oct 8 18:11:48 2023 -0400
+
+    Added the pictures to brokers
+
+[33mcommit e7ec7031f24f917a6d716f95ea93e8b0f2dc51c1[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Sun Oct 8 18:09:06 2023 -0400
+
+    Added Team to app.jsx
+
+[33mcommit 0ccf3e982e2399216a7f86472e5cdaa089758c53[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Sun Oct 8 18:07:12 2023 -0400
+
+    added featured brokers
+
+[33mcommit 69d5f127adef91027e193c46ca943666227bd7fb[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Sun Oct 8 17:49:46 2023 -0400
+
+    Added FeaturedProperties section
+
+[33mcommit 6d59f9f62d81e6168e0f9ffd24dec84293a5fc6f[m
+Author: HAWAAFNANE SAID <hawa21244@gmail.com>
+Date:   Thu Oct 5 13:38:15 2023 -0400
+
+    Main page changements
+    
+    - "Set us apart" page finally responsive
+    - Took the grey border off the dropdowns
+
+[33mcommit 37222694aed38d3f2d6727eebaaaf2344646344b[m
+Author: HAWAAFNANE SAID <hawa21244@gmail.com>
+Date:   Tue Oct 3 12:40:28 2023 -0400
+
+    Merge branch 'Frontend' of https://github.com/jainammshah12/6amigos-soen341projectF2023 into Frontend
+
+[33mcommit 4f60994e0bd500dc3901611117f9bc64d9dc2de0[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Tue Oct 3 12:38:34 2023 -0400
+
+    search bar 15% bottom root
+
+[33mcommit c93a4fe5f09016d0849a9ac95bcc6f3e03c881cc[m
+Merge: 555d5fe4 3bc59d00
+Author: HAWAAFNANE SAID <hawa21244@gmail.com>
+Date:   Tue Oct 3 12:34:17 2023 -0400
+
+    Merge branch 'Frontend' of https://github.com/jainammshah12/6amigos-soen341projectF2023 into Frontend
+
+[33mcommit 555d5fe43aabf2b64cfa65f7e5f9a7cb2ef4527d[m
+Merge: 6c93fdcd 3a209a35
+Author: HAWAAFNANE SAID <hawa21244@gmail.com>
+Date:   Tue Oct 3 12:30:38 2023 -0400
+
+    Merge branch 'Frontend' of https://github.com/jainammshah12/6amigos-soen341projectF2023 into Frontend
+
+[33mcommit 3bc59d00fd6ad274ad8692601661d73a2d5476f5[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Tue Oct 3 12:21:44 2023 -0400
+
+    Search bar height ( 20% root )
+
+[33mcommit ca8ed50e14aac82fc2f2ab8fb0a6fc0d99bb75a0[m
+Merge: 531ff571 6c93fdcd
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Tue Oct 3 12:14:06 2023 -0400
+
+    Merge branch 'Frontend' of https://github.com/jainammshah12/6amigos-soen341projectF2023 into Frontend
+
+[33mcommit 531ff5714073fa1e91d5bd2867cf5cad019a1d14[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Tue Oct 3 12:12:51 2023 -0400
+
+    pictures in featured prop
+
+[33mcommit 6c93fdcdb27b8c39fb5934beb2dcfb6fcad9d391[m
+Merge: bfe7df5c e9497660
+Author: HAWAAFNANE SAID <hawa21244@gmail.com>
+Date:   Tue Oct 3 12:08:02 2023 -0400
+
+    Merge branch 'Frontend' of https://github.com/jainammshah12/6amigos-soen341projectF2023 into Frontend
+
+[33mcommit 3a209a3546d9df5b93fcdf9faa70ad4c51f133f4[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Tue Oct 3 12:02:27 2023 -0400
+
+    Featured prop
+
+[33mcommit bfe7df5c467d3c0f220f29ef72c0358b4b72817e[m
+Author: HAWAAFNANE SAID <hawa21244@gmail.com>
+Date:   Tue Oct 3 12:00:56 2023 -0400
+
+    Main page changes
+    
+    - Search bar a little higher
+    - Made the "set us apart" page responsive(hopefullly)
+
+[33mcommit e9497660cf01981816de5a836903de06709c1907[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Tue Oct 3 11:56:51 2023 -0400
+
+    Button css
+
+[33mcommit 3e11c15fc6435db52bc9d5cb4c38a718fa7adc6a[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Tue Oct 3 01:01:50 2023 -0400
+
+    Hamburger Nav Bar
+
+[33mcommit 2bcf36b6dc75735719609b2262666045148690d4[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Tue Oct 3 00:35:04 2023 -0400
+
+    css on the search bar
+
+[33mcommit 38182308c3f0106450129a8fbcae72d0327bbe69[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Mon Oct 2 23:41:32 2023 -0400
+
+    logo
+
+[33mcommit 14f43c368fcaf1e2c2690ce9ad995443987d5e75[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Mon Oct 2 23:25:09 2023 -0400
+
+    CSS
+
+[33mcommit a7954b24859406fdc1b014be4d9c54bf18b2a4b2[m
+Author: HAWAAFNANE SAID <hawa21244@gmail.com>
+Date:   Mon Oct 2 09:55:43 2023 -0400
+
+    Title/name changes
+    
+    - Title changed
+
+[33mcommit 44d5e03b22868cbae0e280daa6fd38505d0f7ced[m
+Author: HAWAAFNANE SAID <hawa21244@gmail.com>
+Date:   Mon Oct 2 09:24:06 2023 -0400
+
+    Main page changes
+    
+    - Added a search bar in the landing page
+    - Added a whats sets us apart
+    - made the src folder more organized
+    - Made the logo appear
+
+[33mcommit a30ef63f8fe036f12d55a27cd3266db57040aa7c[m
+Merge: 7a87a2e7 fb00d20e
+Author: Hawa-Afnane Said <138806579+asu21244@users.noreply.github.com>
+Date:   Fri Sep 29 21:40:22 2023 -0400
+
+    Merge pull request #13 from jainammshah12/HaifaaJanoudi-patch-1
+    
+    Update README.md
+
+[33mcommit fb00d20e069e3b8aafd65e375c60bde11c54986d[m[33m ([m[1;31morigin/HaifaaJanoudi-patch-1[m[33m)[m
+Author: HaifaaJanoudi <138940955+HaifaaJanoudi@users.noreply.github.com>
+Date:   Fri Sep 29 21:39:21 2023 -0400
+
+    Update README.md
+
+[33mcommit 7a87a2e70756fc23355370a65588d4f96ad48260[m
+Merge: 84ec745a 3aaf57b7
+Author: HaifaaJanoudi <138940955+HaifaaJanoudi@users.noreply.github.com>
+Date:   Fri Sep 29 21:15:00 2023 -0400
+
+    Merge pull request #12 from jainammshah12/asu21244-patch-2
+    
+    Update README.md
+
+[33mcommit 3aaf57b7b8c23e73c6eb1fb3899cfb916a052af3[m[33m ([m[1;31morigin/asu21244-patch-2[m[33m)[m
+Author: Hawa-Afnane Said <138806579+asu21244@users.noreply.github.com>
+Date:   Fri Sep 29 21:12:30 2023 -0400
+
+    Update README.md
+
+[33mcommit 84ec745ad10350668547347550255c6dc5982ba2[m
+Merge: dce33976 f94abc6f
+Author: Jainam Shah <98244939+jainammshah12@users.noreply.github.com>
+Date:   Fri Sep 29 14:27:29 2023 -0400
+
+    Merge pull request #11 from jainammshah12/huy2272-patch-1
+
+[33mcommit f94abc6feb9ab738ced37f74120310d3df50345e[m[33m ([m[1;31morigin/huy2272-patch-1[m[33m)[m
+Author: Khanh Huy Nguyen <91811941+huy2272@users.noreply.github.com>
+Date:   Fri Sep 29 14:25:26 2023 -0400
+
+    Added getting started instructions for backend
+
+[33mcommit dce3397699e64c44f6cce71d600556c33405c3d4[m
+Merge: ebe8fa07 c58ad92e
+Author: Hawa-Afnane Said <138806579+asu21244@users.noreply.github.com>
+Date:   Thu Sep 28 23:39:00 2023 -0400
+
+    Merge pull request #10 from jainammshah12/Frontend
+    
+    Frontend
+
+[33mcommit c58ad92e6b001c604c798982221047272f4f0195[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Thu Sep 28 23:37:14 2023 -0400
+
+    color change
+
+[33mcommit 5ca0b46d21dc759c09c987de9a8ec4161b1d53f8[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Thu Sep 28 23:36:51 2023 -0400
+
+    Added a background, made the description  readable
+
+[33mcommit ebe8fa076755a02c543a4ba906bf7eb81a43aaff[m
+Merge: 185678e3 e5741a4a
+Author: Zineb Alaoui <99938269+Zineb2a@users.noreply.github.com>
+Date:   Thu Sep 28 19:46:21 2023 -0400
+
+    Merge pull request #7 from jainammshah12/Frontend
+    
+    Landing Page with nav bar , buttons and Text
+
+[33mcommit e5741a4a637367582bd0ec7a34ff3d2c357173eb[m
+Merge: 87666abb 185678e3
+Author: Zineb Alaoui <99938269+Zineb2a@users.noreply.github.com>
+Date:   Thu Sep 28 18:50:44 2023 -0400
+
+    Merge pull request #8 from jainammshah12/main
+    
+    I've added padding in the top container
+
+[33mcommit 87666abb4662c7c746e5950b5ba2c0faf276949c[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Thu Sep 28 18:49:20 2023 -0400
+
+    Delete
+
+[33mcommit 7f5cbc929fcfe61605ea2dd1a4c5f941d716bfd1[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Thu Sep 28 18:37:10 2023 -0400
+
+    Deleted Node modules
+
+[33mcommit 684e8e3de5f8a0c9a3f247fff79a82c1c48115ba[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Thu Sep 28 18:24:18 2023 -0400
+
+    Landing Page with nav bar , buttons and Text
+
+[33mcommit 185678e345dd327d499acc64831c46305b098618[m
+Merge: 6e749340 ce187602
+Author: Zineb Alaoui <99938269+Zineb2a@users.noreply.github.com>
+Date:   Thu Sep 28 14:37:40 2023 -0400
+
+    Merge pull request #6 from jainammshah12/Frontend
+    
+    FrontEnd Update
+
+[33mcommit ce18760210675abf54823de82ecd0bba10ae7fc3[m
+Author: Zineb2a <zineb.alaoui663@gmail.com>
+Date:   Thu Sep 28 14:30:03 2023 -0400
+
+    FrontEnd Update
+
+[33mcommit 6e749340dd3c691f91fcb5304c892b80c1597829[m
+Merge: b1dc21e6 37839cdb
+Author: Jainam Shah <98244939+jainammshah12@users.noreply.github.com>
+Date:   Mon Sep 25 23:49:01 2023 -0400
+
+    Merge pull request #5 from jainammshah12/Endpoints-GET-POST
+
+[33mcommit 37839cdb2c9031e99beb615d48ef07bac7a1424a[m[33m ([m[1;31morigin/Endpoints-GET-POST[m[33m)[m
+Author: Khanh Huy Nguyen <huy2272@gmail.com>
+Date:   Sat Sep 23 18:47:23 2023 -0400
+
+    Implemented folder structure for controller, service and persistence layer. Implemented GET and POST endpoints. POST endpoint can add a user to mongoDB, while GET endpoint will retrieve ALL users inside the database.
+
+[33mcommit b1dc21e6a5b587511f7704226f2e42705c68b1d0[m
+Merge: f8c4a872 271c2935
+Author: Khanh Huy Nguyen <91811941+huy2272@users.noreply.github.com>
+Date:   Sat Sep 23 12:02:53 2023 -0400
+
+    Merge pull request #4 from jainammshah12/KaotharReda-patch-2
+    
+    Update application.properties
+
+[33mcommit 271c2935c09b89b262fe039cc3eb751f61c0aeee[m[33m ([m[1;31morigin/KaotharReda-patch-2[m[33m)[m
+Author: KaotharReda <144386965+KaotharReda@users.noreply.github.com>
+Date:   Fri Sep 22 23:34:31 2023 -0400
+
+    Update application.properties
+
+[33mcommit f8c4a872bd5a4b2994e3c139ad6b35c54bc87a98[m
+Merge: 32a9ab65 fef109d9
+Author: KaotharReda <144386965+KaotharReda@users.noreply.github.com>
+Date:   Fri Sep 22 23:03:50 2023 -0400
+
+    Merge pull request #2 from jainammshah12/KaotharReda-patch-1
+    
+    Update pom.xml
+
+[33mcommit 32a9ab650f9b55730a62447c3c4c7a4e95fcd026[m
+Merge: 81661046 f010fd61
+Author: KaotharReda <144386965+KaotharReda@users.noreply.github.com>
+Date:   Fri Sep 22 23:01:29 2023 -0400
+
+    Merge pull request #3 from jainammshah12/KaotharReda-patch-yaml-file
+    
+    Create docker-compose.yaml
+
+[33mcommit f010fd61ac8dc3f8d1e31ad32967cd8412b569c7[m[33m ([m[1;31morigin/KaotharReda-patch-yaml-file[m[33m)[m
+Author: KaotharReda <144386965+KaotharReda@users.noreply.github.com>
+Date:   Fri Sep 22 13:24:15 2023 -0400
+
+    Create docker-compose.yaml
+
+[33mcommit fef109d964842d9c7a9e90b3390cfe90fed34ef6[m[33m ([m[1;31morigin/KaotharReda-patch-1[m[33m)[m
+Author: KaotharReda <144386965+KaotharReda@users.noreply.github.com>
+Date:   Fri Sep 22 12:44:22 2023 -0400
+
+    Update pom.xml
+
+[33mcommit 8166104630c22f79a6180c048b9c43b5e4491981[m
+Merge: 6320d1b4 d63cf2db
+Author: Hawa-Afnane Said <138806579+asu21244@users.noreply.github.com>
+Date:   Fri Sep 22 08:58:08 2023 -0400
+
+    Merge pull request #1 from jainammshah12/asu21244-patch-1
+
+[33mcommit d63cf2db606d9f3fab8de3f8352a42e5497e6773[m[33m ([m[1;31morigin/asu21244-patch-1[m[33m)[m
+Author: Hawa-Afnane Said <138806579+asu21244@users.noreply.github.com>
+Date:   Thu Sep 21 22:49:57 2023 -0400
+
+    Update README.md
+
+[33mcommit 6320d1b4f16d90699a89b5e96afdf30076e92eb5[m[33m ([m[1;31morigin/zineb[m[33m)[m
+Author: HaifaaJanoudi <138940955+HaifaaJanoudi@users.noreply.github.com>
+Date:   Thu Sep 21 18:49:17 2023 -0400
+
+    Update README.md
+
+[33mcommit 3a2307a57c6f806b692dea19e61f23c565bf72db[m[33m ([m[1;31morigin/Test[m[33m)[m
+Author: Zineb Alaoui <99938269+Zineb2a@users.noreply.github.com>
+Date:   Thu Sep 21 16:59:45 2023 -0400
+
+    Update README.md
+
+[33mcommit a3b762978e53c349e0213722f08ba6ebabcdfcf9[m
+Author: Zineb Alaoui <99938269+Zineb2a@users.noreply.github.com>
+Date:   Thu Sep 21 15:36:54 2023 -0400
+
+    Update README.md
+    
+    Frontend Approach
+
+[33mcommit bd0e0e3faf7658260d12ecd177a56c84afa6b72b[m
+Author: Hawa-Afnane Said <138806579+asu21244@users.noreply.github.com>
+Date:   Thu Sep 21 15:10:42 2023 -0400
+
+    Update README.md
+
+[33mcommit ec9a7b8a71c86d5850f7ba60bd71c8c6a940a88a[m
+Author: Zineb Alaoui <99938269+Zineb2a@users.noreply.github.com>
+Date:   Thu Sep 21 14:22:59 2023 -0400
+
+    Update README.md
+
+[33mcommit b260be0507320ef95379dbe9a95af37013887fce[m
+Author: Jainam Shah <98244939+jainammshah12@users.noreply.github.com>
+Date:   Sun Sep 17 20:14:13 2023 -0400
+
+    Added instructions for back-end developers
+    
+    It is just the starting steps to ensure that you can start working on Spring Boot applications.
+
+[33mcommit 6f10097f889632584f7d3c64adec6cd72a27b417[m
+Author: Jainam Shah <98244939+jainammshah12@users.noreply.github.com>
+Date:   Sun Sep 17 17:49:40 2023 -0400
+
+    Created server-side Spring Boot application
+    
+    Everything is based on the Real Estate web application, which is why I used this name instead of our group name.
+
+[33mcommit 4352244fe715c6b58e364ff95f442f4bfa0237d5[m
+Author: Jainam Shah <98244939+jainammshah12@users.noreply.github.com>
+Date:   Sun Sep 17 17:47:43 2023 -0400
+
+    Delete server/demo
+
+[33mcommit 8eefb779d28f759c7b8b267e721e95fa9b66fe69[m
+Author: Jainam Shah <98244939+jainammshah12@users.noreply.github.com>
+Date:   Sun Sep 17 17:44:57 2023 -0400
+
+    Creating server-side folder
+
+[33mcommit f7c811e1e6fae006cf9cde639e89fbc5a51692aa[m
+Author: Khanh Huy Nguyen <91811941+huy2272@users.noreply.github.com>
+Date:   Sun Sep 17 12:27:43 2023 -0400
+
+    Added project description, team members roles, project approach & technology
+    
+    1.      Description of the Project
+    2.      Team Members and Roles
+    3.      Project Approach and Technology
+
+[33mcommit c0dfecfa87ef15da60c7d3d0868c8323cd1b27ce[m
+Author: Jainam Shah <98244939+jainammshah12@users.noreply.github.com>
+Date:   Thu Sep 14 19:15:18 2023 -0400
+
+    Name change
+
+[33mcommit 2517b0177e3b7a0683986769a0323ac79390ab2c[m
+Author: Jainam Shah <98244939+jainammshah12@users.noreply.github.com>
+Date:   Thu Sep 14 19:07:22 2023 -0400
+
+    Initial commit

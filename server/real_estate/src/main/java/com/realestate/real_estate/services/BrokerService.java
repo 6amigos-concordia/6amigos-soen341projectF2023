@@ -23,7 +23,7 @@ public class BrokerService {
         return propertyRepository.save(property);
     }
 
-    public boolean deleteProperty(ObjectId propertyId) {
+    public boolean deleteProperty(String propertyId) {
         if(propertyRepository.existsById(propertyId)) {
             propertyRepository.deleteById(propertyId);
             return true;
@@ -31,7 +31,7 @@ public class BrokerService {
         return false;
     }
 
-    public Optional<Property> updateProperty(ObjectId propertyId, Property property) {
+    public Optional<Property> updateProperty(String propertyId, Property property) {
       return propertyRepository.findById(propertyId).map(i -> {
             Property updatedProperty = i.updateWith(property);
             return propertyRepository.save(updatedProperty);

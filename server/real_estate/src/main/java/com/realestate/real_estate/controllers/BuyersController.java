@@ -29,7 +29,7 @@ public class BuyersController {
     }
 
     @GetMapping(path = "/users/broker/{brokerId}")
-    public ResponseEntity<Optional<Broker>> returnBrokerProfile(@PathVariable ObjectId brokerId){
+    public ResponseEntity<Optional<Broker>> returnBrokerProfile(@PathVariable String brokerId){
         return ResponseEntity.ok(userService.getBroker(brokerId));
     }
 }

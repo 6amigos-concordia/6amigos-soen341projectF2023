@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PostMapping;
 
 @Service
 public class AppointmentService {
@@ -17,12 +18,17 @@ public class AppointmentService {
     @Autowired
     private AppointmentRepository appointmentRepository;
 
+    @Autowired
+    private EmailSenderService emailSenderService;
+
     public List<Appointment> getAppointments() {
         return appointmentRepository.findAll();
     }
 
     public Appointment bookAppointment(Appointment appointment) {
-
+        emailSenderService.sendAppointmentConfirmation(appointment.getUserEmail(),
+                    "Hi " + appointment.getUsername() + "\n\n" + "Your upcoming appointment in " + appointment.getAddress() + " is at " + appointment.getDateTime() + "\n\n If you are unable to come to this appointment, please contact our office as soon as possible to reschedule.\n\n We look forward to seeing you!",
+                    "Your upcoming appointment");
         return appointmentRepository.save(appointment);
     }
 

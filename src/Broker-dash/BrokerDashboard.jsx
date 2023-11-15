@@ -19,7 +19,6 @@ const properties = [
 const visitRequests = [
   { id: 1, propertyId: 1, clientName: 'Client A', status: 'Pending' },
   { id: 2, propertyId: 2, clientName: 'Client B', status: 'Confirmed' },
-  // ... additional requests
 ];
 
 // Broker's information
@@ -29,7 +28,7 @@ const brokerInfo = {
   phone: '+1234567890',
 };
 
-const BrokerDashboard = () => {
+export const BrokerDashboard = () => {
   return (
     <div className="broker-dashboard">
       <h1>Broker Dashboard</h1>
@@ -80,5 +79,3 @@ const BrokerDashboard = () => {
     </div>
   );
 };
-
-export default BrokerDashboard;

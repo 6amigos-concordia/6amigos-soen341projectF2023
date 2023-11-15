@@ -8,14 +8,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.data.mongo.DataMongoTest;
 import org.springframework.data.mongodb.core.MongoTemplate;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 import static org.hamcrest.Matchers.equalTo;
 
 @DataMongoTest
 public class AppointmentRepositoryTests {
+
     @Autowired
     private MongoTemplate mongoTemplate;
 
@@ -23,11 +22,13 @@ public class AppointmentRepositoryTests {
     private AppointmentRepository appointmentRepository;
 
     // Arrange
-    ObjectId id = new ObjectId();
+    ObjectId idAppointment = new ObjectId();
     Appointment appointmentSample = Appointment.builder()
-            .id(id)
+            .id(idAppointment)
+            .dateTime("2023-11-08")
             .username("Kaothar")
-            .dateTime("11-06-2023 4:00PM")
+            .userEmail("kaotharr97@gmail.com")
+            .address("2334 Rue Richard")
             .build();
     @BeforeEach
     public void setUp() {
@@ -37,8 +38,8 @@ public class AppointmentRepositoryTests {
     @Test
     public void AppointmentRepository_Save_ReturnSavedAppointmentById() {
         // Assert
-        Optional<Appointment> savedAppointment = appointmentRepository.findById(id);
-        MatcherAssert.assertThat(appointmentRepository.findById(id).isPresent(), equalTo(true));
-        MatcherAssert.assertThat(appointmentRepository.findById(id).map(i -> i), equalTo(savedAppointment));
+        Optional<Appointment> savedAppointment = appointmentRepository.findById(idAppointment);
+        MatcherAssert.assertThat(appointmentRepository.findById(idAppointment).isPresent(), equalTo(true));
+        MatcherAssert.assertThat(appointmentRepository.findById(idAppointment).map(i -> i), equalTo(savedAppointment));
     }
 }
