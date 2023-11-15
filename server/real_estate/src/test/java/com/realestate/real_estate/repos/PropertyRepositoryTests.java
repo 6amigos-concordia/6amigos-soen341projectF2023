@@ -26,6 +26,7 @@ public class PropertyRepositoryTests {
     private PropertyRepository propertyRepository;
 
     // Arrange
+    String id = new String();
     PropertyDetails propertyDetailsSample = PropertyDetails.builder().bedrooms(2).bathrooms(2).build();
     List<String> appointmentIdsSample = new ArrayList<>();
     List<Broker> brokerIdsSample = new ArrayList<>();
