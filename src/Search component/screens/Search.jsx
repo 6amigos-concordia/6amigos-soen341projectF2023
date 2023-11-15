@@ -133,8 +133,8 @@ export const Search = () => {
           selectedValue={selectedPropertyType}
           onChange={handlePropertyTypeChange}
         />
-        <button className="button-with-icon" onClick={handleButtonClick}>
-          <IconsSearch className="icons-search" />
+        <button className="button" onClick={handleButtonClick}>
+        Search 
         </button>
         <button className="button-with-icon" type="button" onClick={handleFilterButtonClick1}>
           <img className="vector" alt="Vector" src="https://i.ibb.co/nnx7Z0V/vector.png" />

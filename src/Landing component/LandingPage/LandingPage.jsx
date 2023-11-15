@@ -34,7 +34,7 @@ export const LandingPage = () => {
     navigate('/BrokerList');
   };
   const handleFindBrokerDashClick = () => {
-    console.log('Find a broker dashboard clicked');
+    console.log('Broker Dashboard clicked');
     navigate('/BrokerDash');
   };
 
