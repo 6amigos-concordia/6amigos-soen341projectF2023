@@ -30,8 +30,9 @@ const App = () => {
           <Route path="/property-listing" element={<PropertyList />} />
           <Route path="/Mortgcalc" element={<Mortgcalc />} />
           <Route path="/BrokerList" element={<BrokerList />} />
-          <Route path="/listing/:id" element={<ListingProp />} /> {/* Updated Route */}
+          <Route path="/listing/:id" element={<ListingProp />} />
           <Route path="/BrokerDash" element={<BrokerDashboard />} />
+          <Route path="/broker/:brokerId" element={<BrokerProfile />} /> {/* New Route for Broker Profile */}
           {/* Other routes */}
         </Routes>
       </div>
