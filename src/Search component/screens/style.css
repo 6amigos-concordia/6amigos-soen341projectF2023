@@ -17,7 +17,6 @@
   height: var(--search-bar-height);
   /* Set the height using the variable */
   margin-bottom: calc(var(--search-bar-height) / -2);
-
 }
 
 .search .subtitle-icon {
@@ -100,6 +99,7 @@
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  margin-top: -5px;
 
   &:hover {
     background-color: #c5ced7;
@@ -113,6 +113,8 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 20px;
+  margin-top: -5px;
+
 }
 
 .search-bar input[type="text"] {
@@ -178,6 +180,10 @@
   height: 20px !important;
   position: relative !important;
   width: 20px !important;
+}
+.button{
+  margin-top: -5px;
+
 }
 
 /* Responsive styles using media queries */

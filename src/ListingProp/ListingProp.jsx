@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import api from '../api'; // Update this path to your api.js file
 import "./style.css";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -44,27 +45,27 @@ const OfferForm = ({ onClose, onSubmit, offerPrice, setOfferPrice, personalMessa
 export const ListingProp = () => {
   const { id } = useParams();
 
-  // State variables for the listing and offer form
-  const [address, setAddress] = useState('');
-  const [propertyImages, setPropertyImages] = useState([]);
-  const [price, setPrice] = useState('');
-  const [description, setDescription] = useState('');
-  const [features, setFeatures] = useState({
-    appliances: '',
-    generalFeatures: '',
-    interiorFeatures: '',
-    exteriorFeatures: '',
-    flooring: '',
-    view: '',
-    heatingCooling: '',
-    amenitiesNearby: ''
-  });
-  const [listingStatus, setListingStatus] = useState('');
-  const [brokerName, setBrokerName] = useState('');
+  const [property, setProperty] = useState(null);
   const [isFrameVisible, setIsFrameVisible] = useState(false);
   const [showOfferForm, setShowOfferForm] = useState(false);
   const [offerPrice, setOfferPrice] = useState('');
   const [personalMessage, setPersonalMessage] = useState('');
+
+  useEffect(() => {
+    const fetchPropertyDetails = async () => {
+      try {
+        const response = await api.properties.getPropertyById(id); // Use API to fetch property details
+        setProperty(response.data); // Assuming response.data contains the property details
+      } catch (error) {
+        console.error("Error fetching property details:", error);
+      }
+    };
+
+    fetchPropertyDetails();
+  }, [id]);
+
+
+
 
   // Form handling functions
   const handleOfferSubmit = (e) => {
@@ -97,6 +98,18 @@ export const ListingProp = () => {
     );
   }
 
+  if (!property) {
+    return <div>Loading property details...</div>;
+  }
+  const {
+    address,
+    propertyImages,
+    price,
+    description,
+    features, // Assuming 'features' is an object
+    listingStatus,
+    brokerName,
+  } = property;
 
   return (
     <div className="listing-prop">
@@ -167,7 +180,6 @@ export const ListingProp = () => {
           </div>
         </div>
 
-        {/* ... Additional property images or content ... */}
       </div>
     </div>
   );

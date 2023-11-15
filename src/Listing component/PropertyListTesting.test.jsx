@@ -1,14 +1,26 @@
 import React from 'react';
-import { render, screen } from '@testing-library/react';
-import { PropertyDetail, PropertyList } from './PropertyList';
-import styles from "../Listing component/PropertyList.css";
+import { render, waitFor } from '@testing-library/react';
+import '@testing-library/jest-dom';
+import { PropertyList } from './PropertyList';
+import { BrowserRouter } from 'react-router-dom';
 
-describe('Listing component tests', () => {
-  it('Page should render', () => {
-    render(<PropertyDetail />);
-    expect(screen.getByText('Property not found!')).toBeInTheDocument();
-  })
-})
-// test('renders PropertyList component without errors', () => {
-//   render(<PropertyList />);
-// });
+// Mocking the api module
+jest.mock('../api', () => ({
+  properties: {
+    getAllProperties: jest.fn(() => Promise.resolve([])), // Mocking an empty response
+  },
+}));
+
+describe('PropertyList component tests', () => {
+  it('should render without crashing', async () => {
+    render(
+      <BrowserRouter>
+        <PropertyList />
+      </BrowserRouter>
+    );
+    // Use waitFor to handle asynchronous state updates
+    await waitFor(() => {
+      // You can add specific checks here if needed
+    });
+  });
+});

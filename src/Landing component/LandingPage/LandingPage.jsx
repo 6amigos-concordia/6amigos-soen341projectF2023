@@ -34,8 +34,13 @@ export const LandingPage = () => {
     navigate('/BrokerList');
   };
   const handleFindBrokerDashClick = () => {
-    console.log('Find a broker dashboard clicked');
+    console.log('Broker Dashboard clicked');
     navigate('/BrokerDash');
+  };
+  
+  const handleFavorite = () => {
+    console.log('Saved Properties');
+    navigate('/Favorite');
   };
 
   return (
@@ -62,7 +67,9 @@ export const LandingPage = () => {
             <div className="link">
               <Link to="/BrokerDash" onClick={handleFindBrokerDashClick}> Broker Dashboard </Link>
             </div>
-            <div className="link">Saved properties</div>
+            <div className="link">
+              <Link to="/Favorite" onClick={handleFavorite}> Saved Properties </Link>
+            </div>
           </div>
         </div>
         <div className="signing">
