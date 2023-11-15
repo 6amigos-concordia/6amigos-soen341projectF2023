@@ -4,6 +4,7 @@ import api from '../api'; // Ensure this path is correct
 import './PropertyList.css';
 import { NavBarLogo } from '../NavBar&Logo/NavBar&Logo';
 import { Search } from '../Search component/screens/Search';
+import axios from 'axios';
 
 export const PropertyList = () => {
     const [properties, setProperties] = useState([]);
@@ -22,11 +23,16 @@ export const PropertyList = () => {
         fetchProperties();
     }, []);
 
-    const handleInterestToggle = (propertyId) => {
-        if (favoritedProperties.includes(propertyId)) {
-            setFavoritedProperties(prev => prev.filter(id => id !== propertyId));
-        } else {
-            setFavoritedProperties(prev => [...prev, propertyId]);
+    const handleInterestToggle = async (propertyId) => {
+        // Assume userId is available from the user's session or context
+        try {
+            const response = await axios.post(`/user/${userId}/favorite`, {
+                propertyId,
+            });
+            const updatedFavorites = response.data;
+            setFavoritedProperties(updatedFavorites);
+        } catch (error) {
+            console.error('Error updating favorites:', error);
         }
     };
 
