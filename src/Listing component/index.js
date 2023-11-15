@@ -1,1 +1,1 @@
-export { PropertyList, PropertyDetail } from "./PropertyList";
+export { PropertyList } from "./PropertyList";
