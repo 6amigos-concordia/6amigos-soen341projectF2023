@@ -6,11 +6,13 @@ import { FeaturedProperties } from './FeaturedProperties';
 import { Team } from './FeaturedBroker';
 import { Cta } from './newsletter';
 import { PropertyList } from "./Listing component"; // Import PropertyList
+import { PropertyDetail } from "./Listing component"; // Import PropertyList
 import {Mortgcalc} from './Mortgcalc';
 import {BrokerList} from './BrokerList';
 import { ListingProp } from "./ListingProp/ListingProp"; // Import ListingProp
 import { BrokerProfile } from "./BrokerProfile/BrokerProfile";
 import { ListingProp } from "./ListingProp/ListingProp";
+
 
 const App = () => {
   return (
