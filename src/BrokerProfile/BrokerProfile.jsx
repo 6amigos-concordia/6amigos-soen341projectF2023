@@ -1,30 +1,28 @@
 import React from 'react';
 import './style.css'; 
+import { useParams } from 'react-router-dom';
 
-const jimbo = {
-  name: 'Jimbo',
-  title: 'Broker',
-  email: 'jimbo@example.com',
-  phone: '04748292827',
-  agency: "Jimbo's Agency",
-  address: '123 Main St, City, Country',
-  experience: 10,
-  specialty: 'Residential Properties',
-  image: 'https://i.ibb.co/r0N3Ffb/Jimbo.webp',
-  properties: [
-    {
-      id: '12345',
-      description: 'Beautiful 3-bedroom apartment in the heart of the city. Close to all amenities. Must see!',
-      bedrooms: 3,
-      bathrooms: 2,
-      image: 'https://i.ibb.co/r0N3Ffb/Jimbo.webp',
-      // ... other property details ...
-    },
-    // ... other properties ...
-  ],
-};
-//<BrokerProfile broker={jimbo} />
-export const BrokerProfile = ({ broker }) => {
+export const BrokerProfile = () => {
+  const [broker, setBroker] = useState(null);
+  const { brokerId } = useParams(); // Get broker ID from URL
+
+  useEffect(() => {
+      const fetchBrokerProfile = async () => {
+          try {
+              const response = await axios.get(`/api/broker/${brokerId}`); // Adjust the URL as per your API
+              setBroker(response.data);
+          } catch (error) {
+              console.error('Error fetching broker profile:', error);
+          }
+      };
+
+      fetchBrokerProfile();
+  }, [brokerId]);
+
+  if (!broker) {
+      return <div>Loading...</div>; // or any other loading state representation
+  }
+
   return (
     <div className="broker-profile">
 
