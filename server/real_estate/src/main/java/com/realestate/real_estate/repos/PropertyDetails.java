@@ -17,31 +17,31 @@ public class PropertyDetails {
     private ObjectId id;
     int bedrooms;
     int bathrooms;
-    int minPrice;
-    int maxPrice;
+    int price;
     String district;
     String cityName;
     String streetName;
     String propertyType;
+    String imageUrl;
 
     public PropertyDetails(
         ObjectId id, 
         int bedrooms, 
         int bathrooms, 
-        int minPrice, 
-        int maxPrice, 
+        int price,
         String district, 
         String cityName, 
         String streetName, 
-        String propertyType) {
+        String propertyType,
+        String imageUrl) {
         this.id = id;
         this.bedrooms = bedrooms;
         this.bathrooms = bathrooms;
-        this.minPrice = minPrice;
-        this.maxPrice = maxPrice;
+        this.price = price;
         this.district = district;
         this.cityName = cityName;
         this.streetName = streetName;
         this.propertyType = propertyType;
+        this.imageUrl = imageUrl;
     }
 }

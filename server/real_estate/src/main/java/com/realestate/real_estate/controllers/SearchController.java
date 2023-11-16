@@ -24,11 +24,11 @@ public class SearchController {
     // Define the route for property search
 
     @PostMapping(path = "/search")
-    public ResponseEntity<List<PropertyDetails>> searchProperties(@RequestParam int bedrooms, @RequestParam int bathrooms, @RequestParam double minPrice, @RequestParam double maxPrice, @RequestParam String district, 
+    public ResponseEntity<List<PropertyDetails>> searchProperties(@RequestParam int bedrooms, @RequestParam int bathrooms, @RequestParam int price, @RequestParam String district,
     @RequestParam String cityName, 
     @RequestParam String streetName, 
     @RequestParam String propertyType) {
-        return ResponseEntity.ok().body(propertyService.searchProperties(bedrooms, bathrooms, minPrice, maxPrice, district, cityName, streetName, propertyType));
+        return ResponseEntity.ok().body(propertyService.searchProperties(bedrooms, bathrooms, price, district, cityName, streetName, propertyType));
     }
 
     @GetMapping(path = "/getAll")

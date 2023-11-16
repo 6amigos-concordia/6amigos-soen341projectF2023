@@ -26,15 +26,14 @@ public class PropertyService {
     
 
     public List<PropertyDetails> searchProperties(int bedrooms, 
-    int bathrooms, 
-    double minPrice, 
-    double maxPrice, 
+    int bathrooms,
+    int price,
     String district,
     String cityName, 
     String streetName, 
     String propertyType){
         if(propertyRepository != null){
-            return propertyRepository.searchProperties(bedrooms, bathrooms, minPrice, maxPrice, district, cityName, streetName, propertyType);
+            return propertyRepository.searchProperties(bedrooms, bathrooms, price, district, cityName, streetName, propertyType);
         }
         else{
             throw new IllegalStateException("Property repository not initialized");

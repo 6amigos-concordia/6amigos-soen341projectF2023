@@ -10,6 +10,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface PropertyRepository extends MongoRepository<Property, String> {
-    @Query("{bedrooms: ?0, bathrooms: ?1, minPrice: ?2, maxPrice: ?3, district: ?4}")                            
-    List<PropertyDetails> searchProperties(int bedrooms, int bathrooms, double minPrice, double maxPrice, String district, String cityName, String streetName, String propertyType);
+    @Query("{bedrooms: ?0, bathrooms: ?1, price:?2 , district: ?3}")
+    List<PropertyDetails> searchProperties(int bedrooms, int bathrooms, int price, String district, String cityName, String streetName, String propertyType);
 }
