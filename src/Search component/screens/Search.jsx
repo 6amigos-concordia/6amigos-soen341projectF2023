@@ -68,10 +68,6 @@ export const Search = () => {
     { label: "4 000 000$", value: "4 000 000$" }
   ];
 
-  const handleButtonClick = () => {
-    console.log('Button clicked!');
-  };
-
   //For Property Type
   const [selectedPropertyType, setSelectedPropertyType] = useState("");
   const handlePropertyTypeChange = (selectedValue) => {
@@ -87,6 +83,22 @@ export const Search = () => {
   const handleFilterButtonClick1 = () => {
     console.log("Filter button clicked!");
     setIsModalVisible(!isModalVisible);
+  };
+  const handleButtonClick = async () => {
+    try {
+      // Make a POST request to the backend using Axios
+      const response = await axios.post(
+        "http://localhost:8080/api/search",
+        {
+          district: selectedDistrict,
+          streetName: inputValue,
+          propertyType: selectedPropertyType
+        }
+      );
+      console.log("Backend response:", response.data);
+    } catch (error) {
+      console.error("Error making API request:", error);
+    }
   };
 
   return (
