@@ -12,6 +12,7 @@ import { BrokerList } from './BrokerList';
 import { ListingProp } from "./ListingProp/ListingProp"; // Import ListingProp
 import { BrokerProfile } from "./BrokerProfile/BrokerProfile";
 import { BrokerDashboard } from "./Broker-dash/BrokerDashboard";
+import {Favorite} from "./FavoriteComponent/Favorite";
 
 const App = () => {
   return (
@@ -32,8 +33,8 @@ const App = () => {
           <Route path="/BrokerList" element={<BrokerList />} />
           <Route path="/listing/:id" element={<ListingProp />} />
           <Route path="/BrokerDash" element={<BrokerDashboard />} />
-          <Route path="/broker/:brokerId" element={<BrokerProfile />} /> {/* New Route for Broker Profile */}
-          {/* Other routes */}
+          <Route path="/broker/:brokerId" element={<BrokerProfile />} />
+          <Route path="/Favorite" element={<Favorite />} /> 
         </Routes>
       </div>
     </Router>

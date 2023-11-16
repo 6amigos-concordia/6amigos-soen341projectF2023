@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Dropdown } from "../../Search component/components/Dropdown";
 import { IconsSearch } from "../../Search component/icons/IconsSearch";
 import FilterFormComponent from "../Filtercomponent/FilterForm";
+import axios from 'axios';
 import "./style.css";
 
 export const Search = () => {
@@ -11,7 +12,7 @@ export const Search = () => {
 
   const handleInputChange = (event) => {
     const inputValue = event.target.value;
-    const pattern = /^[a-zA-Z\s]+$/;
+    const pattern = /^[a-zA-Z,\s]+$/;
     if (pattern.test(inputValue) || inputValue === "") {
       setInputValue(inputValue);
     }
@@ -97,9 +98,11 @@ export const Search = () => {
       );
       console.log("Backend response:", response.data);
     } catch (error) {
-      console.error("Error making API request:", error);
+      console.error("Error making API request:", error.message); // Log the error message
+      console.error("Error details:", error); // Log the entire error object
     }
   };
+  
 
   return (
     <div className="search">

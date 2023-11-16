@@ -18,7 +18,6 @@ export const NavBarLogo = () => {
     console.log('Mortgage Calc button clicked');
     navigate('/Mortgcalc');
   };
-
   const handleFindBrokerClick = () => {
     console.log('Find a broker button clicked');
     navigate('/BrokerList');
@@ -27,6 +26,11 @@ export const NavBarLogo = () => {
     console.log('Broker Dashboard clicked');
     navigate('/BrokerDash');
   };
+  const handleFavoriteClick = () => {
+    console.log('Broker Dashboard clicked');
+    navigate('/Favorite');
+  };
+
 
   return (
     <div className="header">
@@ -50,7 +54,9 @@ export const NavBarLogo = () => {
             <div className="link">
               <Link to="/BrokerDash" onClick={handleFindBrokerDashClick}> Broker Dashboard </Link>
             </div>
-            <div className="link">Saved properties</div>
+            <div className="link">
+            <Link to="/Favorite" onClick={handleFavoriteClick}> Saved properties </Link>
+            </div>
           </div>
         </div>
         <div className="signing">

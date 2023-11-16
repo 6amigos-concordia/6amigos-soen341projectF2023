@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import { Button } from "../../Landing component/components landing/Button";
 import { ButtonSecondary } from "../../Landing component/components landing/ButtonSecondary";
 import { ContentCta } from "../../Landing component/components landing/CTA";
-import { Search } from "../../Search component/screens/Search";
 import { Mortgcalc } from '../../Mortgcalc/Mortgcalc';
 import "./style.css";
 import api from "../../api";
@@ -78,8 +77,6 @@ export const LandingPage = () => {
         </div>
       </div>
       <ContentCta />
-      <Search />
-
     </div>
   );
 };

@@ -8,7 +8,6 @@ const FilterFormComponent = ({ onSubmit }) => {
   const [maxBeds, setMaxBeds] = useState("");
   const [minBaths, setMinBaths] = useState("");
   const [maxBaths, setMaxBaths] = useState("");
-  const [ownership, setOwnership] = useState("");
   const [yearBuilt, setYearBuilt] = useState("");
 
   const handleSubmit = (e) => {
@@ -21,7 +20,6 @@ const FilterFormComponent = ({ onSubmit }) => {
       maxBeds,
       minBaths,
       maxBaths,
-      ownership,
       yearBuilt,
     };
     onSubmit(formData);
@@ -88,14 +86,6 @@ const FilterFormComponent = ({ onSubmit }) => {
             type="text"
             value={maxBaths}
             onChange={(e) => setMaxBaths(e.target.value)}
-          />
-        </label>
-        <label>
-          Ownership/Title:
-          <input
-            type="text"
-            value={ownership}
-            onChange={(e) => setOwnership(e.target.value)}
           />
         </label>
         <label>
