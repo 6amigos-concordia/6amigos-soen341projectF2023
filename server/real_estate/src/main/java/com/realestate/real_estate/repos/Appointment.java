@@ -13,7 +13,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "appointments")
 public class Appointment {
     @Id
-    private ObjectId id;
+    private String id;
     String dateTime;
     String username;
     String userEmail;
