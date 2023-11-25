@@ -26,10 +26,6 @@ export const NavBarLogo = () => {
     console.log('Broker Dashboard clicked');
     navigate('/BrokerDash');
   };
-  const handleFavoriteClick = () => {
-    console.log('Broker Dashboard clicked');
-    navigate('/Favorite');
-  };
 
 
   return (
@@ -53,9 +49,6 @@ export const NavBarLogo = () => {
             </div>
             <div className="link">
               <Link to="/BrokerDash" onClick={handleFindBrokerDashClick}>Dashboard </Link>
-            </div>
-            <div className="link">
-            <Link to="/Favorite" onClick={handleFavoriteClick}> Saved properties </Link>
             </div>
           </div>
         </div>

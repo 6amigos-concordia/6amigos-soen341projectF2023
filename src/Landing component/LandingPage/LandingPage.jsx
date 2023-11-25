@@ -37,11 +37,6 @@ export const LandingPage = () => {
     navigate('/BrokerDash');
   };
   
-  const handleFavorite = () => {
-    console.log('Saved Properties');
-    navigate('/Favorite');
-  };
-
   return (
     <div className="landing-page">
       <div className="top-fixed-container">
@@ -65,9 +60,6 @@ export const LandingPage = () => {
             </div>
             <div className="link">
               <Link to="/BrokerDash" onClick={handleFindBrokerDashClick}> Dashboard </Link>
-            </div>
-            <div className="link">
-              <Link to="/Favorite" onClick={handleFavorite}> Saved Properties </Link>
             </div>
           </div>
         </div>
