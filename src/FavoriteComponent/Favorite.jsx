@@ -1,16 +1,21 @@
-import React from 'react';
 import React, { useState } from 'react';
 import './Favorite.css';
 import { NavBarLogo } from '../NavBar&Logo/NavBar&Logo';
 
-export const SavedProperties = ({ favoritedProperties, properties }) => {
+export const Favorite = ({ favoritedProperties, properties }) => {
   const savedProperties = properties ? properties.filter(property => favoritedProperties.includes(property.id)) : [];
   
-const [requests, setRequests] = useState(visitRequests);
-const visitRequests = [
-  { id: 1, propertyId: 1, clientName: 'Client A', status: 'Pending' },
-  { id: 2, propertyId: 2, clientName: 'Client B', status: 'Confirmed' },
-];
+  const [requests, setRequests] = useState(visitRequests);
+  
+  const visitRequests = [
+    { id: 1, propertyId: 1, status: 'Pending' },
+    { id: 2, propertyId: 2, status: 'Confirmed' },
+  ];
+
+  const handleStatusChange = (id, newStatus) => {
+    // Implement your logic to handle status change
+  };
+
   return (
     <div className="saved-properties">
       <div className="NavBarLogo">

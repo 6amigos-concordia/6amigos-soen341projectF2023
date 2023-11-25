@@ -12,7 +12,7 @@ import { BrokerList } from './BrokerList';
 import { ListingProp } from "./ListingProp/ListingProp"; // Import ListingProp
 import { BrokerProfile } from "./BrokerProfile/BrokerProfile";
 import { BrokerDashboard } from "./Broker-dash/BrokerDashboard";
-import {Favorite} from "./FavoriteComponent/Favorite";
+import { Favorite } from "./FavoriteComponent/Favorite";
 
 const App = () => {
   return (

@@ -1,1 +1,1 @@
-export { SavedProperties, VisitRequests } from "./Favorite";
+export {Favorite } from "./Favorite";
