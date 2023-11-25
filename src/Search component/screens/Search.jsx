@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Dropdown } from "../../Search component/components/Dropdown";
 import { IconsSearch } from "../../Search component/icons/IconsSearch";
 import FilterFormComponent from "../Filtercomponent/FilterForm";
+import axios from 'axios';
 import "./style.css";
 
 export const Search = () => {
@@ -11,11 +12,13 @@ export const Search = () => {
 
   const handleInputChange = (event) => {
     const inputValue = event.target.value;
-    const pattern = /^[a-zA-Z\s]+$/;
+    const pattern = /^[a-zA-Z,\s]+$/;
     if (pattern.test(inputValue) || inputValue === "") {
       setInputValue(inputValue);
     }
   };
+  
+  
 
   //For District
   const [selectedDistrict, setSelectedDistrict] = useState(""); // State to hold selected district
@@ -68,10 +71,6 @@ export const Search = () => {
     { label: "4 000 000$", value: "4 000 000$" }
   ];
 
-  const handleButtonClick = () => {
-    console.log('Button clicked!');
-  };
-
   //For Property Type
   const [selectedPropertyType, setSelectedPropertyType] = useState("");
   const handlePropertyTypeChange = (selectedValue) => {
@@ -88,6 +87,29 @@ export const Search = () => {
     console.log("Filter button clicked!");
     setIsModalVisible(!isModalVisible);
   };
+  
+  const handleButtonClick = async () => {
+    if (!inputValue.trim()) {
+      alert("Please enter a city name & a street name.");
+      return;
+    }
+
+    try {
+      // Make a POST request to the backend using Axios
+      const response = await axios.post(
+        "http://localhost:8080/api/search",
+        {
+          district: selectedDistrict,
+          streetName: inputValue,
+          propertyType: selectedPropertyType
+        }
+      );
+      console.log("Backend response:", response.data);
+    } catch (error) {
+      console.error("Error making API request:", error.message); // Log the error message
+      console.error("Error details:", error); // Log the entire error object
+    }
+  };
 
   return (
     <div className="search">
@@ -95,59 +117,30 @@ export const Search = () => {
         <div className="description"> Find Your Home</div>
         <IconsSearch className="icons-search" />
       </div>
-      <div className="input-wrapper"> {}
-        <input
-          className="input-instance"
-          iconsArrowDownColor="#2F234F"
-          placeholder="City name, street name"
-          value={inputValue}
-          onChange={handleInputChange}
-        />
-      </div>
-      <div className="text-search-BTN">
-        <Dropdown className="dropdown-instance"
-          text="District"
-          placeholder="District"
-          options={districts}
-          selectedValue={selectedDistrict}
-          onChange={handleDistrictChange}
-        />
-        <Dropdown className="dropdown-instance"
-          text="Minimum Price"
-          placeholder="Minimum Price"
-          options={minPriceOptions}
-          selectedValue={selectedMinPrice}
-          onChange={handleMinPriceChange}
-        />
-        <Dropdown className="dropdown-instance"
-          text="Maximum Price"
-          placeholder="Maximum Price"
-          options={maxPriceOptions}
-          selectedValue={selectedMaxPrice}
-          onChange={handleMaxPriceChange}
-        />
-        <Dropdown className="dropdown-instance"
-          text="Property Type"
-          placeholder="Property Type"
-          options={propertyTypeOptions}
-          selectedValue={selectedPropertyType}
-          onChange={handlePropertyTypeChange}
-        />
-        <button className="button" onClick={handleButtonClick}>
-        Search 
-        </button>
+      <div className="input-wrapper">
+        <div className="input-container">
+          <input
+            className="input-instance"
+            placeholder="City name, street name"
+            value={inputValue}
+            onChange={handleInputChange}
+          />
+          <button className="button" onClick={handleButtonClick}>
+            Search
+          </button>
+        </div>
         <button className="button-with-icon" type="button" onClick={handleFilterButtonClick1}>
           <img className="vector" alt="Vector" src="https://i.ibb.co/nnx7Z0V/vector.png" />
         </button>
-        {isModalVisible && (
-          <div className={`modal ${isModalVisible ? 'visible' : ''}`}>
-            <div className="modal-content">
-              <FilterFormComponent onSubmit={formData => console.log(formData)} />
-            </div>
-          </div>
-        )}
-
       </div>
+      {isModalVisible && (
+        <div className={`modal ${isModalVisible ? 'visible' : ''}`}>
+          <div className="modal-content">
+            <FilterFormComponent onSubmit={formData => console.log(formData)} />
+          </div>
+        </div>
+      )}
     </div>
   );
+  
 };
