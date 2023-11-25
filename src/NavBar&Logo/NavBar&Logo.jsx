@@ -52,7 +52,7 @@ export const NavBarLogo = () => {
               <Link to="/BrokerList" onClick={handleFindBrokerClick}> Find a broker </Link>
             </div>
             <div className="link">
-              <Link to="/BrokerDash" onClick={handleFindBrokerDashClick}> Broker Dashboard </Link>
+              <Link to="/BrokerDash" onClick={handleFindBrokerDashClick}>Dashboard </Link>
             </div>
             <div className="link">
             <Link to="/Favorite" onClick={handleFavoriteClick}> Saved properties </Link>
