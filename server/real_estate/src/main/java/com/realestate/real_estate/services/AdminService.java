@@ -18,6 +18,9 @@ public class AdminService {
         return brokerRepository.findAll();
     }
 
+    public Optional<Broker> getBroker(String id){
+        return brokerRepository.findById(id);
+    }
     public Broker addNewBroker(Broker broker) {
         return brokerRepository.save(broker);
     }
