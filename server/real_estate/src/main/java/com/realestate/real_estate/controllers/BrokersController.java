@@ -23,6 +23,16 @@ public class BrokersController {
     public ResponseEntity<List<Property>> getAllProperties() {
         return ResponseEntity.ok().body(brokerService.getAllProperties());
     }
+
+    @GetMapping(path = "/properties/{propertyId}")
+    public ResponseEntity<Property> getPropertyById(@PathVariable String propertyId) {
+        Optional<Property> property = brokerService.getProperty(propertyId);
+        return property.map(value -> ResponseEntity.ok().body(value))
+                .orElseGet(() -> {
+                    return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+                });
+    }
+
     @PostMapping(path = "/properties/add")
     public ResponseEntity<Property> saveProperty(@RequestBody Property property) {
         return ResponseEntity.ok(brokerService.addNewProperty(property));
