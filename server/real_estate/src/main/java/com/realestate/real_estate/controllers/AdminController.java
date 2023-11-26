@@ -21,6 +21,16 @@ public class AdminController {
     public ResponseEntity<List<Broker>> getAllBrokers() {
         return new ResponseEntity<List<Broker>>(adminService.allBrokers(), HttpStatus.OK);
     }
+
+    @GetMapping(path = "/{brokerId}")
+    public ResponseEntity<Broker> getBrokerById(@PathVariable String brokerId) {
+        Optional<Broker> broker = adminService.getBroker(brokerId);
+        return broker.map(value -> ResponseEntity.ok().body(value))
+                .orElseGet(() -> {
+                    return new ResponseEntity<>(null, HttpStatus.NOT_FOUND);
+                });
+    }
+
     @PostMapping(path = "/add")
     public ResponseEntity<Broker> saveUser(@RequestBody Broker broker) {
         return ResponseEntity.ok(adminService.addNewBroker(broker));
