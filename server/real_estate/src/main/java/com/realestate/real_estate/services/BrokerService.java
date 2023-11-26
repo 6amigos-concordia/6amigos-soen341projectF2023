@@ -1,20 +1,18 @@
 package com.realestate.real_estate.services;
 
-import com.realestate.real_estate.repos.PropertyRepository;
-import com.realestate.real_estate.repos.Property;
-import com.realestate.real_estate.repos.PropertyDetails;
-
-import org.bson.types.ObjectId;
+import com.realestate.real_estate.repos.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
 
 @Service
-public class BrokerService {
+public class BrokerService implements BrokerServicI {
     @Autowired
     private PropertyRepository propertyRepository;
+
+    @Autowired
+    private BrokerRepository brokerRepository;
 
     public List<Property> getAllProperties() {
         return propertyRepository.findAll();
@@ -36,5 +34,16 @@ public class BrokerService {
             Property updatedProperty = i.updateWith(property);
             return propertyRepository.save(updatedProperty);
         });
+    }
+    @Override
+    public Broker signUp(Broker broker) {
+        // Implement validation logic if needed
+        return brokerRepository.save(broker);
+    }
+    @Override
+    public Optional<Broker> signIn(String username, String password) {
+        // Implement sign-in logic
+        return brokerRepository.findByName(username)
+                .filter(broker -> broker.getPassword().equals(password));
     }
 }
