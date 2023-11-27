@@ -4,7 +4,6 @@ import { useNavigate } from 'react-router-dom';
 import { Button } from "../../Landing component/components landing/Button";
 import { ButtonSecondary } from "../../Landing component/components landing/ButtonSecondary";
 import { ContentCta } from "../../Landing component/components landing/CTA";
-import { Search } from "../../Search component/screens/Search";
 import { Mortgcalc } from '../../Mortgcalc/Mortgcalc';
 import "./style.css";
 import api from "../../api";
@@ -38,11 +37,6 @@ export const LandingPage = () => {
     navigate('/BrokerDash');
   };
   
-  const handleFavorite = () => {
-    console.log('Saved Properties');
-    navigate('/Favorite');
-  };
-
   return (
     <div className="landing-page">
       <div className="top-fixed-container">
@@ -65,10 +59,7 @@ export const LandingPage = () => {
               <Link to="/BrokerList" onClick={handleFindBrokerClick}> Find a broker </Link>
             </div>
             <div className="link">
-              <Link to="/BrokerDash" onClick={handleFindBrokerDashClick}> Broker Dashboard </Link>
-            </div>
-            <div className="link">
-              <Link to="/Favorite" onClick={handleFavorite}> Saved Properties </Link>
+              <Link to="/BrokerDash" onClick={handleFindBrokerDashClick}> Dashboard </Link>
             </div>
           </div>
         </div>
@@ -78,8 +69,6 @@ export const LandingPage = () => {
         </div>
       </div>
       <ContentCta />
-      <Search />
-
     </div>
   );
 };

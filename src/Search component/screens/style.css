@@ -5,17 +5,13 @@
 .search {
   background-color: #ffffff;
   border-radius: 8px;
-  height: 196px;
   position: relative;
-  width: 2000px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-top: 0%;
   padding-left: 2%;
   padding-right: 2%;
   height: var(--search-bar-height);
-  /* Set the height using the variable */
   margin-bottom: calc(var(--search-bar-height) / -2);
 }
 
@@ -39,7 +35,6 @@
   position: relative;
   white-space: nowrap;
   width: fit-content;
-
 }
 
 .search .icons-search {
@@ -48,43 +43,35 @@
   width: 24px !important;
 }
 
-
-.search .text-search-BTN {
-  align-items: center;
-  display: flex;
-  gap: 42px;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 20px;
-  margin-left: 10px;
-
-}
-.search .dropdown-instance {
-  flex: 1 !important;
-  flex-grow: 1 !important;
-  width: unset !important;
-}
-
 .input-wrapper {
-  position: relative;
+  display: flex;
+  align-items: center;
   margin-bottom: 5px;
   margin-left: 10px;
 }
 
 .input-instance {
+  flex: 1;
   height: 40px;
-  width: 450px;
-  border-radius: 25px;
-  border: 1px solid #ccc;
+  width: 800px!important;
+  border-radius: 8px; /* Adjust the border-radius to your preference */
+  border: 2px solid #3498db; /* Change the border color */
   padding: 10px;
+  font-size: 16px; /* Change the font size */
+  color: #333; /* Change the text color */
+  background-color: #f2f2f2; /* Change the background color */
 }
 
-.search .button-text-only-instance {
-  background-color: var(--x-1433-9e) !important;
-  border-radius: 6px !important;
-  display: flex !important;
-  flex: 1 !important;
-  flex-grow: 1 !important;
+.input-instance:focus {
+  outline: none; /* Remove the default focus outline */
+  border-color: #2ecc71; /* Change the border color on focus */
+  box-shadow: 0 0 5px rgba(46, 204, 113, 0.5); /* Add a box shadow on focus */
+}
+
+.button,
+.button-with-icon {
+  height: 40px;
+  margin-left: 10px;
 }
 
 .button-with-icon {
@@ -92,148 +79,63 @@
   align-items: center;
   justify-content: center;
   width: 50px;
-  height: 50px;
   border: none;
   background-color: #f8f8f9;
   color: white;
   border-radius: 50%;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: -5px;
 
   &:hover {
     background-color: #c5ced7;
   }
 }
 
-.search-bar {
-  background-color: #f0f0f0;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
+.modal {
+  z-index: 9999;
+  display: none;
+  justify-content: center;
   align-items: center;
-  margin-bottom: 20px;
-  margin-top: -5px;
-
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
 
-.search-bar input[type="text"] {
-  width: 70%;
-  padding: 8px;
-  font-size: 16px;
-}
-
-.search-bar button {
-  padding: 8px 16px;
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-.search .dropdown-instance {
-  flex: 1 !important;
-  flex-grow: 1 !important;
-  width: unset !important;
-
-
-}
-
-.dropdown {
-  align-items: center !important;
-  background-color: #ffffff !important;
-  border: none !important;
-  /* Remove the border */
-  border-radius: 6px !important;
-  box-shadow: var(--shadow-xs) !important;
+.modal.visible {
   display: flex;
-  gap: 8px;
-  padding: 10px 14px;
-  position: relative;
-  width: 320px;
 }
 
-.dropdown .content {
-  align-items: center;
-  display: flex;
-  flex: 1;
-  flex-grow: 1;
-  gap: 8px;
-  position: relative;
-}
-
-.dropdown .text {
-  color: #667084;
-  font-family: "Montserrat-Regular", Helvetica;
-  font-size: 16px;
-  font-weight: 400;
-  letter-spacing: 0;
-  line-height: 24px;
-  margin-top: -1px;
-  position: relative;
-  white-space: nowrap;
-  width: fit-content;
-}
-
-.dropdown .icons-arrow-down {
-  height: 20px !important;
-  position: relative !important;
-  width: 20px !important;
-}
-.button{
-  margin-top: -5px;
-
+.modal-content {
+  background: white;
+  z-index: 9999;
+  padding: 20px;
+  border-radius: 5px;
 }
 
 /* Responsive styles using media queries */
 @media screen and (max-width: 768px) {
-  .search-bar input[type="text"] {
+  .input-instance {
     width: 60%;
     font-size: 14px;
   }
 
-  .search-bar button {
+  .button {
     padding: 8px 12px;
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .search-bar input[type="text"] {
+  .input-instance {
     width: 50%;
     font-size: 12px;
   }
 
-  .search-bar button {
+  .button {
     padding: 6px 10px;
     font-size: 12px;
   }
-
-  /* Your existing styles */
-  .modal {
-    z-index: 9999;
-    display: none; 
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-  }
-  
-  .modal.visible {
-    display: flex; 
-  }
-  
-  .modal-content {
-    background: white;
-    z-index: 9999;
-    padding: 20px;
-    border-radius: 5px;
-  }
-  
-
 }

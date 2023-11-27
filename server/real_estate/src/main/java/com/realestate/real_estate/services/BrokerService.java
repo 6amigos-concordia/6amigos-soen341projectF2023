@@ -17,6 +17,10 @@ public class BrokerService implements BrokerServicI {
     public List<Property> getAllProperties() {
         return propertyRepository.findAll();
     }
+
+    public Optional<Property> getProperty(String id){
+        return propertyRepository.findById(id);
+    }
     public Property addNewProperty(Property property) {
         return propertyRepository.save(property);
     }
