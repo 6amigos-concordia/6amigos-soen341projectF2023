@@ -13,7 +13,7 @@ import { ListingProp } from "./ListingProp/ListingProp"; // Import ListingProp
 import { BrokerProfile } from "./BrokerProfile/BrokerProfile";
 import { BrokerDashboard } from "./Broker-dash/BrokerDashboard";
 import { Favorite } from "./FavoriteComponent/Favorite";
-
+import { Frame } from "./Frame/Frame";
 const App = () => {
   return (
     <Router>
@@ -26,6 +26,7 @@ const App = () => {
               <FeaturedProperties />
               <Team />
               <Cta />
+              <Frame/>
             </>
           } />
           <Route path="/property-listing" element={<PropertyList />} />
@@ -35,6 +36,7 @@ const App = () => {
           <Route path="/BrokerDash" element={<BrokerDashboard />} />
           <Route path="/broker/:brokerId" element={<BrokerProfile />} />
           <Route path="/Favorite" element={<Favorite />} /> 
+          <Route path= "/Frame" element={<Frame />} />
         </Routes>
       </div>
     </Router>
