@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Optional;
 
 @Service
-public class BrokerService implements BrokerServicI {
+public class BrokerService {
     @Autowired
     private PropertyRepository propertyRepository;
 
@@ -38,16 +38,5 @@ public class BrokerService implements BrokerServicI {
             Property updatedProperty = i.updateWith(property);
             return propertyRepository.save(updatedProperty);
         });
-    }
-    @Override
-    public Broker signUp(Broker broker) {
-        // Implement validation logic if needed
-        return brokerRepository.save(broker);
-    }
-    @Override
-    public Optional<Broker> signIn(String username, String password) {
-        // Implement sign-in logic
-        return brokerRepository.findByName(username)
-                .filter(broker -> broker.getPassword().equals(password));
     }
 }

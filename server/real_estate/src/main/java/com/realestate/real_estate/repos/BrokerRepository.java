@@ -6,5 +6,4 @@ import java.util.Optional;
 
 @Repository
 public interface BrokerRepository extends MongoRepository<Broker, String> {
-    Optional<Broker> findByName(String name);
 }

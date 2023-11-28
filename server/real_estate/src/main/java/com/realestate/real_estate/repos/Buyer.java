@@ -9,12 +9,20 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Data
 @Builder
 @Jacksonized
-@Document(collection = "Accounts")
-public class SignIn {
+@Document(collection = "Buyers")
+public class Buyer {
     @Id
     String id;
-    String username;
+    String name;
+    String email;
     String password;
-    String userType;
-}
 
+    public Buyer updateWith(Buyer buyer) {
+        return new Buyer(
+                this.id,
+                this.password,
+                buyer.name,
+                buyer.email
+        );
+    }
+}

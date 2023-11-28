@@ -2,8 +2,6 @@ package com.realestate.real_estate.services;
 
 import com.realestate.real_estate.repos.Broker;
 import com.realestate.real_estate.repos.BrokerRepository;
-import com.realestate.real_estate.repos.Property;
-import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

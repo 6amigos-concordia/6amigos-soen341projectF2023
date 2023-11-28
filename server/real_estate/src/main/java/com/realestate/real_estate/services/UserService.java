@@ -5,15 +5,17 @@ import com.realestate.real_estate.repos.BrokerRepository;
 import com.realestate.real_estate.repos.User;
 import com.realestate.real_estate.repos.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
 @Service
-public class UserService implements UserServicI {
-
+public class UserService {
     @Autowired
     private UserRepository userRepository;
+
+    @Autowired
     private BrokerRepository brokerRepository;
 
     public List<User> getUsers() {
@@ -24,17 +26,23 @@ public class UserService implements UserServicI {
         return brokerRepository.findById(id);
     }
 
-    @Override
     public User signUp(User user) {
-        // Implement validation logic if needed
+        // Check if user already exists
+        if (userRepository.findByName(user.getName()) != null){
+            throw new DataIntegrityViolationException("The account with username: " + user.getName() + " already exists");
+        }
         return userRepository.save(user);
     }
 
-    @Override
-    public Optional<User> signIn(String name, String password) {
-        // Implement sign-in logic
-        return userRepository.findByName(name)
-                .filter(buyer -> buyer.getPassword().equals(password));
+    public User signIn(String name, String password) {
+        User user = userRepository.findByName(name);
+
+        if (user != null && user.getPassword().equals(password)) {
+            return user;
+        } else {
+            return null; // Authentication failed
+        }
+
     }
 
 }
