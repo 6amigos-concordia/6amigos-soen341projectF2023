@@ -26,7 +26,10 @@ export const NavBarLogo = () => {
     console.log('Broker Dashboard clicked');
     navigate('/BrokerDash');
   };
-
+  const handleFavoriteClick = () => {
+    console.log('Favorite Clicked');
+    navigate('/Favorite');
+  };
 
   return (
     <div className="header">
@@ -49,6 +52,9 @@ export const NavBarLogo = () => {
             </div>
             <div className="link">
               <Link to="/BrokerDash" onClick={handleFindBrokerDashClick}>Dashboard </Link>
+            </div>
+            <div className="link">
+              <Link to="/Favorite" onClick={handleFavoriteClick}> Favorite </Link>
             </div>
           </div>
         </div>
