@@ -11,7 +11,8 @@ export const Search = () => {
   const [filterData, setFilterData] = useState({
     bedrooms: 0,
     bathrooms: 0,
-    price: 0,
+    minPrice: 0,
+    maxPrice:0,
     district: "",
     cityName: "",
     streetName: "",
@@ -40,7 +41,8 @@ export const Search = () => {
       const response = await axios.post("http://localhost:8080/api/search", {
         bedrooms: filterData.bedrooms,
         bathrooms: filterData.bathrooms,
-        price: parseInt(filterData.price),
+        minPrice: parseInt(filterData.minPrice),
+        maxPrice: parseInt(filterData.maxPrice),
         district: filterData.district,
         cityName: cityName,
         streetName: streetName,

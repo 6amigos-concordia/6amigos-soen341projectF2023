@@ -2,7 +2,8 @@ import React, { useState } from "react";
 
 const FilterFormComponent = ({ inputValue, onInputChange, onSubmit }) => {
   const [transactionType, setTransactionType] = useState("");
-  const [Price, setPrice] = useState("");
+  const [minPrice, setMinPrice] = useState("");
+  const [maxPrice, setMaxPrice] = useState("");
   const [Beds, setBeds] = useState("");
   const [Baths, setBaths] = useState("");
   const [districts, setdistricts] = useState("");
@@ -11,7 +12,8 @@ const FilterFormComponent = ({ inputValue, onInputChange, onSubmit }) => {
     e.preventDefault();
     const formData = {
       transactionType,
-      Price,
+      minPrice,
+      maxPrice,
       Beds,
       Baths,
       districts,
@@ -23,7 +25,8 @@ const FilterFormComponent = ({ inputValue, onInputChange, onSubmit }) => {
 
   const handleReset = () => {
     setTransactionType("");
-    setPrice("");
+    setMinPrice("");
+    setMaxPrice(""),
     setBeds("");
     setBaths("");
     setdistricts("");
@@ -56,10 +59,27 @@ const FilterFormComponent = ({ inputValue, onInputChange, onSubmit }) => {
           </select>
         </label>
         <label>
-          Price:
+         Minimum Price:
           <select
-            value={Price}
-            onChange={(e) => setPrice(e.target.value)}
+            value={minPrice}
+            onChange={(e) => setMinPrice(e.target.value)}
+          >
+            <option value="">Select</option>
+            <option value="500000">$500,000</option>
+            <option value="1000000">$1,000,000</option>
+            <option value="1500000">$1,500,000</option>
+            <option value="2000000">$2,000,000</option>
+            <option value="2500000">$2,500,000</option>
+            <option value="3000000">$3,000,000</option>
+            <option value="3500000">$3,500,000</option>
+            <option value="4000000">$4,000,000</option>
+          </select>
+        </label>
+        <label>
+          Maximum Price:
+          <select
+            value={maxPrice}
+            onChange={(e) => setMaxPrice(e.target.value)}
           >
             <option value="">Select</option>
             <option value="500000">$500,000</option>
