@@ -6,14 +6,15 @@ import { OurFeature } from './Feature component';
 import { FeaturedProperties } from './FeaturedProperties';
 import { Team } from './FeaturedBroker';
 import { Cta } from './newsletter';
-import { PropertyList } from "./Listing component"; // Import PropertyList
+import { PropertyList } from "./Listing component";
 import { Mortgcalc } from './Mortgcalc';
 import { BrokerList } from './BrokerList';
-import { ListingProp } from "./ListingProp/ListingProp"; // Import ListingProp
+import { ListingProp } from "./ListingProp/ListingProp";
 import { BrokerProfile } from "./BrokerProfile/BrokerProfile";
 import { BrokerDashboard } from "./Broker-dash/BrokerDashboard";
 import { Favorite } from "./FavoriteComponent/Favorite";
 import { Frame } from "./Frame/Frame";
+
 const App = () => {
   return (
     <Router>
@@ -33,6 +34,8 @@ const App = () => {
           <Route path="/Mortgcalc" element={<Mortgcalc />} />
           <Route path="/BrokerList" element={<BrokerList />} />
           <Route path="/listing/:id" element={<ListingProp />} />
+          <Route path="/property/:id" element={<ListingProp />} />
+
           <Route path="/BrokerDash" element={<BrokerDashboard />} />
           <Route path="/broker/:brokerId" element={<BrokerProfile />} />
           <Route path="/Favorite" element={<Favorite />} /> 

@@ -50,19 +50,33 @@ export const ListingProp = () => {
   const [showOfferForm, setShowOfferForm] = useState(false);
   const [offerPrice, setOfferPrice] = useState('');
   const [personalMessage, setPersonalMessage] = useState('');
+  const [loading, setLoading] = useState(true);
+const [error, setError] = useState(null);
 
-  useEffect(() => {
-    const fetchPropertyDetails = async () => {
-      try {
-        const response = await api.properties.getPropertyById(id); // Use API to fetch property details
-        setProperty(response.data); // Assuming response.data contains the property details
-      } catch (error) {
-        console.error("Error fetching property details:", error);
-      }
-    };
+useEffect(() => {
+  const fetchPropertyDetails = async () => {
+    setLoading(true);
+    try {
+      const response = await api.properties.getPropertyById(id);
+      setProperty(response.data);
+      setLoading(false);
+    } catch (error) {
+      console.error("Error fetching property details:", error);
+      setError(error);
+      setLoading(false);
+    }
+  };
 
-    fetchPropertyDetails();
-  }, [id]);
+  fetchPropertyDetails();
+}, [id]);
+
+if (loading) {
+  return <div>Loading property details...</div>;
+}
+
+if (error) {
+  return <div>Error loading property details.</div>;
+}
 
 
 
@@ -103,13 +117,13 @@ export const ListingProp = () => {
   }
   const {
     address,
-    propertyImages,
-    price,
-    description,
-    features, // Assuming 'features' is an object
-    listingStatus,
-    brokerName,
+    details, // Adjusted from propertyImages, price, description, features
+    brokerIds, // Adjusted from brokerName
   } = property;
+
+  // Use optional chaining for safe access to details properties
+  const { bedrooms, bathrooms, price, district, cityName, streetName, propertyType, imageUrl } = details || {};
+
 
   return (
     <div className="listing-prop">
@@ -130,19 +144,17 @@ export const ListingProp = () => {
     <div className="address-bar">
         <p className="address">{address}</p>
       </div>
-    <div className="overlap">
 
-
-    <div className="box">
-    <Carousel useKeyboardArrows={true} style={{ maxWidth: "300px" }}>
-        {propertyImages.map((URL, index) => (
-          <div className="slide" key={index}>
-            <img alt="Property" src={URL} />
-          </div>
-        ))}
-      </Carousel>
-    </div>
-    </div>
+      <div className="overlap">
+        <div className="box">
+          <Carousel useKeyboardArrows={true} style={{ maxWidth: "300px" }}>
+            {/* Adjusted to use imageUrl from details */}
+            <div className="slide">
+              <img alt="Property" src={imageUrl} />
+            </div>
+          </Carousel>
+        </div>
+      </div>
       
     <div className="price-section">
         <div className="price">{price}</div>
@@ -150,19 +162,13 @@ export const ListingProp = () => {
       </div>
 
       <div className="description">
-        <p>{description}</p>
+        {/* Adjusted to show city and district */}
+        <p>{cityName}, {district}</p>
       </div>
-
-      <Feature title="Listing Status:" content={listingStatus} />
-      <Feature title="Presented by:" content={brokerName} />
-      <Feature title="Appliances" content={features.appliances} />
-      <Feature title="General Features" content={features.generalFeatures} />
-      <Feature title="Interior Features" content={features.interiorFeatures} />
-      <Feature title="Exterior Features" content={features.exteriorFeatures} />
-      <Feature title="Flooring" content={features.flooring} />
-      <Feature title="View" content={features.view} />
-      <Feature title="Heating & Cooling" content={features.heatingCooling} />
-      <Feature title="Amenities Nearby" content={features.amenitiesNearby} />
+      <Feature title="Bedrooms:" content={bedrooms} />
+      <Feature title="Bathrooms:" content={bathrooms} />
+      <Feature title="Property Type:" content={propertyType} />
+      <Feature title="Street Name:" content={streetName} />
 
        
 
