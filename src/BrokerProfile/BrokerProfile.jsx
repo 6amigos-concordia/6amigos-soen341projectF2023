@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css'; 
 import { useParams } from 'react-router-dom';
+import React, { useState, useEffect } from 'react'; // Add the missing imports
 
 export const BrokerProfile = () => {
   const [broker, setBroker] = useState(null);
@@ -47,7 +48,7 @@ export const BrokerProfile = () => {
         <h2>More information</h2>
         <ul>
           <li>Experience: {broker.experience} years</li>
-          <li>Specialty: {broker.specialty}</li>
+      
           {/* Add more details as needed */}
         </ul>
       </div>

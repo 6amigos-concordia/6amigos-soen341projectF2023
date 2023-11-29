@@ -9,7 +9,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
- 
 }
 
 .Searchbar {
@@ -27,12 +26,11 @@
 }
 
 .property {
-
   display: flex;
   flex-direction: column;
   border: 1px solid #e0e0e0;
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease-in-out;
 }
 
@@ -65,21 +63,11 @@
 .property-details p {
   margin: 0;
   color: #7f8c8d;
-  font-size: 16px;
-  line-height: 1.4;
+  font-size: 14px; /* Reduced font size to make them smaller */
+  line-height: 1.2; /* Adjusted line height for better readability */
 }
 
 .property-details p:nth-child(2) {
   margin-bottom: 10px;
   font-weight: 600;
-}
-.property-details p.bio {
-  background-color: #f4f4f4; /* Light gray background */
-  padding: 10px 15px;
-  border-radius: 8px;
-  text-align: center;
-  font-style: italic;
-  margin-top: 15px;
-  line-height: 1.6;
-  color: #34495e;
 }

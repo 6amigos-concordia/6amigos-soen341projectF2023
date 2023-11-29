@@ -27,7 +27,7 @@ const App = () => {
               <FeaturedProperties />
               <Team />
               <Cta />
-              <Frame/>
+           
             </>
           } />
           <Route path="/property-listing" element={<PropertyList />} />
