@@ -8,36 +8,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d3cde203-a638-44a9-b897-3804d44118f9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/controllers/UsersController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/Buyer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/UserType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/httpRequests/http-requests-log.http" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/controllers/AppointmentsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/controllers/AppointmentsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/controllers/BrokersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/controllers/BrokersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/controllers/BuyersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/controllers/BuyersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/Appointment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/AppointmentRequest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/BrokerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/BrokerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/Property.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/Property.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/PropertyDetails.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/PropertyDetails.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/SignIn.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/SignInRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/services/AdminService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/services/AdminService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/services/AppointmentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/services/AppointmentService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/services/BrokerServicI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/services/BrokerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/services/BrokerService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/services/PropertyService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/services/PropertyService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/services/UserServicI.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/services/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/controllers/AppointmentsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/controllers/AppointmentsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/controllers/BuyersController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/controllers/BuyersController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/User$UserBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/User$UserBuilder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/UserRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/repos/UserRepository.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/services/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/realestate/real_estate/services/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/controllers/UsersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/controllers/UsersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/realestate/real_estate/repos/Buyer.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,7 +36,6 @@
   </component>
   <component name="HttpClientSelectedEnvironments">
     <file url="file://$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" />
-    <file url="file://$USER_HOME$/AppData/Local/Temp/whats-new-dir/whats-new.http" environment="test" />
   </component>
   <component name="KubernetesApiProvider">{
   &quot;isMigrated&quot;: true
@@ -142,9 +115,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="HTTP Request.generated-requests | #10" />
         <item itemvalue="HTTP Request.generated-requests | #11" />
         <item itemvalue="HTTP Request.generated-requests | #9" />
-        <item itemvalue="HTTP Request.generated-requests | #10" />
         <item itemvalue="HTTP Request.generated-requests | #7" />
         <item itemvalue="HTTP Request.generated-requests | #8" />
       </list>
@@ -171,7 +144,8 @@
       <workItem from="1699635323062" duration="6368000" />
       <workItem from="1700844418210" duration="803000" />
       <workItem from="1701024066784" duration="24658000" />
-      <workItem from="1701118798605" duration="7956000" />
+      <workItem from="1701118798605" duration="10226000" />
+      <workItem from="1701302369157" duration="1268000" />
     </task>
     <servers />
   </component>
