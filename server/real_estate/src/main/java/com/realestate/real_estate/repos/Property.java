@@ -5,7 +5,6 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.extern.jackson.Jacksonized;
-import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.DocumentReference;
@@ -20,7 +19,7 @@ import java.util.List;
 @Document(collection = "properties")
 public class Property {
     @Id
-    private ObjectId id;
+    private String id;
     private String address;
     private PropertyDetails details;
     private List<String> appointmentIds;

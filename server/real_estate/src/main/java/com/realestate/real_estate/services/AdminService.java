@@ -6,6 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class AdminService {
@@ -13,5 +14,27 @@ public class AdminService {
     private BrokerRepository brokerRepository;
     public List<Broker> allBrokers() {
         return brokerRepository.findAll();
+    }
+
+    public Optional<Broker> getBroker(String id){
+        return brokerRepository.findById(id);
+    }
+    public Broker addNewBroker(Broker broker) {
+        return brokerRepository.save(broker);
+    }
+
+    public boolean deleteBroker(String brokerId) {
+        if(brokerRepository.existsById(brokerId)) {
+            brokerRepository.deleteById(brokerId);
+            return true;
+        }
+        return false;
+    }
+
+    public Optional<Broker> updateBrokerProfile(String propertyId, Broker broker) {
+        return brokerRepository.findById(propertyId).map(i -> {
+            Broker updatedBrokerProfile = i.updateWith(broker);
+            return brokerRepository.save(updatedBrokerProfile);
+        });
     }
 }

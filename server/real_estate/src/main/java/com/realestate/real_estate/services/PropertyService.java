@@ -1,13 +1,11 @@
 package com.realestate.real_estate.services;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestParam;
-
-import com.realestate.real_estate.repos.BrokerRepository;
 import com.realestate.real_estate.repos.Property;
 import com.realestate.real_estate.repos.PropertyDetails;
 import com.realestate.real_estate.repos.PropertyRepository;
@@ -25,9 +23,9 @@ public class PropertyService {
     }
     
 
-    public List<PropertyDetails> searchProperties(int bedrooms, int bathrooms, double minPrice, double maxPrice, String district){
+    public Optional<List<Property>> searchProperties(String address){
         if(propertyRepository != null){
-            return propertyRepository.searchProperties(bedrooms, bathrooms, minPrice, maxPrice, district);
+            return propertyRepository.searchPropertiesByAddress(address);
         }
         else{
             throw new IllegalStateException("Property repository not initialized");

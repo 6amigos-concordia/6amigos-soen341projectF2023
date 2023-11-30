@@ -5,6 +5,8 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Frame } from "../Frame/Frame";
 import { useParams } from 'react-router-dom';
+import { NavBarLogo } from '../NavBar&Logo/NavBar&Logo';
+import {OfferForm} from './OfferForm';
 
 const Feature = ({ title, content }) => (
   <p className="feature">
@@ -13,72 +15,80 @@ const Feature = ({ title, content }) => (
   </p>
 );
 
-// Full-Page Offer Form Component
-const OfferForm = ({ onClose, onSubmit, offerPrice, setOfferPrice, personalMessage, setPersonalMessage }) => {
-  return (
-    <div className="offer-form-overlay">
-      <button className="close-offer-form" onClick={onClose}>Close</button>
-      <form onSubmit={onSubmit} className="offer-form">
-        <label>
-          Offered Price:
-          <input 
-            type="number" 
-            value={offerPrice} 
-            onChange={(e) => setOfferPrice(e.target.value)} 
-            placeholder="Enter your offer price" 
-          />
-        </label>
-        <label>
-          Personal Message or Notes:
-          <textarea 
-            value={personalMessage} 
-            onChange={(e) => setPersonalMessage(e.target.value)} 
-            placeholder="Add any personal messages or notes here"
-          />
-        </label>
-        <button type="submit">Submit Offer</button>
-      </form>
-    </div>
-  );
-};
-
 export const ListingProp = () => {
   const { id } = useParams();
 
-  const [property, setProperty] = useState(null);
+  const [property, setProperty] = useState({
+    address: "",
+    details: {
+      bedrooms: 0,
+      bathrooms: 0,
+      price: 0,
+      district: "",
+      cityName: "",
+      streetName: "",
+      propertyType: "",
+      imageUrl: ""
+
+    },
+    appointmentIds: [],
+    brokerIds: []
+  });
   const [isFrameVisible, setIsFrameVisible] = useState(false);
-  const [showOfferForm, setShowOfferForm] = useState(false);
+ 
   const [offerPrice, setOfferPrice] = useState('');
   const [personalMessage, setPersonalMessage] = useState('');
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [showOfferForm, setShowOfferForm] = useState(false);
 
   useEffect(() => {
-    const fetchPropertyDetails = async () => {
-      try {
-        const response = await api.properties.getPropertyById(id); // Use API to fetch property details
-        setProperty(response.data); // Assuming response.data contains the property details
-      } catch (error) {
-        console.error("Error fetching property details:", error);
-      }
-    };
-
     fetchPropertyDetails();
   }, [id]);
 
+  const fetchPropertyDetails = async () => {
+    setLoading(true);
+    try {
+      const response = await api.properties.getPropertyById(id);
+      setProperty(response);
+      setLoading(false);
+    } catch (error) {
+      console.error("Error fetching property details:", error);
+      if (error.response) {
+        console.error(error.response.data);
+        console.error(error.response.status);
+        console.error(error.response.headers);
+      } else if (error.request) {
+
+        console.error(error.request);
+      } else {
+        console.error('Error', error.message);
+      }
+      setError(error);
+    }
+
+  };
 
 
 
-  // Form handling functions
+
+
+
+
+
+
+
+
+
   const handleOfferSubmit = (e) => {
     e.preventDefault();
-    // Form validation logic here
-    // For example:
+   
     if (offerPrice.trim() === '') {
       alert('Please enter an offer price.');
       return;
     }
-    // Additional validation as needed
-    setShowOfferForm(false); // Hide the form after submission
-    // Handle offer submission logic (e.g., send to server)
+   
+    setShowOfferForm(false); 
   };
 
   if (isFrameVisible) {
@@ -90,93 +100,74 @@ export const ListingProp = () => {
       <OfferForm
         onClose={() => setShowOfferForm(false)}
         onSubmit={handleOfferSubmit}
-        offerPrice={offerPrice}
-        setOfferPrice={setOfferPrice}
-        personalMessage={personalMessage}
-        setPersonalMessage={setPersonalMessage}
       />
     );
   }
-
-  if (!property) {
-    return <div>Loading property details...</div>;
-  }
   const {
     address,
-    propertyImages,
-    price,
-    description,
-    features, // Assuming 'features' is an object
-    listingStatus,
-    brokerName,
+    details, // Adjusted from propertyImages, price, description, features
+    brokerIds, // Adjusted from brokerName
   } = property;
+
+  // Use optional chaining for safe access to details properties
+  const { bedrooms, bathrooms, price, district, cityName, streetName, propertyType, imageUrl } = details || {};
+
 
   return (
     <div className="listing-prop">
 
-      <div className="top-fixed-container">
-      <div className="brand">
-        <img className="IMG" alt="" src="https://i.ibb.co/TbH49Cr/luxium.png"/>
+<div className="Navbar">
+        <NavBarLogo />
       </div>
-      <div className="links">
-        <div className="link">Find a home</div>
-        <div className="link">Mortage Calculator</div>
-        <div className="link">Find a broker</div>
-        <div className="link">Saved properties</div>
-      </div>      
-    </div>
-    
-    <div className="content-div">
-    <div className="address-bar">
-        <p className="address">{address}</p>
-      </div>
-    <div className="overlap">
 
+      <div className="content-div">
+        <div className="address-bar">
+          <p className="address">{address}</p>
+        </div>
 
-    <div className="box">
-    <Carousel useKeyboardArrows={true} style={{ maxWidth: "300px" }}>
-        {propertyImages.map((URL, index) => (
-          <div className="slide" key={index}>
-            <img alt="Property" src={URL} />
+        <div className="overlap">
+          <div className="box">
+            <Carousel useKeyboardArrows={true} style={{ maxWidth: "200px",maxHeight: "200px" }}>
+              {/* Adjusted to use imageUrl from details */}
+              <div className="slide"style={{ maxWidth: "500px",maxHeight: "1%" }}>
+                <img alt="Property" src={imageUrl} />
+              </div>
+            </Carousel>
           </div>
-        ))}
-      </Carousel>
-    </div>
-    </div>
-      
-    <div className="price-section">
-        <div className="price">{price}</div>
-        <p className="tax-info">USD (incl. of all taxes)</p>
-      </div>
+        </div>
 
-      <div className="description">
-        <p>{description}</p>
-      </div>
+        <div className="price-section">
+          <div className="price">{price}</div>
+          <p className="tax-info">USD (incl. of all taxes)</p>
+        </div>
 
-      <Feature title="Listing Status:" content={listingStatus} />
-      <Feature title="Presented by:" content={brokerName} />
-      <Feature title="Appliances" content={features.appliances} />
-      <Feature title="General Features" content={features.generalFeatures} />
-      <Feature title="Interior Features" content={features.interiorFeatures} />
-      <Feature title="Exterior Features" content={features.exteriorFeatures} />
-      <Feature title="Flooring" content={features.flooring} />
-      <Feature title="View" content={features.view} />
-      <Feature title="Heating & Cooling" content={features.heatingCooling} />
-      <Feature title="Amenities Nearby" content={features.amenitiesNearby} />
+        <div className="description">
+          {/* Adjusted to show city and district */}
+          <p>{cityName}, {district}</p>
+        </div>
+        <Feature title="Bedrooms:" content={bedrooms} />
+        <Feature title="Bathrooms:" content={bathrooms} />
+        <Feature title="Property Type:" content={propertyType} />
+        <Feature title="Street Name:" content={streetName} />
 
-       
+
 
         <div className="actions">
-        <div className="request-visit">
+          <div className="request-visit">
             <button onClick={() => setIsFrameVisible(true)}>
               Request a Visit
             </button>
           </div>
           <div className="save-to-fav">Save to Favorite</div>
           <div className="submit-offer">
-            <button onClick={() => setShowOfferForm(true)}>
-              Submit Offer
-            </button>
+          <button onClick={() => setShowOfferForm(true)}>Submit Offer</button>
+    {showOfferForm && (
+      <OfferForm
+        onClose={() => setShowOfferForm(false)}
+        onSubmit={handleOfferSubmit}
+    
+      />
+    )}
           </div>
         </div>
 

@@ -48,11 +48,13 @@ export const PropertyList = () => {
                 {properties.map(property => (
                     <div className="property" key={property.id}>
                         {/* Update Link to point to ListingProp */}
-                        <Link to={`/property/${property.id}`}> 
-                            <img src={property.image} alt={property.name} className="property-image" />
+                        <Link to={`/property/${property.id}`}>
+                            <img src={property.details.imageUrl} alt={property.name} className="property-image" />
                             <div className="property-details">
-                                <h2>{property.name}</h2>
-                                <p>Price: ${property.price}</p>
+                                <h2>{property.address}</h2>
+                                <p>Price: {property.details.price} $</p>
+                                <p>Number of Bedrooms :{property.details.bedrooms}</p>
+                                <p>Number of Bathrooms :{property.details.bathrooms}</p>
                             </div>
                         </Link>
                         <button
