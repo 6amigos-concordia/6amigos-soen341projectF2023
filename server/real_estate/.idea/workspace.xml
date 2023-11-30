@@ -84,7 +84,7 @@
       <recent name="com.realestate.real_estate" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.RealEstateApplication">
+  <component name="RunManager">
     <configuration name="generated-requests | #10" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="10" requestIdentifier="#10" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -113,15 +113,6 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="HTTP Request.generated-requests | #10" />
-        <item itemvalue="HTTP Request.generated-requests | #11" />
-        <item itemvalue="HTTP Request.generated-requests | #9" />
-        <item itemvalue="HTTP Request.generated-requests | #7" />
-        <item itemvalue="HTTP Request.generated-requests | #8" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
