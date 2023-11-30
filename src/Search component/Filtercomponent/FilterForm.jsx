@@ -1,35 +1,31 @@
 import React, { useState } from "react";
 
-const FilterFormComponent = ({ inputValue, onInputChange, onSubmit }) => {
-  const [transactionType, setTransactionType] = useState("");
-  const [minPrice, setMinPrice] = useState("");
-  const [maxPrice, setMaxPrice] = useState("");
-  const [Beds, setBeds] = useState("");
-  const [Baths, setBaths] = useState("");
-  const [districts, setdistricts] = useState("");
+const FilterFormComponent = ({inputValue, onInputChange }) => {
+  const [propertyType, setpropertyType] = useState("");
+  const [price, setprice] = useState("");
+  const [bedrooms, setbedrooms] = useState("");
+  const [bathrooms, setbathrooms] = useState("");
+  const [district, setdistrict] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
     const formData = {
-      transactionType,
-      minPrice,
-      maxPrice,
-      Beds,
-      Baths,
-      districts,
-      cityName: inputValue.split(',')[0].trim(),
-      streetName: inputValue.split(',')[1]?.trim() || '',
+      propertyType,
+      price,
+      bedrooms,
+      bathrooms,
+      district,
+      address:inputValue,
     };
     onSubmit(formData);
   };
 
   const handleReset = () => {
-    setTransactionType("");
-    setMinPrice("");
-    setMaxPrice(""),
-    setBeds("");
-    setBaths("");
-    setdistricts("");
+    setpropertyType("");
+    setprice("");
+    setbedrooms("");
+    setbathrooms("");
+    setdistrict("");
     onInputChange("");
   };
 
@@ -38,31 +34,30 @@ const FilterFormComponent = ({ inputValue, onInputChange, onSubmit }) => {
       <label> Search: </label>
       <input
         className="input-instance"
-        placeholder="City name, street name"
+        placeholder="address"
         value={inputValue}
-        onChange={(e) => onInputChange(e.target.value)}
+        readOnly
       />
-      <br/>
-      <br/>
-      <br/>
+      <br />
+      <br />
+      <br />
       <form onSubmit={handleSubmit}>
         <label>
           Transaction Type:
           <select
-            value={transactionType}
-            onChange={(e) => setTransactionType(e.target.value)}
+            value={propertyType}
+            onChange={(e) => setpropertyType(e.target.value)}
           >
             <option value="">Select</option>
             <option value="for sale">For Sale</option>
             <option value="for rent">For Rent</option>
-            <option value="sold">Sold</option>
           </select>
         </label>
         <label>
-         Minimum Price:
+          Price:
           <select
-            value={minPrice}
-            onChange={(e) => setMinPrice(e.target.value)}
+            value={price}
+            onChange={(e) => setprice(e.target.value)}
           >
             <option value="">Select</option>
             <option value="500000">$500,000</option>
@@ -76,27 +71,10 @@ const FilterFormComponent = ({ inputValue, onInputChange, onSubmit }) => {
           </select>
         </label>
         <label>
-          Maximum Price:
+          Bedrooms:
           <select
-            value={maxPrice}
-            onChange={(e) => setMaxPrice(e.target.value)}
-          >
-            <option value="">Select</option>
-            <option value="500000">$500,000</option>
-            <option value="1000000">$1,000,000</option>
-            <option value="1500000">$1,500,000</option>
-            <option value="2000000">$2,000,000</option>
-            <option value="2500000">$2,500,000</option>
-            <option value="3000000">$3,000,000</option>
-            <option value="3500000">$3,500,000</option>
-            <option value="4000000">$4,000,000</option>
-          </select>
-        </label>
-        <label>
-          Beds:
-          <select
-            value={Beds}
-            onChange={(e) => setBeds(e.target.value)}
+            value={bedrooms}
+            onChange={(e) => setbedrooms(e.target.value)}
           >
             <option value="">Select</option>
             <option value="1">1</option>
@@ -108,10 +86,10 @@ const FilterFormComponent = ({ inputValue, onInputChange, onSubmit }) => {
           </select>
         </label>
         <label>
-          Baths:
+          Bathrooms:
           <select
-            value={Baths}
-            onChange={(e) => setBaths(e.target.value)}
+            value={bathrooms}
+            onChange={(e) => setbathrooms(e.target.value)}
           >
             <option value="">Select</option>
             <option value="1">1</option>
@@ -126,8 +104,8 @@ const FilterFormComponent = ({ inputValue, onInputChange, onSubmit }) => {
           District:
           <input
             type="text"
-            value={districts}
-            onChange={(e) => setdistricts(e.target.value)}
+            value={district}
+            onChange={(e) => setdistrict(e.target.value)}
           />
         </label>
         <div className="button-group">
