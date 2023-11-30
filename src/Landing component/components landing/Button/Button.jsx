@@ -16,19 +16,19 @@ export const Button = ({ className, frameClassName, divClassName }) => {
     setError(null);
 
     try {
-      const response = await fetch("https://your-backend-endpoint.com/signup", {
+      const response = await fetch("http://localhost:8080/api/sign-up", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify({ name, email, userType, password }), // Include name and userType
+        body: JSON.stringify({ name, email, userType, password }),
       });
 
       const data = await response.json();
       if (!response.ok) {
-        throw new Error(data.message || "Something went wrong!");
+        throw new Error(data.message || "This username is already taken !");
       }
-      console.log("SignUp successful:", data);
+      alert("Sign-Up successful ", data);
     } catch (err) {
       setError(err.message);
     } finally {
@@ -55,7 +55,7 @@ export const Button = ({ className, frameClassName, divClassName }) => {
               <form className="sign-up-form" onSubmit={handleSignUp}>
                 <h1>Create an account</h1>
 
-                {error && <p className="error-message">{error}</p>}
+                {error && <p className="error-message">This username is already taken !</p>}
 
                 <div className="input-group">
                   <label htmlFor="name">Full Name</label>
