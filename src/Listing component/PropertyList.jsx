@@ -1,4 +1,4 @@
-export default FilterFormComponent;          PropertyList.jsx:// PropertyList.jsx
+export default FilterFormComponent;   
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import api from '../api';
