@@ -4,7 +4,6 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -17,6 +16,7 @@ public class Broker {
     @Id
     private String id;
     private String name;
+    private String password;
     private String email;
     private String phone;
     private String agency;
@@ -28,6 +28,7 @@ public class Broker {
         return new Broker(
                 this.id,
                 broker.name,
+                this.password,
                 broker.email,
                 broker.phone,
                 broker.agency,

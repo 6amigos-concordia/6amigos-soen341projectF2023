@@ -3,12 +3,8 @@ package com.realestate.real_estate.repos;
 import lombok.Builder;
 import lombok.Data;
 import lombok.extern.jackson.Jacksonized;
-import org.bson.types.ObjectId;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-import org.springframework.data.mongodb.core.mapping.DocumentReference;
-import java.util.Date;
-import java.util.List;
 
 @Data
 @Builder
@@ -16,7 +12,7 @@ import java.util.List;
 @Document(collection = "appointments")
 public class Appointment {
     @Id
-    private ObjectId id;
+    private String id;
     String dateTime;
     String username;
     String userEmail;

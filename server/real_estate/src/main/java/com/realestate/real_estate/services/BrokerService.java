@@ -1,13 +1,8 @@
 package com.realestate.real_estate.services;
 
-import com.realestate.real_estate.repos.PropertyRepository;
-import com.realestate.real_estate.repos.Property;
-import com.realestate.real_estate.repos.PropertyDetails;
-
-import org.bson.types.ObjectId;
+import com.realestate.real_estate.repos.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.util.List;
 import java.util.Optional;
 
@@ -15,6 +10,9 @@ import java.util.Optional;
 public class BrokerService {
     @Autowired
     private PropertyRepository propertyRepository;
+
+    @Autowired
+    private BrokerRepository brokerRepository;
 
     public List<Property> getAllProperties() {
         return propertyRepository.findAll();
