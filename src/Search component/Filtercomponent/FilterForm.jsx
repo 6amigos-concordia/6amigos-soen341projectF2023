@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const FilterFormComponent = ({inputValue, onInputChange, onSubmit }) => {
+const FilterFormComponent = ({inputValue, onInputChange }) => {
   const [propertyType, setpropertyType] = useState("");
   const [price, setprice] = useState("");
   const [bedrooms, setbedrooms] = useState("");
