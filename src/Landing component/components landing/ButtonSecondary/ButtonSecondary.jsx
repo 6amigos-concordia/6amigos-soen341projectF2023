@@ -3,7 +3,7 @@ import "./style.css";
 
 export const ButtonSecondary = ({ className, frameClassName, divClassName }) => {
   const [isFormVisible, setIsFormVisible] = useState(false);
-  const [name, setName] = useState(""); // Change to "name" instead of "email"
+  const [name, setName] = useState(""); 
   const [password, setPassword] = useState("");
   const [error, setError] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -12,28 +12,28 @@ export const ButtonSecondary = ({ className, frameClassName, divClassName }) => 
     e.preventDefault();
     setLoading(true);
     setError(null);
-
+  
+    const queryParams = new URLSearchParams({ name, password }).toString();
+    const signInUrl = `http://localhost:8080/api/sign-in?${queryParams}`;
+    
+    alert("Sign-In URL:", signInUrl);  // Log the URL for inspection
+  
     try {
-      const response = await fetch("https://your-backend-endpoint.com/signin", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({ name, password }) // Change to "name" instead of "email"
-      });
-
-      const data = await response.json();
+      const response = await fetch(signInUrl, { method: "POST" });
+  
       if (!response.ok) {
-        throw new Error(data.message || "Something went wrong!");
+        const data = await response.json();
+        throw new Error(data.message || "Username or password is incorrect");
       }
-      console.log("SignIn successful:", data);
+      console.log("SignIn successful");
     } catch (err) {
       setError(err.message);
     } finally {
       setLoading(false);
     }
   };
-
+  
+  
   return (
     <div>
       <button className={`button ${className}`} onClick={() => setIsFormVisible(true)}>
@@ -48,7 +48,7 @@ export const ButtonSecondary = ({ className, frameClassName, divClassName }) => 
             <button onClick={() => setIsFormVisible(false)}>Close</button>
             <form className="sign-in-form" onSubmit={handleSignIn}>
               <h1>Sign In to your account</h1>
-              {error && <p className="error-message">{error}</p>}
+              {error && <p className="error-message">The username or the password is incorrect</p>}
               <div className="input-group">
                 <label htmlFor="name">Full Name</label> {/* Change to "Full Name" */}
                 <input 
