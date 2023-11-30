@@ -17,7 +17,10 @@ const api = {
             const response = await axios.get(`${urls.brokersSearch.allBrokers}`);
             return response.data;
         },
-
+        async getBrokerById(id) {
+            const response = await axios.get(`${urls.propertiesSearch.getAllProperties}/${id}`);
+            return response.data;
+        },
     },
 
 
