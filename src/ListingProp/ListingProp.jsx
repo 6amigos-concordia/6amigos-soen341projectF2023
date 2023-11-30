@@ -21,18 +21,18 @@ const OfferForm = ({ onClose, onSubmit, offerPrice, setOfferPrice, personalMessa
       <form onSubmit={onSubmit} className="offer-form">
         <label>
           Offered Price:
-          <input 
-            type="number" 
-            value={offerPrice} 
-            onChange={(e) => setOfferPrice(e.target.value)} 
-            placeholder="Enter your offer price" 
+          <input
+            type="number"
+            value={offerPrice}
+            onChange={(e) => setOfferPrice(e.target.value)}
+            placeholder="Enter your offer price"
           />
         </label>
         <label>
           Personal Message or Notes:
-          <textarea 
-            value={personalMessage} 
-            onChange={(e) => setPersonalMessage(e.target.value)} 
+          <textarea
+            value={personalMessage}
+            onChange={(e) => setPersonalMessage(e.target.value)}
             placeholder="Add any personal messages or notes here"
           />
         </label>
@@ -45,20 +45,38 @@ const OfferForm = ({ onClose, onSubmit, offerPrice, setOfferPrice, personalMessa
 export const ListingProp = () => {
   const { id } = useParams();
 
-  const [property, setProperty] = useState(null);
+  const [property, setProperty] = useState({
+    address: "",
+    details: {
+      bedrooms: 0,
+      bathrooms: 0,
+      price: 0,
+      district: "",
+      cityName: "",
+      streetName: "",
+      propertyType: "",
+      imageUrl: ""
+
+    },
+    appointmentIds: [],
+    brokerIds: []
+  });
   const [isFrameVisible, setIsFrameVisible] = useState(false);
   const [showOfferForm, setShowOfferForm] = useState(false);
   const [offerPrice, setOfferPrice] = useState('');
   const [personalMessage, setPersonalMessage] = useState('');
   const [loading, setLoading] = useState(true);
-const [error, setError] = useState(null);
+  const [error, setError] = useState(null);
 
-useEffect(() => {
+  useEffect(() => {
+    fetchPropertyDetails();
+  }, [id]);
+
   const fetchPropertyDetails = async () => {
     setLoading(true);
     try {
       const response = await api.properties.getPropertyById(id);
-      setProperty(response.data);
+      setProperty(response);
       setLoading(false);
     } catch (error) {
       console.error("Error fetching property details:", error);
@@ -77,19 +95,8 @@ useEffect(() => {
       }
       setError(error);
     }
-    
+
   };
-
-  fetchPropertyDetails();
-}, [id]);
-
-if (loading) {
-  return <div>Loading property details...</div>;
-}
-
-if (error) {
-  return <div>Error loading property details.</div>;
-}
 
 
 
@@ -124,10 +131,6 @@ if (error) {
       />
     );
   }
-
-  if (!property) {
-    return <div>Loading property details...</div>;
-  }
   const {
     address,
     details, // Adjusted from propertyImages, price, description, features
@@ -142,51 +145,51 @@ if (error) {
     <div className="listing-prop">
 
       <div className="top-fixed-container">
-      <div className="brand">
-        <img className="IMG" alt="" src="https://i.ibb.co/TbH49Cr/luxium.png"/>
-      </div>
-      <div className="links">
-        <div className="link">Find a home</div>
-        <div className="link">Mortage Calculator</div>
-        <div className="link">Find a broker</div>
-        <div className="link">Saved properties</div>
-      </div>      
-    </div>
-    
-    <div className="content-div">
-    <div className="address-bar">
-        <p className="address">{address}</p>
-      </div>
-
-      <div className="overlap">
-        <div className="box">
-          <Carousel useKeyboardArrows={true} style={{ maxWidth: "300px" }}>
-            {/* Adjusted to use imageUrl from details */}
-            <div className="slide">
-              <img alt="Property" src={imageUrl} />
-            </div>
-          </Carousel>
+        <div className="brand">
+          <img className="IMG" alt="" src="https://i.ibb.co/TbH49Cr/luxium.png" />
+        </div>
+        <div className="links">
+          <div className="link">Find a home</div>
+          <div className="link">Mortage Calculator</div>
+          <div className="link">Find a broker</div>
+          <div className="link">Saved properties</div>
         </div>
       </div>
-      
-    <div className="price-section">
-        <div className="price">{price}</div>
-        <p className="tax-info">USD (incl. of all taxes)</p>
-      </div>
 
-      <div className="description">
-        {/* Adjusted to show city and district */}
-        <p>{cityName}, {district}</p>
-      </div>
-      <Feature title="Bedrooms:" content={bedrooms} />
-      <Feature title="Bathrooms:" content={bathrooms} />
-      <Feature title="Property Type:" content={propertyType} />
-      <Feature title="Street Name:" content={streetName} />
+      <div className="content-div">
+        <div className="address-bar">
+          <p className="address">{address}</p>
+        </div>
 
-       
+        <div className="overlap">
+          <div className="box">
+            <Carousel useKeyboardArrows={true} style={{ maxWidth: "300px" }}>
+              {/* Adjusted to use imageUrl from details */}
+              <div className="slide">
+                <img alt="Property" src={imageUrl} />
+              </div>
+            </Carousel>
+          </div>
+        </div>
+
+        <div className="price-section">
+          <div className="price">{price}</div>
+          <p className="tax-info">USD (incl. of all taxes)</p>
+        </div>
+
+        <div className="description">
+          {/* Adjusted to show city and district */}
+          <p>{cityName}, {district}</p>
+        </div>
+        <Feature title="Bedrooms:" content={bedrooms} />
+        <Feature title="Bathrooms:" content={bathrooms} />
+        <Feature title="Property Type:" content={propertyType} />
+        <Feature title="Street Name:" content={streetName} />
+
+
 
         <div className="actions">
-        <div className="request-visit">
+          <div className="request-visit">
             <button onClick={() => setIsFrameVisible(true)}>
               Request a Visit
             </button>

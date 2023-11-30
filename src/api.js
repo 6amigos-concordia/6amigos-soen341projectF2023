@@ -7,24 +7,27 @@ const api = {
             const response = await axios.get(`${urls.propertiesSearch.getAllProperties}`);
             return response.data;
         },
-       
+        async getPropertyById(id) {
+            const response = await axios.get(`${urls.propertiesSearch.getAllProperties}/${id}`);
+            return response.data;
+        },
     },
     brokers: {
         async allBrokers() {
             const response = await axios.get(`${urls.brokersSearch.allBrokers}`);
             return response.data;
         },
-       
+
     },
-   
-        
 
-    
 
-  
-    
 
-    
+
+
+
+
+
+
 }
 
 export default api;
