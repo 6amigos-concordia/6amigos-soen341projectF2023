@@ -5,6 +5,7 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Frame } from "../Frame/Frame";
 import { useParams } from 'react-router-dom';
+import { NavBarLogo } from '../NavBar&Logo/NavBar&Logo';
 
 const Feature = ({ title, content }) => (
   <p className="feature">
@@ -14,10 +15,29 @@ const Feature = ({ title, content }) => (
 );
 
 // Full-Page Offer Form Component
-const OfferForm = ({ onClose, onSubmit, offerPrice, setOfferPrice, personalMessage, setPersonalMessage }) => {
+const OfferForm = ({
+  onClose,
+  onSubmit,
+  offerPrice,
+  setOfferPrice,
+  personalMessage,
+  setPersonalMessage,
+  brokerName,
+  brokerEmail,
+  brokerLicenseNum,
+  Agency,
+  buyerName,
+  buyerAddress,
+  buyerEmail,
+  addressProperty,
+  deedOfSaleDate,
+  occupancyDate,
+}) => {
   return (
     <div className="offer-form-overlay">
-      <button className="close-offer-form" onClick={onClose}>Close</button>
+      <button className="close-offer-form" onClick={onClose}>
+        Close
+      </button>
       <form onSubmit={onSubmit} className="offer-form">
         <label>
           Offered Price:
@@ -28,20 +48,58 @@ const OfferForm = ({ onClose, onSubmit, offerPrice, setOfferPrice, personalMessa
             placeholder="Enter your offer price"
           />
         </label>
+      
         <label>
-          Personal Message or Notes:
-          <textarea
-            value={personalMessage}
-            onChange={(e) => setPersonalMessage(e.target.value)}
-            placeholder="Add any personal messages or notes here"
-          />
+          Broker Name:
+          <input type="text" value={brokerName}  />
         </label>
+        <label>
+          Broker Email:
+          <input type="email" value={brokerEmail}  />
+        </label>
+        <label>
+          Broker License Number:
+          <input type="text" value={brokerLicenseNum}  />
+        </label>
+        <label>
+          Agency:
+          <input type="text" value={Agency}  />
+        </label>
+        <label>
+          Buyer Name:
+          <input type="text" value={buyerName}  />
+        </label>
+        <label>
+          Buyer Address:
+          <input type="text" value={buyerAddress}  />
+        </label>
+        <label>
+          Buyer Email:
+          <input type="email" value={buyerEmail}  />
+        </label>
+        <label>
+          Address Property:
+          <input type="text" value={addressProperty}  />
+        </label>
+        <label>
+          Deed of Sale Date:
+          <input type="text" value={deedOfSaleDate} disabled />
+        </label>
+        <label>
+          Occupancy Date:
+          <input type="text" value={occupancyDate} />
+        </label>
+
         <button type="submit">Submit Offer</button>
+        <button  onClick={onClose}>
+        Close
+      </button>
       </form>
     </div>
   );
 };
 
+export default OfferForm;
 export const ListingProp = () => {
   const { id } = useParams();
 
@@ -144,16 +202,8 @@ export const ListingProp = () => {
   return (
     <div className="listing-prop">
 
-      <div className="top-fixed-container">
-        <div className="brand">
-          <img className="IMG" alt="" src="https://i.ibb.co/TbH49Cr/luxium.png" />
-        </div>
-        <div className="links">
-          <div className="link">Find a home</div>
-          <div className="link">Mortage Calculator</div>
-          <div className="link">Find a broker</div>
-          <div className="link">Saved properties</div>
-        </div>
+<div className="Navbar">
+        <NavBarLogo />
       </div>
 
       <div className="content-div">
@@ -163,9 +213,9 @@ export const ListingProp = () => {
 
         <div className="overlap">
           <div className="box">
-            <Carousel useKeyboardArrows={true} style={{ maxWidth: "300px" }}>
+            <Carousel useKeyboardArrows={true} style={{ maxWidth: "200px",maxHeight: "200px" }}>
               {/* Adjusted to use imageUrl from details */}
-              <div className="slide">
+              <div className="slide"style={{ maxWidth: "500px",maxHeight: "1%" }}>
                 <img alt="Property" src={imageUrl} />
               </div>
             </Carousel>
