@@ -1,3 +1,4 @@
+// PropertyList.jsx
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import api from '../api'; // Ensure this path is correct
@@ -21,7 +22,7 @@ export const PropertyList = () => {
     };
 
     fetchProperties();
-  }, []);
+  }, []); // Empty dependency array for fetching properties on mount
 
   const handleInterestToggle = async (propertyId) => {
     // Assume userId is available from the user's session or context
@@ -36,18 +37,21 @@ export const PropertyList = () => {
     }
   };
 
+  const handleSearchResults = (searchResults) => {
+    setProperties(searchResults);
+  };
+
   return (
     <div className="property-list">
       <div className="Navbar">
         <NavBarLogo />
       </div>
       <div className="Searchbar">
-        <Search />
+        <Search onSearchResults={handleSearchResults} />
       </div>
       <div className="Postings">
-        {properties.map(property => (
+        {properties.map((property) => (
           <div className="property" key={property.id}>
-            {/* Update Link to point to ListingProp */}
             <Link to={`/property/${property.id}`}>
               <img src={property.image} alt={property.name} className="property-image" />
               <div className="property-details">

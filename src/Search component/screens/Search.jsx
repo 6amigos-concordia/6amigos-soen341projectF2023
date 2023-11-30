@@ -6,7 +6,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './style.css';
 
-export const Search = ({ onSearch }) => {
+export const Search = ({ onSearchResults }) => {
   const [inputValue, setInputValue] = useState('');
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [filterData, setFilterData] = useState({
@@ -47,7 +47,7 @@ export const Search = ({ onSearch }) => {
       });
 
       console.log('Backend response:', response.data);
-      onSearch(response.data); // Pass the search results to the parent component
+      onSearchResults(response.data); // Pass the search results to the parent component
 
       navigate('/property-list'); // Redirect to property list
     } catch (error) {
