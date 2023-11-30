@@ -15,6 +15,8 @@ import { BrokerDashboard } from "./Broker-dash/BrokerDashboard";
 import { Favorite } from "./FavoriteComponent/Favorite";
 import { Frame } from "./Frame/Frame";
 
+
+
 const App = () => {
   return (
     <Router>
@@ -27,6 +29,7 @@ const App = () => {
               <FeaturedProperties />
               <Team />
               <Cta />
+             
            
             </>
           } />
