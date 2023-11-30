@@ -1,5 +1,4 @@
-// Search.jsx
-import React, { useState } from 'react';
+:import React, { useState } from 'react';
 import { IconsSearch } from '../../Search component/icons/IconsSearch';
 import FilterFormComponent from '../Filtercomponent/FilterForm';
 import { useNavigate } from 'react-router-dom';
@@ -93,6 +92,7 @@ export const Search = ({ onSearchResults }) => {
           </div>
         </div>
       )}
+
     </div>
   );
-};
+};  
