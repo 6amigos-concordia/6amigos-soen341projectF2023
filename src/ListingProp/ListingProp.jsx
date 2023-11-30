@@ -6,6 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Frame } from "../Frame/Frame";
 import { useParams } from 'react-router-dom';
 import { NavBarLogo } from '../NavBar&Logo/NavBar&Logo';
+import {OfferForm} from './OfferForm';
 
 const Feature = ({ title, content }) => (
   <p className="feature">
@@ -14,92 +15,6 @@ const Feature = ({ title, content }) => (
   </p>
 );
 
-// Full-Page Offer Form Component
-const OfferForm = ({
-  onClose,
-  onSubmit,
-  offerPrice,
-  setOfferPrice,
-  personalMessage,
-  setPersonalMessage,
-  brokerName,
-  brokerEmail,
-  brokerLicenseNum,
-  Agency,
-  buyerName,
-  buyerAddress,
-  buyerEmail,
-  addressProperty,
-  deedOfSaleDate,
-  occupancyDate,
-}) => {
-  return (
-    <div className="offer-form-overlay">
-      <button className="close-offer-form" onClick={onClose}>
-        Close
-      </button>
-      <form onSubmit={onSubmit} className="offer-form">
-        <label>
-          Offered Price:
-          <input
-            type="number"
-            value={offerPrice}
-            onChange={(e) => setOfferPrice(e.target.value)}
-            placeholder="Enter your offer price"
-          />
-        </label>
-      
-        <label>
-          Broker Name:
-          <input type="text" value={brokerName}  />
-        </label>
-        <label>
-          Broker Email:
-          <input type="email" value={brokerEmail}  />
-        </label>
-        <label>
-          Broker License Number:
-          <input type="text" value={brokerLicenseNum}  />
-        </label>
-        <label>
-          Agency:
-          <input type="text" value={Agency}  />
-        </label>
-        <label>
-          Buyer Name:
-          <input type="text" value={buyerName}  />
-        </label>
-        <label>
-          Buyer Address:
-          <input type="text" value={buyerAddress}  />
-        </label>
-        <label>
-          Buyer Email:
-          <input type="email" value={buyerEmail}  />
-        </label>
-        <label>
-          Address Property:
-          <input type="text" value={addressProperty}  />
-        </label>
-        <label>
-          Deed of Sale Date:
-          <input type="text" value={deedOfSaleDate} disabled />
-        </label>
-        <label>
-          Occupancy Date:
-          <input type="text" value={occupancyDate} />
-        </label>
-
-        <button type="submit">Submit Offer</button>
-        <button  onClick={onClose}>
-        Close
-      </button>
-      </form>
-    </div>
-  );
-};
-
-export default OfferForm;
 export const ListingProp = () => {
   const { id } = useParams();
 
@@ -120,11 +35,12 @@ export const ListingProp = () => {
     brokerIds: []
   });
   const [isFrameVisible, setIsFrameVisible] = useState(false);
-  const [showOfferForm, setShowOfferForm] = useState(false);
+ 
   const [offerPrice, setOfferPrice] = useState('');
   const [personalMessage, setPersonalMessage] = useState('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [showOfferForm, setShowOfferForm] = useState(false);
 
   useEffect(() => {
     fetchPropertyDetails();
@@ -139,16 +55,13 @@ export const ListingProp = () => {
     } catch (error) {
       console.error("Error fetching property details:", error);
       if (error.response) {
-        // The request was made and the server responded with a status code
-        // that falls out of the range of 2xx
         console.error(error.response.data);
         console.error(error.response.status);
         console.error(error.response.headers);
       } else if (error.request) {
-        // The request was made but no response was received
+
         console.error(error.request);
       } else {
-        // Something happened in setting up the request that triggered an Error
         console.error('Error', error.message);
       }
       setError(error);
@@ -159,18 +72,23 @@ export const ListingProp = () => {
 
 
 
-  // Form handling functions
+
+
+
+
+
+
+
+
   const handleOfferSubmit = (e) => {
     e.preventDefault();
-    // Form validation logic here
-    // For example:
+   
     if (offerPrice.trim() === '') {
       alert('Please enter an offer price.');
       return;
     }
-    // Additional validation as needed
-    setShowOfferForm(false); // Hide the form after submission
-    // Handle offer submission logic (e.g., send to server)
+   
+    setShowOfferForm(false); 
   };
 
   if (isFrameVisible) {
@@ -182,10 +100,6 @@ export const ListingProp = () => {
       <OfferForm
         onClose={() => setShowOfferForm(false)}
         onSubmit={handleOfferSubmit}
-        offerPrice={offerPrice}
-        setOfferPrice={setOfferPrice}
-        personalMessage={personalMessage}
-        setPersonalMessage={setPersonalMessage}
       />
     );
   }
@@ -246,9 +160,14 @@ export const ListingProp = () => {
           </div>
           <div className="save-to-fav">Save to Favorite</div>
           <div className="submit-offer">
-            <button onClick={() => setShowOfferForm(true)}>
-              Submit Offer
-            </button>
+          <button onClick={() => setShowOfferForm(true)}>Submit Offer</button>
+    {showOfferForm && (
+      <OfferForm
+        onClose={() => setShowOfferForm(false)}
+        onSubmit={handleOfferSubmit}
+    
+      />
+    )}
           </div>
         </div>
 
