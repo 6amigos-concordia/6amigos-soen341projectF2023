@@ -14,6 +14,7 @@ import { BrokerProfile } from "./BrokerProfile/BrokerProfile";
 import { BrokerDashboard } from "./Broker-dash/BrokerDashboard";
 import { Favorite } from "./FavoriteComponent/Favorite";
 import { Frame } from "./Frame/Frame";
+import { AdminDashboard } from "./AdminDashboard/AdminDashboard";
 const App = () => {
   return (
     <Router>
@@ -27,6 +28,7 @@ const App = () => {
               <Team />
               <Cta />
               <Frame/>
+              <AdminDashboard />
             </>
           } />
           <Route path="/property-listing" element={<PropertyList />} />
@@ -37,6 +39,7 @@ const App = () => {
           <Route path="/broker/:brokerId" element={<BrokerProfile />} />
           <Route path="/Favorite" element={<Favorite />} /> 
           <Route path= "/Frame" element={<Frame />} />
+          <Route path = "/AdminDashboard" element={<AdminDashboard />} />
         </Routes>
       </div>
     </Router>
