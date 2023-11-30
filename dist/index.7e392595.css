@@ -1444,41 +1444,6 @@ img.IMG {
   color: red;
 }
 
-.select-instance {
-  box-shadow: var(--shadow-xs);
-  background-color: #fff;
-  border: 1px solid #cfd4dc;
-  border-radius: 6px;
-  align-items: center;
-  gap: 8px;
-  width: 100%;
-  padding: 10px 14px;
-  display: flex;
-  position: relative;
-}
-
-.select-instance::-ms-expand {
-  display: none;
-}
-
-.select-instance option {
-  color: #667084;
-  background-color: #fff;
-  font-family: Montserrat, Helvetica;
-  font-size: 16px;
-}
-
-.select-instance:focus {
-  border-color: #7f57f1;
-}
-
-@media screen and (width <= 768px) {
-  .select-instance {
-    padding: 8px 12px;
-    font-size: 14px;
-  }
-}
-
 :root {
   --search-bar-height: 15%;
 }
@@ -2753,8 +2718,8 @@ img.IMG {
   display: flex;
 }
 
-.favorites h1 {
-  margin-top: 175px;
+.favorited-listings h1 {
+  margin-bottom: 10%;
 }
 
 .visit-requests ul {
@@ -2767,6 +2732,90 @@ img.IMG {
   border: 1px solid #ddd;
   margin-bottom: 10px;
   padding: 10px;
+}
+
+@media (width <= 768px) {
+  .favorites h1 {
+    font-size: 28px;
+  }
+
+  .visit-requests li {
+    padding: 8px;
+  }
+}
+
+.AdminDashboard {
+  text-align: center;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.forms-container {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.broker-form {
+  background: #f9f9f9;
+  border-radius: 8px;
+  width: 40%;
+  margin: 0;
+  padding: 20px;
+  box-shadow: 0 2px 4px #0000001a;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  background-color: #f3f3f3;
+  border-radius: 5px;
+  margin: 8px 0;
+  padding: 15px;
+  font-size: 1.2em;
+}
+
+input[type="text"] {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: calc(100% - 40px);
+  margin: 10px 0;
+  padding: 20px;
+  font-size: 1.5em;
+}
+
+button {
+  cursor: pointer;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  margin: 10px 0;
+  padding: 20px 25px;
+  font-size: 1.5em;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #0056b3;
+}
+
+@media (width >= 1024px) {
+  .broker-form {
+    width: 30%;
+  }
+}
+
+@media (width <= 768px) {
+  .broker-form {
+    width: 80%;
+  }
 }
 
 /*# sourceMappingURL=index.7e392595.css.map */

@@ -27153,6 +27153,7 @@ var _brokerProfile = require("./BrokerProfile/BrokerProfile");
 var _brokerDashboard = require("./Broker-dash/BrokerDashboard");
 var _favorite = require("./FavoriteComponent/Favorite");
 var _frame = require("./Frame/Frame");
+var _adminDashboard = require("./AdminDashboard/AdminDashboard");
 const App = ()=>{
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.BrowserRouter), {
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -27168,12 +27169,13 @@ const App = ()=>{
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _featuredProperties.FeaturedProperties), {}, void 0, false, void 0, void 0),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _featuredBroker.Team), {}, void 0, false, void 0, void 0),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _newsletter.Cta), {}, void 0, false, void 0, void 0),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _frame.Frame), {}, void 0, false, void 0, void 0)
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _frame.Frame), {}, void 0, false, void 0, void 0),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminDashboard.AdminDashboard), {}, void 0, false, void 0, void 0)
                             ]
                         }, void 0, true)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 22,
+                        lineNumber: 23,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27181,7 +27183,7 @@ const App = ()=>{
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _listingComponent.PropertyList), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 32,
+                        lineNumber: 34,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27189,7 +27191,7 @@ const App = ()=>{
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _mortgcalc.Mortgcalc), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 33,
+                        lineNumber: 35,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27197,7 +27199,7 @@ const App = ()=>{
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _brokerList.BrokerList), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 34,
+                        lineNumber: 36,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27205,7 +27207,7 @@ const App = ()=>{
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _listingProp.ListingProp), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 35,
+                        lineNumber: 37,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27213,7 +27215,7 @@ const App = ()=>{
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _brokerDashboard.BrokerDashboard), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 36,
+                        lineNumber: 38,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27221,7 +27223,7 @@ const App = ()=>{
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _brokerProfile.BrokerProfile), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 37,
+                        lineNumber: 39,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27229,7 +27231,7 @@ const App = ()=>{
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _favorite.Favorite), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 38,
+                        lineNumber: 40,
                         columnNumber: 11
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
@@ -27237,23 +27239,31 @@ const App = ()=>{
                         element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _frame.Frame), {}, void 0, false, void 0, void 0)
                     }, void 0, false, {
                         fileName: "src/App.jsx",
-                        lineNumber: 39,
+                        lineNumber: 41,
+                        columnNumber: 11
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Route), {
+                        path: "/AdminDashboard",
+                        element: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _adminDashboard.AdminDashboard), {}, void 0, false, void 0, void 0)
+                    }, void 0, false, {
+                        fileName: "src/App.jsx",
+                        lineNumber: 42,
                         columnNumber: 11
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/App.jsx",
-                lineNumber: 21,
+                lineNumber: 22,
                 columnNumber: 9
             }, undefined)
         }, void 0, false, {
             fileName: "src/App.jsx",
-            lineNumber: 20,
+            lineNumber: 21,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/App.jsx",
-        lineNumber: 19,
+        lineNumber: 20,
         columnNumber: 5
     }, undefined);
 };
@@ -27267,7 +27277,7 @@ $RefreshReg$(_c, "App");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","react-router-dom":"9xmpe","./Landing component/LandingPage":"bQzRZ","./Feature component":"eDTYY","./FeaturedProperties":"1ymem","./FeaturedBroker":"2sHyA","./newsletter":"jMOOi","./Listing component":"fAykt","./Mortgcalc":"i6AhA","./BrokerList":"a2FRC","./ListingProp/ListingProp":"7IoxF","./BrokerProfile/BrokerProfile":"6nZSa","./Broker-dash/BrokerDashboard":"ag3zL","./FavoriteComponent/Favorite":"hPnZV","./Frame/Frame":"9fFZX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"9xmpe":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","react-dom":"j6uA9","react-router-dom":"9xmpe","./Landing component/LandingPage":"bQzRZ","./Feature component":"eDTYY","./FeaturedProperties":"1ymem","./FeaturedBroker":"2sHyA","./newsletter":"jMOOi","./Listing component":"fAykt","./Mortgcalc":"i6AhA","./BrokerList":"a2FRC","./ListingProp/ListingProp":"7IoxF","./BrokerProfile/BrokerProfile":"6nZSa","./Broker-dash/BrokerDashboard":"ag3zL","./FavoriteComponent/Favorite":"hPnZV","./Frame/Frame":"9fFZX","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru","./AdminDashboard/AdminDashboard":"7awgm"}],"9xmpe":[function(require,module,exports) {
 /**
  * React Router DOM v6.18.0
  *
@@ -33609,6 +33619,10 @@ const LandingPage = ()=>{
         console.log("Broker Dashboard clicked");
         navigate("/BrokerDash");
     };
+    const handleFavoriteClick = ()=>{
+        console.log("Favorite Clicked");
+        navigate("/Favorite");
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "landing-page",
         children: [
@@ -33625,17 +33639,17 @@ const LandingPage = ()=>{
                                 src: "https://i.ibb.co/zh7bVNh/luxium.png"
                             }, void 0, false, {
                                 fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                                lineNumber: 45,
+                                lineNumber: 49,
                                 columnNumber: 13
                             }, undefined)
                         }, void 0, false, {
                             fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                            lineNumber: 44,
+                            lineNumber: 48,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                        lineNumber: 43,
+                        lineNumber: 47,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -33651,12 +33665,12 @@ const LandingPage = ()=>{
                                         children: " Find a home "
                                     }, void 0, false, {
                                         fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                                        lineNumber: 52,
+                                        lineNumber: 56,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                                    lineNumber: 51,
+                                    lineNumber: 55,
                                     columnNumber: 13
                                 }, undefined),
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -33665,22 +33679,6 @@ const LandingPage = ()=>{
                                         to: "/Mortgcalc",
                                         onClick: MortgcalcClick,
                                         children: " Mortage Calculator "
-                                    }, void 0, false, {
-                                        fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                                        lineNumber: 55,
-                                        columnNumber: 15
-                                    }, undefined)
-                                }, void 0, false, {
-                                    fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                                    lineNumber: 54,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    className: "link",
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                        to: "/BrokerList",
-                                        onClick: handleFindBrokerClick,
-                                        children: " Find a broker "
                                     }, void 0, false, {
                                         fileName: "src/Landing component/LandingPage/LandingPage.jsx",
                                         lineNumber: 59,
@@ -33694,28 +33692,60 @@ const LandingPage = ()=>{
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                     className: "link",
                                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                        to: "/BrokerList",
+                                        onClick: handleFindBrokerClick,
+                                        children: " Find a broker "
+                                    }, void 0, false, {
+                                        fileName: "src/Landing component/LandingPage/LandingPage.jsx",
+                                        lineNumber: 63,
+                                        columnNumber: 15
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/Landing component/LandingPage/LandingPage.jsx",
+                                    lineNumber: 62,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "link",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
                                         to: "/BrokerDash",
                                         onClick: handleFindBrokerDashClick,
                                         children: " Dashboard "
                                     }, void 0, false, {
                                         fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                                        lineNumber: 62,
+                                        lineNumber: 66,
                                         columnNumber: 15
                                     }, undefined)
                                 }, void 0, false, {
                                     fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                                    lineNumber: 61,
+                                    lineNumber: 65,
+                                    columnNumber: 13
+                                }, undefined),
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                    className: "link",
+                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                        to: "/Favorite",
+                                        onClick: handleFavoriteClick,
+                                        children: " Favorite "
+                                    }, void 0, false, {
+                                        fileName: "src/Landing component/LandingPage/LandingPage.jsx",
+                                        lineNumber: 69,
+                                        columnNumber: 15
+                                    }, undefined)
+                                }, void 0, false, {
+                                    fileName: "src/Landing component/LandingPage/LandingPage.jsx",
+                                    lineNumber: 68,
                                     columnNumber: 13
                                 }, undefined)
                             ]
                         }, void 0, true, {
                             fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                            lineNumber: 50,
+                            lineNumber: 54,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                        lineNumber: 48,
+                        lineNumber: 52,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -33727,7 +33757,7 @@ const LandingPage = ()=>{
                                 textClassName: "button-secondary-instance"
                             }, void 0, false, {
                                 fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                                lineNumber: 67,
+                                lineNumber: 74,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _button.Button), {
@@ -33736,30 +33766,30 @@ const LandingPage = ()=>{
                                 frameClassName: "button-instance"
                             }, void 0, false, {
                                 fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                                lineNumber: 68,
+                                lineNumber: 75,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                        lineNumber: 66,
+                        lineNumber: 73,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                lineNumber: 42,
+                lineNumber: 46,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _cta.ContentCta), {}, void 0, false, {
                 fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-                lineNumber: 71,
+                lineNumber: 78,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Landing component/LandingPage/LandingPage.jsx",
-        lineNumber: 41,
+        lineNumber: 45,
         columnNumber: 5
     }, undefined);
 };
@@ -35142,6 +35172,10 @@ const NavBarLogo = ()=>{
         console.log("Broker Dashboard clicked");
         navigate("/BrokerDash");
     };
+    const handleFavoriteClick = ()=>{
+        console.log("Favorite Clicked");
+        navigate("/Favorite");
+    };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "header",
         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35157,17 +35191,17 @@ const NavBarLogo = ()=>{
                             src: "https://i.ibb.co/zh7bVNh/luxium.png"
                         }, void 0, false, {
                             fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-                            lineNumber: 36,
+                            lineNumber: 39,
                             columnNumber: 13
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-                        lineNumber: 35,
+                        lineNumber: 38,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-                    lineNumber: 34,
+                    lineNumber: 37,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35183,22 +35217,6 @@ const NavBarLogo = ()=>{
                                     children: " Find a home "
                                 }, void 0, false, {
                                     fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-                                    lineNumber: 42,
-                                    columnNumber: 15
-                                }, undefined)
-                            }, void 0, false, {
-                                fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-                                lineNumber: 41,
-                                columnNumber: 13
-                            }, undefined),
-                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                className: "link",
-                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                    to: "/Mortgcalc",
-                                    onClick: MortgcalcClick,
-                                    children: " Mortage Calculator "
-                                }, void 0, false, {
-                                    fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
                                     lineNumber: 45,
                                     columnNumber: 15
                                 }, undefined)
@@ -35210,9 +35228,9 @@ const NavBarLogo = ()=>{
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "link",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                    to: "/BrokerList",
-                                    onClick: handleFindBrokerClick,
-                                    children: " Find a broker "
+                                    to: "/Mortgcalc",
+                                    onClick: MortgcalcClick,
+                                    children: " Mortage Calculator "
                                 }, void 0, false, {
                                     fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
                                     lineNumber: 48,
@@ -35226,9 +35244,9 @@ const NavBarLogo = ()=>{
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                                 className: "link",
                                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
-                                    to: "/BrokerDash",
-                                    onClick: handleFindBrokerDashClick,
-                                    children: "Dashboard "
+                                    to: "/BrokerList",
+                                    onClick: handleFindBrokerClick,
+                                    children: " Find a broker "
                                 }, void 0, false, {
                                     fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
                                     lineNumber: 51,
@@ -35238,16 +35256,48 @@ const NavBarLogo = ()=>{
                                 fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
                                 lineNumber: 50,
                                 columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "link",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    to: "/BrokerDash",
+                                    onClick: handleFindBrokerDashClick,
+                                    children: "Dashboard "
+                                }, void 0, false, {
+                                    fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
+                                    lineNumber: 54,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
+                                lineNumber: 53,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                                className: "link",
+                                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _reactRouterDom.Link), {
+                                    to: "/Favorite",
+                                    onClick: handleFavoriteClick,
+                                    children: " Favorite "
+                                }, void 0, false, {
+                                    fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
+                                    lineNumber: 57,
+                                    columnNumber: 15
+                                }, undefined)
+                            }, void 0, false, {
+                                fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
+                                lineNumber: 56,
+                                columnNumber: 13
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-                        lineNumber: 40,
+                        lineNumber: 43,
                         columnNumber: 11
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-                    lineNumber: 39,
+                    lineNumber: 42,
                     columnNumber: 9
                 }, undefined),
                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -35259,7 +35309,7 @@ const NavBarLogo = ()=>{
                             textClassName: "button-secondary-instance"
                         }, void 0, false, {
                             fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-                            lineNumber: 56,
+                            lineNumber: 62,
                             columnNumber: 11
                         }, undefined),
                         /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _button.Button), {
@@ -35268,24 +35318,24 @@ const NavBarLogo = ()=>{
                             frameClassName: "button-instance"
                         }, void 0, false, {
                             fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-                            lineNumber: 57,
+                            lineNumber: 63,
                             columnNumber: 11
                         }, undefined)
                     ]
                 }, void 0, true, {
                     fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-                    lineNumber: 55,
+                    lineNumber: 61,
                     columnNumber: 9
                 }, undefined)
             ]
         }, void 0, true, {
             fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-            lineNumber: 33,
+            lineNumber: 36,
             columnNumber: 7
         }, undefined)
     }, void 0, false, {
         fileName: "src/NavBar&Logo/NavBar&Logo.jsx",
-        lineNumber: 32,
+        lineNumber: 35,
         columnNumber: 5
     }, undefined);
 };
@@ -41164,13 +41214,13 @@ var prevRefreshSig = window.$RefreshSig$;
 $parcel$ReactRefreshHelpers$279a.prelude(module);
 
 try {
+// Search.jsx
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "Search", ()=>Search);
 var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
-var _dropdown = require("../../Search component/components/Dropdown");
 var _iconsSearch = require("../../Search component/icons/IconsSearch");
 var _filterForm = require("../Filtercomponent/FilterForm");
 var _filterFormDefault = parcelHelpers.interopDefault(_filterForm);
@@ -41180,148 +41230,24 @@ var _styleCss = require("./style.css");
 var _s = $RefreshSig$();
 const Search = ()=>{
     _s();
-    //For location
     const [inputValue, setInputValue] = (0, _react.useState)("");
-    const handleInputChange = (event)=>{
-        const inputValue = event.target.value;
-        const pattern = /^[a-zA-Z,\s]+$/;
-        if (pattern.test(inputValue) || inputValue === "") setInputValue(inputValue);
-    };
-    //For District
-    const [selectedDistrict, setSelectedDistrict] = (0, _react.useState)(""); // State to hold selected district
-    const handleDistrictChange = (selectedValue)=>{
-        setSelectedDistrict(selectedValue); // Update the selected district in state
-    };
-    const districts = [
-        {
-            label: "WestMount",
-            value: "westmount"
-        },
-        {
-            label: "Outremont",
-            value: "outremont"
-        },
-        {
-            label: "Town of Mont-Royal",
-            value: "Town of Mont-Royal"
-        },
-        {
-            label: "West Island",
-            value: "West Island"
-        },
-        {
-            label: "Hampstead",
-            value: "Hampstead"
-        },
-        {
-            label: "\xcele des Soeurs",
-            value: "\xcele des Soeurs"
-        },
-        {
-            label: "Candiac",
-            value: "candiac"
-        }
-    ];
-    //For min price
-    const [selectedMinPrice, setSelectedMinPrice] = (0, _react.useState)("");
-    const handleMinPriceChange = (selectedValue)=>{
-        setSelectedMinPrice(selectedValue);
-    };
-    const minPriceOptions = [
-        {
-            label: "500 000$",
-            value: "500 000$"
-        },
-        {
-            label: "1 000 000$",
-            value: "1 000 000$"
-        },
-        {
-            label: "1 500 000$",
-            value: "1 500 000$"
-        },
-        {
-            label: "2 000 000$",
-            value: "2 000 000$"
-        },
-        {
-            label: "2 500 000$",
-            value: "2 500 000$"
-        },
-        {
-            label: "3 000 000$",
-            value: "3 000 000$"
-        },
-        {
-            label: "3 500 000$",
-            value: "3 500 000$"
-        },
-        {
-            label: "4 000 000$",
-            value: "4 000 000$"
-        }
-    ];
-    //For max price
-    const [selectedMaxPrice, setSelectedMaxPrice] = (0, _react.useState)("");
-    const handleMaxPriceChange = (selectedValue)=>{
-        setSelectedMaxPrice(selectedValue);
-    };
-    const maxPriceOptions = [
-        {
-            label: "500 000$",
-            value: "500 000$"
-        },
-        {
-            label: "1 000 000$",
-            value: "1 000 000$"
-        },
-        {
-            label: "1 500 000$",
-            value: "1 500 000$"
-        },
-        {
-            label: "2 000 000$",
-            value: "2 000 000$"
-        },
-        {
-            label: "2 500 000$",
-            value: "2 500 000$"
-        },
-        {
-            label: "3 000 000$",
-            value: "3 000 000$"
-        },
-        {
-            label: "3 500 000$",
-            value: "3 500 000$"
-        },
-        {
-            label: "4 000 000$",
-            value: "4 000 000$"
-        }
-    ];
-    //For Property Type
-    const [selectedPropertyType, setSelectedPropertyType] = (0, _react.useState)("");
-    const handlePropertyTypeChange = (selectedValue)=>{
-        setSelectedPropertyType(selectedValue);
-    };
-    const propertyTypeOptions = [
-        {
-            label: "For sale",
-            value: "For sale"
-        },
-        {
-            label: "For rent",
-            value: "For rent"
-        },
-        {
-            label: "Sold",
-            value: "Sold"
-        }
-    ];
     const [isModalVisible, setIsModalVisible] = (0, _react.useState)(false);
+    const [filterData, setFilterData] = (0, _react.useState)({
+        bedrooms: 0,
+        bathrooms: 0,
+        minPrice: 0,
+        maxPrice: 0,
+        district: "",
+        cityName: "",
+        streetName: "",
+        propertyType: ""
+    });
+    const handleInputChange = (event)=>{
+        const value = event.target.value;
+        const pattern = /^[a-zA-Z,\s]+$/;
+        if (pattern.test(value) || value === "") setInputValue(value);
+    };
     const handleFilterButtonClick1 = ()=>{
-        console.log("Filter button clicked!");
         setIsModalVisible(!isModalVisible);
     };
     const handleButtonClick = async ()=>{
@@ -41330,16 +41256,20 @@ const Search = ()=>{
             return;
         }
         try {
-            // Make a POST request to the backend using Axios
+            const [cityName, streetName] = inputValue.split(",").map((part)=>part.trim());
             const response = await (0, _axiosDefault.default).post("http://localhost:8080/api/search", {
-                district: selectedDistrict,
-                streetName: inputValue,
-                propertyType: selectedPropertyType
+                bedrooms: filterData.bedrooms,
+                bathrooms: filterData.bathrooms,
+                minPrice: parseInt(filterData.minPrice),
+                maxPrice: parseInt(filterData.maxPrice),
+                district: filterData.district,
+                cityName: cityName,
+                streetName: streetName,
+                propertyType: filterData.propertyType
             });
             console.log("Backend response:", response.data);
         } catch (error) {
-            console.error("Error making API request:", error.message); // Log the error message
-            console.error("Error details:", error); // Log the entire error object
+            console.error("Error making API request:", error.message);
         }
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41353,20 +41283,20 @@ const Search = ()=>{
                         children: " Find Your Home"
                     }, void 0, false, {
                         fileName: "src/Search component/screens/Search.jsx",
-                        lineNumber: 117,
+                        lineNumber: 61,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _iconsSearch.IconsSearch), {
                         className: "icons-search"
                     }, void 0, false, {
                         fileName: "src/Search component/screens/Search.jsx",
-                        lineNumber: 118,
+                        lineNumber: 62,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Search component/screens/Search.jsx",
-                lineNumber: 116,
+                lineNumber: 60,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41382,7 +41312,7 @@ const Search = ()=>{
                                 onChange: handleInputChange
                             }, void 0, false, {
                                 fileName: "src/Search component/screens/Search.jsx",
-                                lineNumber: 122,
+                                lineNumber: 66,
                                 columnNumber: 11
                             }, undefined),
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -41391,13 +41321,13 @@ const Search = ()=>{
                                 children: "Search"
                             }, void 0, false, {
                                 fileName: "src/Search component/screens/Search.jsx",
-                                lineNumber: 128,
+                                lineNumber: 72,
                                 columnNumber: 11
                             }, undefined)
                         ]
                     }, void 0, true, {
                         fileName: "src/Search component/screens/Search.jsx",
-                        lineNumber: 121,
+                        lineNumber: 65,
                         columnNumber: 9
                     }, undefined),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
@@ -41410,18 +41340,18 @@ const Search = ()=>{
                             src: "https://i.ibb.co/nnx7Z0V/vector.png"
                         }, void 0, false, {
                             fileName: "src/Search component/screens/Search.jsx",
-                            lineNumber: 133,
+                            lineNumber: 77,
                             columnNumber: 11
                         }, undefined)
                     }, void 0, false, {
                         fileName: "src/Search component/screens/Search.jsx",
-                        lineNumber: 132,
+                        lineNumber: 76,
                         columnNumber: 9
                     }, undefined)
                 ]
             }, void 0, true, {
                 fileName: "src/Search component/screens/Search.jsx",
-                lineNumber: 120,
+                lineNumber: 64,
                 columnNumber: 7
             }, undefined),
             isModalVisible && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
@@ -41429,30 +41359,32 @@ const Search = ()=>{
                 children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                     className: "modal-content",
                     children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _filterFormDefault.default), {
+                        inputValue: inputValue,
+                        onInputChange: setInputValue,
                         onSubmit: (formData)=>console.log(formData)
                     }, void 0, false, {
                         fileName: "src/Search component/screens/Search.jsx",
-                        lineNumber: 139,
+                        lineNumber: 83,
                         columnNumber: 13
                     }, undefined)
                 }, void 0, false, {
                     fileName: "src/Search component/screens/Search.jsx",
-                    lineNumber: 138,
+                    lineNumber: 82,
                     columnNumber: 11
                 }, undefined)
             }, void 0, false, {
                 fileName: "src/Search component/screens/Search.jsx",
-                lineNumber: 137,
+                lineNumber: 81,
                 columnNumber: 9
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/Search component/screens/Search.jsx",
-        lineNumber: 115,
+        lineNumber: 59,
         columnNumber: 5
     }, undefined);
 };
-_s(Search, "Nn42zQvfOMS0sQdSsELhgarBZ2E=");
+_s(Search, "PAPSBlUozqfhD7C9tnIZsH8CPbY=");
 _c = Search;
 var _c;
 $RefreshReg$(_c, "Search");
@@ -41462,84 +41394,7 @@ $RefreshReg$(_c, "Search");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../Search component/components/Dropdown":"hI7DG","../../Search component/icons/IconsSearch":"dvFTl","../Filtercomponent/FilterForm":"lRAGc","axios":"jo6P5","./style.css":"bYIyU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"hI7DG":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Dropdown", ()=>(0, _dropdown.Dropdown));
-var _dropdown = require("./Dropdown");
-
-},{"./Dropdown":"lUbAl","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"lUbAl":[function(require,module,exports) {
-var $parcel$ReactRefreshHelpers$df85 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
-var prevRefreshReg = window.$RefreshReg$;
-var prevRefreshSig = window.$RefreshSig$;
-$parcel$ReactRefreshHelpers$df85.prelude(module);
-
-try {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-parcelHelpers.export(exports, "Dropdown", ()=>Dropdown);
-var _jsxDevRuntime = require("react/jsx-dev-runtime");
-var _propTypes = require("prop-types");
-var _propTypesDefault = parcelHelpers.interopDefault(_propTypes);
-var _react = require("react");
-var _reactDefault = parcelHelpers.interopDefault(_react);
-var _styleCss = require("./style.css");
-const Dropdown = ({ className, text = "Select team member", options, onChange, placeholder, iconsArrowDownColor = "black" })=>{
-    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: `dropdown ${className}`,
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
-            className: "select-instance",
-            onChange: onChange,
-            children: [
-                placeholder && /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                    value: "",
-                    children: placeholder
-                }, void 0, false, {
-                    fileName: "src/Search component/components/Dropdown/Dropdown.jsx",
-                    lineNumber: 11,
-                    columnNumber: 11
-                }, undefined),
-                options.map((option, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                        value: option.value,
-                        children: option.label
-                    }, index, false, {
-                        fileName: "src/Search component/components/Dropdown/Dropdown.jsx",
-                        lineNumber: 14,
-                        columnNumber: 11
-                    }, undefined))
-            ]
-        }, void 0, true, {
-            fileName: "src/Search component/components/Dropdown/Dropdown.jsx",
-            lineNumber: 9,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
-        fileName: "src/Search component/components/Dropdown/Dropdown.jsx",
-        lineNumber: 8,
-        columnNumber: 5
-    }, undefined);
-};
-_c = Dropdown;
-Dropdown.propTypes = {
-    text: (0, _propTypesDefault.default).string,
-    iconsArrowDownColor: (0, _propTypesDefault.default).string,
-    options: (0, _propTypesDefault.default).arrayOf((0, _propTypesDefault.default).shape({
-        label: (0, _propTypesDefault.default).string.isRequired,
-        value: (0, _propTypesDefault.default).string.isRequired
-    })).isRequired,
-    selectedValue: (0, _propTypesDefault.default).string,
-    onChange: (0, _propTypesDefault.default).func.isRequired,
-    placeholder: (0, _propTypesDefault.default).string
-};
-var _c;
-$RefreshReg$(_c, "Dropdown");
-
-  $parcel$ReactRefreshHelpers$df85.postlude(module);
-} finally {
-  window.$RefreshReg$ = prevRefreshReg;
-  window.$RefreshSig$ = prevRefreshSig;
-}
-},{"react/jsx-dev-runtime":"iTorj","prop-types":"7wKI2","react":"21dqq","./style.css":"3zzKY","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"3zzKY":[function() {},{}],"dvFTl":[function(require,module,exports) {
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","../../Search component/icons/IconsSearch":"dvFTl","../Filtercomponent/FilterForm":"lRAGc","axios":"jo6P5","./style.css":"bYIyU","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"dvFTl":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "IconsSearch", ()=>(0, _iconsSearch.IconsSearch));
@@ -41646,412 +41501,320 @@ var _jsxDevRuntime = require("react/jsx-dev-runtime");
 var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _s = $RefreshSig$();
-const FilterFormComponent = ({ onSubmit, onReset })=>{
+const FilterFormComponent = ({ inputValue, onInputChange, onSubmit })=>{
     _s();
     const [transactionType, setTransactionType] = (0, _react.useState)("");
     const [minPrice, setMinPrice] = (0, _react.useState)("");
     const [maxPrice, setMaxPrice] = (0, _react.useState)("");
-    const [minBeds, setMinBeds] = (0, _react.useState)("");
-    const [maxBeds, setMaxBeds] = (0, _react.useState)("");
-    const [minBaths, setMinBaths] = (0, _react.useState)("");
-    const [maxBaths, setMaxBaths] = (0, _react.useState)("");
+    const [Beds, setBeds] = (0, _react.useState)("");
+    const [Baths, setBaths] = (0, _react.useState)("");
     const [districts, setdistricts] = (0, _react.useState)("");
     const handleSubmit = (e)=>{
         e.preventDefault();
-        if (!transactionType && !minPrice && !maxPrice && !minBeds && !maxBeds && !minBaths && !maxBaths && !districts) {
-            alert("Please select at least one field before searching.");
-            return;
-        }
         const formData = {
             transactionType,
             minPrice,
             maxPrice,
-            minBeds,
-            maxBeds,
-            minBaths,
-            maxBaths,
-            districts
+            Beds,
+            Baths,
+            districts,
+            cityName: inputValue.split(",")[0].trim(),
+            streetName: inputValue.split(",")[1]?.trim() || ""
         };
         onSubmit(formData);
     };
     const handleReset = ()=>{
-        // Reset the form data to the initial state
         setTransactionType("");
         setMinPrice("");
-        setMaxPrice("");
-        setMinBeds("");
-        setMaxBeds("");
-        setMinBaths("");
-        setMaxBaths("");
+        setMaxPrice(""), setBeds("");
+        setBaths("");
         setdistricts("");
+        onInputChange("");
     };
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
         className: "filter-form",
-        children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
-            onSubmit: handleSubmit,
-            children: [
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                    children: [
-                        "Transaction Type:",
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
-                            value: transactionType,
-                            onChange: (e)=>setTransactionType(e.target.value),
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "",
-                                    children: "Select"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 64,
-                                    columnNumber: 12
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "for sale",
-                                    children: "For Sale"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 65,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "for rent",
-                                    children: "For Rent"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 66,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "sold",
-                                    children: "Sold"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 67,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                            lineNumber: 60,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                    lineNumber: 58,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                    children: [
-                        "Min Price:",
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
-                            value: minPrice,
-                            onChange: (e)=>setMinPrice(e.target.value),
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "",
-                                    children: "Select"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 76,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "500 000$",
-                                    children: "500 000$"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 77,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "1 000 000",
-                                    children: "1 000 000$"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 78,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "1 500 000$",
-                                    children: "1 500 000$"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 79,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "2 000 000$",
-                                    children: "2 000 000$"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 80,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "2 500 000$",
-                                    children: "2 500 000$"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 81,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "3 000 000$",
-                                    children: "3 000 000$"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 82,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "3 500 000$",
-                                    children: "3 500 000$"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 83,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "4 000 000$",
-                                    children: "4 000 000$"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 84,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                            lineNumber: 72,
-                            columnNumber: 13
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                    lineNumber: 70,
-                    columnNumber: 11
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                    children: [
-                        "Max Price:",
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
-                            value: maxPrice,
-                            onChange: (e)=>setMaxPrice(e.target.value),
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "",
-                                    children: "Select"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 93,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "500 000$",
-                                    children: '500 000$"'
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 94,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "1 000 000",
-                                    children: "1 000 000$"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 95,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "1 500 000$",
-                                    children: "1 500 000$"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 96,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "2 000 000$",
-                                    children: "2 000 000$"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 97,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "2 500 000$",
-                                    children: "2 500 000$"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 98,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "3 000 000$",
-                                    children: "3 000 000$"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 99,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "3 500 000$",
-                                    children: "3 500 000$"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 100,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "4 000 000$",
-                                    children: "4 000 000$"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 101,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                            lineNumber: 89,
-                            columnNumber: 9
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                    lineNumber: 87,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                    children: [
-                        "Min Beds:",
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
-                            value: minBeds,
-                            onChange: (e)=>setMinBeds(e.target.value),
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "",
-                                    children: "Select"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 110,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "1",
-                                    children: "1"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 111,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "1+",
-                                    children: "1+"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 112,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "2",
-                                    children: "2"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 113,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "2+",
-                                    children: "2+"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 114,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "3",
-                                    children: "3"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 115,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "3+",
-                                    children: "3+"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 116,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "4",
-                                    children: "4 "
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 117,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "4+",
-                                    children: "4+"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 118,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "5",
-                                    children: "5"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 119,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "5+",
-                                    children: "5+"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 120,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "6",
-                                    children: "6"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 121,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                            lineNumber: 106,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                    lineNumber: 104,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                children: " Search: "
+            }, void 0, false, {
+                fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                lineNumber: 38,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                className: "input-instance",
+                placeholder: "City name, street name",
+                value: inputValue,
+                onChange: (e)=>onInputChange(e.target.value)
+            }, void 0, false, {
+                fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                lineNumber: 39,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                lineNumber: 45,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                lineNumber: 46,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
+                fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                lineNumber: 47,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                onSubmit: handleSubmit,
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
                         children: [
-                            "Max Beds:",
+                            "Transaction Type:",
                             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
-                                value: maxBeds,
-                                onChange: (e)=>setMaxBeds(e.target.value),
+                                value: transactionType,
+                                onChange: (e)=>setTransactionType(e.target.value),
                                 children: [
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
                                         value: "",
                                         children: "Select"
                                     }, void 0, false, {
                                         fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                        lineNumber: 131,
+                                        lineNumber: 55,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "for sale",
+                                        children: "For Sale"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 56,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "for rent",
+                                        children: "For Rent"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 57,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "sold",
+                                        children: "Sold"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 58,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                lineNumber: 51,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                        lineNumber: 49,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        children: [
+                            "Minimum Price:",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
+                                value: minPrice,
+                                onChange: (e)=>setMinPrice(e.target.value),
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "",
+                                        children: "Select"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 67,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "500000",
+                                        children: "$500,000"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 68,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "1000000",
+                                        children: "$1,000,000"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 69,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "1500000",
+                                        children: "$1,500,000"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 70,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "2000000",
+                                        children: "$2,000,000"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 71,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "2500000",
+                                        children: "$2,500,000"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 72,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "3000000",
+                                        children: "$3,000,000"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 73,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "3500000",
+                                        children: "$3,500,000"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 74,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "4000000",
+                                        children: "$4,000,000"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 75,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                lineNumber: 63,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                        lineNumber: 61,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        children: [
+                            "Maximum Price:",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
+                                value: maxPrice,
+                                onChange: (e)=>setMaxPrice(e.target.value),
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "",
+                                        children: "Select"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 84,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "500000",
+                                        children: "$500,000"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 85,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "1000000",
+                                        children: "$1,000,000"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 86,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "1500000",
+                                        children: "$1,500,000"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 87,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "2000000",
+                                        children: "$2,000,000"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 88,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "2500000",
+                                        children: "$2,500,000"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 89,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "3000000",
+                                        children: "$3,000,000"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 90,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "3500000",
+                                        children: "$3,500,000"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 91,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "4000000",
+                                        children: "$4,000,000"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 92,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                lineNumber: 80,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                        lineNumber: 78,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        children: [
+                            "Beds:",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
+                                value: Beds,
+                                onChange: (e)=>setBeds(e.target.value),
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "",
+                                        children: "Select"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 101,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -42059,15 +41822,7 @@ const FilterFormComponent = ({ onSubmit, onReset })=>{
                                         children: "1"
                                     }, void 0, false, {
                                         fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                        lineNumber: 132,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                        value: "1+",
-                                        children: "1+"
-                                    }, void 0, false, {
-                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                        lineNumber: 133,
+                                        lineNumber: 102,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -42075,15 +41830,7 @@ const FilterFormComponent = ({ onSubmit, onReset })=>{
                                         children: "2"
                                     }, void 0, false, {
                                         fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                        lineNumber: 134,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                        value: "2+",
-                                        children: "2+"
-                                    }, void 0, false, {
-                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                        lineNumber: 135,
+                                        lineNumber: 103,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -42091,31 +41838,15 @@ const FilterFormComponent = ({ onSubmit, onReset })=>{
                                         children: "3"
                                     }, void 0, false, {
                                         fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                        lineNumber: 136,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                        value: "3+",
-                                        children: "3+"
-                                    }, void 0, false, {
-                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                        lineNumber: 137,
+                                        lineNumber: 104,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
                                         value: "4",
-                                        children: "4 "
+                                        children: "4"
                                     }, void 0, false, {
                                         fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                        lineNumber: 138,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                        value: "4+",
-                                        children: "4+"
-                                    }, void 0, false, {
-                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                        lineNumber: 139,
+                                        lineNumber: 105,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -42123,15 +41854,7 @@ const FilterFormComponent = ({ onSubmit, onReset })=>{
                                         children: "5"
                                     }, void 0, false, {
                                         fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                        lineNumber: 140,
-                                        columnNumber: 13
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                        value: "5+",
-                                        children: "5+"
-                                    }, void 0, false, {
-                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                        lineNumber: 141,
+                                        lineNumber: 106,
                                         columnNumber: 13
                                     }, undefined),
                                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
@@ -42139,11 +41862,104 @@ const FilterFormComponent = ({ onSubmit, onReset })=>{
                                         children: "6"
                                     }, void 0, false, {
                                         fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                        lineNumber: 142,
+                                        lineNumber: 107,
                                         columnNumber: 13
                                     }, undefined)
                                 ]
                             }, void 0, true, {
+                                fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                lineNumber: 97,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                        lineNumber: 95,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        children: [
+                            "Baths:",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
+                                value: Baths,
+                                onChange: (e)=>setBaths(e.target.value),
+                                children: [
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "",
+                                        children: "Select"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 116,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "1",
+                                        children: "1"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 117,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "2",
+                                        children: "2"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 118,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "3",
+                                        children: "3"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 119,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "4",
+                                        children: "4"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 120,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "5",
+                                        children: "5"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 121,
+                                        columnNumber: 13
+                                    }, undefined),
+                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
+                                        value: "6",
+                                        children: "6"
+                                    }, void 0, false, {
+                                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                        lineNumber: 122,
+                                        columnNumber: 13
+                                    }, undefined)
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                lineNumber: 112,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                        lineNumber: 110,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
+                        children: [
+                            "District:",
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "text",
+                                value: districts,
+                                onChange: (e)=>setdistricts(e.target.value)
+                            }, void 0, false, {
                                 fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
                                 lineNumber: 127,
                                 columnNumber: 11
@@ -42153,299 +41969,47 @@ const FilterFormComponent = ({ onSubmit, onReset })=>{
                         fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
                         lineNumber: 125,
                         columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "button-group",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                type: "submit",
+                                children: "Search"
+                            }, void 0, false, {
+                                fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                lineNumber: 134,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                type: "button",
+                                onClick: handleReset,
+                                children: "Reset"
+                            }, void 0, false, {
+                                fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                                lineNumber: 135,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                        lineNumber: 133,
+                        columnNumber: 9
                     }, undefined)
-                }, void 0, false, {
-                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                    lineNumber: 124,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                    children: [
-                        "Min Baths:",
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
-                            value: minBaths,
-                            onChange: (e)=>setMinBaths(e.target.value),
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "",
-                                    children: "Select"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 152,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "1",
-                                    children: "1"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 153,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "1+",
-                                    children: "1+"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 154,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "2",
-                                    children: "2"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 155,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "2+",
-                                    children: "2+"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 156,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "3",
-                                    children: "3"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 157,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "3+",
-                                    children: "3+"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 158,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "4",
-                                    children: "4 "
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 159,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "4+",
-                                    children: "4+"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 160,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "5",
-                                    children: "5"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 161,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "5+",
-                                    children: "5+"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 162,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "6",
-                                    children: "6"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 163,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                            lineNumber: 148,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                    lineNumber: 146,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                    children: [
-                        "Max Baths:",
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("select", {
-                            value: maxBaths,
-                            onChange: (e)=>setMaxBaths(e.target.value),
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "",
-                                    children: "Select"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 172,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "1",
-                                    children: "1"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 173,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "1+",
-                                    children: "1+"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 174,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "2",
-                                    children: "2"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 175,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "2+",
-                                    children: "2+"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 176,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "3",
-                                    children: "3"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 177,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "3+",
-                                    children: "3+"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 178,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "4",
-                                    children: "4 "
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 179,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "4+",
-                                    children: "4+"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 180,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "5",
-                                    children: "5"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 181,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "5+",
-                                    children: "5+"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 182,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("option", {
-                                    value: "6",
-                                    children: "6"
-                                }, void 0, false, {
-                                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                                    lineNumber: 183,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, void 0, true, {
-                            fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                            lineNumber: 168,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                    lineNumber: 166,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("label", {
-                    children: [
-                        "District",
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
-                            type: "text",
-                            value: districts,
-                            onChange: (e)=>setdistricts(e.target.value)
-                        }, void 0, false, {
-                            fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                            lineNumber: 188,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                    lineNumber: 186,
-                    columnNumber: 9
-                }, undefined),
-                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "button-group",
-                    children: [
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            type: "submit",
-                            children: "Search"
-                        }, void 0, false, {
-                            fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                            lineNumber: 195,
-                            columnNumber: 11
-                        }, undefined),
-                        /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                            type: "button",
-                            onClick: handleReset,
-                            children: "Reset"
-                        }, void 0, false, {
-                            fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                            lineNumber: 196,
-                            columnNumber: 11
-                        }, undefined)
-                    ]
-                }, void 0, true, {
-                    fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-                    lineNumber: 194,
-                    columnNumber: 9
-                }, undefined)
-            ]
-        }, void 0, true, {
-            fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-            lineNumber: 57,
-            columnNumber: 7
-        }, undefined)
-    }, void 0, false, {
+                ]
+            }, void 0, true, {
+                fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
+                lineNumber: 48,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
         fileName: "src/Search component/Filtercomponent/FilterForm.jsx",
-        lineNumber: 56,
+        lineNumber: 37,
         columnNumber: 5
     }, undefined);
 };
-_s(FilterFormComponent, "wPy6X0vSBiM3UzI00kDF4co9pP4=");
+_s(FilterFormComponent, "zbszuJM5qVKVvy1cwThGOrF7lP0=");
 _c = FilterFormComponent;
 exports.default = FilterFormComponent;
 var _c;
@@ -46007,186 +45571,72 @@ var _react = require("react");
 var _reactDefault = parcelHelpers.interopDefault(_react);
 var _favoriteCss = require("./Favorite.css");
 var _navBarLogo = require("../NavBar&Logo/NavBar&Logo");
-var _s = $RefreshSig$();
 const Favorite = ({ favoritedProperties, properties })=>{
-    _s();
-    const savedProperties = properties ? properties.filter((property)=>favoritedProperties.includes(property.id)) : [];
-    const [requests, setRequests] = (0, _react.useState)(visitRequests);
-    const visitRequests = [
-        {
-            id: 1,
-            propertyId: 1,
-            status: "Pending"
-        },
-        {
-            id: 2,
-            propertyId: 2,
-            status: "Confirmed"
-        }
-    ];
-    const handleStatusChange = (id, newStatus)=>{
-    // Implement your logic to handle status change
-    };
+    // Add defensive checks to ensure properties is defined and is an array
+    const favoritedListings = properties && Array.isArray(properties) ? properties.filter((property)=>favoritedProperties.includes(property?.id)) : [];
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        className: "saved-properties",
+        className: "favorited-listings",
         children: [
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "NavBarLogo",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBarLogo.NavBarLogo), {}, void 0, false, {
-                    fileName: "src/FavoriteComponent/Favorite.jsx",
-                    lineNumber: 22,
-                    columnNumber: 9
-                }, undefined)
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _navBarLogo.NavBarLogo), {}, void 0, false, {
+                fileName: "src/FavoriteComponent/Favorite.jsx",
+                lineNumber: 15,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Favorited Properties"
             }, void 0, false, {
                 fileName: "src/FavoriteComponent/Favorite.jsx",
-                lineNumber: 21,
+                lineNumber: 16,
                 columnNumber: 7
             }, undefined),
             /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                 className: "favorites",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
-                        children: "Saved Properties"
-                    }, void 0, false, {
-                        fileName: "src/FavoriteComponent/Favorite.jsx",
-                        lineNumber: 25,
-                        columnNumber: 9
-                    }, undefined),
-                    savedProperties.map((property)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            children: [
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
-                                    src: property.image,
-                                    alt: property.name
-                                }, void 0, false, {
-                                    fileName: "src/FavoriteComponent/Favorite.jsx",
-                                    lineNumber: 28,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                                    children: property.name
-                                }, void 0, false, {
-                                    fileName: "src/FavoriteComponent/Favorite.jsx",
-                                    lineNumber: 29,
-                                    columnNumber: 13
-                                }, undefined),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                    children: [
-                                        "Price: $",
-                                        property.price
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "src/FavoriteComponent/Favorite.jsx",
-                                    lineNumber: 30,
-                                    columnNumber: 13
-                                }, undefined)
-                            ]
-                        }, property.id, true, {
-                            fileName: "src/FavoriteComponent/Favorite.jsx",
-                            lineNumber: 27,
-                            columnNumber: 11
-                        }, undefined))
-                ]
-            }, void 0, true, {
-                fileName: "src/FavoriteComponent/Favorite.jsx",
-                lineNumber: 24,
-                columnNumber: 7
-            }, undefined),
-            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "visit-requests",
-                children: [
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
-                        children: "Requested Visits"
-                    }, void 0, false, {
-                        fileName: "src/FavoriteComponent/Favorite.jsx",
-                        lineNumber: 35,
-                        columnNumber: 9
-                    }, undefined),
-                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
-                        children: requests.map((request)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
-                                className: "request-item",
-                                children: [
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        children: [
-                                            "Property ID: ",
-                                            request.propertyId
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/FavoriteComponent/Favorite.jsx",
-                                        lineNumber: 39,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        children: [
-                                            "Client Name: ",
-                                            request.clientName
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/FavoriteComponent/Favorite.jsx",
-                                        lineNumber: 40,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
-                                        children: [
-                                            "Status: ",
-                                            request.status
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/FavoriteComponent/Favorite.jsx",
-                                        lineNumber: 41,
-                                        columnNumber: 15
-                                    }, undefined),
-                                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                        className: "request-actions",
-                                        children: [
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                className: "button accept",
-                                                onClick: ()=>handleStatusChange(request.id, "Accepted"),
-                                                children: "Accept"
-                                            }, void 0, false, {
-                                                fileName: "src/FavoriteComponent/Favorite.jsx",
-                                                lineNumber: 43,
-                                                columnNumber: 17
-                                            }, undefined),
-                                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
-                                                className: "button decline",
-                                                onClick: ()=>handleStatusChange(request.id, "Declined"),
-                                                children: "Decline"
-                                            }, void 0, false, {
-                                                fileName: "src/FavoriteComponent/Favorite.jsx",
-                                                lineNumber: 49,
-                                                columnNumber: 17
-                                            }, undefined)
-                                        ]
-                                    }, void 0, true, {
-                                        fileName: "src/FavoriteComponent/Favorite.jsx",
-                                        lineNumber: 42,
-                                        columnNumber: 15
-                                    }, undefined)
-                                ]
-                            }, request.id, true, {
+                children: favoritedListings.map((property)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "favorited-property",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("img", {
+                                src: property.image,
+                                alt: property.name
+                            }, void 0, false, {
                                 fileName: "src/FavoriteComponent/Favorite.jsx",
-                                lineNumber: 38,
+                                lineNumber: 20,
                                 columnNumber: 13
-                            }, undefined))
-                    }, void 0, false, {
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h2", {
+                                children: property.name
+                            }, void 0, false, {
+                                fileName: "src/FavoriteComponent/Favorite.jsx",
+                                lineNumber: 21,
+                                columnNumber: 13
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("p", {
+                                children: [
+                                    "Price: $",
+                                    property.price
+                                ]
+                            }, void 0, true, {
+                                fileName: "src/FavoriteComponent/Favorite.jsx",
+                                lineNumber: 22,
+                                columnNumber: 13
+                            }, undefined)
+                        ]
+                    }, property.id, true, {
                         fileName: "src/FavoriteComponent/Favorite.jsx",
-                        lineNumber: 36,
-                        columnNumber: 9
-                    }, undefined)
-                ]
-            }, void 0, true, {
+                        lineNumber: 19,
+                        columnNumber: 11
+                    }, undefined))
+            }, void 0, false, {
                 fileName: "src/FavoriteComponent/Favorite.jsx",
-                lineNumber: 34,
+                lineNumber: 17,
                 columnNumber: 7
             }, undefined)
         ]
     }, void 0, true, {
         fileName: "src/FavoriteComponent/Favorite.jsx",
-        lineNumber: 20,
+        lineNumber: 14,
         columnNumber: 5
     }, undefined);
 };
-_s(Favorite, "uOW/rsDrY0EkPPWro7JuF5FDmn8=");
 _c = Favorite;
 var _c;
 $RefreshReg$(_c, "Favorite");
@@ -46196,6 +45646,159 @@ $RefreshReg$(_c, "Favorite");
   window.$RefreshReg$ = prevRefreshReg;
   window.$RefreshSig$ = prevRefreshSig;
 }
-},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Favorite.css":"4yYba","../NavBar&Logo/NavBar&Logo":"6ELei","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4yYba":[function() {},{}]},["4s3Ar","1xC6H","d8Dch"], "d8Dch", "parcelRequire6432")
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./Favorite.css":"4yYba","../NavBar&Logo/NavBar&Logo":"6ELei","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"4yYba":[function() {},{}],"7awgm":[function(require,module,exports) {
+var $parcel$ReactRefreshHelpers$2475 = require("@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js");
+var prevRefreshReg = window.$RefreshReg$;
+var prevRefreshSig = window.$RefreshSig$;
+$parcel$ReactRefreshHelpers$2475.prelude(module);
+
+try {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "AdminDashboard", ()=>AdminDashboard);
+var _jsxDevRuntime = require("react/jsx-dev-runtime");
+var _react = require("react");
+var _reactDefault = parcelHelpers.interopDefault(_react);
+var _adminDashboardCss = require("./AdminDashboard.css"); // Make sure this CSS file is in the same directory
+var _s = $RefreshSig$();
+const AdminDashboard = ()=>{
+    _s();
+    const [brokers, setBrokers] = (0, _react.useState)([]);
+    const [brokerNameToAdd, setBrokerNameToAdd] = (0, _react.useState)("");
+    const [brokerNameToRemove, setBrokerNameToRemove] = (0, _react.useState)("");
+    const addBroker = (e)=>{
+        e.preventDefault();
+        if (brokerNameToAdd.trim() && !brokers.includes(brokerNameToAdd)) {
+            setBrokers([
+                ...brokers,
+                brokerNameToAdd
+            ]);
+            setBrokerNameToAdd("");
+        }
+    };
+    const removeBroker = (e)=>{
+        e.preventDefault();
+        setBrokers(brokers.filter((broker)=>broker !== brokerNameToRemove));
+        setBrokerNameToRemove("");
+    };
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+        className: "AdminDashboard",
+        children: [
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("h1", {
+                children: "Admin Dashboard"
+            }, void 0, false, {
+                fileName: "src/AdminDashboard/AdminDashboard.jsx",
+                lineNumber: 25,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                className: "forms-container",
+                children: [
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                        onSubmit: addBroker,
+                        className: "broker-form",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "text",
+                                value: brokerNameToAdd,
+                                onChange: (e)=>setBrokerNameToAdd(e.target.value),
+                                placeholder: "Enter broker name to add",
+                                required: true
+                            }, void 0, false, {
+                                fileName: "src/AdminDashboard/AdminDashboard.jsx",
+                                lineNumber: 28,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                type: "submit",
+                                children: "Add Broker"
+                            }, void 0, false, {
+                                fileName: "src/AdminDashboard/AdminDashboard.jsx",
+                                lineNumber: 35,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/AdminDashboard/AdminDashboard.jsx",
+                        lineNumber: 27,
+                        columnNumber: 9
+                    }, undefined),
+                    /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("form", {
+                        onSubmit: removeBroker,
+                        className: "broker-form",
+                        children: [
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("input", {
+                                type: "text",
+                                value: brokerNameToRemove,
+                                onChange: (e)=>setBrokerNameToRemove(e.target.value),
+                                placeholder: "Enter broker name to remove",
+                                required: true
+                            }, void 0, false, {
+                                fileName: "src/AdminDashboard/AdminDashboard.jsx",
+                                lineNumber: 38,
+                                columnNumber: 11
+                            }, undefined),
+                            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("button", {
+                                type: "submit",
+                                children: "Remove Broker"
+                            }, void 0, false, {
+                                fileName: "src/AdminDashboard/AdminDashboard.jsx",
+                                lineNumber: 45,
+                                columnNumber: 11
+                            }, undefined)
+                        ]
+                    }, void 0, true, {
+                        fileName: "src/AdminDashboard/AdminDashboard.jsx",
+                        lineNumber: 37,
+                        columnNumber: 9
+                    }, undefined)
+                ]
+            }, void 0, true, {
+                fileName: "src/AdminDashboard/AdminDashboard.jsx",
+                lineNumber: 26,
+                columnNumber: 7
+            }, undefined),
+            /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)(BrokerList, {
+                brokers: brokers
+            }, void 0, false, {
+                fileName: "src/AdminDashboard/AdminDashboard.jsx",
+                lineNumber: 48,
+                columnNumber: 7
+            }, undefined)
+        ]
+    }, void 0, true, {
+        fileName: "src/AdminDashboard/AdminDashboard.jsx",
+        lineNumber: 24,
+        columnNumber: 5
+    }, undefined);
+};
+_s(AdminDashboard, "VFgJxmTrTNcVsRgiY6PvPPlQFLc=");
+_c = AdminDashboard;
+const BrokerList = ({ brokers })=>{
+    return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("ul", {
+        children: brokers.map((broker, index)=>/*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("li", {
+                children: broker
+            }, index, false, {
+                fileName: "src/AdminDashboard/AdminDashboard.jsx",
+                lineNumber: 57,
+                columnNumber: 9
+            }, undefined))
+    }, void 0, false, {
+        fileName: "src/AdminDashboard/AdminDashboard.jsx",
+        lineNumber: 55,
+        columnNumber: 5
+    }, undefined);
+};
+_c1 = BrokerList;
+var _c, _c1;
+$RefreshReg$(_c, "AdminDashboard");
+$RefreshReg$(_c1, "BrokerList");
+
+  $parcel$ReactRefreshHelpers$2475.postlude(module);
+} finally {
+  window.$RefreshReg$ = prevRefreshReg;
+  window.$RefreshSig$ = prevRefreshSig;
+}
+},{"react/jsx-dev-runtime":"iTorj","react":"21dqq","./AdminDashboard.css":"011Lh","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","@parcel/transformer-react-refresh-wrap/lib/helpers/helpers.js":"km3Ru"}],"011Lh":[function() {},{}]},["4s3Ar","1xC6H","d8Dch"], "d8Dch", "parcelRequire6432")
 
 //# sourceMappingURL=index.b4b6dfad.js.map
